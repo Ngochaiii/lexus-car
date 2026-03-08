@@ -1,0 +1,6164 @@
+/* homepage  */
+        /* ===================== CSS VARIABLES (SHARED) ===================== */
+        :root {
+            --lexus-gold: #C4A052;
+            --lexus-gold-light: rgba(196,160,82,0.15);
+            --lexus-gold-dark: #A8893F;
+            --lexus-black: #0A0A0A;
+            --lexus-dark: #141414;
+            --lexus-dark-2: #1A1A1A;
+            --lexus-dark-3: #222222;
+            --lexus-gray: #2A2A2A;
+            --lexus-gray-light: #3A3A3A;
+            --lexus-text: #E5E5E5;
+            --lexus-text-muted: #888888;
+            --lexus-white: #FFFFFF;
+            --lexus-red: #C41E3A;
+            --lexus-green: #2E8B57;
+            --radius: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 16px;
+            --shadow-gold: 0 4px 30px rgba(196,160,82,0.2);
+            --shadow-dark: 0 8px 40px rgba(0,0,0,0.4);
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--lexus-black);
+            color: var(--lexus-text);
+            -webkit-font-smoothing: antialiased;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        img { max-width: 100%; }
+
+        /* ===================== TYPOGRAPHY ===================== */
+        .font-display { font-family: 'Playfair Display', serif; }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--lexus-gold), transparent);
+            margin-top: 16px;
+        }
+
+        .section-title.center::after {
+            margin: 16px auto 0;
+            width: 80px;
+            background: linear-gradient(90deg, transparent, var(--lexus-gold), transparent);
+        }
+
+        .section-subtitle {
+            font-size: 0.9rem;
+            color: var(--lexus-text-muted);
+            max-width: 600px;
+        }
+
+        .section-subtitle.center {
+            margin: 0 auto;
+        }
+
+        /* ====== NEW SECTIONS ONLY (shared vars already in style.css) ====== */
+
+        /* ====== SEARCH SECTION — simplified ====== */
+        .search-section { background: var(--lexus-dark); padding: 60px 0; position: relative; margin-top: -80px; z-index: 10; }
+        .search-box { background: var(--lexus-dark-2); border: 1px solid var(--lexus-gray); border-radius: var(--radius-lg); padding: 32px; }
+        .search-tabs { display: flex; gap: 4px; margin-bottom: 24px; flex-wrap: wrap; }
+        .search-tab { background: transparent; border: none; color: var(--lexus-text-muted); font-size: 0.82rem; font-weight: 600; padding: 10px 20px; border-radius: var(--radius); cursor: pointer; transition: var(--transition); }
+        .search-tab:hover { color: var(--lexus-white); }
+        .search-tab.active { background: var(--lexus-gold); color: var(--lexus-black); }
+
+        /* New simplified search form */
+        .search-form-simple { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: end; }
+        .search-input-wrap { position: relative; }
+        .search-input-wrap label { display: block; font-size: 0.75rem; font-weight: 600; color: var(--lexus-text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em; }
+        .search-input-wrap input { width: 100%; padding: 16px 20px 16px 48px; font-size: 0.95rem; color: var(--lexus-white); background: var(--lexus-black); border: 1px solid var(--lexus-gray); border-radius: var(--radius); transition: var(--transition); }
+        .search-input-wrap input::placeholder { color: var(--lexus-text-muted); }
+        .search-input-wrap input:focus { outline: none; border-color: var(--lexus-gold); }
+        .search-input-wrap .si-icon { position: absolute; left: 16px; bottom: 17px; color: var(--lexus-text-muted); font-size: 1rem; pointer-events: none; }
+        .btn-search { background: var(--lexus-gold); color: var(--lexus-black); font-size: 0.85rem; font-weight: 600; padding: 16px 36px; border: none; border-radius: var(--radius); cursor: pointer; transition: var(--transition); display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+        .btn-search:hover { background: var(--lexus-gold-dark); transform: translateY(-2px); }
+
+        /* Category pills below input */
+        .search-categories { display: flex; align-items: center; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+        .search-categories span { font-size: 0.75rem; font-weight: 600; color: var(--lexus-text-muted); }
+        .cat-pill { padding: 5px 14px; border: 1px solid var(--lexus-gray); border-radius: 20px; font-size: 0.75rem; color: var(--lexus-text-muted); cursor: pointer; transition: var(--transition); background: transparent; }
+        .cat-pill:hover, .cat-pill.active { border-color: var(--lexus-gold); color: var(--lexus-gold); background: var(--lexus-gold-light); }
+
+        /* Search results hint */
+        .search-live-results { background: var(--lexus-black); border: 1px solid var(--lexus-gray); border-radius: var(--radius); margin-top: 8px; display: none; overflow: hidden; }
+        .search-live-results.show { display: block; }
+        .slr-item { display: flex; align-items: center; gap: 14px; padding: 12px 16px; cursor: pointer; transition: var(--transition); }
+        .slr-item:hover { background: var(--lexus-dark-2); }
+        .slr-item:not(:last-child) { border-bottom: 1px solid var(--lexus-gray); }
+        .slr-thumb { width: 48px; height: 36px; object-fit: cover; border-radius: 4px; }
+        .slr-name { font-size: 0.85rem; color: var(--lexus-white); font-weight: 500; }
+        .slr-series { font-size: 0.72rem; color: var(--lexus-text-muted); }
+
+        /* ====== AWARDS / TRUST BAR ====== */
+        .trust-bar { background: var(--lexus-dark-2); border-top: 1px solid var(--lexus-gray); border-bottom: 1px solid var(--lexus-gray); padding: 24px 0; }
+        .trust-bar-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+        .trust-item { display: flex; align-items: center; gap: 14px; }
+        .trust-icon { width: 48px; height: 48px; background: var(--lexus-gold-light); border: 1px solid rgba(196,160,82,0.25); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: var(--lexus-gold); font-size: 1.2rem; flex-shrink: 0; }
+        .trust-label { font-size: 0.72rem; font-weight: 600; color: var(--lexus-text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+        .trust-value { font-size: 0.88rem; font-weight: 600; color: var(--lexus-white); }
+        .trust-divider { width: 1px; height: 40px; background: var(--lexus-gray); flex-shrink: 0; }
+
+        /* ====== AWARDS SECTION ====== */
+        .awards-section { padding: 80px 0; background: var(--lexus-black); border-bottom: 1px solid var(--lexus-gray); }
+        .awards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
+        .award-card { background: var(--lexus-dark-2); border: 1px solid var(--lexus-gray); border-radius: var(--radius-lg); padding: 32px 24px; text-align: center; transition: var(--transition); position: relative; overflow: hidden; }
+        .award-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--lexus-gold), transparent); opacity: 0; transition: var(--transition); }
+        .award-card:hover { border-color: var(--lexus-gold); transform: translateY(-4px); }
+        .award-card:hover::before { opacity: 1; }
+        .award-year { display: inline-block; font-size: 0.68rem; font-weight: 700; color: var(--lexus-gold); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 16px; background: var(--lexus-gold-light); padding: 4px 12px; border-radius: 20px; }
+        .award-org { font-size: 0.82rem; font-weight: 700; color: var(--lexus-white); letter-spacing: 0.05em; margin-bottom: 6px; }
+        .award-name { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--lexus-text-muted); line-height: 1.5; }
+        .award-icon { font-size: 2rem; color: var(--lexus-gold); margin-bottom: 16px; }
+
+        /* ====== FAQ SECTION ====== */
+        .faq-section { padding: 100px 0; background: var(--lexus-dark); }
+        .faq-list { margin-top: 48px; }
+        .faq-item { border: 1px solid var(--lexus-gray); border-radius: var(--radius-lg); margin-bottom: 12px; overflow: hidden; transition: var(--transition); }
+        .faq-item.open { border-color: rgba(196,160,82,0.4); }
+        .faq-question { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 28px; cursor: pointer; background: var(--lexus-dark-2); transition: var(--transition); }
+        .faq-question:hover { background: var(--lexus-dark-3); }
+        .faq-q-text { font-size: 0.95rem; font-weight: 600; color: var(--lexus-white); flex: 1; }
+        .faq-item.open .faq-q-text { color: var(--lexus-gold); }
+        .faq-toggle { width: 32px; height: 32px; background: var(--lexus-gray); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--lexus-text-muted); font-size: 1rem; flex-shrink: 0; transition: var(--transition); }
+        .faq-item.open .faq-toggle { background: var(--lexus-gold); color: var(--lexus-black); transform: rotate(45deg); }
+        .faq-answer { display: none; padding: 0 28px 24px; background: var(--lexus-dark-2); }
+        .faq-item.open .faq-answer { display: block; }
+        .faq-answer p { font-size: 0.88rem; color: var(--lexus-text-muted); line-height: 1.9; margin: 0; border-left: 2px solid var(--lexus-gold); padding-left: 16px; }
+        .faq-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+        .faq-sidebar { background: var(--lexus-dark-2); border: 1px solid var(--lexus-gray); border-radius: var(--radius-lg); padding: 32px; position: sticky; top: 100px; }
+        .faq-sidebar h4 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--lexus-white); margin-bottom: 16px; }
+        .faq-sidebar p { font-size: 0.85rem; color: var(--lexus-text-muted); margin-bottom: 24px; line-height: 1.7; }
+        .faq-contact-items { display: flex; flex-direction: column; gap: 12px; }
+        .faq-contact-item { display: flex; align-items: center; gap: 12px; padding: 14px; background: var(--lexus-black); border-radius: var(--radius); }
+        .faq-contact-item i { color: var(--lexus-gold); font-size: 1.1rem; }
+        .fci-label { font-size: 0.72rem; color: var(--lexus-text-muted); }
+        .fci-val { font-size: 0.88rem; font-weight: 600; color: var(--lexus-white); }
+
+        /* ====== RESPONSIVE ADDITIONS ====== */
+        @media (max-width: 991px) {
+            .search-form-simple { grid-template-columns: 1fr; }
+            .awards-grid { grid-template-columns: repeat(2, 1fr); }
+            .faq-cols { grid-template-columns: 1fr; }
+            .trust-bar-inner { justify-content: center; }
+            .trust-divider { display: none; }
+        }
+        @media (max-width: 767px) {
+            .awards-grid { grid-template-columns: 1fr; }
+        }
+
+        /* ===================== NAVBAR ===================== */
+        .navbar-lexus {
+            background: rgba(10,10,10,0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(196,160,82,0.1);
+            padding: 16px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .navbar-lexus.scrolled {
+            padding: 10px 0;
+            background: rgba(10,10,10,0.98);
+        }
+
+        .nav-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--lexus-white);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-link-custom {
+            color: var(--lexus-text-muted);
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 8px 16px;
+            position: relative;
+        }
+
+        .nav-link-custom::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 1px;
+            background: var(--lexus-gold);
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
+
+        .nav-link-custom:hover { color: var(--lexus-white); }
+        .nav-link-custom:hover::after { width: 60%; }
+        .nav-link-custom.active { color: var(--lexus-gold); }
+
+        .btn-lexus {
+            background: transparent;
+            border: 1px solid var(--lexus-gold);
+            color: var(--lexus-gold);
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 10px 24px;
+            border-radius: 0;
+            transition: var(--transition);
+        }
+
+        .btn-lexus:hover {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        /* ===================== HERO SECTION ===================== */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 80px;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--lexus-black) 0%, var(--lexus-dark) 50%, var(--lexus-black) 100%);
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 150%;
+            background: radial-gradient(ellipse, rgba(196,160,82,0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(to top, var(--lexus-black), transparent);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-tagline {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--lexus-gold);
+            margin-bottom: 20px;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .hero-tagline::before,
+        .hero-tagline::after {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background: var(--lexus-gold);
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.8rem, 7vw, 5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            animation: fadeInUp 0.8s ease 0.1s forwards;
+            opacity: 0;
+        }
+
+        .hero-title .highlight {
+            color: var(--lexus-gold);
+            font-style: italic;
+        }
+
+        .hero-desc {
+            font-size: 1rem;
+            color: var(--lexus-text-muted);
+            max-width: 500px;
+            line-height: 1.8;
+            margin-bottom: 32px;
+            animation: fadeInUp 0.8s ease 0.2s forwards;
+            opacity: 0;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            animation: fadeInUp 0.8s ease 0.3s forwards;
+            opacity: 0;
+        }
+
+        .btn-primary-lexus {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 16px 36px;
+            border: none;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary-lexus:hover {
+            background: var(--lexus-gold-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .btn-outline-lexus {
+            background: transparent;
+            color: var(--lexus-white);
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 16px 36px;
+            border: 1px solid var(--lexus-gray-light);
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-outline-lexus:hover {
+            border-color: var(--lexus-gold);
+            color: var(--lexus-gold);
+        }
+
+        .hero-image {
+            position: relative;
+            animation: fadeInRight 1s ease 0.4s forwards;
+            opacity: 0;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 700px;
+            filter: drop-shadow(0 30px 60px rgba(0,0,0,0.5));
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 48px;
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid var(--lexus-gray);
+            animation: fadeInUp 0.8s ease 0.5s forwards;
+            opacity: 0;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--lexus-gold);
+            line-height: 1;
+        }
+
+        .hero-stat-label {
+            font-size: 0.72rem;
+            color: var(--lexus-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: 6px;
+        }
+
+        /* ===================== SEARCH SECTION ===================== */
+        .search-section {
+            background: var(--lexus-dark);
+            padding: 60px 0;
+            position: relative;
+            margin-top: -80px;
+            z-index: 10;
+        }
+
+        .search-box {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+        }
+
+        .search-tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 24px;
+        }
+
+        .search-tab {
+            background: transparent;
+            border: none;
+            color: var(--lexus-text-muted);
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .search-tab:hover { color: var(--lexus-white); }
+
+        .search-tab.active {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        .search-form {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr) auto;
+            gap: 12px;
+            align-items: end;
+        }
+
+        .search-field label {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--lexus-text-muted);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .search-field select,
+        .search-field input {
+            width: 100%;
+            padding: 14px 16px;
+            font-size: 0.88rem;
+            color: var(--lexus-white);
+            background: var(--lexus-black);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius);
+            transition: var(--transition);
+            appearance: none;
+        }
+
+        .search-field select {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23888' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+            padding-right: 40px;
+        }
+
+        .search-field select:focus,
+        .search-field input:focus {
+            outline: none;
+            border-color: var(--lexus-gold);
+        }
+
+        .btn-search {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 14px 32px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        .btn-search:hover {
+            background: var(--lexus-gold-dark);
+        }
+
+        .search-popular {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .search-popular span { font-weight: 600; }
+
+        .search-popular a {
+            color: var(--lexus-text-muted);
+            padding: 4px 12px;
+            border: 1px solid var(--lexus-gray);
+            border-radius: 20px;
+            font-size: 0.75rem;
+        }
+
+        .search-popular a:hover {
+            border-color: var(--lexus-gold);
+            color: var(--lexus-gold);
+        }
+
+        /* ===================== MODELS SECTION ===================== */
+        .models-section {
+            padding: 100px 0;
+            background: var(--lexus-black);
+        }
+
+        .model-card {
+            position: relative;
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+            height: 100%;
+        }
+
+        .model-card:hover {
+            border-color: var(--lexus-gold);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .model-card-img {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--lexus-dark) 0%, var(--lexus-dark-2) 100%);
+        }
+
+        .model-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .model-card:hover .model-card-img img {
+            transform: scale(1.05);
+        }
+
+        .model-badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .model-badge.new { background: var(--lexus-green); color: var(--lexus-white); }
+        .model-badge.hybrid { background: #00A3E0; color: var(--lexus-white); }
+
+        .model-fav {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            width: 36px;
+            height: 36px;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            border: none;
+            border-radius: 50%;
+            color: var(--lexus-white);
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .model-fav:hover {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        .model-card-body {
+            padding: 24px;
+        }
+
+        .model-series {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--lexus-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 6px;
+        }
+
+        .model-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+            margin-bottom: 4px;
+        }
+
+        .model-variant {
+            font-size: 0.82rem;
+            color: var(--lexus-text-muted);
+            margin-bottom: 16px;
+        }
+
+        .model-specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            padding-top: 16px;
+            border-top: 1px solid var(--lexus-gray);
+            margin-bottom: 16px;
+        }
+
+        .model-spec {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.78rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .model-spec i {
+            color: var(--lexus-gold);
+            font-size: 0.9rem;
+        }
+
+        .model-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .model-price {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+        }
+
+        .model-price span {
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: var(--lexus-text-muted);
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .model-link {
+            color: var(--lexus-gold);
+            font-size: 0.82rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .model-link:hover {
+            gap: 10px;
+        }
+
+        /* ===================== FEATURED SECTION ===================== */
+        .featured-section {
+            padding: 100px 0;
+            background: var(--lexus-dark);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .featured-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -10%;
+            width: 50%;
+            height: 100%;
+            background: radial-gradient(ellipse at right, rgba(196,160,82,0.05) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .featured-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .featured-badge {
+            display: inline-block;
+            background: var(--lexus-gold-light);
+            border: 1px solid rgba(196,160,82,0.3);
+            padding: 6px 16px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--lexus-gold);
+            margin-bottom: 20px;
+        }
+
+        .featured-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .featured-title .highlight {
+            color: var(--lexus-gold);
+        }
+
+        .featured-desc {
+            font-size: 0.95rem;
+            color: var(--lexus-text-muted);
+            line-height: 1.8;
+            margin-bottom: 32px;
+            max-width: 500px;
+        }
+
+        .featured-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 32px 0;
+        }
+
+        .featured-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 0;
+            font-size: 0.9rem;
+            color: var(--lexus-text);
+            border-bottom: 1px solid var(--lexus-gray);
+        }
+
+        .featured-list li:last-child { border-bottom: none; }
+
+        .featured-list li i {
+            color: var(--lexus-gold);
+            font-size: 1rem;
+            margin-top: 2px;
+        }
+
+        .featured-image {
+            position: relative;
+        }
+
+        .featured-image img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-dark);
+        }
+
+        .featured-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: var(--lexus-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--lexus-black);
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 10px 40px rgba(196,160,82,0.4);
+        }
+
+        .featured-play:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        /* ===================== STATS SECTION ===================== */
+        .stats-section {
+            padding: 60px 0;
+            background: var(--lexus-gold);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .stat-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--lexus-black);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: rgba(0,0,0,0.6);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* ===================== WHY CHOOSE SECTION ===================== */
+        .why-section {
+            padding: 100px 0;
+            background: var(--lexus-black);
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 40px 24px;
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            transition: var(--transition);
+            height: 100%;
+        }
+
+        .why-card:hover {
+            border-color: var(--lexus-gold);
+            transform: translateY(-4px);
+        }
+
+        .why-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--lexus-gold-light);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.5rem;
+            color: var(--lexus-gold);
+        }
+
+        .why-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+            margin-bottom: 12px;
+        }
+
+        .why-desc {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+            line-height: 1.7;
+        }
+
+        /* ===================== TESTIMONIALS SECTION ===================== */
+        .testimonials-section {
+            padding: 100px 0;
+            background: var(--lexus-dark);
+        }
+
+        .testimonial-card {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            display: flex;
+        }
+
+        .testimonial-image {
+            width: 300px;
+            flex-shrink: 0;
+        }
+
+        .testimonial-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .testimonial-content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .testimonial-rating {
+            color: var(--lexus-gold);
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .testimonial-meta {
+            font-size: 0.78rem;
+            color: var(--lexus-text-muted);
+            margin-bottom: 16px;
+        }
+
+        .testimonial-quote {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--lexus-text);
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .testimonial-author {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+        }
+
+        .testimonial-author span {
+            font-weight: 400;
+            color: var(--lexus-text-muted);
+        }
+
+        .testimonial-dots {
+            display: flex;
+            gap: 8px;
+            margin-top: 24px;
+        }
+
+        .testimonial-dots .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--lexus-gray);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .testimonial-dots .dot.active {
+            width: 24px;
+            border-radius: 4px;
+            background: var(--lexus-gold);
+        }
+
+        /* ===================== NEWS SECTION ===================== */
+        .news-section {
+            padding: 100px 0;
+            background: var(--lexus-black);
+        }
+
+        .news-card {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+            height: 100%;
+        }
+
+        .news-card:hover {
+            border-color: var(--lexus-gold);
+            transform: translateY(-4px);
+        }
+
+        .news-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .news-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .news-card:hover .news-image img {
+            transform: scale(1.05);
+        }
+
+        .news-body {
+            padding: 24px;
+        }
+
+        .news-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--lexus-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+        }
+
+        .news-date {
+            font-size: 0.75rem;
+            color: var(--lexus-text-muted);
+            margin-bottom: 12px;
+        }
+
+        .news-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .news-link {
+            color: var(--lexus-gold);
+            font-size: 0.82rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .news-link:hover { gap: 10px; }
+
+        /* ===================== CTA SECTION ===================== */
+        .cta-section {
+            padding: 60px 0;
+            background: var(--lexus-dark);
+        }
+
+        .cta-box {
+            padding: 48px;
+            border-radius: var(--radius-xl);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 32px;
+        }
+
+        .cta-box.gold {
+            background: linear-gradient(135deg, var(--lexus-gold) 0%, var(--lexus-gold-dark) 100%);
+            color: var(--lexus-black);
+        }
+
+        .cta-box.dark {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            color: var(--lexus-white);
+        }
+
+        .cta-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .cta-content p {
+            font-size: 0.88rem;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .cta-box.gold .btn-cta {
+            background: var(--lexus-black);
+            color: var(--lexus-white);
+        }
+
+        .cta-box.dark .btn-cta {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        .btn-cta {
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 14px 28px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-2px);
+        }
+
+        .cta-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        /* ===================== NEWSLETTER SECTION ===================== */
+        .newsletter-section {
+            padding: 60px 0;
+            background: var(--lexus-black);
+            border-top: 1px solid var(--lexus-gray);
+        }
+
+        .newsletter-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+            margin-bottom: 8px;
+        }
+
+        .newsletter-desc {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 12px;
+            max-width: 450px;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 14px 20px;
+            font-size: 0.88rem;
+            color: var(--lexus-white);
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius);
+        }
+
+        .newsletter-form input::placeholder {
+            color: var(--lexus-text-muted);
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+            border-color: var(--lexus-gold);
+        }
+
+        .newsletter-form button {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 14px 28px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .newsletter-form button:hover {
+            background: var(--lexus-gold-dark);
+        }
+
+        /* ===================== FOOTER ===================== */
+        .footer-lexus {
+            background: var(--lexus-black);
+            border-top: 1px solid var(--lexus-gray);
+            padding: 60px 0 24px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--lexus-white);
+            margin-bottom: 16px;
+        }
+
+        .footer-desc {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-socials a {
+            width: 40px;
+            height: 40px;
+            background: var(--lexus-gray);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--lexus-text-muted);
+            transition: var(--transition);
+        }
+
+        .footer-socials a:hover {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        .footer-title {
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--lexus-white);
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .footer-links a:hover {
+            color: var(--lexus-gold);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 24px;
+            border-top: 1px solid var(--lexus-gray);
+            font-size: 0.78rem;
+            color: var(--lexus-text-muted);
+        }
+
+        /* ===================== BACK TO TOP ===================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            border: none;
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 99;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--lexus-gold-dark);
+            transform: translateY(-4px);
+        }
+
+        /* ===================== ANIMATIONS ===================== */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* ===================== RESPONSIVE ===================== */
+        @media (max-width: 1199px) {
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 991px) {
+            .hero-section {
+                padding-top: 100px;
+                min-height: auto;
+                padding-bottom: 120px;
+            }
+
+            .hero-image {
+                margin-top: 40px;
+            }
+
+            .search-form {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .search-form .btn-search {
+                grid-column: span 2;
+            }
+
+            .testimonial-card {
+                flex-direction: column;
+            }
+
+            .testimonial-image {
+                width: 100%;
+                height: 250px;
+            }
+
+            .cta-box {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 24px;
+            }
+
+            .hero-stat {
+                flex: 1;
+                min-width: 100px;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+            }
+
+            .search-form {
+                grid-template-columns: 1fr;
+            }
+
+            .search-form .btn-search {
+                grid-column: span 1;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .stat-value {
+                font-size: 2rem;
+            }
+        }
+
+/* DETAIL CAR  */
+
+        :root {
+            --lexus-gold: #C4A052;
+            --lexus-gold-light: rgba(196,160,82,0.15);
+            --lexus-gold-dark: #A8893F;
+            --lexus-black: #0A0A0A;
+            --lexus-dark: #141414;
+            --lexus-dark-2: #1A1A1A;
+            --lexus-dark-3: #222222;
+            --lexus-gray: #2A2A2A;
+            --lexus-gray-light: #3A3A3A;
+            --lexus-text: #E5E5E5;
+            --lexus-text-muted: #888888;
+            --lexus-white: #FFFFFF;
+            --lexus-red: #C41E3A;
+            --lexus-green: #2E8B57;
+            --radius: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 16px;
+            --shadow-gold: 0 4px 30px rgba(196,160,82,0.2);
+            --shadow-dark: 0 8px 40px rgba(0,0,0,0.4);
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--lexus-black);
+            color: var(--lexus-text);
+            -webkit-font-smoothing: antialiased;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        img { max-width: 100%; }
+
+        /* ===================== NAVBAR ===================== */
+        .navbar-lexus {
+            background: rgba(10,10,10,0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(196,160,82,0.1);
+            padding: 16px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .navbar-lexus.scrolled {
+            padding: 10px 0;
+            background: rgba(10,10,10,0.98);
+        }
+
+        .nav-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--lexus-white);
+        }
+
+        .nav-link-custom {
+            color: var(--lexus-text-muted);
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 8px 16px;
+            position: relative;
+        }
+
+        .nav-link-custom::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 1px;
+            background: var(--lexus-gold);
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
+
+        .nav-link-custom:hover { color: var(--lexus-white); }
+        .nav-link-custom:hover::after { width: 60%; }
+        .nav-link-custom.active { color: var(--lexus-gold); }
+
+        .btn-lexus {
+            background: transparent;
+            border: 1px solid var(--lexus-gold);
+            color: var(--lexus-gold);
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 10px 24px;
+            border-radius: 0;
+            transition: var(--transition);
+        }
+
+        .btn-lexus:hover {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        /* ===================== BREADCRUMB ===================== */
+        .breadcrumb-section {
+            padding: 100px 0 20px;
+            background: var(--lexus-black);
+        }
+
+        .breadcrumb-custom {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.82rem;
+            color: var(--lexus-text-muted);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .breadcrumb-custom a { color: var(--lexus-text-muted); }
+        .breadcrumb-custom a:hover { color: var(--lexus-gold); }
+        .breadcrumb-custom .sep { color: var(--lexus-gray-light); }
+        .breadcrumb-custom .current { color: var(--lexus-gold); font-weight: 600; }
+
+        /* ===================== PRODUCT SECTION ===================== */
+        .product-section {
+            padding: 20px 0 80px;
+            background: var(--lexus-black);
+        }
+
+        /* ===================== PRODUCT GALLERY ===================== */
+        .product-gallery {
+            position: sticky;
+            top: 100px;
+        }
+
+        .gallery-main-wrap {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--lexus-dark) 0%, var(--lexus-dark-2) 100%);
+            margin-bottom: 16px;
+        }
+
+        .gallery-main {
+            position: relative;
+            aspect-ratio: 4/3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .gallery-main img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            transition: transform 0.6s ease;
+            filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
+        }
+
+        .gallery-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .gallery-badge span {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 6px 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .gallery-badge span.new {
+            background: var(--lexus-green);
+            color: var(--lexus-white);
+        }
+
+        .gallery-badge span.hybrid {
+            background: var(--lexus-dark-3);
+            border: 1px solid var(--lexus-gold);
+            color: var(--lexus-gold);
+        }
+
+        .gallery-actions {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .gallery-action-btn {
+            width: 44px;
+            height: 44px;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: var(--lexus-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .gallery-action-btn:hover {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            border-color: var(--lexus-gold);
+        }
+
+        .gallery-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 48px;
+            height: 48px;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--lexus-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 10;
+        }
+
+        .gallery-nav:hover {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        .gallery-nav.prev { left: 16px; }
+        .gallery-nav.next { right: 16px; }
+
+        .gallery-counter {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            color: var(--lexus-white);
+            border-radius: var(--radius);
+        }
+
+        .gallery-thumbs {
+            display: flex;
+            gap: 10px;
+        }
+
+        .gallery-thumb {
+            flex: 1;
+            aspect-ratio: 16/10;
+            border-radius: var(--radius);
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid transparent;
+            opacity: 0.5;
+            transition: var(--transition);
+            background: var(--lexus-dark-2);
+        }
+
+        .gallery-thumb:hover,
+        .gallery-thumb.active {
+            opacity: 1;
+            border-color: var(--lexus-gold);
+        }
+
+        .gallery-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+ /* ===================== GALLERY SECTION ===================== */
+        .gallery-section {
+            padding: 100px 0;
+            background: var(--lexus-dark);
+            position: relative;
+        }
+
+        .gallery-main-wrap {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            background: var(--lexus-black);
+        }
+
+        .gallery-main {
+            position: relative;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+        }
+
+        .gallery-main img {
+            width: 70%;
+            height: 80%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-main:hover img {
+            transform: scale(1.03);
+        }
+
+        .gallery-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 48px;
+            height: 48px;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--lexus-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 10;
+        }
+
+        .gallery-nav:hover {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            border-color: var(--lexus-gold);
+        }
+
+        .gallery-nav.prev { left: 20px; }
+        .gallery-nav.next { right: 20px; }
+
+        .gallery-counter {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            color: var(--lexus-white);
+        }
+
+        .gallery-thumbs {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .gallery-thumb {
+            flex: 1;
+            aspect-ratio: 16/9;
+            border-radius: var(--radius);
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid transparent;
+            opacity: 0.5;
+            transition: var(--transition);
+        }
+
+        .gallery-thumb:hover,
+        .gallery-thumb.active {
+            opacity: 1;
+            border-color: var(--lexus-gold);
+        }
+
+        .gallery-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* ===================== FEATURE HOTSPOT SECTION ===================== */
+        .hotspot-section {
+            padding: 100px 0;
+            background: var(--lexus-black);
+            position: relative;
+        }
+
+        .hotspot-container {
+            position: relative;
+            margin-top: 48px;
+        }
+
+        .hotspot-image-wrap {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .hotspot-image {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            background: var(--lexus-dark);
+        }
+
+        .hotspot-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hotspot-point {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            background: var(--lexus-gold);
+            border: 3px solid var(--lexus-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--lexus-black);
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 10;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .hotspot-point::before {
+            content: '';
+            position: absolute;
+            inset: -6px;
+            border: 1px solid var(--lexus-gold);
+            border-radius: 50%;
+            opacity: 0;
+            animation: hotspotPulse 2s infinite;
+        }
+
+        .hotspot-point:hover {
+            transform: scale(1.2);
+            background: var(--lexus-white);
+        }
+
+        .hotspot-point.active {
+            background: var(--lexus-white);
+            transform: scale(1.2);
+        }
+
+        @keyframes hotspotPulse {
+            0% { transform: scale(1); opacity: 0.6; }
+            100% { transform: scale(1.8); opacity: 0; }
+        }
+
+        .hotspot-info-panel {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            margin-top: 32px;
+        }
+
+        .hotspot-info-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--lexus-gold);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .hotspot-info-title .point-label {
+            width: 28px;
+            height: 28px;
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .hotspot-info-desc {
+            font-size: 0.88rem;
+            color: var(--lexus-text-muted);
+            line-height: 1.7;
+        }
+
+        .feature-thumbnails {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-top: 40px;
+        }
+
+        .feature-thumb {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .feature-thumb:hover {
+            border-color: var(--lexus-gold);
+            transform: translateY(-4px);
+        }
+
+        .feature-thumb-img {
+            aspect-ratio: 4/3;
+            overflow: hidden;
+            background: var(--lexus-black);
+        }
+
+        .feature-thumb-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .feature-thumb-label {
+            padding: 12px;
+            font-size: 0.75rem;
+            color: var(--lexus-text-muted);
+            line-height: 1.5;
+        }
+
+        .feature-thumb-label strong {
+            color: var(--lexus-gold);
+        }
+
+        /* ===================== CHASSIS SECTION ===================== */
+        .chassis-section {
+            padding: 100px 0;
+            background: var(--lexus-black);
+        }
+
+        .chassis-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 40px;
+            margin-top: 48px;
+        }
+
+        .chassis-images {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .chassis-img-card {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .chassis-img-card:hover {
+            border-color: var(--lexus-gold);
+        }
+
+        .chassis-img-card img {
+            width: 100%;
+        }
+
+        .chassis-img-label {
+            padding: 14px 18px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--lexus-text);
+            background: var(--lexus-dark);
+            border-top: 1px solid var(--lexus-gray);
+        }
+
+        .chassis-diagram {
+            position: relative;
+        }
+
+        .chassis-diagram-img {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .chassis-diagram-img img {
+            width: 100%;
+        }
+
+        .chassis-legend {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius);
+            font-size: 0.78rem;
+            color: var(--lexus-text);
+            transition: var(--transition);
+        }
+
+        .legend-item:hover {
+            border-color: var(--lexus-gold);
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 8px;
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .legend-color.c1 { background: #E74C3C; }
+        .legend-color.c2 { background: #3498DB; }
+        .legend-color.c3 { background: #2ECC71; }
+        .legend-color.c4 { background: #F39C12; }
+        .legend-color.c5 { background: #9B59B6; }
+        .legend-color.c6 { background: #1ABC9C; }
+
+        .chassis-info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .chassis-info-box {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+        }
+
+        .chassis-info-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--lexus-gold);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .chassis-info-title i {
+            font-size: 1.1rem;
+        }
+
+        .chassis-info-desc {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+            line-height: 1.8;
+        }
+
+        /* ===================== PRODUCT INFO ===================== */
+        .product-info {
+            padding-left: 20px;
+        }
+
+        .product-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--lexus-gold-light);
+            border: 1px solid rgba(196,160,82,0.3);
+            padding: 6px 16px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--lexus-gold);
+            margin-bottom: 16px;
+        }
+
+        .product-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 3vw, 2.4rem);
+            font-weight: 700;
+            color: var(--lexus-white);
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+
+        .product-subtitle {
+            font-size: 1rem;
+            color: var(--lexus-text-muted);
+            margin-bottom: 20px;
+        }
+
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--lexus-gray);
+        }
+
+        .rating-stars {
+            color: var(--lexus-gold);
+            font-size: 0.9rem;
+        }
+
+        .rating-text {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .rating-text strong {
+            color: var(--lexus-white);
+        }
+
+        /* Price Box */
+        .price-box {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 16px;
+        }
+
+        .price-label {
+            font-size: 0.75rem;
+            color: var(--lexus-text-muted);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .price-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--lexus-gold);
+            line-height: 1;
+        }
+
+        .price-installment {
+            background: var(--lexus-gold-light);
+            border-radius: var(--radius);
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .price-installment i {
+            color: var(--lexus-gold);
+            font-size: 1.2rem;
+        }
+
+        .price-installment-text {
+            font-size: 0.82rem;
+            color: var(--lexus-text);
+        }
+
+        .price-installment-text strong {
+            color: var(--lexus-gold);
+        }
+
+        /* Color Selector */
+        .option-group {
+            margin-bottom: 24px;
+        }
+
+        .option-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .option-label span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+        }
+
+        .option-label .selected-value {
+            font-size: 0.82rem;
+            color: var(--lexus-gold);
+            font-weight: 500;
+        }
+
+        .color-options {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .color-option {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            border: 3px solid transparent;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .color-option::before {
+            content: '';
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--color);
+        }
+
+        .color-option:hover,
+        .color-option.active {
+            border-color: var(--lexus-gold);
+            transform: scale(1.1);
+        }
+
+        .color-option.active::after {
+            content: '✓';
+            position: absolute;
+            color: var(--lexus-white);
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .color-option[data-color="white"]::after,
+        .color-option[data-color="silver"]::after {
+            color: var(--lexus-black);
+            text-shadow: none;
+        }
+
+        /* Version Selector */
+        .version-options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .version-option {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius);
+            padding: 16px;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .version-option:hover {
+            border-color: var(--lexus-gold);
+        }
+
+        .version-option.active {
+            border-color: var(--lexus-gold);
+            background: var(--lexus-gold-light);
+        }
+
+        .version-option .vo-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .version-option .vo-radio {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--lexus-gray-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .version-option.active .vo-radio {
+            border-color: var(--lexus-gold);
+        }
+
+        .version-option.active .vo-radio::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: var(--lexus-gold);
+            border-radius: 50%;
+        }
+
+        .version-option .vo-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+        }
+
+        .version-option .vo-price {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--lexus-gold);
+        }
+
+        /* Quick Specs */
+        .quick-specs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-bottom: 24px;
+            padding: 20px;
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+        }
+
+        .qs-item {
+            text-align: center;
+            padding: 12px 8px;
+        }
+
+        .qs-item:not(:last-child) {
+            border-right: 1px solid var(--lexus-gray);
+        }
+
+        .qs-icon {
+            font-size: 1.3rem;
+            color: var(--lexus-gold);
+            margin-bottom: 8px;
+        }
+
+        .qs-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--lexus-white);
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .qs-label {
+            font-size: 0.7rem;
+            color: var(--lexus-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* ===================== INQUIRY FORM ===================== */
+        .inquiry-box {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gold);
+            border-radius: var(--radius-xl);
+            padding: 28px;
+            margin-bottom: 24px;
+        }
+
+        .inquiry-header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .inquiry-header h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--lexus-white);
+            margin-bottom: 6px;
+        }
+
+        .inquiry-header p {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .inquiry-form .form-group {
+            margin-bottom: 16px;
+        }
+
+        .inquiry-form .form-label {
+            display: block;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--lexus-text-muted);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .inquiry-form .form-control {
+            width: 100%;
+            padding: 14px 16px;
+            font-size: 0.9rem;
+            color: var(--lexus-white);
+            background: var(--lexus-black);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius);
+            transition: var(--transition);
+        }
+
+        .inquiry-form .form-control::placeholder {
+            color: var(--lexus-text-muted);
+        }
+
+        .inquiry-form .form-control:focus {
+            outline: none;
+            border-color: var(--lexus-gold);
+            box-shadow: 0 0 0 3px rgba(196,160,82,0.1);
+        }
+
+        .inquiry-form textarea.form-control {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .inquiry-form .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .inquiry-form .form-check {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .inquiry-form .form-check input {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--lexus-gold);
+            margin-top: 2px;
+        }
+
+        .inquiry-form .form-check label {
+            font-size: 0.82rem;
+            color: var(--lexus-text-muted);
+            line-height: 1.5;
+        }
+
+        .inquiry-form .form-check label a {
+            color: var(--lexus-gold);
+            text-decoration: underline;
+        }
+
+        .btn-submit-inquiry {
+            width: 100%;
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 16px 24px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-submit-inquiry:hover {
+            background: var(--lexus-gold-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .inquiry-divider {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .inquiry-divider::before,
+        .inquiry-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--lexus-gray);
+        }
+
+        .inquiry-divider span {
+            font-size: 0.78rem;
+            color: var(--lexus-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn-action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .btn-action.primary {
+            background: transparent;
+            border: 1px solid var(--lexus-gold);
+            color: var(--lexus-gold);
+        }
+
+        .btn-action.primary:hover {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        .btn-action.secondary {
+            background: var(--lexus-gray);
+            border: none;
+            color: var(--lexus-text);
+        }
+
+        .btn-action.secondary:hover {
+            background: var(--lexus-gray-light);
+            color: var(--lexus-white);
+        }
+
+        .btn-action.hotline {
+            background: var(--lexus-dark-3);
+            border: 1px solid var(--lexus-gray);
+            color: var(--lexus-white);
+        }
+
+        .btn-action.hotline:hover {
+            border-color: var(--lexus-gold);
+        }
+
+        .btn-action.hotline .hotline-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--lexus-gold);
+        }
+
+        /* Dealer Info */
+        .dealer-info {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .dealer-avatar {
+            width: 56px;
+            height: 56px;
+            background: var(--lexus-gold-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--lexus-gold);
+            flex-shrink: 0;
+        }
+
+        .dealer-content { flex: 1; }
+
+        .dealer-name {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--lexus-white);
+            margin-bottom: 2px;
+        }
+
+        .dealer-location {
+            font-size: 0.82rem;
+            color: var(--lexus-text-muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .dealer-status {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.75rem;
+            color: var(--lexus-green);
+            margin-top: 4px;
+        }
+
+        .dealer-status::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--lexus-green);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* ===================== SECTION STYLES ===================== */
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.4rem);
+            font-weight: 600;
+            color: var(--lexus-white);
+            margin-bottom: 16px;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--lexus-gold), transparent);
+            margin-top: 16px;
+        }
+
+        .section-desc {
+            font-size: 1rem;
+            color: var(--lexus-text-muted);
+            max-width: 700px;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        /* ===================== POWERTRAIN SECTION ===================== */
+        .powertrain-section {
+            background: var(--lexus-dark);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .powertrain-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 150%;
+            background: radial-gradient(ellipse, rgba(196,160,82,0.05) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .powertrain-grid {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .powertrain-image {
+            position: relative;
+        }
+
+        .powertrain-image img {
+            border-radius: var(--radius-xl);
+            width: 100%;
+        }
+
+        .powertrain-badge {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .powertrain-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--lexus-gold);
+            margin-bottom: 16px;
+        }
+
+        .powertrain-content p {
+            font-size: 0.95rem;
+            color: var(--lexus-text);
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .powertrain-specs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .pt-spec {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius);
+            padding: 16px;
+            text-align: center;
+        }
+
+        .pt-spec-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--lexus-gold);
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .pt-spec-label {
+            font-size: 0.72rem;
+            color: var(--lexus-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .hybrid-components {
+            margin-top: 40px;
+        }
+
+        .hybrid-components h4 {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--lexus-white);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .hc-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .hc-item {
+            background: var(--lexus-gold-light);
+            border: 1px solid rgba(196,160,82,0.3);
+            color: var(--lexus-gold);
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* ===================== F SPORT EQUIPMENT ===================== */
+        .equipment-section {
+            background: var(--lexus-black);
+        }
+
+        .equipment-tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--lexus-gray);
+            overflow-x: auto;
+        }
+
+        .equipment-tab {
+            background: transparent;
+            border: none;
+            color: var(--lexus-text-muted);
+            font-size: 0.88rem;
+            font-weight: 600;
+            padding: 16px 24px;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .equipment-tab::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--lexus-gold);
+            transform: scaleX(0);
+            transition: var(--transition);
+        }
+
+        .equipment-tab:hover { color: var(--lexus-white); }
+        .equipment-tab.active { color: var(--lexus-gold); }
+        .equipment-tab.active::after { transform: scaleX(1); }
+
+        .equipment-content {
+            display: none;
+        }
+
+        .equipment-content.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .equipment-card {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .equipment-card:hover {
+            border-color: var(--lexus-gold);
+            transform: translateY(-4px);
+        }
+
+        .equipment-card .ec-badge {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.6rem;
+            font-weight: 700;
+            padding: 4px 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .equipment-card .ec-letter {
+            width: 40px;
+            height: 40px;
+            background: var(--lexus-gold-light);
+            border: 1px solid var(--lexus-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--lexus-gold);
+            margin-bottom: 16px;
+        }
+
+        .equipment-card .ec-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--lexus-white);
+            margin-bottom: 8px;
+        }
+
+        .equipment-card .ec-desc {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+            line-height: 1.6;
+        }
+
+        /* ===================== TECHNOLOGY SECTION ===================== */
+        .technology-section {
+            background: var(--lexus-dark);
+        }
+
+        .tech-category {
+            margin-bottom: 48px;
+        }
+
+        .tech-category:last-child {
+            margin-bottom: 0;
+        }
+
+        .tech-category-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--lexus-gold);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .tech-category-title i {
+            width: 40px;
+            height: 40px;
+            background: var(--lexus-gold-light);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+        }
+
+        .tech-item {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius);
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            transition: var(--transition);
+        }
+
+        .tech-item:hover {
+            border-color: var(--lexus-gold);
+        }
+
+        .tech-item .ti-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--lexus-gold-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--lexus-gold);
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .tech-item .ti-content { flex: 1; }
+
+        .tech-item .ti-name {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--lexus-white);
+            margin-bottom: 4px;
+        }
+
+        .tech-item .ti-abbr {
+            font-size: 0.7rem;
+            color: var(--lexus-gold);
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .tech-item .ti-desc {
+            font-size: 0.82rem;
+            color: var(--lexus-text-muted);
+            line-height: 1.5;
+        }
+
+        /* ===================== SPECS SECTION ===================== */
+        .specs-section {
+            background: var(--lexus-black);
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .specs-card {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+        }
+
+        .specs-card-header {
+            background: var(--lexus-gold-light);
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--lexus-gray);
+        }
+
+        .specs-card-header h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--lexus-gold);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .specs-card-body { padding: 0; }
+
+        .spec-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 14px 24px;
+            border-bottom: 1px solid var(--lexus-gray);
+        }
+
+        .spec-row:last-child { border-bottom: none; }
+        .spec-row:hover { background: rgba(196,160,82,0.05); }
+
+        .spec-row .spec-name {
+            font-size: 0.88rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .spec-row .spec-value {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+            text-align: right;
+        }
+
+        /* ===================== NEWSLETTER ===================== */
+        .newsletter-section {
+            background: var(--lexus-gold);
+            padding: 48px 0;
+        }
+
+        .newsletter-section h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--lexus-black);
+            margin-bottom: 6px;
+        }
+
+        .newsletter-section .nb-sub {
+            font-size: 0.9rem;
+            color: rgba(0,0,0,0.6);
+        }
+
+        .newsletter-section .nl-form {
+            display: flex;
+            gap: 10px;
+            max-width: 450px;
+        }
+
+        .newsletter-section .nl-form input {
+            flex: 1;
+            padding: 14px 20px;
+            font-size: 0.9rem;
+            color: var(--lexus-black);
+            background: var(--lexus-white);
+            border: none;
+            border-radius: var(--radius);
+        }
+
+        .newsletter-section .btn-nls {
+            background: var(--lexus-black);
+            color: var(--lexus-white);
+            font-size: 0.88rem;
+            font-weight: 600;
+            padding: 14px 28px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        /* ===================== FOOTER ===================== */
+        .footer-lexus {
+            background: var(--lexus-black);
+            border-top: 1px solid var(--lexus-gray);
+            padding: 60px 0 24px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--lexus-white);
+            margin-bottom: 16px;
+        }
+
+        .footer-desc {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-socials a {
+            width: 40px;
+            height: 40px;
+            background: var(--lexus-gray);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--lexus-text-muted);
+            transition: var(--transition);
+        }
+
+        .footer-socials a:hover {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        .footer-title {
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--lexus-white);
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li { margin-bottom: 10px; }
+
+        .footer-links a {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .footer-links a:hover { color: var(--lexus-gold); }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 24px;
+            border-top: 1px solid var(--lexus-gray);
+            font-size: 0.78rem;
+            color: var(--lexus-text-muted);
+        }
+
+        /* ===================== BACK TO TOP ===================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            border: none;
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 99;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ===================== RESPONSIVE ===================== */
+        @media (max-width: 1199px) {
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+            .powertrain-grid { gap: 40px; }
+        }
+
+        @media (max-width: 991px) {
+            .product-gallery {
+                position: relative;
+                top: 0;
+                margin-bottom: 40px;
+            }
+
+            .product-info { padding-left: 0; }
+
+            .quick-specs { grid-template-columns: repeat(2, 1fr); }
+            .quick-specs .qs-item:nth-child(2) { border-right: none; }
+
+            .inquiry-form .form-row { grid-template-columns: 1fr; }
+
+            .powertrain-grid {
+                grid-template-columns: 1fr;
+            }
+            .feature-thumbnails {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 40px;
+            }
+
+            .chassis-grid {
+            display: grid;
+            grid-template-columns: auto;
+            gap: 40px;
+            margin-top: 48px;
+            }
+            .chassis-info-grid {
+            display: grid;
+            grid-template-columns: auto;
+            gap: 32px;
+            margin-top: 48px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .quick-specs .qs-item { border-right: none !important; }
+            .quick-specs .qs-item:nth-child(odd) { border-right: 1px solid var(--lexus-gray) !important; }
+
+            .footer-grid { grid-template-columns: 1fr; }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+
+            .newsletter-section .nl-form { flex-direction: column; }
+        }
+
+        @media (max-width: 575px) {
+            .product-title { font-size: 1.6rem; }
+            .price-value { font-size: 1.6rem; }
+
+            .color-option {
+                width: 40px;
+                height: 40px;
+            }
+
+            .color-option::before {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+
+        /* blog  */
+
+        /* ===================== CSS VARIABLES (SHARED) ===================== */
+        :root {
+            --lexus-gold: #C4A052;
+            --lexus-gold-light: rgba(196,160,82,0.15);
+            --lexus-gold-dark: #A8893F;
+            --lexus-black: #0A0A0A;
+            --lexus-dark: #141414;
+            --lexus-dark-2: #1A1A1A;
+            --lexus-dark-3: #222222;
+            --lexus-gray: #2A2A2A;
+            --lexus-gray-light: #3A3A3A;
+            --lexus-text: #E5E5E5;
+            --lexus-text-muted: #888888;
+            --lexus-white: #FFFFFF;
+            --lexus-red: #C41E3A;
+            --lexus-green: #2E8B57;
+            --lexus-blue: #2563EB;
+            --radius: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 16px;
+            --shadow-gold: 0 4px 30px rgba(196,160,82,0.2);
+            --shadow-dark: 0 8px 40px rgba(0,0,0,0.4);
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--lexus-black);
+            color: var(--lexus-text);
+            -webkit-font-smoothing: antialiased;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        img { max-width: 100%; }
+
+        /* ===================== TYPOGRAPHY ===================== */
+        .font-display { font-family: 'Playfair Display', serif; }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--lexus-gold), transparent);
+            margin-top: 16px;
+        }
+
+        .section-title.center::after {
+            margin: 16px auto 0;
+            width: 80px;
+            background: linear-gradient(90deg, transparent, var(--lexus-gold), transparent);
+        }
+
+        /* ===================== NAVBAR ===================== */
+        .navbar-lexus {
+            background: rgba(10,10,10,0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(196,160,82,0.1);
+            padding: 16px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .navbar-lexus.scrolled {
+            padding: 10px 0;
+            background: rgba(10,10,10,0.98);
+        }
+
+        .nav-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--lexus-white);
+        }
+
+        .nav-link-custom {
+            color: var(--lexus-text-muted);
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 8px 16px;
+            position: relative;
+        }
+
+        .nav-link-custom::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 1px;
+            background: var(--lexus-gold);
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
+
+        .nav-link-custom:hover { color: var(--lexus-white); }
+        .nav-link-custom:hover::after { width: 60%; }
+        .nav-link-custom.active { color: var(--lexus-gold); }
+
+        .btn-lexus {
+            background: transparent;
+            border: 1px solid var(--lexus-gold);
+            color: var(--lexus-gold);
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 10px 24px;
+            border-radius: 0;
+            transition: var(--transition);
+        }
+
+        .btn-lexus:hover {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        /* ===================== PAGE HERO ===================== */
+        .page-hero {
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 140px 0 80px;
+            background: linear-gradient(135deg, var(--lexus-black) 0%, var(--lexus-dark) 50%, var(--lexus-black) 100%);
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 60%;
+            height: 120%;
+            background: radial-gradient(ellipse, rgba(196,160,82,0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 150px;
+            background: linear-gradient(to top, var(--lexus-dark), transparent);
+            pointer-events: none;
+        }
+
+        .breadcrumb-hero {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.82rem;
+            color: var(--lexus-text-muted);
+            margin-bottom: 20px;
+            list-style: none;
+            padding: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .breadcrumb-hero a { color: var(--lexus-text-muted); }
+        .breadcrumb-hero a:hover { color: var(--lexus-gold); }
+        .breadcrumb-hero .sep { color: var(--lexus-gray-light); }
+        .breadcrumb-hero .current { color: var(--lexus-gold); font-weight: 600; }
+
+        .page-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            color: var(--lexus-white);
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .page-hero > .container > p {
+            font-size: 1rem;
+            color: var(--lexus-text-muted);
+            max-width: 600px;
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 0.8s ease 0.1s forwards;
+            opacity: 0;
+        }
+
+        .hero-search-blog {
+            position: relative;
+            max-width: 500px;
+            margin-top: 32px;
+            z-index: 2;
+            animation: fadeInUp 0.8s ease 0.2s forwards;
+            opacity: 0;
+        }
+
+        .hero-search-blog input {
+            width: 100%;
+            padding: 18px 24px;
+            padding-right: 60px;
+            font-size: 0.95rem;
+            color: var(--lexus-white);
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            transition: var(--transition);
+        }
+
+        .hero-search-blog input::placeholder { color: var(--lexus-text-muted); }
+
+        .hero-search-blog input:focus {
+            outline: none;
+            border-color: var(--lexus-gold);
+            box-shadow: 0 0 0 3px rgba(196,160,82,0.1);
+        }
+
+        .hero-search-blog .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lexus-gold);
+            font-size: 1.1rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 0.8s ease 0.3s forwards;
+            opacity: 0;
+        }
+
+        .hero-stats .hs-item {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .hero-stats .hs-item strong {
+            display: block;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--lexus-gold);
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        /* ===================== FILTER BAR ===================== */
+        .blog-filter-bar {
+            background: var(--lexus-dark);
+            border-bottom: 1px solid var(--lexus-gray);
+            padding: 16px 0;
+            position: sticky;
+            top: 60px;
+            z-index: 100;
+        }
+
+        .blog-filter-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .cat-tabs {
+            display: flex;
+            gap: 4px;
+            overflow-x: auto;
+            padding-bottom: 4px;
+        }
+
+        .cat-tabs::-webkit-scrollbar { height: 3px; }
+        .cat-tabs::-webkit-scrollbar-track { background: var(--lexus-gray); }
+        .cat-tabs::-webkit-scrollbar-thumb { background: var(--lexus-gold); border-radius: 3px; }
+
+        .cat-tabs .ct {
+            background: transparent;
+            border: 1px solid var(--lexus-gray);
+            color: var(--lexus-text-muted);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 8px 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .cat-tabs .ct:hover {
+            border-color: var(--lexus-gold);
+            color: var(--lexus-gold);
+        }
+
+        .cat-tabs .ct.active {
+            background: var(--lexus-gold);
+            border-color: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        .sort-select {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            color: var(--lexus-text);
+            font-size: 0.82rem;
+            padding: 8px 32px 8px 14px;
+            border-radius: var(--radius);
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23888' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+        }
+
+        .sort-select:focus {
+            outline: none;
+            border-color: var(--lexus-gold);
+        }
+
+        .view-toggle {
+            display: flex;
+            gap: 2px;
+            background: var(--lexus-dark-2);
+            padding: 3px;
+            border-radius: var(--radius);
+        }
+
+        .view-toggle .vt-btn {
+            background: transparent;
+            border: none;
+            color: var(--lexus-text-muted);
+            padding: 6px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .view-toggle .vt-btn:hover { color: var(--lexus-white); }
+
+        .view-toggle .vt-btn.active {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        /* ===================== FEATURED POST ===================== */
+        .featured-post {
+            margin-bottom: 40px;
+        }
+
+        .featured-post .fp-img {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            height: 420px;
+        }
+
+        .featured-post .fp-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .featured-post:hover .fp-img img {
+            transform: scale(1.03);
+        }
+
+        .featured-post .fp-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 40px;
+        }
+
+        .featured-post .fp-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 6px 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+            width: fit-content;
+        }
+
+        .featured-post .fp-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .featured-post .fp-title a {
+            color: var(--lexus-white);
+        }
+
+        .featured-post .fp-title a:hover {
+            color: var(--lexus-gold);
+        }
+
+        .featured-post .fp-excerpt {
+            font-size: 0.92rem;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.7;
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+
+        .featured-post .fp-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.82rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        .featured-post .fp-meta img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 2px solid var(--lexus-gold);
+        }
+
+        .featured-post .fm-author {
+            color: var(--lexus-white);
+            font-weight: 600;
+        }
+
+        .featured-post .fp-read-time {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* ===================== BLOG CARD ===================== */
+        .blog-card {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            border-color: var(--lexus-gold);
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .blog-card .bc-img {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .blog-card .bc-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .blog-card:hover .bc-img img {
+            transform: scale(1.05);
+        }
+
+        .blog-card .bc-tag {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .blog-card .bc-bookmark {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            width: 36px;
+            height: 36px;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            border: none;
+            border-radius: 50%;
+            color: var(--lexus-white);
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .blog-card .bc-bookmark:hover,
+        .blog-card .bc-bookmark.saved {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        .blog-card .bc-body {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .blog-card .bc-date {
+            font-size: 0.75rem;
+            color: var(--lexus-text-muted);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .blog-card .bc-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 12px;
+        }
+
+        .blog-card .bc-title a {
+            color: var(--lexus-white);
+        }
+
+        .blog-card .bc-title a:hover {
+            color: var(--lexus-gold);
+        }
+
+        .blog-card .bc-excerpt {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+            line-height: 1.7;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        .blog-card .bc-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            border-top: 1px solid var(--lexus-gray);
+            margin-top: auto;
+        }
+
+        .blog-card .bc-author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .blog-card .bc-author img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 2px solid var(--lexus-gray);
+        }
+
+        .blog-card .bca-name {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+        }
+
+        .blog-card .bca-role {
+            font-size: 0.72rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .blog-card .bc-stats {
+            display: flex;
+            gap: 12px;
+            font-size: 0.78rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .blog-card .bc-stats span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* ===================== LIST VIEW ===================== */
+        .blog-card.list-view {
+            flex-direction: row;
+        }
+
+        .blog-card.list-view .bc-img {
+            width: 280px;
+            height: auto;
+            min-height: 200px;
+            flex-shrink: 0;
+        }
+
+        .blog-card.list-view .bc-body {
+            padding: 24px 28px;
+        }
+
+        .blog-card.list-view .bc-title {
+            font-size: 1.2rem;
+        }
+
+        /* ===================== SIDEBAR ===================== */
+        .sidebar-card {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sidebar-title i {
+            color: var(--lexus-gold);
+        }
+
+        .sb-search {
+            position: relative;
+        }
+
+        .sb-search input {
+            width: 100%;
+            padding: 12px 16px;
+            padding-right: 44px;
+            font-size: 0.88rem;
+            color: var(--lexus-white);
+            background: var(--lexus-black);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius);
+        }
+
+        .sb-search input::placeholder { color: var(--lexus-text-muted); }
+
+        .sb-search input:focus {
+            outline: none;
+            border-color: var(--lexus-gold);
+        }
+
+        .sb-search .sb-icon {
+            position: absolute;
+            right: 4px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 36px;
+            height: 36px;
+            background: var(--lexus-gold);
+            border: none;
+            border-radius: 6px;
+            color: var(--lexus-black);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ===================== CATEGORY LIST ===================== */
+        .cat-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cat-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--lexus-gray);
+            font-size: 0.88rem;
+            color: var(--lexus-text);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .cat-list li:last-child { border-bottom: none; }
+
+        .cat-list li:hover {
+            color: var(--lexus-gold);
+        }
+
+        .cat-list li:hover .cat-count {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        .cat-count {
+            background: var(--lexus-gray);
+            color: var(--lexus-text-muted);
+            font-size: 0.72rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 20px;
+            transition: var(--transition);
+        }
+
+        /* ===================== RECENT POSTS ===================== */
+        .recent-post {
+            display: flex;
+            gap: 14px;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--lexus-gray);
+        }
+
+        .recent-post:last-child { border-bottom: none; }
+
+        .recent-post .rp-img {
+            width: 80px;
+            height: 60px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .recent-post .rp-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .recent-post .rp-title {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+            line-height: 1.4;
+            margin-bottom: 6px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .recent-post .rp-title a:hover {
+            color: var(--lexus-gold);
+        }
+
+        .recent-post .rp-date {
+            font-size: 0.75rem;
+            color: var(--lexus-text-muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* ===================== TAGS ===================== */
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag-cloud .tag {
+            background: var(--lexus-gray);
+            color: var(--lexus-text-muted);
+            font-size: 0.78rem;
+            font-weight: 500;
+            padding: 6px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tag-cloud .tag:hover,
+        .tag-cloud .tag.active {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        /* ===================== NEWSLETTER SIDEBAR ===================== */
+        .sb-newsletter {
+            background: linear-gradient(135deg, var(--lexus-dark-2) 0%, var(--lexus-dark-3) 100%);
+            border: 1px solid var(--lexus-gold);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sb-newsletter .sbn-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--lexus-gold-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 1.5rem;
+            color: var(--lexus-gold);
+        }
+
+        .sb-newsletter h5 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+            margin-bottom: 8px;
+        }
+
+        .sb-newsletter p {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+            margin-bottom: 20px;
+        }
+
+        .sb-newsletter input {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 0.88rem;
+            color: var(--lexus-white);
+            background: var(--lexus-black);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius);
+            margin-bottom: 12px;
+        }
+
+        .sb-newsletter input::placeholder { color: var(--lexus-text-muted); }
+
+        .sb-newsletter input:focus {
+            outline: none;
+            border-color: var(--lexus-gold);
+        }
+
+        .sb-newsletter .btn-nl {
+            width: 100%;
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 12px 20px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .sb-newsletter .btn-nl:hover {
+            background: var(--lexus-gold-dark);
+        }
+
+        /* ===================== AD BANNER ===================== */
+        .sb-ad {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .sb-ad img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .sb-ad .ad-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 24px;
+        }
+
+        .sb-ad .ad-label {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: var(--lexus-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+        }
+
+        .sb-ad .ad-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+            margin-bottom: 16px;
+        }
+
+        .sb-ad .ad-btn {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            width: fit-content;
+            transition: var(--transition);
+        }
+
+        .sb-ad .ad-btn:hover {
+            background: var(--lexus-gold-dark);
+        }
+
+        /* ===================== SOCIAL FOLLOW ===================== */
+        .social-follow {
+            display: flex;
+            gap: 8px;
+        }
+
+        .social-follow a {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 12px;
+            border-radius: var(--radius);
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+            transition: var(--transition);
+        }
+
+        .social-follow a:hover {
+            transform: translateY(-2px);
+        }
+
+        .social-follow .fb { background: #1877F2; }
+        .social-follow .ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .social-follow .yt { background: #FF0000; }
+        .social-follow .tt { background: var(--lexus-dark-3); border: 1px solid var(--lexus-gray); }
+
+        /* ===================== PAGINATION ===================== */
+        .pagination-custom {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            margin-top: 48px;
+        }
+
+        .pagination-custom .pg-btn {
+            width: 42px;
+            height: 42px;
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            color: var(--lexus-text-muted);
+            font-size: 0.88rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .pagination-custom .pg-btn:hover:not(.disabled) {
+            border-color: var(--lexus-gold);
+            color: var(--lexus-gold);
+        }
+
+        .pagination-custom .pg-btn.active {
+            background: var(--lexus-gold);
+            border-color: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        .pagination-custom .pg-btn.disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .pagination-custom .pg-dots {
+            display: flex;
+            align-items: center;
+            color: var(--lexus-text-muted);
+            padding: 0 8px;
+        }
+
+        /* ===================== NO RESULTS ===================== */
+        #noResults {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        #noResults i {
+            font-size: 3rem;
+            color: var(--lexus-gray-light);
+            margin-bottom: 16px;
+        }
+
+        #noResults h5 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--lexus-white);
+            margin-bottom: 8px;
+        }
+
+        #noResults p {
+            font-size: 0.9rem;
+            color: var(--lexus-text-muted);
+        }
+
+        /* ===================== NEWSLETTER BOTTOM ===================== */
+        .newsletter-bottom {
+            background: var(--lexus-gold);
+            padding: 48px 0;
+        }
+
+        .newsletter-bottom h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--lexus-black);
+            margin-bottom: 6px;
+        }
+
+        .newsletter-bottom .nb-sub {
+            font-size: 0.9rem;
+            color: rgba(0,0,0,0.6);
+        }
+
+        .newsletter-bottom .nl-form {
+            display: flex;
+            gap: 10px;
+            max-width: 450px;
+        }
+
+        .newsletter-bottom .nl-form input {
+            flex: 1;
+            padding: 14px 20px;
+            font-size: 0.9rem;
+            color: var(--lexus-black);
+            background: var(--lexus-white);
+            border: none;
+            border-radius: var(--radius);
+        }
+
+        .newsletter-bottom .nl-form input::placeholder {
+            color: var(--lexus-text-muted);
+        }
+
+        .newsletter-bottom .btn-nls {
+            background: var(--lexus-black);
+            color: var(--lexus-white);
+            font-size: 0.88rem;
+            font-weight: 600;
+            padding: 14px 28px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .newsletter-bottom .btn-nls:hover {
+            background: var(--lexus-dark);
+        }
+
+        /* ===================== FOOTER ===================== */
+        .footer-lexus {
+            background: var(--lexus-black);
+            border-top: 1px solid var(--lexus-gray);
+            padding: 60px 0 24px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--lexus-white);
+            margin-bottom: 16px;
+        }
+
+        .footer-desc {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-socials a {
+            width: 40px;
+            height: 40px;
+            background: var(--lexus-gray);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--lexus-text-muted);
+            transition: var(--transition);
+        }
+
+        .footer-socials a:hover {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        .footer-title {
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--lexus-white);
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .footer-links a:hover {
+            color: var(--lexus-gold);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 24px;
+            border-top: 1px solid var(--lexus-gray);
+            font-size: 0.78rem;
+            color: var(--lexus-text-muted);
+        }
+
+        /* ===================== BACK TO TOP ===================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            border: none;
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 99;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--lexus-gold-dark);
+            transform: translateY(-4px);
+        }
+
+        /* ===================== ANIMATIONS ===================== */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .anim {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .anim-d1 { animation-delay: 0.1s; opacity: 0; }
+        .anim-d2 { animation-delay: 0.2s; opacity: 0; }
+        .anim-d3 { animation-delay: 0.3s; opacity: 0; }
+        .anim-d4 { animation-delay: 0.4s; opacity: 0; }
+        .anim-d5 { animation-delay: 0.5s; opacity: 0; }
+        .anim-d6 { animation-delay: 0.6s; opacity: 0; }
+
+        /* ===================== RESPONSIVE ===================== */
+        @media (max-width: 1199px) {
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 991px) {
+            .page-hero {
+                padding: 120px 0 60px;
+                min-height: auto;
+            }
+
+            .blog-filter-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .cat-tabs {
+                width: 100%;
+            }
+
+            .featured-post .fp-img {
+                height: 320px;
+            }
+
+            .featured-post .fp-overlay {
+                padding: 24px;
+            }
+
+            .blog-card.list-view {
+                flex-direction: column;
+            }
+
+            .blog-card.list-view .bc-img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 24px;
+            }
+
+            .hero-stats .hs-item {
+                flex: 1;
+                min-width: 100px;
+            }
+
+            .featured-post .fp-img {
+                height: 280px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+
+            .newsletter-bottom .nl-form {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .featured-post .fp-img {
+                height: 240px;
+            }
+
+            .featured-post .fp-title {
+                font-size: 1.2rem;
+            }
+
+            .social-follow {
+                flex-wrap: wrap;
+            }
+
+            .social-follow a {
+                flex: 1 1 45%;
+            }
+        }
+
+        /* detail blog  */
+
+        /* ===================== CSS VARIABLES (SHARED) ===================== */
+        :root {
+            --lexus-gold: #C4A052;
+            --lexus-gold-light: rgba(196,160,82,0.15);
+            --lexus-gold-dark: #A8893F;
+            --lexus-black: #0A0A0A;
+            --lexus-dark: #141414;
+            --lexus-dark-2: #1A1A1A;
+            --lexus-dark-3: #222222;
+            --lexus-gray: #2A2A2A;
+            --lexus-gray-light: #3A3A3A;
+            --lexus-text: #E5E5E5;
+            --lexus-text-muted: #888888;
+            --lexus-white: #FFFFFF;
+            --lexus-red: #C41E3A;
+            --lexus-green: #2E8B57;
+            --lexus-blue: #2563EB;
+            --radius: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 16px;
+            --shadow-gold: 0 4px 30px rgba(196,160,82,0.2);
+            --shadow-dark: 0 8px 40px rgba(0,0,0,0.4);
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--lexus-black);
+            color: var(--lexus-text);
+            -webkit-font-smoothing: antialiased;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        img { max-width: 100%; }
+
+        /* ===================== READING PROGRESS ===================== */
+        .reading-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--lexus-gold), var(--lexus-gold-dark));
+            z-index: 9999;
+            transition: width 0.1s linear;
+        }
+
+        /* ===================== NAVBAR ===================== */
+        .navbar-lexus {
+            background: rgba(10,10,10,0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(196,160,82,0.1);
+            padding: 16px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .navbar-lexus.scrolled {
+            padding: 10px 0;
+            background: rgba(10,10,10,0.98);
+        }
+
+        .nav-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--lexus-white);
+        }
+
+        .nav-link-custom {
+            color: var(--lexus-text-muted);
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 8px 16px;
+            position: relative;
+        }
+
+        .nav-link-custom::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 1px;
+            background: var(--lexus-gold);
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
+
+        .nav-link-custom:hover { color: var(--lexus-white); }
+        .nav-link-custom:hover::after { width: 60%; }
+        .nav-link-custom.active { color: var(--lexus-gold); }
+
+        .btn-lexus {
+            background: transparent;
+            border: 1px solid var(--lexus-gold);
+            color: var(--lexus-gold);
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 10px 24px;
+            border-radius: 0;
+            transition: var(--transition);
+        }
+
+        .btn-lexus:hover {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        /* ===================== ARTICLE HERO ===================== */
+        .article-hero {
+            position: relative;
+            min-height: 70vh;
+            display: flex;
+            align-items: flex-end;
+            padding-top: 80px;
+        }
+
+        .article-hero > img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .ah-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top,
+                rgba(10,10,10,1) 0%,
+                rgba(10,10,10,0.9) 30%,
+                rgba(10,10,10,0.4) 60%,
+                rgba(10,10,10,0.2) 100%);
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 60px;
+        }
+
+        .ah-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .ah-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.82rem;
+            color: var(--lexus-text-muted);
+            margin-bottom: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .ah-breadcrumb a { color: var(--lexus-text-muted); }
+        .ah-breadcrumb a:hover { color: var(--lexus-gold); }
+        .ah-breadcrumb .sep { color: var(--lexus-gray-light); }
+        .ah-breadcrumb .current { color: var(--lexus-gold); font-weight: 600; }
+
+        .ah-tags {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .ah-tags .aht {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 5px 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .ah-tags .aht.secondary {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            color: var(--lexus-white);
+        }
+
+        .ah-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            color: var(--lexus-white);
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        .ah-meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .ahm-author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .ahm-author img {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 2px solid var(--lexus-gold);
+        }
+
+        .ahm-name {
+            color: var(--lexus-white);
+            font-weight: 600;
+        }
+
+        .ahm-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .ahm-item i {
+            color: var(--lexus-gold);
+        }
+
+        /* ===================== ARTICLE WRAPPER ===================== */
+        .article-wrapper {
+            padding: 60px 0 80px;
+        }
+
+        /* ===================== ARTICLE BODY ===================== */
+        .article-body {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-xl);
+            padding: 48px;
+        }
+
+        .article-body h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--lexus-white);
+            margin: 40px 0 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--lexus-gray);
+        }
+
+        .article-body h2:first-child {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+        }
+
+        .article-body h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--lexus-gold);
+            margin: 28px 0 14px;
+        }
+
+        .article-body p {
+            font-size: 1rem;
+            line-height: 1.9;
+            color: var(--lexus-text);
+            margin-bottom: 20px;
+        }
+
+        .article-body strong {
+            color: var(--lexus-white);
+            font-weight: 600;
+        }
+
+        .article-body ul,
+        .article-body ol {
+            margin: 20px 0;
+            padding-left: 24px;
+        }
+
+        .article-body li {
+            margin-bottom: 12px;
+            line-height: 1.8;
+            color: var(--lexus-text);
+        }
+
+        .article-body ol li {
+            padding-left: 8px;
+        }
+
+        /* ===================== STAT GRID ===================== */
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 32px 0;
+        }
+
+        .stat-grid .sg-item {
+            background: var(--lexus-dark-3);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            text-align: center;
+        }
+
+        .stat-grid .sg-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--lexus-gold);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .stat-grid .sg-label {
+            font-size: 0.82rem;
+            color: var(--lexus-text-muted);
+        }
+
+        /* ===================== HIGHLIGHT BOX ===================== */
+        .highlight-box {
+            background: var(--lexus-gold-light);
+            border-left: 4px solid var(--lexus-gold);
+            border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+            padding: 24px 28px;
+            margin: 28px 0;
+        }
+
+        .highlight-box .hb-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--lexus-gold);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: var(--lexus-text);
+        }
+
+        /* ===================== ARTICLE IMAGE ===================== */
+        .article-img {
+            margin: 32px 0;
+        }
+
+        .article-img img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+        }
+
+        .article-img .img-caption {
+            font-size: 0.82rem;
+            color: var(--lexus-text-muted);
+            text-align: center;
+            margin-top: 12px;
+            font-style: italic;
+        }
+
+        /* ===================== BLOCKQUOTE ===================== */
+        .article-body blockquote {
+            background: var(--lexus-dark-3);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            margin: 32px 0;
+            position: relative;
+        }
+
+        .article-body blockquote::before {
+            content: '"';
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            color: var(--lexus-gold);
+            position: absolute;
+            top: 10px;
+            left: 24px;
+            line-height: 1;
+            opacity: 0.5;
+        }
+
+        .article-body blockquote p {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--lexus-white);
+            margin-bottom: 16px;
+            padding-left: 40px;
+        }
+
+        .article-body blockquote cite {
+            display: block;
+            font-size: 0.88rem;
+            font-style: normal;
+            color: var(--lexus-gold);
+            padding-left: 40px;
+        }
+
+        /* ===================== ARTICLE ACTIONS ===================== */
+        .article-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-top: 32px;
+            margin-top: 32px;
+            border-top: 1px solid var(--lexus-gray);
+        }
+
+        .aa-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .aa-tags .aat {
+            background: var(--lexus-gray);
+            color: var(--lexus-text-muted);
+            font-size: 0.78rem;
+            font-weight: 500;
+            padding: 6px 14px;
+            border-radius: 20px;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .aa-tags .aat:hover {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        .aa-share {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .aa-share span {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+            font-weight: 600;
+        }
+
+        .share-btn {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--lexus-white);
+        }
+
+        .share-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .share-btn.fb { background: #1877F2; }
+        .share-btn.tw { background: #000; }
+        .share-btn.ln { background: #0A66C2; }
+        .share-btn.wa { background: #25D366; }
+        .share-btn.cp { background: var(--lexus-gold); color: var(--lexus-black); }
+
+        /* ===================== AUTHOR BOX ===================== */
+        .author-box {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-xl);
+            padding: 32px;
+            display: flex;
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .author-box .ab-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid var(--lexus-gold);
+            flex-shrink: 0;
+        }
+
+        .author-box .ab-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--lexus-white);
+            margin-bottom: 4px;
+        }
+
+        .author-box .ab-role {
+            font-size: 0.85rem;
+            color: var(--lexus-gold);
+            margin-bottom: 12px;
+        }
+
+        .author-box .ab-stats {
+            display: flex;
+            gap: 20px;
+            font-size: 0.82rem;
+            color: var(--lexus-text-muted);
+            margin-bottom: 14px;
+        }
+
+        .author-box .ab-stats span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .author-box .ab-bio {
+            font-size: 0.9rem;
+            color: var(--lexus-text);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .author-box .ab-socials {
+            display: flex;
+            gap: 10px;
+        }
+
+        .author-box .ab-socials a {
+            width: 36px;
+            height: 36px;
+            background: var(--lexus-gray);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--lexus-text-muted);
+            transition: var(--transition);
+        }
+
+        .author-box .ab-socials a:hover {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        /* ===================== POST NAVIGATION ===================== */
+        .post-nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 32px;
+        }
+
+        .post-nav .pn-item {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            transition: var(--transition);
+        }
+
+        .post-nav .pn-item:hover {
+            border-color: var(--lexus-gold);
+        }
+
+        .post-nav .pn-item.next {
+            text-align: right;
+        }
+
+        .post-nav .pn-label {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--lexus-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+
+        .post-nav .pn-item.next .pn-label {
+            justify-content: flex-end;
+        }
+
+        .post-nav .pn-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+            line-height: 1.4;
+        }
+
+        /* ===================== COMMENTS SECTION ===================== */
+        .comments-section {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-xl);
+            padding: 32px;
+            margin-top: 32px;
+        }
+
+        .comments-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--lexus-white);
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .comments-title .ct-count {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+
+        /* ===================== COMMENT ITEM ===================== */
+        .comment-item {
+            display: flex;
+            gap: 16px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--lexus-gray);
+        }
+
+        .comment-item:last-of-type {
+            border-bottom: none;
+        }
+
+        .comment-item .ci-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .comment-item .ci-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .comment-item .ci-name {
+            font-weight: 700;
+            color: var(--lexus-white);
+            font-size: 0.92rem;
+        }
+
+        .comment-item .ci-badge {
+            background: var(--lexus-gold-light);
+            color: var(--lexus-gold);
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+
+        .comment-item .ci-date {
+            font-size: 0.78rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .comment-item .ci-text {
+            font-size: 0.92rem;
+            color: var(--lexus-text);
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .comment-item .ci-actions {
+            display: flex;
+            gap: 16px;
+        }
+
+        .comment-item .ci-actions button {
+            background: none;
+            border: none;
+            color: var(--lexus-text-muted);
+            font-size: 0.82rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: var(--transition);
+        }
+
+        .comment-item .ci-actions button:hover {
+            color: var(--lexus-gold);
+        }
+
+        .comment-reply {
+            margin-left: 64px;
+            padding-left: 20px;
+            border-left: 2px solid var(--lexus-gray);
+        }
+
+        /* ===================== COMMENT FORM ===================== */
+        .comment-form {
+            margin-top: 32px;
+            padding-top: 32px;
+            border-top: 1px solid var(--lexus-gray);
+        }
+
+        .comment-form .cf-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+            margin-bottom: 20px;
+        }
+
+        .comment-form .cf-input {
+            width: 100%;
+            padding: 14px 18px;
+            font-size: 0.9rem;
+            color: var(--lexus-white);
+            background: var(--lexus-black);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius);
+            transition: var(--transition);
+        }
+
+        .comment-form .cf-input::placeholder {
+            color: var(--lexus-text-muted);
+        }
+
+        .comment-form .cf-input:focus {
+            outline: none;
+            border-color: var(--lexus-gold);
+        }
+
+        .comment-form textarea.cf-input {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .comment-form .cf-submit {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.88rem;
+            font-weight: 600;
+            padding: 14px 28px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .comment-form .cf-submit:hover {
+            background: var(--lexus-gold-dark);
+        }
+
+        /* ===================== SIDEBAR ===================== */
+        .sidebar-card {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sidebar-title i {
+            color: var(--lexus-gold);
+        }
+
+        /* ===================== TABLE OF CONTENTS ===================== */
+        .toc-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .toc-list li {
+            font-size: 0.88rem;
+            color: var(--lexus-text-muted);
+            padding: 10px 0;
+            padding-left: 16px;
+            border-left: 2px solid var(--lexus-gray);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .toc-list li:hover {
+            color: var(--lexus-white);
+            border-left-color: var(--lexus-gold);
+        }
+
+        .toc-list li.active {
+            color: var(--lexus-gold);
+            border-left-color: var(--lexus-gold);
+            font-weight: 600;
+        }
+
+        /* ===================== RECENT POSTS ===================== */
+        .recent-post {
+            display: flex;
+            gap: 14px;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--lexus-gray);
+        }
+
+        .recent-post:last-child { border-bottom: none; }
+
+        .recent-post .rp-img {
+            width: 80px;
+            height: 60px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .recent-post .rp-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .recent-post .rp-title {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+            line-height: 1.4;
+            margin-bottom: 6px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .recent-post .rp-title a:hover {
+            color: var(--lexus-gold);
+        }
+
+        .recent-post .rp-date {
+            font-size: 0.75rem;
+            color: var(--lexus-text-muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* ===================== TAGS ===================== */
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag-cloud .tag {
+            background: var(--lexus-gray);
+            color: var(--lexus-text-muted);
+            font-size: 0.78rem;
+            font-weight: 500;
+            padding: 6px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tag-cloud .tag:hover,
+        .tag-cloud .tag.active {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        /* ===================== NEWSLETTER SIDEBAR ===================== */
+        .sb-newsletter {
+            background: linear-gradient(135deg, var(--lexus-dark-2) 0%, var(--lexus-dark-3) 100%);
+            border: 1px solid var(--lexus-gold);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sb-newsletter .sbn-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--lexus-gold-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 1.5rem;
+            color: var(--lexus-gold);
+        }
+
+        .sb-newsletter h5 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+            margin-bottom: 8px;
+        }
+
+        .sb-newsletter p {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+            margin-bottom: 20px;
+        }
+
+        .sb-newsletter input {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 0.88rem;
+            color: var(--lexus-white);
+            background: var(--lexus-black);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius);
+            margin-bottom: 12px;
+        }
+
+        .sb-newsletter input::placeholder { color: var(--lexus-text-muted); }
+
+        .sb-newsletter input:focus {
+            outline: none;
+            border-color: var(--lexus-gold);
+        }
+
+        .sb-newsletter .btn-nl {
+            width: 100%;
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 12px 20px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .sb-newsletter .btn-nl:hover {
+            background: var(--lexus-gold-dark);
+        }
+
+        /* ===================== RELATED SECTION ===================== */
+        .related-section {
+            background: var(--lexus-dark);
+            padding: 80px 0;
+        }
+
+        .related-section .sec-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        .related-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--lexus-white);
+        }
+
+        .related-section .view-all {
+            color: var(--lexus-gold);
+            font-size: 0.88rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .related-section .view-all:hover {
+            gap: 10px;
+        }
+
+        /* ===================== BLOG CARD ===================== */
+        .blog-card {
+            background: var(--lexus-dark-2);
+            border: 1px solid var(--lexus-gray);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            border-color: var(--lexus-gold);
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .blog-card .bc-img {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .blog-card .bc-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .blog-card:hover .bc-img img {
+            transform: scale(1.05);
+        }
+
+        .blog-card .bc-tag {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .blog-card .bc-body {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .blog-card .bc-date {
+            font-size: 0.75rem;
+            color: var(--lexus-text-muted);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .blog-card .bc-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 12px;
+        }
+
+        .blog-card .bc-title a {
+            color: var(--lexus-white);
+        }
+
+        .blog-card .bc-title a:hover {
+            color: var(--lexus-gold);
+        }
+
+        .blog-card .bc-excerpt {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+            line-height: 1.7;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        .blog-card .bc-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            border-top: 1px solid var(--lexus-gray);
+            margin-top: auto;
+        }
+
+        .blog-card .bc-author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .blog-card .bc-author img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        .blog-card .bca-name {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--lexus-white);
+        }
+
+        .blog-card .bc-stats {
+            display: flex;
+            gap: 12px;
+            font-size: 0.78rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .blog-card .bc-stats span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* ===================== NEWSLETTER BOTTOM ===================== */
+        .newsletter-bottom {
+            background: var(--lexus-gold);
+            padding: 48px 0;
+        }
+
+        .newsletter-bottom h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--lexus-black);
+            margin-bottom: 6px;
+        }
+
+        .newsletter-bottom .nb-sub {
+            font-size: 0.9rem;
+            color: rgba(0,0,0,0.6);
+        }
+
+        .newsletter-bottom .nl-form {
+            display: flex;
+            gap: 10px;
+            max-width: 450px;
+        }
+
+        .newsletter-bottom .nl-form input {
+            flex: 1;
+            padding: 14px 20px;
+            font-size: 0.9rem;
+            color: var(--lexus-black);
+            background: var(--lexus-white);
+            border: none;
+            border-radius: var(--radius);
+        }
+
+        .newsletter-bottom .nl-form input::placeholder {
+            color: var(--lexus-text-muted);
+        }
+
+        .newsletter-bottom .btn-nls {
+            background: var(--lexus-black);
+            color: var(--lexus-white);
+            font-size: 0.88rem;
+            font-weight: 600;
+            padding: 14px 28px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .newsletter-bottom .btn-nls:hover {
+            background: var(--lexus-dark);
+        }
+
+        /* ===================== FOOTER ===================== */
+        .footer-lexus {
+            background: var(--lexus-black);
+            border-top: 1px solid var(--lexus-gray);
+            padding: 60px 0 24px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--lexus-white);
+            margin-bottom: 16px;
+        }
+
+        .footer-desc {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-socials a {
+            width: 40px;
+            height: 40px;
+            background: var(--lexus-gray);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--lexus-text-muted);
+            transition: var(--transition);
+        }
+
+        .footer-socials a:hover {
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+        }
+
+        .footer-title {
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--lexus-white);
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            font-size: 0.85rem;
+            color: var(--lexus-text-muted);
+        }
+
+        .footer-links a:hover {
+            color: var(--lexus-gold);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 24px;
+            border-top: 1px solid var(--lexus-gray);
+            font-size: 0.78rem;
+            color: var(--lexus-text-muted);
+        }
+
+        /* ===================== FLOATING SHARE ===================== */
+        .float-share {
+            position: fixed;
+            left: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 99;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .float-share.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .float-share .fs-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: none;
+            color: var(--lexus-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+
+        .float-share .fs-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* ===================== BACK TO TOP ===================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--lexus-gold);
+            color: var(--lexus-black);
+            border: none;
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 99;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--lexus-gold-dark);
+            transform: translateY(-4px);
+        }
+
+        /* ===================== ANIMATIONS ===================== */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .anim {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .anim-d1 { animation-delay: 0.1s; opacity: 0; }
+        .anim-d2 { animation-delay: 0.2s; opacity: 0; }
+        .anim-d3 { animation-delay: 0.3s; opacity: 0; }
+
+        /* ===================== RESPONSIVE ===================== */
+        @media (max-width: 1199px) {
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .float-share {
+                display: none;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .article-hero {
+                min-height: 60vh;
+            }
+
+            .ah-title {
+                font-size: 1.8rem;
+            }
+
+            .article-body {
+                padding: 32px;
+            }
+
+            .stat-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .author-box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .author-box .ab-socials {
+                justify-content: center;
+            }
+
+            .post-nav {
+                grid-template-columns: 1fr;
+            }
+
+            .comment-reply {
+                margin-left: 32px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .ah-meta {
+                gap: 12px;
+            }
+
+            .article-body {
+                padding: 24px;
+            }
+
+            .article-body h2 {
+                font-size: 1.4rem;
+            }
+
+            .article-actions {
+                flex-direction: column;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+
+            .newsletter-bottom .nl-form {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .article-hero {
+                min-height: 50vh;
+            }
+
+            .ah-title {
+                font-size: 1.5rem;
+            }
+
+            .ah-overlay {
+                padding-bottom: 40px;
+            }
+        }
