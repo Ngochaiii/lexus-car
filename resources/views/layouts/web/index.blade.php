@@ -13,7 +13,19 @@
     <meta property="og:description"
         content="Trải nghiệm sự hoàn hảo trong từng chi tiết với các mẫu xe sang trọng từ Lexus Vietnam.">
     <meta property="og:type" content="website">
-    <link rel="canonical" href="https://lexus.com.vn/">
+     <!-- ✅ FAVICON -->
+    <link rel="icon" type="image/png" href="{{ asset('web/assets/imgages/lexus_logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('web/assets/imgages/lexus_logo.png') }}">
+
+    <!-- ✅ OG IMAGE — ảnh hiện khi share lên Zalo/Facebook -->
+    <meta property="og:title" content="Lexus Vietnam — Experience Amazing">
+    <meta property="og:description" content="Trải nghiệm sự hoàn hảo trong từng chi tiết với các mẫu xe sang trọng từ Lexus Vietnam.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lexus-es.com">
+    <meta property="og:image" content="https://lexus-es.com/web/assets/images/es-250-overview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="canonical" href="https://lexus-es.com">
 
     <!-- JSON-LD Structured Data for SEO -->
     <script type="application/ld+json">
@@ -22,7 +34,7 @@
             "@type": "AutoDealer",
             "name": "Lexus Vietnam",
             "description": "Đại lý xe Lexus chính hãng tại Việt Nam",
-            "url": "https://lexus.com.vn",
+            "url": "https://lexus-es.com",
             "telephone": "1900123456",
             "address": {
                 "@type": "PostalAddress",
