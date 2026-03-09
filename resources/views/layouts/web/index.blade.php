@@ -14,8 +14,8 @@
         content="Trải nghiệm sự hoàn hảo trong từng chi tiết với các mẫu xe sang trọng từ Lexus Vietnam.">
     <meta property="og:type" content="website">
      <!-- ✅ FAVICON -->
-    <link rel="icon" type="image/png" href="{{ asset('web/assets/imgages/lexus_logo.png') }}">
-    <link rel="apple-touch-icon" href="{{ asset('web/assets/imgages/lexus_logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('web/assets/images/lexus_logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('web/assets/images/lexus_logo.png') }}">
 
     <!-- ✅ OG IMAGE — ảnh hiện khi share lên Zalo/Facebook -->
     <meta property="og:title" content="Lexus Vietnam — Experience Amazing">
