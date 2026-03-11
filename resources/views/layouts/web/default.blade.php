@@ -11,7 +11,7 @@
 
 <body>
     @include('layouts.web.nav')
-    @include('layouts.web.breadcrumb')
+    @include('layouts.web.breadrumb')
     @yield('content')
     @include('layouts.web.footer')
     @include('layouts.web.footer_js')
