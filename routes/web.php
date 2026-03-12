@@ -3,6 +3,7 @@
 use App\Http\Controllers\web\BlogsController;
 use App\Http\Controllers\web\HomeController;
 use App\Http\Controllers\web\ProductsController;
+use App\Http\Controllers\web\TechnogoryLexusController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,6 +20,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('web.home');
 
 Route::get('/lexus-rx', [ProductsController::class, 'index'])->name('products.index');
+
+Route::get('/technolory-lexus', [TechnogoryLexusController::class, 'index'])->name('tech_car.index');
+
 
  Route::group(['prefix' => 'blogs'], function () {
         Route::get('/', [BlogsController::class, 'index'])->name('web.blogs');
