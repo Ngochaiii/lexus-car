@@ -1,33 +1,90 @@
 @extends('layouts.web.default')
 
 @section('content')
-    <!-- HERO -->
+<!-- HERO -->
 <section class="hero">
-    <div class="hero-grid"></div><div class="hero-glow"></div><div class="hero-glow2"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
     <div class="container hero-c">
-        <div class="row">
-            <div class="col-lg-7">
+        <div class="row g-5 align-items-center">
+
+            <!-- LEFT: Text -->
+            <div class="col-lg-5">
                 <div class="h-over">Lexus Safety System+</div>
-                <h1 class="h-title">Công Nghệ<br><span class="hl it">Tiên Phong</span><br>Bảo Vệ Bạn</h1>
-                <p class="h-desc">Hệ sinh thái công nghệ toàn diện của Lexus — từ an toàn chủ động, chiếu sáng thông minh đến hỗ trợ lái xe thế hệ mới — mang đến trải nghiệm an toàn tuyệt đối trên mọi hành trình.</p>
+                <h1 class="h-title">Công<br>Nghệ <span class="hl it">Tiên</span><br><span class="hl it">Phong</span></h1>
+                <p class="h-desc">Hệ sinh thái công nghệ toàn diện — từ an toàn chủ động, chiếu sáng thông minh đến hỗ trợ lái thế hệ mới — bảo vệ bạn trên mọi hành trình.</p>
+                <div class="h-btns">
+                    <a href="#tech-grid" class="btn-pl"><i class="bi bi-grid-3x3-gap"></i> Khám phá tất cả</a>
+                    <a href="lexus-rx500h-detail.html" class="btn-ol"><i class="bi bi-car-front"></i> Xem trên RX</a>
+                </div>
                 <div class="h-stats">
                     <div class="hsi"><div class="hsi-n">19</div><div class="hsi-l">Công nghệ</div></div>
                     <div class="hsi"><div class="hsi-n">5</div><div class="hsi-l">Hệ thống</div></div>
                     <div class="hsi"><div class="hsi-n">360°</div><div class="hsi-l">Bảo vệ</div></div>
                 </div>
-                <div class="h-btns">
-                    <a href="#tech-grid" class="btn-pl"><i class="bi bi-grid-3x3-gap"></i> Khám phá tất cả</a>
-                    <a href="lexus-rx500h-detail.html" class="btn-ol"><i class="bi bi-car-front"></i> Xem trên RX Series</a>
+            </div>
+
+            <!-- RIGHT: Tech badge grid -->
+            <div class="col-lg-7">
+                <div class="h-right">
+
+                    <!-- LSS+ Bar -->
+                    <div class="h-lss-bar">
+                        <span class="h-lss-tag">LSS+</span>
+                        <div class="h-lss-txt"><b>Lexus Safety System+</b> — Hệ thống bảo vệ chủ động thế hệ mới tích hợp Radar · Camera · AI</div>
+                        <div style="display:flex;align-items:center;gap:5px;font-size:.65rem;font-weight:700;color:#22c55e;flex-shrink:0">
+                            <span style="width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 6px #22c55e;display:block"></span>
+                            Kích hoạt
+                        </div>
+                    </div>
+
+                    <!-- Top row: 2 primary badges -->
+                    <div class="h-right-top">
+                        <div class="hb hb-lg">
+                            <div class="hb-icon"><i class="bi bi-speedometer2"></i></div>
+                            <div>
+                                <div class="hb-ab">DRCC</div>
+                                <div class="hb-nm">Hành Trình Chủ Động<br>0 – 180 km/h</div>
+                                <div class="hb-dot">Đang hoạt động</div>
+                            </div>
+                        </div>
+                        <div class="hb hb-lg">
+                            <div class="hb-icon"><i class="bi bi-eye"></i></div>
+                            <div>
+                                <div class="hb-ab">LTA</div>
+                                <div class="hb-nm">Theo Dõi Làn Đường<br>Tự động</div>
+                                <div class="hb-dot">Đang hoạt động</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom row: 3 compact badges -->
+                    <div class="h-right-bottom">
+                        <div class="hb hb-sm">
+                            <div class="hb-icon"><i class="bi bi-shield-check"></i></div>
+                            <div class="hb-ab">PCS</div>
+                            <div class="hb-nm">An Toàn Tiền Va Chạm</div>
+                            <div class="hb-dot">Sẵn sàng</div>
+                        </div>
+                        <div class="hb hb-sm">
+                            <div class="hb-icon"><i class="bi bi-lightbulb-fill"></i></div>
+                            <div class="hb-ab">AHS</div>
+                            <div class="hb-nm">Đèn Pha Thích Ứng</div>
+                            <div class="hb-dot">Sẵn sàng</div>
+                        </div>
+                        <div class="hb hb-sm">
+                            <div class="hb-icon"><i class="bi bi-p-circle-fill"></i></div>
+                            <div class="hb-ab">PKSB</div>
+                            <div class="hb-nm">Phanh An Toàn Đỗ Xe</div>
+                            <div class="hb-dot">Sẵn sàng</div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
         </div>
-    </div>
-    <div class="h-float">
-        <div class="fb"><div class="fb-ic"><i class="bi bi-speedometer2"></i></div><div><div class="fb-ab">DRCC</div><div class="fb-nm">Hành Trình Thích Ứng</div></div><div class="fb-dot"></div></div>
-        <div class="fb"><div class="fb-ic"><i class="bi bi-eye"></i></div><div><div class="fb-ab">LTA</div><div class="fb-nm">Theo Dõi Làn Đường</div></div><div class="fb-dot"></div></div>
-        <div class="fb"><div class="fb-ic"><i class="bi bi-shield-check"></i></div><div><div class="fb-ab">PCS</div><div class="fb-nm">Tiền Va Chạm</div></div><div class="fb-dot"></div></div>
-        <div class="fb"><div class="fb-ic"><i class="bi bi-lightbulb"></i></div><div><div class="fb-ab">AHS</div><div class="fb-nm">Đèn Pha Thích Ứng</div></div><div class="fb-dot"></div></div>
-        <div class="fb"><div class="fb-ic"><i class="bi bi-p-circle"></i></div><div><div class="fb-ab">PKSB</div><div class="fb-nm">Phanh An Toàn Đỗ Xe</div></div><div class="fb-dot"></div></div>
     </div>
 </section>
 
@@ -84,7 +141,7 @@
         <div class="col-xl-4 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="LTA" src="{{asset('web/assets/images/lta.webp')}}" alt="Hệ thống LTA — Theo dõi làn đường">
+                <img data-tech="LTA" src="" alt="Hệ thống LTA — Theo dõi làn đường">
                 <div class="ph">
                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80" fill="none">
                         <rect x="10" y="30" width="100" height="20" rx="3" fill="#C4A052" opacity=".15"/>
@@ -109,7 +166,7 @@
         <div class="col-xl-4 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="DRCC" src="{{asset('web/assets/images/lexus-lm350-dynamic-radar-cruise-control.jpg')}}" alt="Hệ thống DRCC">
+                <img data-tech="DRCC" src="" alt="Hệ thống DRCC">
                 <div class="ph">
                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80" fill="none">
                         <rect x="5" y="42" width="50" height="22" rx="4" fill="#C4A052" opacity=".2"/>
@@ -132,7 +189,7 @@
         <div class="col-xl-4 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="PCS" src="{{asset('web/assets/images/lexus-lm-500h-antoan.jpg')}}" alt="Hệ thống PCS">
+                <img data-tech="PCS" src="" alt="Hệ thống PCS">
                 <div class="ph">
                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80" fill="none">
                         <circle cx="90" cy="30" r="15" stroke="#ef4444" stroke-width="1.5" fill="none" opacity=".5"/>
@@ -155,7 +212,7 @@
         <div class="col-xl-4 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="BSM" src="{{asset('web/assets/images/canh-bao-diem-mu-5.webp')}}" alt="Hệ thống BSM">
+                <img data-tech="BSM" src="" alt="Hệ thống BSM">
                 <div class="ph">
                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80" fill="none">
                         <rect x="40" y="25" width="40" height="30" rx="4" fill="#C4A052" opacity=".2"/>
@@ -179,7 +236,7 @@
         <div class="col-xl-4 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="LDA" src="{{asset('web/assets/images/anh-2-4.jpg')}}" alt="Hệ thống LDA">
+                <img data-tech="LDA" src="" alt="Hệ thống LDA">
                 <div class="ph">
                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80" fill="none">
                         <line x1="40" y1="5" x2="40" y2="75" stroke="#888" stroke-width="1" stroke-dasharray="5 3" opacity=".4"/>
@@ -203,7 +260,7 @@
         <div class="col-xl-4 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="RCTA" src="{{asset('web/assets/images/he-thong-rcta-1.webp')}}" alt="Hệ thống RCTA">
+                <img data-tech="RCTA" src="" alt="Hệ thống RCTA">
                 <div class="ph">
                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80" fill="none">
                         <rect x="40" y="10" width="40" height="25" rx="4" fill="#C4A052" opacity=".2"/>
@@ -227,7 +284,7 @@
         <div class="col-xl-4 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="STOP_WARNING" src="{{asset('web/assets/images/cruise-control-la-gi-3.webp')}}" alt="Cảnh báo khi dừng">
+                <img data-tech="STOP_WARNING" src="" alt="Cảnh báo khi dừng">
                 <div class="ph">
                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80" fill="none">
                         <rect x="40" y="20" width="40" height="25" rx="4" fill="#C4A052" opacity=".2"/>
@@ -264,7 +321,7 @@
         <div class="col-xl-6 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="AHS" src="{{asset('web/assets/images/cong-nghe-den-pha-tu-dong-thich-ung-ahs-tren-xe-lexus-2.webp')}}" alt="Hệ thống AHS BladeScan">
+                <img data-tech="AHS" src="" alt="Hệ thống AHS BladeScan">
                 <div class="ph">
                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80" fill="none">
                         <path d="M20 40 L70 20 L70 60 Z" fill="#fbbf24" opacity=".15"/>
@@ -292,7 +349,7 @@
         <div class="col-xl-6 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="LED_CORNER" src="{{asset('web/assets/images/Den-LED-xe-Lexus.jpg')}}" alt="Đèn góc LED">
+                <img data-tech="LED_CORNER" src="" alt="Đèn góc LED">
                 <div class="ph">
                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80" fill="none">
                         <path d="M70 50 L20 20" stroke="#fbbf24" stroke-width="2" opacity=".6"/>
@@ -331,7 +388,7 @@
         <div class="col-xl-4 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="PUH" src="{{asset('web/assets/images/xanh.jpg')}}" alt="Kết cấu mui xe an toàn PUH">
+                <img data-tech="PUH" src="" alt="Kết cấu mui xe an toàn PUH">
                 <div class="ph">
                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80" fill="none">
                         <path d="M20 60 Q60 55 100 60" stroke="#C4A052" stroke-width="2" fill="none" opacity=".5"/>
@@ -355,7 +412,7 @@
         <div class="col-xl-4 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="SRS" src="{{asset('web/assets/images/tui-khi-xe-hoi-thumb.webp')}}" alt="Hệ thống túi khí SRS">
+                <img data-tech="SRS" src="" alt="Hệ thống túi khí SRS">
                 <div class="ph">
                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80" fill="none">
                         <rect x="35" y="25" width="50" height="35" rx="6" fill="#C4A052" opacity=".1" stroke="#C4A052" stroke-width="1" opacity=".3"/>
@@ -378,7 +435,7 @@
         <div class="col-xl-4 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="PKSB" src="{{asset('web/assets/images/phanh-tay-dien-tu-1.webp')}}" alt="Hệ thống PKSB">
+                <img data-tech="PKSB" src="" alt="Hệ thống PKSB">
                 <div class="ph">
                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80" fill="none">
                         <rect x="35" y="10" width="50" height="28" rx="4" fill="#C4A052" opacity=".2"/>
@@ -415,7 +472,7 @@
         <div class="col-xl-4 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="HUD" src="{{asset('web/assets/images/hud-la-gi-3.webp')}}" alt="Màn hình HUD 24 inch">
+                <img data-tech="HUD" src="" alt="Màn hình HUD 24 inch">
                 <div class="ph">
                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80" fill="none">
                         <rect x="10" y="35" width="120" height="30" rx="4" fill="#8b5cf6" opacity=".1" stroke="#8b5cf6" stroke-width="1" opacity=".4"/>
@@ -440,7 +497,7 @@
         <div class="col-xl-4 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="PVM" src="{{asset('web/assets/images/customer-relationship.webp')}}" alt="Hệ thống quan sát toàn cảnh PVM">
+                <img data-tech="PVM" src="" alt="Hệ thống quan sát toàn cảnh PVM">
                 <div class="ph">
                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80" fill="none">
                         <rect x="35" y="25" width="50" height="30" rx="4" stroke="#8b5cf6" stroke-width="1.5" fill="rgba(139,92,246,.08)" opacity=".8"/>
@@ -466,7 +523,7 @@
         <div class="col-xl-4 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="AUTO_SEAT" src="{{asset('web/assets/images/tg4-1763813772705-17638137733472007808675-1763827393125-176382739334267401945.jpg')}}" alt="Ghế sau tự động ngả">
+                <img data-tech="AUTO_SEAT" src="" alt="Ghế sau tự động ngả">
                 <div class="ph">
                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80" fill="none">
                         <rect x="20" y="35" width="35" height="30" rx="4" fill="#8b5cf6" opacity=".15" stroke="#8b5cf6" stroke-width="1" opacity=".4"/>
@@ -490,7 +547,7 @@
         <div class="col-xl-6 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="SEA" src="{{asset('web/assets/images/he-thong-ho-tro-ra-khoi-xe-an-toan-sea-tren-xe-lexus-1.webp')}}" alt="Hệ thống SEA">
+                <img data-tech="SEA" src="" alt="Hệ thống SEA">
                 <div class="ph">
                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80" fill="none">
                         <rect x="40" y="20" width="60" height="35" rx="5" fill="#8b5cf6" opacity=".1" stroke="#8b5cf6" stroke-width="1.5" opacity=".4"/>
@@ -516,7 +573,7 @@
         <div class="col-xl-6 col-lg-6">
         <div class="tc">
             <div class="tc-img">
-                <img data-tech="ELATCH" src="{{asset('web/assets/images/3055123-0635a485c0f25155906edeab3db39541.jpg')}}" alt="Hệ thống e-Latch">
+                <img data-tech="ELATCH" src="" alt="Hệ thống e-Latch">
                 <div class="ph">
                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80" fill="none">
                         <rect x="45" y="15" width="50" height="45" rx="6" fill="#8b5cf6" opacity=".08" stroke="#8b5cf6" stroke-width="1.5" opacity=".4"/>
@@ -631,7 +688,7 @@
                 <div class="col-lg-5">
                     <div class="sp-img" style="min-height:360px">
                         <!-- SPOTLIGHT IMAGE SLOT: DRCC -->
-                        <img data-tech="DRCC_SPOTLIGHT" src="{{asset('web/assets/images/cruise-control_01.jpg')}}" alt="DRCC Spotlight" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
+                        <img data-tech="DRCC_SPOTLIGHT" src="" alt="DRCC Spotlight" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
                         <div class="sp-ph">
                             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" opacity=".25">
                                 <circle cx="50" cy="50" r="45" stroke="#C4A052" stroke-width="2"/>
@@ -725,7 +782,7 @@
                         <div class="tl-left"><div class="tl-node"><i class="bi bi-eye"></i></div><div class="tl-ln"></div></div>
                         <div><div class="tl-cnt" onclick="toggleTL(this.closest('.tl-item'))">
                             <div class="tl-img">
-                                <img data-tech="LTA_TL" src="{{asset('web/assets/images/lta.webp')}}" alt="LTA">
+                                <img data-tech="LTA_TL" src="" alt="LTA">
                                 <div class="tl-ph"><svg width="60" height="40" viewBox="0 0 60 40" fill="none" opacity=".3"><line x1="20" y1="0" x2="20" y2="40" stroke="#C4A052" stroke-width="1" stroke-dasharray="4 2"/><line x1="40" y1="0" x2="40" y2="40" stroke="#C4A052" stroke-width="1" stroke-dasharray="4 2"/><rect x="23" y="15" width="14" height="10" rx="2" fill="#C4A052"/></svg><div style="font-size:.65rem;color:var(--muted)">img slot · LTA_TL</div></div>
                             </div>
                             <div class="tl-body-wrap">
@@ -827,6 +884,7 @@
         </div>
     </div>
 </section>
+
 @endsection
 @push('js')
     <script>
@@ -835,6 +893,21 @@
         document.getElementById('nav').classList.toggle('s',window.scrollY>100);
         document.getElementById('btt').classList.toggle('show',window.scrollY>400);
     });
+
+    // Mobile Menu
+    const drawer=document.getElementById('mobileDrawer');
+    const menuBtn=document.getElementById('mobileMenuBtn');
+    const menuIcon=document.getElementById('menuIcon');
+    let menuOpen=false;
+    function toggleMenu(force){
+        menuOpen=typeof force==='boolean'?force:!menuOpen;
+        drawer.style.transform=menuOpen?'translateX(0)':'translateX(100%)';
+        drawer.style.pointerEvents=menuOpen?'auto':'none';
+        menuIcon.className=menuOpen?'bi bi-x-lg':'bi bi-list';
+        document.body.classList.toggle('menu-open',menuOpen);
+    }
+    menuBtn.addEventListener('click',()=>toggleMenu());
+    drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>toggleMenu(false)));
 
     // Filter
     document.querySelectorAll('.fbtn').forEach(b=>{
@@ -845,6 +918,10 @@
             document.querySelectorAll('.cgroup').forEach(g=>{
                 g.classList.toggle('hidden',f!=='all'&&g.dataset.category!==f);
             });
+            // Mobile: scroll active filter button into center view
+            if(window.innerWidth<=767){
+                this.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+            }
             setTimeout(()=>document.getElementById('tech-grid').scrollIntoView({behavior:'smooth',block:'start'}),80);
         });
     });
@@ -869,6 +946,28 @@
     });
     document.querySelectorAll('.tc').forEach((c,i)=>{c.style.transitionDelay=`${(i%3)*.08}s`;});
 
+    // Hero badge stagger animation on load
+    document.querySelectorAll('.hb,.h-lss-bar').forEach((el,i)=>{
+        el.style.opacity='0';
+        el.style.transform='translateY(20px)';
+        el.style.transition='opacity .5s ease, transform .5s ease';
+        el.style.transitionDelay=`${.3 + i*.1}s`;
+        requestAnimationFrame(()=>requestAnimationFrame(()=>{
+            el.style.opacity='1';
+            el.style.transform='translateY(0)';
+        }));
+    });
+    // Hero text stagger
+    ['.h-over','.h-title','.h-desc','.h-btns','.h-stats'].forEach((sel,i)=>{
+        const el=document.querySelector(sel);
+        if(!el)return;
+        el.style.opacity='0';el.style.transform='translateY(16px)';
+        el.style.transition=`opacity .5s ease ${i*.1}s, transform .5s ease ${i*.1}s`;
+        requestAnimationFrame(()=>requestAnimationFrame(()=>{
+            el.style.opacity='1';el.style.transform='translateY(0)';
+        }));
+    });
+
     // ══════════════════════════════════════
     // IMAGE SWAP UTILITY
     // Để thêm ảnh thật, gọi: swapImage('LTA', 'path/to/lta.jpg')
@@ -883,4 +982,14 @@
     // Ví dụ: swapImage('LTA', 'images/lta.jpg');
     // swapImage('DRCC', 'images/drcc.jpg');
 </script>
+</script>
+@endpush
+@push('css')
+    <style>
+        .breadcrumb-section {
+    display: none !important;
+    padding: 100px 0 20px;
+    background: var(--lexus-black);
+}
+    </style>
 @endpush
