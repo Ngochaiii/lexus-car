@@ -7,14 +7,13 @@
                         <div class="hero-content">
                             <div class="hero-tagline">Experience Amazing</div>
                             <h1 class="hero-title">
-                                Khám Phá <span class="highlight">Đẳng Cấp</span>
-                                Lexus
+                                Trải Nghiệm Đẳng Cấp Lexus
                             </h1>
                             <p class="hero-desc">
                                 Trải nghiệm sự hoàn hảo trong từng chi tiết với
                                 các mẫu xe sang trọng,
                                 công nghệ tiên tiến và dịch vụ đẳng cấp từ Lexus
-                                Vietnam.
+                                Thăng Long.
                             </p>
                             <div class="hero-actions">
                                 <a href="#models" class="btn-primary-lexus">
@@ -31,8 +30,8 @@
                                     <div class="hero-stat-label">Dòng xe</div>
                                 </div>
                                 <div class="hero-stat">
-                                    <div class="hero-stat-value">25+</div>
-                                    <div class="hero-stat-label">Đại lý</div>
+                                    <div class="hero-stat-value">Chỉ 1</div>
+                                    <div class="hero-stat-label">Đại lý Miền Bắc</div>
                                 </div>
                                 <div class="hero-stat">
                                     <div class="hero-stat-value">50K+</div>

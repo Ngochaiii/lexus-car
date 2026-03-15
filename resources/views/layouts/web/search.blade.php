@@ -11,9 +11,7 @@
                         <button class="search-tab"
                             data-cat="sedan">Sedan</button>
                         <button class="search-tab"
-                            data-cat="coupe">Coupe</button>
-                        <button class="search-tab" data-cat="hybrid">Hybrid /
-                            EV</button>
+                            data-cat="MPV">MPV</button>
                     </div>
 
                     <!-- Single name search -->
@@ -64,11 +62,9 @@
                     <div class="search-categories">
                         <span>Hạng mục:</span>
                         <button class="cat-pill active">Tất cả</button>
-                        <button class="cat-pill">SUV Hạng sang</button>
-                        <button class="cat-pill">Sedan điều hành</button>
-                        <button class="cat-pill">Hybrid & Điện</button>
-                        <button class="cat-pill">Coupe & Convertible</button>
-                        <button class="cat-pill">Flagship</button>
+                        <button class="cat-pill">SUV Đa dụng </button>
+                        <button class="cat-pill">Sedan Thanh lịch</button>
+                        <button class="cat-pill">MPV Sang trọng </button>
                     </div>
 
                 </div>

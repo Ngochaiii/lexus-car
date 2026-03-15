@@ -1897,6 +1897,7 @@ img {
 
 @media (max-width: 575px) {
     .hero-title {
+        text-align: center;
         font-size: 2.2rem;
     }
 
@@ -7593,7 +7594,7 @@ img {
         /* NAV */
         .nav-lx{position:fixed;top:0;left:0;right:0;z-index:1000;padding:20px 0;background:transparent;border-bottom:1px solid transparent;transition:var(--ease)}
         .nav-lx.s{background:rgba(10,10,10,.96);backdrop-filter:blur(20px);border-bottom-color:var(--gray);padding:14px 0}
-        .n-brand{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;letter-spacing:.25em;color:var(--gold)}
+        .n-brand{font-family:'Playfair Display',serif;font-size:3.6rem;font-weight:700;letter-spacing:.25em;color:var(--gold)}
         .n-link{color:rgba(229,229,229,.75);font-size:.82rem;font-weight:500;padding:8px 14px;border-radius:var(--r);transition:var(--ease)}
         .n-link:hover,.n-link.a{color:var(--white)}
         .n-link.a{color:var(--gold)}
@@ -7979,7 +7980,7 @@ img {
             /* --- NAV --- */
             .nav-lx{padding:14px 0}
             .nav-lx.s{padding:12px 0}
-            .n-brand{font-size:1.3rem;letter-spacing:.15em}
+            .n-brand{font-size:2.2rem;letter-spacing:.15em}
 
             /* --- HERO --- */
             .hero{padding:100px 0 56px;min-height:auto}

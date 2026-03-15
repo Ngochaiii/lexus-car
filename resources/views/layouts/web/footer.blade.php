@@ -22,6 +22,8 @@
                       <li><a href="#">ES Series</a></li>
                       <li><a href="#">LS Series</a></li>
                       <li><a href="#">LX Series</a></li>
+                      <li><a href="#">LM Series</a></li>
+                      <li><a href="#">GX Series</a></li>
                   </ul>
               </div>
               <div>
@@ -40,7 +42,7 @@
                       <li><a href="#">Tìm đại lý</a></li>
                       <li><a href="#">Đặt lịch lái thử</a></li>
                       <li><a href="#">Báo giá</a></li>
-                      <li><a href="#">Hotline: 1900 1234 56</a></li>
+                      <li><a href="#">Hotline: 0962896582</a></li>
                   </ul>
               </div>
           </div>

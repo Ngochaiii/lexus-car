@@ -10,8 +10,7 @@
                                 class="bi bi-patch-check-fill"></i></div>
                         <div>
                             <div class="trust-label">Nhà phân phối</div>
-                            <div class="trust-value">Chính hãng Toyota Motor
-                                VN</div>
+                            <div class="trust-value">Chính hãng Lexus Thăng Long</div>
                         </div>
                     </div>
                     <div class="trust-divider"></div>
@@ -20,7 +19,7 @@
                                 class="bi bi-shield-fill-check"></i></div>
                         <div>
                             <div class="trust-label">Bảo hành</div>
-                            <div class="trust-value">5 năm / 150.000 km</div>
+                            <div class="trust-value">5 năm / 100.000 km</div>
                         </div>
                     </div>
                     <div class="trust-divider"></div>
@@ -29,7 +28,7 @@
                                 class="bi bi-headset"></i></div>
                         <div>
                             <div class="trust-label">Hỗ trợ cứu hộ</div>
-                            <div class="trust-value">24/7 Toàn quốc</div>
+                            <div class="trust-value">online-24/7</div>
                         </div>
                     </div>
                     <div class="trust-divider"></div>
@@ -38,7 +37,7 @@
                                 class="bi bi-geo-alt-fill"></i></div>
                         <div>
                             <div class="trust-label">Hệ thống đại lý</div>
-                            <div class="trust-value">25+ tỉnh thành</div>
+                            <div class="trust-value">Hà Nội & HCM</div>
                         </div>
                     </div>
                     <div class="trust-divider"></div>
@@ -61,8 +60,7 @@
                 <div class="row align-items-end mb-5">
                     <div class="col-lg-6">
                         <h2 class="section-title">Khám Phá Các Dòng Xe</h2>
-                        <p class="section-subtitle">Từ sedan sang trọng đến SUV
-                            mạnh mẽ, Lexus mang đến trải nghiệm lái xe đỉnh cao
+                        <p class="section-subtitle">Lexus mang đến trải nghiệm lái xe đỉnh cao
                             cho mọi phong cách sống.</p>
                     </div>
                     <div class="col-lg-6 text-lg-end">
@@ -75,7 +73,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=500&q=80"
+                                    src="{{asset('web/assets/images/gallery-ext-03-d.webp')}}"
                                     alt="Lexus RX 500h F SPORT">
                                 <span class="model-badge">F SPORT</span>
                                 <button class="model-fav"><i
@@ -89,17 +87,17 @@
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
-                                        371 HP</span>
+                                        270 HP</span>
                                     <span class="model-spec"><i
                                             class="bi bi-speedometer2"></i>
-                                        5.9s</span>
+                                        6.2s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-fuel-pump"></i>
                                         Hybrid</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">4.310.000.000đ</div>
+                                        class="model-price">4.940.000.000đ</div>
                                     <a href="lexus-rx500h-detail.html"
                                         class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
@@ -111,7 +109,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=500&q=80"
+                                    src="{{asset('web/assets/images/Lexus NX 350h.jpeg')}}"
                                     alt="Lexus NX 350h Hybrid">
                                 <span class="model-badge hybrid">Hybrid</span>
                                 <button class="model-fav"><i
@@ -135,7 +133,7 @@
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">3.160.000.000đ</div>
+                                        class="model-price">3.270.000.000đ</div>
                                     <a href="#" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
@@ -146,7 +144,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=500&q=80"
+                                    src="{{asset('web/assets/images/Lexus-ES-300h-2025-co-nhung-dong-xe-nao-doi-thu-cung-phan-khuc.jpg')}}"
                                     alt="Lexus ES 300h Ultra Luxury">
                                 <span class="model-badge new">Mới</span>
                                 <button class="model-fav"><i
@@ -159,17 +157,17 @@
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
-                                        218 HP</span>
+                                        295 HP</span>
                                     <span class="model-spec"><i
                                             class="bi bi-speedometer2"></i>
-                                        8.1s</span>
+                                        6.7s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-fuel-pump"></i>
                                         Hybrid</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">2.990.000.000đ</div>
+                                        class="model-price">3.140.000.000đ</div>
                                     <a href="#" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
@@ -180,7 +178,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="https://images.unsplash.com/photo-1549317661-bd32c8ce0afe?w=500&q=80"
+                                    src="{{asset('web/assets/images/lx600-vip-overview.jpg')}}"
                                     alt="Lexus LX 600 VIP">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -195,14 +193,14 @@
                                         409 HP</span>
                                     <span class="model-spec"><i
                                             class="bi bi-speedometer2"></i>
-                                        6.9s</span>
+                                        7s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-fuel-pump"></i>
                                         Petrol</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">9.350.000.000đ</div>
+                                        class="model-price">9.700.000.000đ</div>
                                     <a href="#" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
@@ -213,7 +211,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500&q=80"
+                                    src="{{asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg')}}"
                                     alt="Lexus LS 500h Flagship">
                                 <span class="model-badge">Flagship</span>
                                 <button class="model-fav"><i
@@ -226,17 +224,17 @@
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
-                                        359 HP</span>
+                                        295 HP</span>
                                     <span class="model-spec"><i
                                             class="bi bi-speedometer2"></i>
-                                        5.4s</span>
+                                        6.7s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-fuel-pump"></i>
                                         Hybrid</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">7.830.000.000đ</div>
+                                        class="model-price">8.030.000.000đ</div>
                                     <a href="#" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
@@ -247,7 +245,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=500&q=80"
+                                    src="{{asset('web/assets/images/640-lexus-rx350h-ra-mat.jpg')}}"
                                     alt="Lexus UX 300e Electric">
                                 <span class="model-badge hybrid">Electric</span>
                                 <button class="model-fav"><i
@@ -255,7 +253,7 @@
                             </div>
                             <div class="model-card-body">
                                 <div class="model-series">Crossover Series</div>
-                                <h3 class="model-name">Lexus UX 300e</h3>
+                                <h3 class="model-name">Lexus RX 350h</h3>
                                 <div class="model-variant">Full Electric</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
@@ -270,7 +268,7 @@
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">2.050.000.000đ</div>
+                                        class="model-price">3.500.000.000đ</div>
                                     <a href="#" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
@@ -281,7 +279,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=500&q=80"
+                                    src="{{asset('web/assets/images/403491-2024-lexus-gx.jpg')}}"
                                     alt="Lexus GX 550 2024">
                                 <span class="model-badge new">Mới 2024</span>
                                 <button class="model-fav"><i
@@ -297,14 +295,14 @@
                                         349 HP</span>
                                     <span class="model-spec"><i
                                             class="bi bi-speedometer2"></i>
-                                        6.8s</span>
+                                        7s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-fuel-pump"></i>
                                         Turbo</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">6.200.000.000đ</div>
+                                        class="model-price">6.450.000.000đ</div>
                                     <a href="#" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
@@ -315,7 +313,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=500&q=80"
+                                    src="{{asset('web/assets/images/lexus-rx-350-overview-mgp.jpg')}}"
                                     alt="Lexus LC 500 Coupe">
                                 <span class="model-badge">Coupe</span>
                                 <button class="model-fav"><i
@@ -323,22 +321,124 @@
                             </div>
                             <div class="model-card-body">
                                 <div class="model-series">Coupe Series</div>
-                                <h3 class="model-name">Lexus LC 500</h3>
+                                <h3 class="model-name">Lexus RX 350</h3>
                                 <div class="model-variant">Convertible</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
-                                        471 HP</span>
+                                        275 HP</span>
                                     <span class="model-spec"><i
                                             class="bi bi-speedometer2"></i>
-                                        4.4s</span>
+                                        7.6s</span>
+                                    <span class="model-spec"><i
+                                            class="bi bi-fuel-pump"></i>
+                                        SUV</span>
+                                </div>
+                                <div class="model-footer">
+                                    <div
+                                        class="model-price">4.330.000.000đ</div>
+                                    <a href="#" class="model-link">Chi tiết <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="model-card">
+                            <div class="model-card-img">
+                                <img
+                                    src="{{asset('web/assets/images/z7621162084592_597fb5e50862a85a5799e6063f1fe472.jpg')}}"
+                                    alt="Lexus UX 300e Electric">
+                                <span class="model-badge hybrid">Electric</span>
+                                <button class="model-fav"><i
+                                        class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="model-card-body">
+                                <div class="model-series">Crossover Series</div>
+                                <h3 class="model-name">Lexus NX 350h</h3>
+                                <div class="model-variant">Full Electric</div>
+                                <div class="model-specs">
+                                    <span class="model-spec"><i
+                                            class="bi bi-lightning-charge"></i>
+                                        288 HP</span>
+                                    <span class="model-spec"><i
+                                            class="bi bi-speedometer2"></i>
+                                        7.7s</span>
+                                    <span class="model-spec"><i
+                                            class="bi bi-ev-station"></i>
+                                        Hybird+Electric</span>
+                                </div>
+                                <div class="model-footer">
+                                    <div
+                                        class="model-price">3.270.000.000đ</div>
+                                    <a href="#" class="model-link">Chi tiết <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="model-card">
+                            <div class="model-card-img">
+                                <img
+                                    src="{{asset('web/assets/images/z7621162805885_c3e3469b52ae6daa20b3d3f1fbf7d3cd.jpg')}}"
+                                    alt="Lexus GX 550 2024">
+                                <span class="model-badge new">Mới 2024</span>
+                                <button class="model-fav"><i
+                                        class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="model-card-body">
+                                <div class="model-series">SUV Series</div>
+                                <h3 class="model-name">Lexus ES 250</h3>
+                                <div class="model-variant">Overtrail+</div>
+                                <div class="model-specs">
+                                    <span class="model-spec"><i
+                                            class="bi bi-lightning-charge"></i>
+                                        204 HP</span>
+                                    <span class="model-spec"><i
+                                            class="bi bi-speedometer2"></i>
+                                        9.1s</span>
+                                    <span class="model-spec"><i
+                                            class="bi bi-fuel-pump"></i>
+                                        Sedan</span>
+                                </div>
+                                <div class="model-footer">
+                                    <div
+                                        class="model-price">2.360.000.000đ</div>
+                                    <a href="#" class="model-link">Chi tiết <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="model-card">
+                            <div class="model-card-img">
+                                <img
+                                    src="{{asset('web/assets/images/z7621163418898_6dfc97686a654b321c1dba840e807cf5.jpg')}}"
+                                    alt="Lexus LC 500 Coupe">
+                                <span class="model-badge">Coupe</span>
+                                <button class="model-fav"><i
+                                        class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="model-card-body">
+                                <div class="model-series">Coupe Series</div>
+                                <h3 class="model-name">Lexus LM 500h</h3>
+                                <div class="model-variant">Convertible</div>
+                                <div class="model-specs">
+                                    <span class="model-spec"><i
+                                            class="bi bi-lightning-charge"></i>
+                                        275 HP</span>
+                                    <span class="model-spec"><i
+                                            class="bi bi-speedometer2"></i>
+                                        6.9s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-fuel-pump"></i>
                                         V8</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">8.660.000.000đ</div>
+                                        class="model-price">7.530.000.000đ</div>
                                     <a href="#" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
@@ -356,24 +456,14 @@
                     <div class="col-lg-6">
                         <div class="featured-content">
                             <div class="featured-badge">Lexus Care</div>
-                            <h2 class="featured-title">Dịch Vụ <span
-                                    class="highlight">Đẳng Cấp</span> Cho Những
-                                Trải Nghiệm Hoàn Hảo</h2>
-                            <p class="featured-desc">Chúng tôi cam kết mang đến
-                                cho khách hàng những dịch vụ tốt nhất, từ bảo
-                                dưỡng định kỳ đến các gói chăm sóc toàn
-                                diện.</p>
+                            <h2 class="featured-title">Đội ngũ <span
+                                    class="highlight">Chuyên nghiệp</span> Tận tâm trong từng chi tiết</h2>
+                            <p class="featured-desc">Chúng tôi tự hào sở hữu đội ngũ cán bộ nhân viên giàu kinh nghiệm, luôn đặt khách hàng làm trung tâm và không ngừng nâng cao chất lượng phục vụ.</p>
                             <ul class="featured-list">
-                                <li><i class="bi bi-check-circle-fill"></i> Bảo
-                                    hành chính hãng lên đến 5 năm hoặc 150.000
-                                    km</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Dịch
-                                    vụ cứu hộ 24/7 trên toàn quốc</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Hệ
-                                    thống đại lý và trạm dịch vụ phủ sóng 25
-                                    tỉnh thành</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Phụ
-                                    tùng chính hãng 100%</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Đội ngũ kỹ thuật viên được đào tạo bài bản theo tiêu chuẩn quốc tế</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Nhân viên tư vấn tận tâm, chuyên nghiệp và luôn sẵn sàng hỗ trợ khách hàng</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Văn hóa làm việc đề cao trách nhiệm, sự chính trực và tinh thần phục vụ</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Không ngừng học hỏi và nâng cao kỹ năng để mang đến trải nghiệm tốt nhất cho khách hàng</li>
                             </ul>
                             <a href="#" class="btn-primary-lexus">Tìm hiểu thêm
                                 <i class="bi bi-arrow-right"></i></a>
@@ -382,7 +472,7 @@
                     <div class="col-lg-6">
                         <div class="featured-image">
                             <img
-                                src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500&q=80"
+                                src="{{asset('web/assets/images/z7621772975194_fc0989ca9b2bbbc48645e6346baca801.jpg')}}"
                                 alt="Lexus Service Center Vietnam">
                             <div class="featured-play"><i
                                     class="bi bi-play-fill"></i></div>
@@ -574,7 +664,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="news-card">
                             <div class="news-image"><img
-                                    src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500&q=80"
+                                    src="{{asset('web/assets/images/2023RX500hFSPORTPerformanceAWDCopper3scaledjpeg-1676880266.jpg')}}"
                                     alt="Lexus RX 500h ra mắt Việt Nam"></div>
                             <div class="news-body">
                                 <span class="news-tag">Ra mắt</span>
@@ -590,7 +680,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="news-card">
                             <div class="news-image"><img
-                                    src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500&q=80"
+                                    src="{{asset('web/assets/images/2.webp')}}"
                                     alt="Công nghệ DIRECT4 Lexus"></div>
                             <div class="news-body">
                                 <span class="news-tag">Công nghệ</span>
@@ -605,7 +695,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="news-card">
                             <div class="news-image"><img
-                                    src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=500&q=80"
+                                    src="{{asset('web/assets/images/lx600-urban-gallery-ext-06-d.jpg')}}"
                                     alt="Lexus lái thử toàn quốc 2026"></div>
                             <div class="news-body">
                                 <span class="news-tag">Sự kiện</span>
@@ -630,7 +720,7 @@
       "@type": "FAQPage",
       "mainEntity": [
         {"@type":"Question","name":"Xe Lexus có bảo hành bao nhiêu năm?","acceptedAnswer":{"@type":"Answer","text":"Lexus cung cấp bảo hành chính hãng lên đến 5 năm hoặc 150.000 km tùy điều kiện nào đến trước, bao gồm cả bảo hành pin hybrid 8 năm."}},
-        {"@type":"Question","name":"Làm thế nào để đặt lịch lái thử Lexus?","acceptedAnswer":{"@type":"Answer","text":"Bạn có thể đặt lịch lái thử trực tiếp trên website, gọi hotline 1900 1234 56, hoặc đến trực tiếp bất kỳ đại lý Lexus nào trong hệ thống 25+ đại lý toàn quốc."}},
+        {"@type":"Question","name":"Làm thế nào để đặt lịch lái thử Lexus?","acceptedAnswer":{"@type":"Answer","text":"Bạn có thể đặt lịch lái thử trực tiếp trên website, gọi hotline 0962896582, hoặc đến trực tiếp bất kỳ đại lý Lexus nào trong hệ thống 25+ đại lý toàn quốc."}},
         {"@type":"Question","name":"Lexus Vietnam có hỗ trợ tài chính mua xe không?","acceptedAnswer":{"@type":"Answer","text":"Có, Lexus Vietnam hợp tác với nhiều ngân hàng và công ty tài chính uy tín, hỗ trợ vay mua xe với lãi suất ưu đãi, trả góp linh hoạt từ 12 đến 84 tháng."}},
         {"@type":"Question","name":"Thời gian bảo dưỡng định kỳ xe Lexus là bao lâu?","acceptedAnswer":{"@type":"Answer","text":"Xe Lexus cần bảo dưỡng định kỳ mỗi 10.000 km hoặc 6 tháng một lần. Thời gian thực hiện tại xưởng thường từ 1-2 giờ cho bảo dưỡng tiêu chuẩn."}},
         {"@type":"Question","name":"Lexus có dịch vụ cứu hộ 24/7 không?","acceptedAnswer":{"@type":"Answer","text":"Có. Lexus Roadside Assistance hoạt động 24/7 trên toàn quốc. Khách hàng chỉ cần gọi hotline để được hỗ trợ kéo xe, thay lốp, hay cứu pin ngay tại chỗ."}}
@@ -745,15 +835,12 @@
                     <!-- Sidebar contact -->
                     <div class="faq-sidebar">
                         <h4>Cần tư vấn thêm?</h4>
-                        <p>Đội ngũ chuyên gia Lexus Vietnam luôn sẵn sàng hỗ trợ
-                            bạn 24/7 qua nhiều kênh liên hệ.</p>
                         <div class="faq-contact-items">
                             <div class="faq-contact-item">
                                 <i class="bi bi-telephone-fill"></i>
                                 <div>
-                                    <div class="fci-label">Hotline miễn
-                                        phí</div>
-                                    <div class="fci-val">1900 1234 56</div>
+                                    <div class="fci-label">Hotline tư vấn</div>
+                                    <div class="fci-val">0962896582</div>
                                 </div>
                             </div>
                             <div class="faq-contact-item">
