@@ -48,7 +48,7 @@
                     <div class="col-lg-6">
                         <div class="hero-image">
                             <img
-                                src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=1000&q=85"
+                                src="{{asset('web/assets/images/image-20210204180128-1.jpeg')}}"
                                 alt="Lexus RX 500h F Sport — Xe SUV Hybrid cao cấp">
                         </div>
                     </div>
