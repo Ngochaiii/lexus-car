@@ -619,7 +619,7 @@
                 <div class="testimonial-card">
                     <div class="testimonial-image">
                         <img
-                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+                            src="{{asset('web/assets/images/605698121_865598073103981_4020906297508280360_n.jpg')}}"
                             alt="Nguyễn Minh Đức — Khách hàng Lexus RX 500h">
                     </div>
                     <div class="testimonial-content">
