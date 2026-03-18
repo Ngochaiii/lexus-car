@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('web.home');
 
-Route::get('/lexus-rx', [ProductsController::class, 'index'])->name('products.index');
+Route::get('/lexus-rx', [ProductsController::class, 'index'])->name('products.rx');
 
 Route::get('/technolory-lexus', [TechnogoryLexusController::class, 'index'])->name('tech_car.index');
 

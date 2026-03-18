@@ -98,7 +98,7 @@
                                 <div class="model-footer">
                                     <div
                                         class="model-price">4.940.000.000đ</div>
-                                    <a href="lexus-rx500h-detail.html"
+                                    <a href="{{route('products.rx')}}"
                                         class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
@@ -269,7 +269,7 @@
                                 <div class="model-footer">
                                     <div
                                         class="model-price">3.500.000.000đ</div>
-                                    <a href="#" class="model-link">Chi tiết <i
+                                    <a href="{{route('products.rx')}}" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -337,7 +337,7 @@
                                 <div class="model-footer">
                                     <div
                                         class="model-price">4.330.000.000đ</div>
-                                    <a href="#" class="model-link">Chi tiết <i
+                                    <a href="{{route('products.rx')}}" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>
