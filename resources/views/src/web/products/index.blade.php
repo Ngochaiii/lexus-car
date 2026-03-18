@@ -358,26 +358,28 @@
                     cung cấp nhiều tùy chọn mâm xe từ 18 đến 21 inch với các kiểu thiết kế phù hợp cho từng phiên bản.</p>
                 <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=70"
+                        <img src="{{asset('web/assets/images/rx/mam-xe.webp')}}"
                             alt="Mâm 21 inch Matte Black">
-                        <div class="item-card-label">21" Matte Black<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">F SPORT</span></div>
+                        <div class="item-card-label">Mâm xe hợp kim nhôm 21inch<br><span
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX 350 PREMIUM</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&q=70"
+                        <img src="{{asset('web/assets/images/rx/mam-xe2.jpg')}}"
                             alt="Mâm 20 inch Nhôm đánh bóng">
-                        <div class="item-card-label">20" Nhôm đánh bóng</div>
+                        <div class="item-card-label">Mâm xe hợp kim nhôm 21inch <br><span
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX 350h LUXURY</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=400&q=70"
+                        <img src="{{asset('web/assets/images/rx/mam-xe3.jpg')}}"
                             alt="Mâm 18 inch tiêu chuẩn">
-                        <div class="item-card-label">18" Tiêu chuẩn</div>
+                        <div class="item-card-label">Mâm xe hợp kim nhôm 21inch <br><span
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX 500h F SPORT PERFORMANCE</span></div>
                     </div>
-                    <div class="item-card" onclick="selectCard(this)">
+                    {{-- <div class="item-card" onclick="selectCard(this)">
                         <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=400&q=70"
                             alt="Mâm 19 inch Sport">
                         <div class="item-card-label">19" Sport Design</div>
-                    </div>
+                    </div> --}}
                 </div>
                 <div
                     style="margin-top:16px;background:var(--lexus-dark-2);border:1px solid var(--lexus-gray);border-radius:var(--radius-lg);padding:18px 22px;">
@@ -392,22 +394,46 @@
             <div class="colour-pane" id="ct-seat">
                 <p style="font-size:0.92rem;color:var(--lexus-text-muted);max-width:600px;margin-bottom:32px;">Ghế bọc da
                     cao cấp với nhiều lựa chọn màu sắc và chất liệu, mang lại sự sang trọng và thoải mái tối đa.</p>
-                <div class="item-grid-3">
+                <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=70"
+                        <img src="{{asset('web/assets/images/rx/ghexe1.jpeg')}}"
                             alt="Da đen đục lỗ">
-                        <div class="item-card-label">Da đen đục lỗ<br><span
+                        <div class="item-card-label">Màu nâu Hazel<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">F SPORT độc quyền</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=70"
+                        <img src="{{asset('web/assets/images/rx/ghexe2.jpg')}}"
                             alt="Da kem cao cấp">
-                        <div class="item-card-label">Da kem cao cấp</div>
+                        <div class="item-card-label">Trắng Solis White</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&q=70"
+                        <img src="{{asset('web/assets/images/rx/ghexe.jpg')}}"
                             alt="Da nâu Saddle Tan">
-                        <div class="item-card-label">Da nâu Saddle Tan</div>
+                        <div class="item-card-label">Đen Black</div>
+                    </div>
+                    <div class="item-card" onclick="selectCard(this)">
+                        <img src="{{asset('web/assets/images/rx/ghexe3.jpg')}}"
+                            alt="Da nâu Saddle Tan">
+                        <div class="item-card-label">Đỏ Dank ROSE</div>
+                    </div>
+                </div>
+                <div class="item-grid-3">
+                    <div class="item-card active" onclick="selectCard(this)">
+                        <img src="{{asset('web/assets/images/rx/chatlieughedasemi.webp')}}"
+                            alt="Da đen đục lỗ">
+                        <div class="item-card-label">Da Semi-aniline<br><span
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX 350h LUXURY</span></div>
+                    </div>
+                    <div class="item-card" onclick="selectCard(this)">
+                        <img src="{{asset('web/assets/images/rx/chatlieughedasmooth.jpg')}}"
+                            alt="Da kem cao cấp">
+                        <div class="item-card-label">Da Smooth<br><span
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX 350 PREMIUM vàRX 350h PREMIUM </span></div>
+                    </div>
+                    <div class="item-card" onclick="selectCard(this)">
+                        <img src="{{asset('web/assets/images/rx/ghexe.jpg')}}"
+                            alt="Da nâu Saddle Tan">
+                        <div class="item-card-label">Đen Black</div>
                     </div>
                 </div>
             </div>
@@ -480,7 +506,7 @@
             <div class="variant-pane active" id="vt-350">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{asset('web/assets/images/rx/mauxam.webp')}}"
+                        <img src="{{asset('web/assets/images/rx/dongco24l.jpg')}}"
                             alt="Động cơ RX 350 2.4L Turbo AWD">
                         <div class="powertrain-badge">2.4L-T AWD</div>
                     </div>
@@ -529,7 +555,7 @@
             <div class="variant-pane" id="vt-350h">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{asset('web/assets/images/rx/maudo.jpg')}}"
+                        <img src="{{asset('web/assets/images/rx/2,5l.jpg')}}"
                             alt="Hệ thống Hybrid RX 350h 2.5L HEV">
                         <div class="powertrain-badge">2.5L HEV E-Four</div>
                     </div>
@@ -581,10 +607,7 @@
         <div class="container">
             <div class="section-tag">Nền tảng kỹ thuật</div>
             <h2 class="section-title">Khung Gầm & Hệ Thống Treo</h2>
-            <p style="color:var(--lexus-text-muted);max-width:700px;margin-bottom:0;">Nền tảng GK-A độ cứng cao cùng hệ
-                thống treo trước MacPherson — đa liên kết phía sau, truyền lực dẫn động xuống mặt đường một cách hiệu quả và
-                chính xác.</p>
-
+            <p style="color:var(--lexus-text-muted);max-width:700px;margin-bottom:0;">Hệ thống treo trước MacPherson và hệ thống treo sau liên kết đa điểm truyền lực dẫn động xuống mặt đường một cách hiệu quả, đồng thời mang đến khả năng thay đổi liền mạch tư thế thân xe.</p>
             <div class="chassis-grid">
                 <div class="chassis-images">
                     <div class="chassis-img-card">
@@ -616,17 +639,11 @@
                     </div>
                     <div class="chassis-info-box mt-3">
                         <h4 class="chassis-info-title"><i class="bi bi-shield-check"></i>Thân xe độ cứng cao</h4>
-                        <p class="chassis-info-desc">Phần phía sau của khung gầm GK-A được thiết kế đặc biệt để phù hợp với
-                            hệ thống treo liên kết đa điểm. Khung thân sau cung cấp độ chịu xoắn cao hỗ trợ chắc chắn hệ
-                            thống treo trong quá trình tăng tốc, giảm tốc và vào cua. Bọt xốp độ cứng cao được bố trí tối ưu
-                            xung quanh cửa hậu giúp gia cố hiệu quả đồng thời tạo nên thân xe nhẹ với độ cứng cao.</p>
+                        <p class="chassis-info-desc">Phần phía sau của khung gầm GK-A được thiết kế đặc biệt để phù hợp với hệ thống treo liên kết đa điểm</p>
                     </div>
                     <div class="chassis-info-box mt-2">
                         <h4 class="chassis-info-title"><i class="bi bi-speedometer2"></i>Hệ thống treo / giảm xóc</h4>
-                        <p class="chassis-info-desc">Hệ thống treo trước MacPherson và hệ thống treo sau liên kết đa điểm
-                            truyền lực dẫn động xuống mặt đường một cách hiệu quả, đồng thời mang đến khả năng thay đổi liền
-                            mạch tư thế thân xe. Hệ thống treo thích ứng AVS điện tử tuyến tính điều chỉnh xuất sắc phản ứng
-                            lực giảm chấn, nhờ đó làm sắc nét hiệu suất lái và đạt mức êm ái ấn tượng.</p>
+                        <p class="chassis-info-desc">Hệ thống treo trước MacPherson và hệ thống treo sau liên kết đa điểm truyền lực dẫn động xuống mặt đường một cách hiệu quả, đồng thời mang đến khả năng thay đổi liền mạch tư thế thân xe.</p>
                     </div>
                     <div class="chassis-info-box mt-2">
                         <h4 class="chassis-info-title"><i class="bi bi-wind"></i>Hiệu suất khí động học</h4>
@@ -644,9 +661,7 @@
         <div class="container">
             <div class="section-tag">Mỹ học & thiết kế</div>
             <h2 class="section-title">Thiết Kế RX Thế Hệ 5</h2>
-            <p class="section-desc">Từ tỷ lệ ngoại thất đột phá đến cabin đặt người lái làm trung tâm — mỗi đường nét đều
-                được tạo ra với mục đích và ý nghĩa.</p>
-
+            <p class="section-desc">Sở hữu chiều dài cơ sở lớn, trọng tâm thấp, chiều rộng cơ sở trước sau lớn là nền tảng tuyệt vời để tạo nên một phong cách thiết kế đột phá, nhấn mạnh vào khả năng vận hành hứng khởi cùng trải nghiệm lực kéo ấn tượng đến từ hệ thống dẫn động 4 bánh trực tiếp Direct4</p>
             <div class="design-tabs">
                 <button class="design-tab active" onclick="switchDesign(this,'dp-exterior')">Ngoại Thất</button>
                 <button class="design-tab" onclick="switchDesign(this,'dp-interior')">Nội Thất</button>
@@ -937,7 +952,7 @@
         <div class="container">
             <div class="section-tag">An toàn & tiện nghi</div>
             <h2 class="section-title">Công Nghệ Tiên Phong</h2>
-            <p class="section-desc">RX 500h F SPORT PERFORMANCE được trang bị hàng loạt công nghệ an toàn chủ động tiên
+            <p class="section-desc">RX được trang bị hàng loạt công nghệ an toàn chủ động tiên
                 tiến nhất từ Lexus Safety System+.</p>
 
             <!-- An toàn chủ động -->
@@ -951,86 +966,95 @@
                 <div class="tech-grid">
                     <div class="tech-item">
                         <div class="ti-content">
+                            <a href="{{route('tech_car.index')}}">
                             <div class="feature-thumb-img">
-                                <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=300&q=70"
+                                <img src="{{asset('web/assets/images/rx/RRCC.webp')}}"
                                     alt="Front Trim">
                             </div>
                             <div class="ti-name">Điều Khiển Hành Trình Thích Ứng</div>
                             <div class="ti-abbr">DRCC — Dynamic Radar Cruise Control (ở mọi tốc độ)</div>
                             <div class="ti-desc">Tự động duy trì khoảng cách an toàn với xe phía trước ở mọi dải tốc độ, kể
                                 cả dừng hẳn trong kẹt xe.</div>
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="ti-content">
+                            <a href="{{route('tech_car.index')}}">
                             <div class="feature-thumb-img">
-                                <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=300&q=70"
+                                <img src="{{asset('web/assets/images/rx/LTA.webp')}}"
                                     alt="Front Trim">
                             </div>
                             <div class="ti-name">Hỗ Trợ Theo Dõi Làn Đường</div>
                             <div class="ti-abbr">LTA — Lane Tracing Assist</div>
                             <div class="ti-desc">Hỗ trợ giữ xe đi đúng giữa làn đường, giảm mệt mỏi khi lái đường dài trên
                                 cao tốc.</div>
+                                </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="ti-content">
+                            <a href="{{route('tech_car.index')}}">
                             <div class="feature-thumb-img">
-                                <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=300&q=70"
+                                <img src="{{asset('web/assets/images/rx/AHS.jpg')}}"
                                     alt="Front Trim">
                             </div>
                             <div class="ti-name">Đèn Trước Tự Động Thích Ứng</div>
                             <div class="ti-abbr">BladeScan AHS — Công nghệ quét tốc độ cao</div>
                             <div class="ti-desc">Tự động điều chỉnh vùng chiếu sáng, tránh chói mắt xe đối diện trong khi
-                                chiếu sáng tối đa vùng ngoài.</div>
+                                chiếu sáng tối đa vùng ngoài.</div> </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="ti-content">
+                            <a href="{{route('tech_car.index')}}">
                             <div class="feature-thumb-img">
-                                <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=300&q=70"
+                                <img src="{{asset('web/assets/images/rx/AHB.webp')}}"
                                     alt="Front Trim">
                             </div>
                             <div class="ti-name">Đèn Pha Tự Động</div>
                             <div class="ti-abbr">AHB — Automatic High Beam</div>
                             <div class="ti-desc">Tự động chuyển đổi giữa đèn pha và đèn cốt theo điều kiện giao thông,
-                                không cần tác động của người lái.</div>
+                                không cần tác động của người lái.</div> </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="ti-content">
+                            <a href="{{route('tech_car.index')}}">
                             <div class="feature-thumb-img">
-                                <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=300&q=70"
+                                <img src="{{asset('web/assets/images/rx/BSM.webp')}}"
                                     alt="Front Trim">
                             </div>
                             <div class="ti-name">Cảnh Báo Điểm Mù</div>
                             <div class="ti-abbr">BSM — Blind Spot Monitor</div>
                             <div class="ti-desc">Cảnh báo bằng ánh sáng và âm thanh khi có phương tiện trong vùng điểm mù
-                                khi chuyển làn đường.</div>
+                                khi chuyển làn đường.</div> </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="ti-content">
+                            <a href="{{route('tech_car.index')}}">
                             <div class="feature-thumb-img">
-                                <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=300&q=70"
+                                <img src="{{asset('web/assets/images/rx/SEA.webp')}}"
                                     alt="Front Trim">
                             </div>
                             <div class="ti-name">Hỗ Trợ Ra Khỏi Xe An Toàn</div>
                             <div class="ti-abbr">SEA — Safe Exit Assist (kiểm soát mở cửa)</div>
                             <div class="ti-desc">Cảnh báo và kiểm soát cửa xe khi phát hiện phương tiện/xe đạp đang đến gần
-                                từ phía sau.</div>
+                                từ phía sau.</div> </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="ti-content">
+                            <a href="{{route('tech_car.index')}}">
                             <div class="feature-thumb-img">
-                                <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=300&q=70"
+                                <img src="{{asset('web/assets/images/rx/PKSB.webp')}}"
                                     alt="Front Trim">
                             </div>
                             <div class="ti-name">Phanh An Toàn Khi Đỗ</div>
                             <div class="ti-abbr">PKSB — Parking Support Brake</div>
                             <div class="ti-desc">Tự động phanh khi phát hiện vật cản trong quá trình đỗ xe tiến và lùi ở
-                                tốc độ thấp.</div>
+                                tốc độ thấp.</div> </a>
                         </div>
                     </div>
                 </div>
@@ -1187,7 +1211,7 @@
                 images: ['{{asset('web/assets/images/rx/ngoai-that.png')}}',
                     '{{asset('web/assets/images/rx/den1.jpg')}}',
                     '{{asset('web/assets/images/rx/den2.webp')}}',
-                    '{{asset('web/assets/images/rx/den3.png')}}',
+                    '{{asset('web/assets/images/rx/den3.jpg')}}',
                     '{{asset('web/assets/images/rx/ngoai-that.png')}}'
                 ]
             },
