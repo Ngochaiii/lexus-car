@@ -22,7 +22,7 @@
                                 <button class="gallery-action-btn" title="Chia sẻ"><i class="bi bi-share"></i></button>
                             </div>
                             <div class="gallery-main">
-                                <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=1000&q=85"
+                                <img src="{{asset('web/assets/images/rx/lexus-rx-black-line-edition.jpg')}}"
                                     alt="Lexus RX 500h F SPORT PERFORMANCE" id="mainImage">
                             </div>
                             <button class="gallery-nav prev" onclick="changeImage(-1)"><i
@@ -34,19 +34,19 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img
-                                    src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=300&q=60"
+                                    src="{{asset('web/assets/images/rx/anh-1.jpg')}}"
                                     alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img
-                                    src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=300&q=60"
+                                    src="{{asset('web/assets/images/rx/anh-2.webp')}}"
                                     alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img
-                                    src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?w=300&q=60"
+                                    src="{{asset('web/assets/images/rx/anh-4.jpg')}}"
                                     alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img
-                                    src="https://images.unsplash.com/photo-1619682817481-e994891cd1f5?w=300&q=60"
+                                    src="{{asset('web/assets/images/rx/anh-3.jpg')}}"
                                     alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(4,this)"><img
-                                    src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=300&q=60"
+                                    src="{{asset('web/assets/images/rx/anh-5.webp')}}"
                                     alt=""></div>
                         </div>
                     </div>
@@ -224,7 +224,7 @@
         <div class="container">
             <div class="intro-grid">
                 <div class="intro-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=900&q=85"
+                    <img src="{{asset('web/assets/images/rx/mauxam.webp')}}"
                         alt="Lexus RX thế hệ thứ 5 — Crossover hạng sang tiên phong từ 1998">
                     <div class="intro-year-badge">
                         <div class="iyb-year">1998</div>
@@ -286,7 +286,7 @@
             <div class="colour-pane active" id="ct-exterior">
                 <div class="ext-layout">
                     <div class="colour-preview-box">
-                        <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=700&q=85"
+                        <img src="{{asset('web/assets/images/rx/ngoai-that.png')}}"
                             alt="Lexus RX ngoại thất" id="extPreviewImg">
                         <div class="cpb-name" id="extPreviewName">Caviar Black</div>
                         <div class="cpb-code">Màu ngoại thất</div>
@@ -296,46 +296,46 @@
                             <label>Màu ngoại thất</label>
                             <div class="swatch-row">
                                 <div class="sw"
-                                    onclick="selectSwatch(this,'Sonic White','https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=700&q=85')"
+                                    onclick="selectSwatch(this,'Sonic White','{{asset('web/assets/images/rx/mautrang.jpg')}}')"
                                     style="--sw-color:#F5F5F5">
                                     <div class="sw-circle"></div>
-                                    <div class="sw-label">Sonic White</div>
+                                    <div class="sw-label">Màu trắng</div>
                                 </div>
                                 <div class="sw active"
-                                    onclick="selectSwatch(this,'Caviar Black','https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=700&q=85')"
+                                    onclick="selectSwatch(this,'Caviar Black','{{asset('web/assets/images/rx/ngoai-that.png')}}')"
                                     style="--sw-color:#1A1A1A">
                                     <div class="sw-circle"></div>
-                                    <div class="sw-label">Caviar Black</div>
+                                    <div class="sw-label">Màu đen</div>
                                 </div>
                                 <div class="sw"
-                                    onclick="selectSwatch(this,'Sonic Titanium','https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=700&q=85')"
+                                    onclick="selectSwatch(this,'Sonic Titanium','{{asset('web/assets/images/rx/mauxam.webp')}}')"
                                     style="--sw-color:#C0C0C0">
                                     <div class="sw-circle"></div>
-                                    <div class="sw-label">Sonic Titanium</div>
+                                    <div class="sw-label">Màu xám</div>
                                 </div>
                                 <div class="sw"
-                                    onclick="selectSwatch(this,'Matador Red Mica','https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=700&q=85')"
+                                    onclick="selectSwatch(this,'Matador Red Mica','{{asset('web/assets/images/rx/maudo.jpg')}}')"
                                     style="--sw-color:#8B0000">
                                     <div class="sw-circle"></div>
-                                    <div class="sw-label">Matador Red</div>
+                                    <div class="sw-label">Màu đỏ</div>
                                 </div>
                                 <div class="sw"
-                                    onclick="selectSwatch(this,'Nori Green Pearl','https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=700&q=85')"
+                                    onclick="selectSwatch(this,'Nori Green Pearl','{{asset('web/assets/images/rx/xanhduong.webp')}}')"
                                     style="--sw-color:#2F4F4F">
                                     <div class="sw-circle"></div>
-                                    <div class="sw-label">Nori Green</div>
+                                    <div class="sw-label">Màu xanh</div>
                                 </div>
                                 <div class="sw"
-                                    onclick="selectSwatch(this,'Copper Crest','https://images.unsplash.com/photo-1549317661-bd32c8ce0afe?w=700&q=85')"
+                                    onclick="selectSwatch(this,'Copper Crest','{{asset('web/assets/images/rx/cam.png')}}')"
                                     style="--sw-color:#B87333">
                                     <div class="sw-circle"></div>
-                                    <div class="sw-label">Copper Crest</div>
+                                    <div class="sw-label">Màu cam</div>
                                 </div>
                                 <div class="sw"
-                                    onclick="selectSwatch(this,'Deep Blue Mica','https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=700&q=85')"
+                                    onclick="selectSwatch(this,'Deep Blue Mica','{{asset('web/assets/images/rx/xanhblue.webp')}}')"
                                     style="--sw-color:#191970">
                                     <div class="sw-circle"></div>
-                                    <div class="sw-label">Deep Blue</div>
+                                    <div class="sw-label">Màu xanh dương</div>
                                 </div>
                             </div>
                         </div>
@@ -480,7 +480,7 @@
             <div class="variant-pane active" id="vt-350">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=900&q=80"
+                        <img src="{{asset('web/assets/images/rx/mauxam.webp')}}"
                             alt="Động cơ RX 350 2.4L Turbo AWD">
                         <div class="powertrain-badge">2.4L-T AWD</div>
                     </div>
@@ -529,7 +529,7 @@
             <div class="variant-pane" id="vt-350h">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=900&q=80"
+                        <img src="{{asset('web/assets/images/rx/maudo.jpg')}}"
                             alt="Hệ thống Hybrid RX 350h 2.5L HEV">
                         <div class="powertrain-badge">2.5L HEV E-Four</div>
                     </div>
@@ -1174,66 +1174,66 @@
         /* ===================== GALLERY BY COLOUR ===================== */
         const colorGalleries = {
             white: {
-                name: 'Sonic White',
-                images: ['https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1549317661-bd32c8ce0afe?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1000&q=85'
+                name: 'Màu trắng',
+                images: ['{{asset('web/assets/images/rx/mautrang.jpg')}}',
+                    '{{asset('web/assets/images/rx/trang1.jpg')}}',
+                    '{{asset('web/assets/images/rx/trang2.jpg')}}',
+                    '{{asset('web/assets/images/rx/trang3.jpg')}}',
+                    '{{asset('web/assets/images/rx/trang4.jpg')}}'
                 ]
             },
             black: {
-                name: 'Caviar Black',
-                images: ['https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1619682817481-e994891cd1f5?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=1000&q=85'
+                name: 'Màu đen',
+                images: ['{{asset('web/assets/images/rx/ngoai-that.png')}}',
+                    '{{asset('web/assets/images/rx/den1.jpg')}}',
+                    '{{asset('web/assets/images/rx/den2.webp')}}',
+                    '{{asset('web/assets/images/rx/den3.png')}}',
+                    '{{asset('web/assets/images/rx/ngoai-that.png')}}'
                 ]
             },
             silver: {
-                name: 'Sonic Titanium',
-                images: ['https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=1000&q=85'
+                name: 'Màu xám',
+                images: ['{{asset('web/assets/images/rx/mauxam.webp')}}',
+                    '{{asset('web/assets/images/rx/xam1.webp')}}',
+                    '{{asset('web/assets/images/rx/xam2.jpg')}}',
+                    '{{asset('web/assets/images/rx/mauxam.webp')}}',
+                    '{{asset('web/assets/images/rx/mauxam.webp')}}'
                 ]
             },
             red: {
-                name: 'Matador Red Mica',
-                images: ['https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd?w=1000&q=85'
+                name: 'Màu đỏ',
+                images: ['{{asset('web/assets/images/rx/maudo.jpg')}}',
+                    '{{asset('web/assets/images/rx/do1.webp')}}',
+                    '{{asset('web/assets/images/rx/do2.png')}}',
+                    '{{asset('web/assets/images/rx/do3.jpg')}}',
+                    '{{asset('web/assets/images/rx/maudo.jpg')}}'
                 ]
             },
             green: {
-                name: 'Nori Green Pearl',
-                images: ['https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1619682817481-e994891cd1f5?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=1000&q=85'
+                name: 'Xanh rêu',
+                images: ['{{asset('web/assets/images/rx/xanhduong.webp')}}',
+                    '{{asset('web/assets/images/rx/xanhr1.webp')}}',
+                    '{{asset('web/assets/images/rx/xanhr2.jpeg')}}',
+                    '{{asset('web/assets/images/rx/xanhr3.jpeg')}}',
+                    '{{asset('web/assets/images/rx/xanhduong.webp')}}'
                 ]
             },
             copper: {
-                name: 'Copper Crest',
-                images: ['https://images.unsplash.com/photo-1549317661-bd32c8ce0afe?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1000&q=85'
+                name: 'Màu đồng',
+                images: ['{{asset('web/assets/images/rx/cam.png')}}',
+                    '{{asset('web/assets/images/rx/cam1.jpg')}}',
+                    '{{asset('web/assets/images/rx/cam2.jpg')}}',
+                    '{{asset('web/assets/images/rx/cam3.jpg')}}',
+                    '{{asset('web/assets/images/rx/cam.png')}}'
                 ]
             },
             blue: {
-                name: 'Deep Blue Mica',
-                images: ['https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1619682817481-e994891cd1f5?w=1000&q=85',
-                    'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1000&q=85'
+                name: 'Màu xanh dương',
+                images: ['{{asset('web/assets/images/rx/xanhblue.webp')}}',
+                    '{{asset('web/assets/images/rx/xanhd1.png')}}',
+                    '{{asset('web/assets/images/rx/xanhd2.jpg')}}',
+                    '{{asset('web/assets/images/rx/xanhd3.webp')}}',
+                    '{{asset('web/assets/images/rx/xanhblue.webp')}}'
                 ]
             }
         };
