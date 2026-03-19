@@ -57,7 +57,7 @@
                     <div class="product-info">
                         <div class="product-badge"><i class="bi bi-lightning-charge-fill"></i> Hybrid Performance — DIRECT4
                         </div>
-                        <h1 class="product-title">Lexus RX 500h</h1>
+                        <h1 class="product-title">Lexus RX</h1>
                         <p class="product-subtitle">F SPORT PERFORMANCE 2.4L-T HEV DIRECT4</p>
 
                         <div class="product-rating">
@@ -1411,4 +1411,104 @@
                 revealObs.observe(el);
             });
     </script>
+    <script>
+    let selectedVersion = {};
+
+    function selectVersion(el, price, name) {
+        document.querySelectorAll('.version-option').forEach(v => v.classList.remove('active'));
+        el.classList.add('active');
+        selectedVersion = { price, name };
+    }
+
+    const active = document.querySelector('.version-option.active');
+    selectedVersion = {
+        price: active.querySelector('.vo-price').textContent,
+        name: active.querySelector('.vo-name').textContent
+    };
+
+    function showToast(success = true) {
+        const toast = document.createElement('div');
+        toast.className = 'toast-notify';
+        toast.innerHTML = success ? `
+            <div class="toast-icon">✅</div>
+            <div>
+                <div class="toast-title">Gửi thông tin thành công!</div>
+                <div class="toast-sub">Chúng tôi sẽ phản hồi bạn ngay trong thời gian sớm nhất.</div>
+            </div>
+        ` : `
+            <div class="toast-icon">❌</div>
+            <div>
+                <div class="toast-title">Gửi thất bại!</div>
+                <div class="toast-sub">Vui lòng thử lại sau.</div>
+            </div>
+        `;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.classList.add('show'), 10);
+        setTimeout(() => {
+            toast.classList.remove('show');
+            setTimeout(() => toast.remove(), 400);
+        }, 4000);
+    }
+
+    async function submitInquiry(event) {
+        event.preventDefault();
+
+        const btn = document.getElementById('submitBtn');
+        btn.disabled = true;
+
+        const form = event.target;
+        const data = {
+            name: form.querySelector('input[type="text"]').value,
+            phone: form.querySelector('input[type="tel"]').value,
+            email: form.querySelector('input[type="email"]').value || null,
+            note: form.querySelector('textarea').value || null,
+            car: selectedVersion.name,
+            price: selectedVersion.price,
+            url: window.location.href
+        };
+
+        try {
+            const res = await fetch('/api/customers', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+
+            if (res.ok) {
+                showToast(true);
+                form.reset();
+            } else {
+                showToast(false);
+            }
+        } catch (e) {
+            showToast(false);
+        } finally {
+            setTimeout(() => btn.disabled = false, 5000);
+        }
+    }
+</script>
+@endpush
+@push('css')
+<style>
+    .toast-notify {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #1a1a2e;
+    color: #fff;
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 9999;
+    transform: translateX(120%);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.toast-notify.show { transform: translateX(0); }
+.toast-notify .toast-icon { font-size: 24px; }
+.toast-notify .toast-title { font-weight: 700; font-size: 15px; }
+.toast-notify .toast-sub { font-size: 12px; opacity: 0.7; margin-top: 2px; }
+</style>
 @endpush

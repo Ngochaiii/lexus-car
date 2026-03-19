@@ -26,6 +26,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <link rel="canonical" href="https://lexus-es.com">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- JSON-LD Structured Data for SEO -->
     <script type="application/ld+json">

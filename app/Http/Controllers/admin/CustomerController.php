@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Http\Controllers\admin;
+
+use App\Http\Controllers\Controller;
+use App\Models\Customer;
+use Illuminate\Http\Request;
+
+class CustomerController extends Controller
+{
+    public function index(){
+        $customers = Customer::latest()->paginate(10);
+        return view('src.admin.customers.index', compact('customers'));
+    }
+}
