@@ -315,7 +315,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/rx/xanhduong.webp') }}" alt="Front Trim">
+                                <img src="{{ asset('web/assets/images/rx/xanhduong.jpg') }}" alt="Front Trim">
                             </div>
                             <div class="ti-abbr">Xanh dương</div>
                         </div>
@@ -1222,7 +1222,7 @@
             },
             green: {
                 name: 'Xanh rêu',
-                images: ['{{ asset('web/assets/images/rx/xanhduong.webp') }}',
+                images: ['{{ asset('web/assets/images/rx/xanhduong.jpg') }}',
                     '{{ asset('web/assets/images/rx/xanhr1.png') }}',
                     '{{ asset('web/assets/images/rx/xanhr2.png') }}',
                     '{{ asset('web/assets/images/rx/xanhr3.png') }}',
