@@ -4456,7 +4456,7 @@ img {
 }
 
 .design-card.wide img {
-    height: 200px;
+    height: 500px;
 }
 
 .design-caption {
@@ -4581,6 +4581,9 @@ img {
     .item-grid-4 {
         grid-template-columns: repeat(2, 1fr);
     }
+    .design-card.wide img {
+    height: 200px;
+}
 }
 
 @media (max-width: 767px) {

@@ -22,7 +22,7 @@
                                 <button class="gallery-action-btn" title="Chia sẻ"><i class="bi bi-share"></i></button>
                             </div>
                             <div class="gallery-main">
-                                <img src="{{asset('web/assets/images/rx/lexus-rx-black-line-edition.jpg')}}"
+                                <img src="{{ asset('web/assets/images/rx/lexus-rx-black-line-edition.jpg') }}"
                                     alt="Lexus RX 500h F SPORT PERFORMANCE" id="mainImage">
                             </div>
                             <button class="gallery-nav prev" onclick="changeImage(-1)"><i
@@ -34,20 +34,15 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img
-                                    src="{{asset('web/assets/images/rx/anh-1.jpg')}}"
-                                    alt=""></div>
+                                    src="{{ asset('web/assets/images/rx/anh-1.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img
-                                    src="{{asset('web/assets/images/rx/anh-2.webp')}}"
-                                    alt=""></div>
+                                    src="{{ asset('web/assets/images/rx/anh-2.webp') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img
-                                    src="{{asset('web/assets/images/rx/anh-4.jpg')}}"
-                                    alt=""></div>
+                                    src="{{ asset('web/assets/images/rx/anh-4.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img
-                                    src="{{asset('web/assets/images/rx/anh-3.jpg')}}"
-                                    alt=""></div>
+                                    src="{{ asset('web/assets/images/rx/anh-3.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(4,this)"><img
-                                    src="{{asset('web/assets/images/rx/anh-5.webp')}}"
-                                    alt=""></div>
+                                    src="{{ asset('web/assets/images/rx/anh-5.webp') }}" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -224,7 +219,7 @@
         <div class="container">
             <div class="intro-grid">
                 <div class="intro-img-wrap">
-                    <img src="{{asset('web/assets/images/rx/mauxam.webp')}}"
+                    <img src="{{ asset('web/assets/images/rx/mauxam.webp') }}"
                         alt="Lexus RX thế hệ thứ 5 — Crossover hạng sang tiên phong từ 1998">
                     <div class="intro-year-badge">
                         <div class="iyb-year">1998</div>
@@ -284,69 +279,61 @@
 
             <!-- NGOẠI THẤT -->
             <div class="colour-pane active" id="ct-exterior">
-                <div class="ext-layout">
-                    <div class="colour-preview-box">
-                        <img src="{{asset('web/assets/images/rx/ngoai-that.png')}}"
-                            alt="Lexus RX ngoại thất" id="extPreviewImg">
-                        <div class="cpb-name" id="extPreviewName">Caviar Black</div>
-                        <div class="cpb-code">Màu ngoại thất</div>
-                    </div>
-                    <div>
-                        <div class="colour-swatch-group">
-                            <label>Màu ngoại thất</label>
-                            <div class="swatch-row">
-                                <div class="sw"
-                                    onclick="selectSwatch(this,'Sonic White','{{asset('web/assets/images/rx/mautrang.jpg')}}')"
-                                    style="--sw-color:#F5F5F5">
-                                    <div class="sw-circle"></div>
-                                    <div class="sw-label">Màu trắng</div>
-                                </div>
-                                <div class="sw active"
-                                    onclick="selectSwatch(this,'Caviar Black','{{asset('web/assets/images/rx/ngoai-that.png')}}')"
-                                    style="--sw-color:#1A1A1A">
-                                    <div class="sw-circle"></div>
-                                    <div class="sw-label">Màu đen</div>
-                                </div>
-                                <div class="sw"
-                                    onclick="selectSwatch(this,'Sonic Titanium','{{asset('web/assets/images/rx/mauxam.webp')}}')"
-                                    style="--sw-color:#C0C0C0">
-                                    <div class="sw-circle"></div>
-                                    <div class="sw-label">Màu xám</div>
-                                </div>
-                                <div class="sw"
-                                    onclick="selectSwatch(this,'Matador Red Mica','{{asset('web/assets/images/rx/maudo.jpg')}}')"
-                                    style="--sw-color:#8B0000">
-                                    <div class="sw-circle"></div>
-                                    <div class="sw-label">Màu đỏ</div>
-                                </div>
-                                <div class="sw"
-                                    onclick="selectSwatch(this,'Nori Green Pearl','{{asset('web/assets/images/rx/xanhduong.webp')}}')"
-                                    style="--sw-color:#2F4F4F">
-                                    <div class="sw-circle"></div>
-                                    <div class="sw-label">Màu xanh</div>
-                                </div>
-                                <div class="sw"
-                                    onclick="selectSwatch(this,'Copper Crest','{{asset('web/assets/images/rx/cam.png')}}')"
-                                    style="--sw-color:#B87333">
-                                    <div class="sw-circle"></div>
-                                    <div class="sw-label">Màu cam</div>
-                                </div>
-                                <div class="sw"
-                                    onclick="selectSwatch(this,'Deep Blue Mica','{{asset('web/assets/images/rx/xanhblue.webp')}}')"
-                                    style="--sw-color:#191970">
-                                    <div class="sw-circle"></div>
-                                    <div class="sw-label">Màu xanh dương</div>
-                                </div>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <div class="ti-content">
+                            <div class="feature-thumb-img">
+                                <img src="{{ asset('web/assets/images/rx/ngoai-that.png') }}" alt="Front Trim">
                             </div>
+                            <div class="ti-abbr">Màu đen </div>
                         </div>
-                        <div
-                            style="background:var(--lexus-dark-2);border:1px solid var(--lexus-gray);border-radius:var(--radius-lg);padding:20px;margin-top:8px;">
-                            <div
-                                style="font-size:0.72rem;font-weight:700;color:var(--lexus-text-muted);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:12px;">
-                                Lưu ý màu sắc</div>
-                            <p style="font-size:0.82rem;color:var(--lexus-text-muted);line-height:1.7;">Màu sắc hiển thị có
-                                thể khác biệt tùy thiết bị. Vui lòng tham khảo bảng màu thực tế tại showroom Lexus hoặc liên
-                                hệ tư vấn viên để xem mẫu màu chính xác.</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="ti-content">
+                            <div class="feature-thumb-img">
+                                <img src="{{ asset('web/assets/images/rx/mautrang.jpg') }}" alt="Front Trim">
+                            </div>
+                            <div class="ti-abbr">Màu trắng</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="ti-content">
+                            <div class="feature-thumb-img">
+                                <img src="{{ asset('web/assets/images/rx/mauxam.webp') }}" alt="Front Trim">
+                            </div>
+                            <div class="ti-abbr">Màu xám</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="ti-content">
+                            <div class="feature-thumb-img">
+                                <img src="{{ asset('web/assets/images/rx/maudo.jpg') }}" alt="Front Trim">
+                            </div>
+                            <div class="ti-abbr">Màu đỏ</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="ti-content">
+                            <div class="feature-thumb-img">
+                                <img src="{{ asset('web/assets/images/rx/xanhduong.webp') }}" alt="Front Trim">
+                            </div>
+                            <div class="ti-abbr">Xanh dương</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="ti-content">
+                            <div class="feature-thumb-img">
+                                <img src="{{ asset('web/assets/images/rx/cam.png') }}" alt="Front Trim">
+                            </div>
+                            <div class="ti-abbr">Màu cam</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="ti-content">
+                            <div class="feature-thumb-img">
+                                <img src="{{ asset('web/assets/images/rx/xanhd1.png') }}" alt="Front Trim">
+                            </div>
+                            <div class="ti-abbr">PKSB — Parking Support Brake</div>
                         </div>
                     </div>
                 </div>
@@ -358,28 +345,24 @@
                     cung cấp nhiều tùy chọn mâm xe từ 18 đến 21 inch với các kiểu thiết kế phù hợp cho từng phiên bản.</p>
                 <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{asset('web/assets/images/rx/mam-xe.webp')}}"
-                            alt="Mâm 21 inch Matte Black">
-                        <div class="item-card-label">Mâm xe hợp kim nhôm 21inch<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX 350 PREMIUM</span></div>
+                        <img src="{{ asset('web/assets/images/rx/mam-xe.png') }}" alt="Mâm 21 inch Matte Black">
+                        <div class="item-card-label">Mâm xe hợp kim nhôm <br><span
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX350 luxury</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{asset('web/assets/images/rx/mam-xe2.jpg')}}"
-                            alt="Mâm 20 inch Nhôm đánh bóng">
-                        <div class="item-card-label">Mâm xe hợp kim nhôm 21inch <br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX 350h LUXURY</span></div>
+                        <img src="{{ asset('web/assets/images/rx/mam-xe2.png') }}" alt="Mâm 20 inch Nhôm đánh bóng">
+                        <div class="item-card-label">Mâm xe hợp kim nhôm 21 inch<br><span
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản rx 350 premium</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{asset('web/assets/images/rx/mam-xe3.jpg')}}"
-                            alt="Mâm 18 inch tiêu chuẩn">
-                        <div class="item-card-label">Mâm xe hợp kim nhôm 21inch <br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX 500h F SPORT PERFORMANCE</span></div>
+                        <img src="{{ asset('web/assets/images/rx/mam-xe3.png') }}" alt="Mâm 18 inch tiêu chuẩn">
+                        <div class="item-card-label">Mâm xe hợp kim nhôm 21 inch <br><span
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX500H F-sport</span></div>
                     </div>
-                    {{-- <div class="item-card" onclick="selectCard(this)">
-                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=400&q=70"
-                            alt="Mâm 19 inch Sport">
-                        <div class="item-card-label">19" Sport Design</div>
-                    </div> --}}
+                    <div class="item-card" onclick="selectCard(this)">
+                        <img src="{{ asset('web/assets/images/rx/mam-xe4.png') }}" alt="Mâm 19 inch Sport">
+                        <div class="item-card-label">Mâm 21 Matte Black</div>
+                    </div>
                 </div>
                 <div
                     style="margin-top:16px;background:var(--lexus-dark-2);border:1px solid var(--lexus-gray);border-radius:var(--radius-lg);padding:18px 22px;">
@@ -396,43 +379,37 @@
                     cao cấp với nhiều lựa chọn màu sắc và chất liệu, mang lại sự sang trọng và thoải mái tối đa.</p>
                 <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{asset('web/assets/images/rx/ghexe1.jpeg')}}"
-                            alt="Da đen đục lỗ">
+                        <img src="{{ asset('web/assets/images/rx/ghexe1.jpeg') }}" alt="Da đen đục lỗ">
                         <div class="item-card-label">Màu nâu Hazel<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">F SPORT độc quyền</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{asset('web/assets/images/rx/ghexe2.jpg')}}"
-                            alt="Da kem cao cấp">
+                        <img src="{{ asset('web/assets/images/rx/ghexe2.jpg') }}" alt="Da kem cao cấp">
                         <div class="item-card-label">Trắng Solis White</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{asset('web/assets/images/rx/ghexe.jpg')}}"
-                            alt="Da nâu Saddle Tan">
+                        <img src="{{ asset('web/assets/images/rx/ghexe.jpg') }}" alt="Da nâu Saddle Tan">
                         <div class="item-card-label">Đen Black</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{asset('web/assets/images/rx/ghexe3.jpg')}}"
-                            alt="Da nâu Saddle Tan">
+                        <img src="{{ asset('web/assets/images/rx/ghexe3.jpg') }}" alt="Da nâu Saddle Tan">
                         <div class="item-card-label">Đỏ Dank ROSE</div>
                     </div>
                 </div>
-                <div class="item-grid-3">
+                <div class="item-grid-3 mt-3">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{asset('web/assets/images/rx/chatlieughedasemi.webp')}}"
-                            alt="Da đen đục lỗ">
+                        <img src="{{ asset('web/assets/images/rx/chatlieughedasemi.webp') }}" alt="Da đen đục lỗ">
                         <div class="item-card-label">Da Semi-aniline<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX 350h LUXURY</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{asset('web/assets/images/rx/chatlieughedasmooth.jpg')}}"
-                            alt="Da kem cao cấp">
+                        <img src="{{ asset('web/assets/images/rx/chatlieughedasmooth.jpg') }}" alt="Da kem cao cấp">
                         <div class="item-card-label">Da Smooth<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX 350 PREMIUM vàRX 350h PREMIUM </span></div>
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX 350 PREMIUM vàRX 350h
+                                PREMIUM </span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{asset('web/assets/images/rx/ghexe.jpg')}}"
-                            alt="Da nâu Saddle Tan">
+                        <img src="{{ asset('web/assets/images/rx/ghexe.jpg') }}" alt="Da nâu Saddle Tan">
                         <div class="item-card-label">Đen Black</div>
                     </div>
                 </div>
@@ -445,20 +422,19 @@
                     thích cá nhân.</p>
                 <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0afe?w=400&q=70"
-                            alt="Chi tiết nhôm xước">
-                        <div class="item-card-label">Nhôm xước thể thao<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">F SPORT</span></div>
+                        <img src="{{ asset('web/assets/images/rx/op1.png') }}" alt="Chi tiết nhôm xước">
+                        <div class="item-card-label">Hoa văn gỗ Sumi Woodgrain<br><span
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX350 Luxury</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=400&q=70"
-                            alt="Gỗ Walnut">
-                        <div class="item-card-label">Gỗ Walnut tự nhiên</div>
+                        <img src="{{ asset('web/assets/images/rx/op2.png') }}" alt="Gỗ Walnut">
+                        <div class="item-card-label">Hoa văn hợp kim cao cấp <br><span
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX500h F-sport</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=400&q=70"
-                            alt="Piano Black">
-                        <div class="item-card-label">Piano Black cao cấp</div>
+                        <img src="{{ asset('web/assets/images/rx/op3.png') }}" alt="Piano Black">
+                        <div class="item-card-label">Hoa văn xương cá<br><span
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX350 Premium</span></div>
                     </div>
                 </div>
             </div>
@@ -467,22 +443,24 @@
             <div class="colour-pane" id="ct-wheel">
                 <p style="font-size:0.92rem;color:var(--lexus-text-muted);max-width:600px;margin-bottom:32px;">Vô lăng 3
                     chấu thiết kế thể thao với các tùy chọn chất liệu bọc da và lẫy chuyển số bằng nhôm.</p>
-                <div class="item-grid-3">
+                <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=400&q=70"
+                        <img src="{{ asset('web/assets/images/rx/volang1.png') }}"
                             alt="Vô lăng bọc da đục lỗ kèm lẫy số">
-                        <div class="item-card-label">Bọc da đục lỗ + lẫy số nhôm<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">F SPORT độc quyền</span></div>
+                        <div class="item-card-label">Da <br><span style="color:var(--lexus-gold);font-size:0.7rem;">Phiên
+                                bản RX350 Premium,RX350h Premium</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=400&q=70"
-                            alt="Vô lăng bọc da tiêu chuẩn">
-                        <div class="item-card-label">Bọc da cao cấp tiêu chuẩn</div>
+                        <img src="{{ asset('web/assets/images/rx/volang2.png') }}" alt="Vô lăng bọc da tiêu chuẩn">
+                        <div class="item-card-label">Da (Phiên bản RX500H F-sport performance)</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&q=70"
-                            alt="Vô lăng bọc gỗ và da">
-                        <div class="item-card-label">Bọc gỗ & da kết hợp</div>
+                        <img src="{{ asset('web/assets/images/rx/volang3.png') }}" alt="Vô lăng bọc gỗ và da">
+                        <div class="item-card-label">Gỗ kết hợp da (Phiên bản RX350H Luxury)</div>
+                    </div>
+                    <div class="item-card" onclick="selectCard(this)">
+                        <img src="{{ asset('web/assets/images/rx/volang4.png')}}" alt="Vô lăng bọc gỗ và da">
+                        <div class="item-card-label">Vô Lăng Bọc Da Đục Lỗ</div>
                     </div>
                 </div>
             </div>
@@ -506,8 +484,7 @@
             <div class="variant-pane active" id="vt-350">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{asset('web/assets/images/rx/dongco24l.jpg')}}"
-                            alt="Động cơ RX 350 2.4L Turbo AWD">
+                        <img src="{{ asset('web/assets/images/rx/dongco24l.jpg') }}" alt="Động cơ RX 350 2.4L Turbo AWD">
                         <div class="powertrain-badge">2.4L-T AWD</div>
                     </div>
                     <div class="powertrain-content">
@@ -555,8 +532,7 @@
             <div class="variant-pane" id="vt-350h">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{asset('web/assets/images/rx/2,5l.jpg')}}"
-                            alt="Hệ thống Hybrid RX 350h 2.5L HEV">
+                        <img src="{{ asset('web/assets/images/rx/2,5l.jpg') }}" alt="Hệ thống Hybrid RX 350h 2.5L HEV">
                         <div class="powertrain-badge">2.5L HEV E-Four</div>
                     </div>
                     <div class="powertrain-content">
@@ -607,26 +583,34 @@
         <div class="container">
             <div class="section-tag">Nền tảng kỹ thuật</div>
             <h2 class="section-title">Khung Gầm & Hệ Thống Treo</h2>
-            <p style="color:var(--lexus-text-muted);max-width:700px;margin-bottom:0;">Hệ thống treo trước MacPherson và hệ thống treo sau liên kết đa điểm truyền lực dẫn động xuống mặt đường một cách hiệu quả, đồng thời mang đến khả năng thay đổi liền mạch tư thế thân xe.</p>
+            <p style="color:var(--lexus-text-muted);max-width:700px;margin-bottom:0;">Hệ thống treo trước MacPherson và hệ
+                thống treo sau liên kết đa điểm truyền lực dẫn động xuống mặt đường một cách hiệu quả, đồng thời mang đến
+                khả năng thay đổi liền mạch tư thế thân xe.</p>
             <div class="chassis-grid">
                 <div class="chassis-images">
                     <div class="chassis-img-card">
-                        <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=600&q=80"
+                        <img src="{{ asset('web/assets/images/rx/treotruoc.png') }}"
                             alt="Hệ thống treo trước MacPherson Lexus RX">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Hệ thống treo trước — MacPherson</div>
                     </div>
                     <div class="chassis-img-card">
-                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&q=80"
+                        <img src="{{ asset('web/assets/images/rx/treosau.png') }}"
                             alt="Hệ thống treo sau đa liên kết Lexus RX">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Hệ thống treo sau — Đa liên kết</div>
+                    </div>
+                    <div class="chassis-info-box mt-2">
+                        <h4 class="chassis-info-title"><i class="bi bi-wind"></i>Hiệu suất khí động học</h4>
+                        <p class="chassis-info-desc">Thiết kế khí động học được tối ưu hoá từng chi tiết — từ đường viền
+                            nóc xuống đến phần dưới gầm xe — giảm lực cản không khí, tăng ổn định tốc độ cao và cải thiện
+                            hiệu suất nhiên liệu đáng kể.</p>
                     </div>
                 </div>
 
                 <div class="chassis-diagram">
                     <div class="chassis-diagram-img">
-                        <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=1400&q=85"
+                        <img src="{{ asset('web/assets/images/rx/docung.png') }}"
                             alt="Sơ đồ cấu trúc thân xe Lexus RX GK-A">
                     </div>
                     <div class="chassis-legend">
@@ -639,17 +623,14 @@
                     </div>
                     <div class="chassis-info-box mt-3">
                         <h4 class="chassis-info-title"><i class="bi bi-shield-check"></i>Thân xe độ cứng cao</h4>
-                        <p class="chassis-info-desc">Phần phía sau của khung gầm GK-A được thiết kế đặc biệt để phù hợp với hệ thống treo liên kết đa điểm</p>
+                        <p class="chassis-info-desc">Phần phía sau của khung gầm GK-A được thiết kế đặc biệt để phù hợp với
+                            hệ thống treo liên kết đa điểm</p>
                     </div>
                     <div class="chassis-info-box mt-2">
                         <h4 class="chassis-info-title"><i class="bi bi-speedometer2"></i>Hệ thống treo / giảm xóc</h4>
-                        <p class="chassis-info-desc">Hệ thống treo trước MacPherson và hệ thống treo sau liên kết đa điểm truyền lực dẫn động xuống mặt đường một cách hiệu quả, đồng thời mang đến khả năng thay đổi liền mạch tư thế thân xe.</p>
-                    </div>
-                    <div class="chassis-info-box mt-2">
-                        <h4 class="chassis-info-title"><i class="bi bi-wind"></i>Hiệu suất khí động học</h4>
-                        <p class="chassis-info-desc">Thiết kế khí động học được tối ưu hoá từng chi tiết — từ đường viền
-                            nóc xuống đến phần dưới gầm xe — giảm lực cản không khí, tăng ổn định tốc độ cao và cải thiện
-                            hiệu suất nhiên liệu đáng kể.</p>
+                        <p class="chassis-info-desc">Hệ thống treo trước MacPherson và hệ thống treo sau liên kết đa điểm
+                            truyền lực dẫn động xuống mặt đường một cách hiệu quả, đồng thời mang đến khả năng thay đổi liền
+                            mạch tư thế thân xe.</p>
                     </div>
                 </div>
             </div>
@@ -661,7 +642,9 @@
         <div class="container">
             <div class="section-tag">Mỹ học & thiết kế</div>
             <h2 class="section-title">Thiết Kế RX Thế Hệ 5</h2>
-            <p class="section-desc">Sở hữu chiều dài cơ sở lớn, trọng tâm thấp, chiều rộng cơ sở trước sau lớn là nền tảng tuyệt vời để tạo nên một phong cách thiết kế đột phá, nhấn mạnh vào khả năng vận hành hứng khởi cùng trải nghiệm lực kéo ấn tượng đến từ hệ thống dẫn động 4 bánh trực tiếp Direct4</p>
+            <p class="section-desc">Sở hữu chiều dài cơ sở lớn, trọng tâm thấp, chiều rộng cơ sở trước sau lớn là nền tảng
+                tuyệt vời để tạo nên một phong cách thiết kế đột phá, nhấn mạnh vào khả năng vận hành hứng khởi cùng trải
+                nghiệm lực kéo ấn tượng đến từ hệ thống dẫn động 4 bánh trực tiếp Direct4</p>
             <div class="design-tabs">
                 <button class="design-tab active" onclick="switchDesign(this,'dp-exterior')">Ngoại Thất</button>
                 <button class="design-tab" onclick="switchDesign(this,'dp-interior')">Nội Thất</button>
@@ -672,7 +655,7 @@
             <div class="design-pane active" id="dp-exterior">
                 <div class="design-row">
                     <div class="design-card">
-                        <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=700&q=80"
+                        <img src="{{asset('web/assets/images/rx/mattruoc.png')}}"
                             alt="Mặt trước Lexus RX thế hệ 5 — Lưới Spindle">
                         <div class="design-caption">
                             <h4>Mặt trước mạnh mẽ — Spindle không viền</h4>
@@ -682,7 +665,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=700&q=80"
+                        <img src="{{asset('web/assets/images/rx/duoixe.png')}}"
                             alt="Đuôi xe Lexus RX — Đèn hậu liên kết">
                         <div class="design-caption">
                             <h4>Đuôi xe thể thao — Đèn hậu liên kết</h4>
@@ -691,7 +674,7 @@
                         </div>
                     </div>
                     <div class="design-card wide">
-                        <img src="https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=1400&q=80"
+                        <img src="{{asset('web/assets/images/rx/thanxe.png')}}"
                             alt="Góc nhìn bên hông Lexus RX 500h — dáng thể thao">
                         <div class="design-caption">
                             <h4>Thân xe — Chiều dài cơ sở lớn & trọng tâm thấp</h4>
@@ -714,7 +697,7 @@
             <div class="design-pane" id="dp-interior">
                 <div class="design-row">
                     <div class="design-card wide">
-                        <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=1200&q=80"
+                        <img src="{{asset('web/assets/images/rx/cabin.png')}}"
                             alt="Nội thất Lexus RX — Cabin lấy người lái làm trung tâm">
                         <div class="design-caption">
                             <h4>Cabin lấy người lái làm trung tâm</h4>
@@ -725,7 +708,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0afe?w=700&q=80"
+                        <img src="{{asset('web/assets/images/rx/duclo.png')}}"
                             alt="Ghế thể thao F SPORT bọc da đục lỗ">
                         <div class="design-caption">
                             <h4>Ghế thể thao F SPORT</h4>
@@ -734,7 +717,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=700&q=80"
+                        <img src="{{asset('web/assets/images/rx/bangdk.png')}}"
                             alt="Bảng điều khiển Lexus RX — tối giản">
                         <div class="design-caption">
                             <h4>Bảng điều khiển tối giản</h4>
@@ -757,7 +740,7 @@
             <div class="design-pane" id="dp-tech">
                 <div class="design-row">
                     <div class="design-card">
-                        <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=700&q=80"
+                        <img src="{{asset('web/assets/images/rx/hub2.png')}}"
                             alt="Màn hình cảm ứng 14 inch Lexus RX">
                         <div class="design-caption">
                             <h4>Màn hình cảm ứng 14 inch</h4>
@@ -766,7 +749,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=700&q=80"
+                        <img src="{{asset('web/assets/images/rx/hub3.png')}}"
                             alt="Màn hình tốc độ TFT Lexus RX 350 Premium">
                         <div class="design-caption">
                             <h4>Màn hình tốc độ TFT (RX 350 Premium)</h4>
@@ -775,7 +758,7 @@
                         </div>
                     </div>
                     <div class="design-card wide">
-                        <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=1400&q=80"
+                        <img src="{{asset('web/assets/images/rx/hub1.png')}}"
                             alt="HUD Lexus RX — Hiển thị trên kính chắn gió">
                         <div class="design-caption">
                             <h4>HUD — Màn hình hiển thị trên kính chắn gió</h4>
@@ -966,95 +949,99 @@
                 <div class="tech-grid">
                     <div class="tech-item">
                         <div class="ti-content">
-                            <a href="{{route('tech_car.index')}}">
-                            <div class="feature-thumb-img">
-                                <img src="{{asset('web/assets/images/rx/RRCC.webp')}}"
-                                    alt="Front Trim">
-                            </div>
-                            <div class="ti-name">Điều Khiển Hành Trình Thích Ứng</div>
-                            <div class="ti-abbr">DRCC — Dynamic Radar Cruise Control (ở mọi tốc độ)</div>
-                            <div class="ti-desc">Tự động duy trì khoảng cách an toàn với xe phía trước ở mọi dải tốc độ, kể
-                                cả dừng hẳn trong kẹt xe.</div>
+                            <a href="{{ route('tech_car.index') }}">
+                                <div class="feature-thumb-img">
+                                    <img src="{{ asset('web/assets/images/rx/RRCC.webp') }}" alt="Front Trim">
+                                </div>
+                                <div class="ti-name">Điều Khiển Hành Trình Thích Ứng</div>
+                                <div class="ti-abbr">DRCC — Dynamic Radar Cruise Control (ở mọi tốc độ)</div>
+                                <div class="ti-desc">Tự động duy trì khoảng cách an toàn với xe phía trước ở mọi dải tốc
+                                    độ, kể
+                                    cả dừng hẳn trong kẹt xe.</div>
                             </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="ti-content">
-                            <a href="{{route('tech_car.index')}}">
-                            <div class="feature-thumb-img">
-                                <img src="{{asset('web/assets/images/rx/LTA.webp')}}"
-                                    alt="Front Trim">
-                            </div>
-                            <div class="ti-name">Hỗ Trợ Theo Dõi Làn Đường</div>
-                            <div class="ti-abbr">LTA — Lane Tracing Assist</div>
-                            <div class="ti-desc">Hỗ trợ giữ xe đi đúng giữa làn đường, giảm mệt mỏi khi lái đường dài trên
-                                cao tốc.</div>
-                                </a>
+                            <a href="{{ route('tech_car.index') }}">
+                                <div class="feature-thumb-img">
+                                    <img src="{{ asset('web/assets/images/rx/LTA.webp') }}" alt="Front Trim">
+                                </div>
+                                <div class="ti-name">Hỗ Trợ Theo Dõi Làn Đường</div>
+                                <div class="ti-abbr">LTA — Lane Tracing Assist</div>
+                                <div class="ti-desc">Hỗ trợ giữ xe đi đúng giữa làn đường, giảm mệt mỏi khi lái đường dài
+                                    trên
+                                    cao tốc.</div>
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="ti-content">
-                            <a href="{{route('tech_car.index')}}">
-                            <div class="feature-thumb-img">
-                                <img src="{{asset('web/assets/images/rx/AHS.jpg')}}"
-                                    alt="Front Trim">
-                            </div>
-                            <div class="ti-name">Đèn Trước Tự Động Thích Ứng</div>
-                            <div class="ti-abbr">BladeScan AHS — Công nghệ quét tốc độ cao</div>
-                            <div class="ti-desc">Tự động điều chỉnh vùng chiếu sáng, tránh chói mắt xe đối diện trong khi
-                                chiếu sáng tối đa vùng ngoài.</div> </a>
+                            <a href="{{ route('tech_car.index') }}">
+                                <div class="feature-thumb-img">
+                                    <img src="{{ asset('web/assets/images/rx/AHS.jpg') }}" alt="Front Trim">
+                                </div>
+                                <div class="ti-name">Đèn Trước Tự Động Thích Ứng</div>
+                                <div class="ti-abbr">BladeScan AHS — Công nghệ quét tốc độ cao</div>
+                                <div class="ti-desc">Tự động điều chỉnh vùng chiếu sáng, tránh chói mắt xe đối diện trong
+                                    khi
+                                    chiếu sáng tối đa vùng ngoài.</div>
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="ti-content">
-                            <a href="{{route('tech_car.index')}}">
-                            <div class="feature-thumb-img">
-                                <img src="{{asset('web/assets/images/rx/AHB.webp')}}"
-                                    alt="Front Trim">
-                            </div>
-                            <div class="ti-name">Đèn Pha Tự Động</div>
-                            <div class="ti-abbr">AHB — Automatic High Beam</div>
-                            <div class="ti-desc">Tự động chuyển đổi giữa đèn pha và đèn cốt theo điều kiện giao thông,
-                                không cần tác động của người lái.</div> </a>
+                            <a href="{{ route('tech_car.index') }}">
+                                <div class="feature-thumb-img">
+                                    <img src="{{ asset('web/assets/images/rx/AHB.webp') }}" alt="Front Trim">
+                                </div>
+                                <div class="ti-name">Đèn Pha Tự Động</div>
+                                <div class="ti-abbr">AHB — Automatic High Beam</div>
+                                <div class="ti-desc">Tự động chuyển đổi giữa đèn pha và đèn cốt theo điều kiện giao thông,
+                                    không cần tác động của người lái.</div>
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="ti-content">
-                            <a href="{{route('tech_car.index')}}">
-                            <div class="feature-thumb-img">
-                                <img src="{{asset('web/assets/images/rx/BSM.webp')}}"
-                                    alt="Front Trim">
-                            </div>
-                            <div class="ti-name">Cảnh Báo Điểm Mù</div>
-                            <div class="ti-abbr">BSM — Blind Spot Monitor</div>
-                            <div class="ti-desc">Cảnh báo bằng ánh sáng và âm thanh khi có phương tiện trong vùng điểm mù
-                                khi chuyển làn đường.</div> </a>
+                            <a href="{{ route('tech_car.index') }}">
+                                <div class="feature-thumb-img">
+                                    <img src="{{ asset('web/assets/images/rx/BSM.webp') }}" alt="Front Trim">
+                                </div>
+                                <div class="ti-name">Cảnh Báo Điểm Mù</div>
+                                <div class="ti-abbr">BSM — Blind Spot Monitor</div>
+                                <div class="ti-desc">Cảnh báo bằng ánh sáng và âm thanh khi có phương tiện trong vùng điểm
+                                    mù
+                                    khi chuyển làn đường.</div>
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="ti-content">
-                            <a href="{{route('tech_car.index')}}">
-                            <div class="feature-thumb-img">
-                                <img src="{{asset('web/assets/images/rx/SEA.webp')}}"
-                                    alt="Front Trim">
-                            </div>
-                            <div class="ti-name">Hỗ Trợ Ra Khỏi Xe An Toàn</div>
-                            <div class="ti-abbr">SEA — Safe Exit Assist (kiểm soát mở cửa)</div>
-                            <div class="ti-desc">Cảnh báo và kiểm soát cửa xe khi phát hiện phương tiện/xe đạp đang đến gần
-                                từ phía sau.</div> </a>
+                            <a href="{{ route('tech_car.index') }}">
+                                <div class="feature-thumb-img">
+                                    <img src="{{ asset('web/assets/images/rx/SEA.webp') }}" alt="Front Trim">
+                                </div>
+                                <div class="ti-name">Hỗ Trợ Ra Khỏi Xe An Toàn</div>
+                                <div class="ti-abbr">SEA — Safe Exit Assist (kiểm soát mở cửa)</div>
+                                <div class="ti-desc">Cảnh báo và kiểm soát cửa xe khi phát hiện phương tiện/xe đạp đang đến
+                                    gần
+                                    từ phía sau.</div>
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="ti-content">
-                            <a href="{{route('tech_car.index')}}">
-                            <div class="feature-thumb-img">
-                                <img src="{{asset('web/assets/images/rx/PKSB.webp')}}"
-                                    alt="Front Trim">
-                            </div>
-                            <div class="ti-name">Phanh An Toàn Khi Đỗ</div>
-                            <div class="ti-abbr">PKSB — Parking Support Brake</div>
-                            <div class="ti-desc">Tự động phanh khi phát hiện vật cản trong quá trình đỗ xe tiến và lùi ở
-                                tốc độ thấp.</div> </a>
+                            <a href="{{ route('tech_car.index') }}">
+                                <div class="feature-thumb-img">
+                                    <img src="{{ asset('web/assets/images/rx/PKSB.webp') }}" alt="Front Trim">
+                                </div>
+                                <div class="ti-name">Phanh An Toàn Khi Đỗ</div>
+                                <div class="ti-abbr">PKSB — Parking Support Brake</div>
+                                <div class="ti-desc">Tự động phanh khi phát hiện vật cản trong quá trình đỗ xe tiến và lùi
+                                    ở
+                                    tốc độ thấp.</div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1199,65 +1186,65 @@
         const colorGalleries = {
             white: {
                 name: 'Màu trắng',
-                images: ['{{asset('web/assets/images/rx/mautrang.jpg')}}',
-                    '{{asset('web/assets/images/rx/trang1.jpg')}}',
-                    '{{asset('web/assets/images/rx/trang2.jpg')}}',
-                    '{{asset('web/assets/images/rx/trang3.jpg')}}',
-                    '{{asset('web/assets/images/rx/trang4.jpg')}}'
+                images: ['{{ asset('web/assets/images/rx/mautrang.jpg') }}',
+                    '{{ asset('web/assets/images/rx/trang1.jpg') }}',
+                    '{{ asset('web/assets/images/rx/trang2.jpg') }}',
+                    '{{ asset('web/assets/images/rx/trang3.jpg') }}',
+                    '{{ asset('web/assets/images/rx/trang4.jpg') }}'
                 ]
             },
             black: {
                 name: 'Màu đen',
-                images: ['{{asset('web/assets/images/rx/ngoai-that.png')}}',
-                    '{{asset('web/assets/images/rx/den1.jpg')}}',
-                    '{{asset('web/assets/images/rx/den2.webp')}}',
-                    '{{asset('web/assets/images/rx/den3.jpg')}}',
-                    '{{asset('web/assets/images/rx/ngoai-that.png')}}'
+                images: ['{{ asset('web/assets/images/rx/ngoai-that.png') }}',
+                    '{{ asset('web/assets/images/rx/den1.jpg') }}',
+                    '{{ asset('web/assets/images/rx/den2.webp') }}',
+                    '{{ asset('web/assets/images/rx/den3.jpg') }}',
+                    '{{ asset('web/assets/images/rx/ngoai-that.png') }}'
                 ]
             },
             silver: {
                 name: 'Màu xám',
-                images: ['{{asset('web/assets/images/rx/mauxam.webp')}}',
-                    '{{asset('web/assets/images/rx/xam1.webp')}}',
-                    '{{asset('web/assets/images/rx/xam2.jpg')}}',
-                    '{{asset('web/assets/images/rx/mauxam.webp')}}',
-                    '{{asset('web/assets/images/rx/mauxam.webp')}}'
+                images: ['{{ asset('web/assets/images/rx/mauxam.webp') }}',
+                    '{{ asset('web/assets/images/rx/xam1.png') }}',
+                    '{{ asset('web/assets/images/rx/xam2.png') }}',
+                    '{{ asset('web/assets/images/rx/xam3.png') }}',
+                    '{{ asset('web/assets/images/rx/xam4.png') }}'
                 ]
             },
             red: {
                 name: 'Màu đỏ',
-                images: ['{{asset('web/assets/images/rx/maudo.jpg')}}',
-                    '{{asset('web/assets/images/rx/do1.webp')}}',
-                    '{{asset('web/assets/images/rx/do2.png')}}',
-                    '{{asset('web/assets/images/rx/do3.jpg')}}',
-                    '{{asset('web/assets/images/rx/maudo.jpg')}}'
+                images: ['{{ asset('web/assets/images/rx/maudo.jpg') }}',
+                    '{{ asset('web/assets/images/rx/do1.webp') }}',
+                    '{{ asset('web/assets/images/rx/do2.png') }}',
+                    '{{ asset('web/assets/images/rx/do3.jpg') }}',
+                    '{{ asset('web/assets/images/rx/maudo.jpg') }}'
                 ]
             },
             green: {
                 name: 'Xanh rêu',
-                images: ['{{asset('web/assets/images/rx/xanhduong.webp')}}',
-                    '{{asset('web/assets/images/rx/xanhr1.webp')}}',
-                    '{{asset('web/assets/images/rx/xanhr2.jpeg')}}',
-                    '{{asset('web/assets/images/rx/xanhr3.jpeg')}}',
-                    '{{asset('web/assets/images/rx/xanhduong.webp')}}'
+                images: ['{{ asset('web/assets/images/rx/xanhduong.webp') }}',
+                    '{{ asset('web/assets/images/rx/xanhr1.png') }}',
+                    '{{ asset('web/assets/images/rx/xanhr2.png') }}',
+                    '{{ asset('web/assets/images/rx/xanhr3.png') }}',
+                    '{{ asset('web/assets/images/rx/xanhr4.png') }}'
                 ]
             },
             copper: {
                 name: 'Màu đồng',
-                images: ['{{asset('web/assets/images/rx/cam.png')}}',
-                    '{{asset('web/assets/images/rx/cam1.jpg')}}',
-                    '{{asset('web/assets/images/rx/cam2.jpg')}}',
-                    '{{asset('web/assets/images/rx/cam3.jpg')}}',
-                    '{{asset('web/assets/images/rx/cam.png')}}'
+                images: ['{{ asset('web/assets/images/rx/cam.png') }}',
+                    '{{ asset('web/assets/images/rx/cam1.jpg') }}',
+                    '{{ asset('web/assets/images/rx/cam2.jpg') }}',
+                    '{{ asset('web/assets/images/rx/cam3.jpg') }}',
+                    '{{ asset('web/assets/images/rx/cam.png') }}'
                 ]
             },
             blue: {
                 name: 'Màu xanh dương',
-                images: ['{{asset('web/assets/images/rx/xanhblue.webp')}}',
-                    '{{asset('web/assets/images/rx/xanhd1.png')}}',
-                    '{{asset('web/assets/images/rx/xanhd2.jpg')}}',
-                    '{{asset('web/assets/images/rx/xanhd3.webp')}}',
-                    '{{asset('web/assets/images/rx/xanhblue.webp')}}'
+                images: ['{{ asset('web/assets/images/rx/xanhblue.webp') }}',
+                    '{{ asset('web/assets/images/rx/xanhd1.png') }}',
+                    '{{ asset('web/assets/images/rx/xanhd2.png') }}',
+                    '{{ asset('web/assets/images/rx/xanhd3.png') }}',
+                    '{{ asset('web/assets/images/rx/xanhd4.png') }}'
                 ]
             }
         };
@@ -1403,7 +1390,7 @@
 
         document.querySelectorAll(
                 '.section-title, .equipment-card, .tech-item, .conv-item, .chassis-info-box, .specs-card, .pt-spec, .ms-item, .design-card, .item-card'
-                )
+            )
             .forEach(el => {
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(20px)';
@@ -1412,24 +1399,27 @@
             });
     </script>
     <script>
-    let selectedVersion = {};
+        let selectedVersion = {};
 
-    function selectVersion(el, price, name) {
-        document.querySelectorAll('.version-option').forEach(v => v.classList.remove('active'));
-        el.classList.add('active');
-        selectedVersion = { price, name };
-    }
+        function selectVersion(el, price, name) {
+            document.querySelectorAll('.version-option').forEach(v => v.classList.remove('active'));
+            el.classList.add('active');
+            selectedVersion = {
+                price,
+                name
+            };
+        }
 
-    const active = document.querySelector('.version-option.active');
-    selectedVersion = {
-        price: active.querySelector('.vo-price').textContent,
-        name: active.querySelector('.vo-name').textContent
-    };
+        const active = document.querySelector('.version-option.active');
+        selectedVersion = {
+            price: active.querySelector('.vo-price').textContent,
+            name: active.querySelector('.vo-name').textContent
+        };
 
-    function showToast(success = true) {
-        const toast = document.createElement('div');
-        toast.className = 'toast-notify';
-        toast.innerHTML = success ? `
+        function showToast(success = true) {
+            const toast = document.createElement('div');
+            toast.className = 'toast-notify';
+            toast.innerHTML = success ? `
             <div class="toast-icon">✅</div>
             <div>
                 <div class="toast-title">Gửi thông tin thành công!</div>
@@ -1442,73 +1432,90 @@
                 <div class="toast-sub">Vui lòng thử lại sau.</div>
             </div>
         `;
-        document.body.appendChild(toast);
-        setTimeout(() => toast.classList.add('show'), 10);
-        setTimeout(() => {
-            toast.classList.remove('show');
-            setTimeout(() => toast.remove(), 400);
-        }, 4000);
-    }
-
-    async function submitInquiry(event) {
-        event.preventDefault();
-
-        const btn = document.getElementById('submitBtn');
-        btn.disabled = true;
-
-        const form = event.target;
-        const data = {
-            name: form.querySelector('input[type="text"]').value,
-            phone: form.querySelector('input[type="tel"]').value,
-            email: form.querySelector('input[type="email"]').value || null,
-            note: form.querySelector('textarea').value || null,
-            car: selectedVersion.name,
-            price: selectedVersion.price,
-            url: window.location.href
-        };
-
-        try {
-            const res = await fetch('/api/customers', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data)
-            });
-
-            if (res.ok) {
-                showToast(true);
-                form.reset();
-            } else {
-                showToast(false);
-            }
-        } catch (e) {
-            showToast(false);
-        } finally {
-            setTimeout(() => btn.disabled = false, 5000);
+            document.body.appendChild(toast);
+            setTimeout(() => toast.classList.add('show'), 10);
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 400);
+            }, 4000);
         }
-    }
-</script>
+
+        async function submitInquiry(event) {
+            event.preventDefault();
+
+            const btn = document.getElementById('submitBtn');
+            btn.disabled = true;
+
+            const form = event.target;
+            const data = {
+                name: form.querySelector('input[type="text"]').value,
+                phone: form.querySelector('input[type="tel"]').value,
+                email: form.querySelector('input[type="email"]').value || null,
+                note: form.querySelector('textarea').value || null,
+                car: selectedVersion.name,
+                price: selectedVersion.price,
+                url: window.location.href
+            };
+
+            try {
+                const res = await fetch('/api/customers', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (res.ok) {
+                    showToast(true);
+                    form.reset();
+                } else {
+                    showToast(false);
+                }
+            } catch (e) {
+                showToast(false);
+            } finally {
+                setTimeout(() => btn.disabled = false, 5000);
+            }
+        }
+    </script>
 @endpush
 @push('css')
-<style>
-    .toast-notify {
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    background: #1a1a2e;
-    color: #fff;
-    padding: 16px 24px;
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    z-index: 9999;
-    transform: translateX(120%);
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.toast-notify.show { transform: translateX(0); }
-.toast-notify .toast-icon { font-size: 24px; }
-.toast-notify .toast-title { font-weight: 700; font-size: 15px; }
-.toast-notify .toast-sub { font-size: 12px; opacity: 0.7; margin-top: 2px; }
-</style>
+    <style>
+        .toast-notify {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: #1a1a2e;
+            color: #fff;
+            padding: 16px 24px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 9999;
+            transform: translateX(120%);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .toast-notify.show {
+            transform: translateX(0);
+        }
+
+        .toast-notify .toast-icon {
+            font-size: 24px;
+        }
+
+        .toast-notify .toast-title {
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        .toast-notify .toast-sub {
+            font-size: 12px;
+            opacity: 0.7;
+            margin-top: 2px;
+        }
+    </style>
 @endpush
