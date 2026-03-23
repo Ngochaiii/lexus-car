@@ -2,16 +2,16 @@
 <nav class="nav-lx" id="nav">
     <div class="container">
         <div class="d-flex align-items-center justify-content-between">
-            <a href="lexus-homepage.html" class="n-brand">LEXUS</a>
+            <a href="{{route('web.home')}}" class="n-brand">LEXUS</a>
             <div class="d-none d-lg-flex align-items-center gap-1">
-                <a href="lexus-homepage.html" class="n-link">Trang chủ</a>
-                <a href="lexus-homepage.html#models" class="n-link">Sản phẩm</a>
-                <a href="lexus-rx500h-detail.html" class="n-link">RX Series</a>
-                <a href="#" class="n-link a">Công nghệ</a>
-                <a href="lexus-homepage.html#news" class="n-link">Tin tức</a>
+                <a href="{{route('web.home')}}" class="n-link">Trang chủ</a>
+                <a href="{{route('web.home')}}" class="n-link">Sản phẩm</a>
+                <a href="{{route('products.rx')}}" class="n-link">RX Series</a>
+                <a href="{{route('tech_car.index')}}" class="n-link a">Công nghệ</a>
+                <a href="{{route('web.home')}}" class="n-link">Tin tức</a>
             </div>
             <div class="d-flex align-items-center gap-3">
-                <a href="#" class="btn-gold d-none d-md-inline-flex">Đặt lịch lái thử</a>
+                <a href="{{route('web.home.regis')}}" class="btn-gold d-none d-md-inline-flex">Đặt lịch lái thử</a>
                 <button id="mobileMenuBtn" class="d-lg-none" style="background:none;border:none;color:#fff;font-size:1.4rem;padding:4px 8px;z-index:1001;position:relative" aria-label="Menu"><i class="bi bi-list" id="menuIcon"></i></button>
             </div>
         </div>
@@ -30,11 +30,11 @@
     pointer-events:none;
 ">
     <div style="flex:1;display:flex;flex-direction:column;gap:4px">
-        <a href="lexus-homepage.html" class="mob-lk">Trang chủ</a>
-        <a href="lexus-homepage.html#models" class="mob-lk">Sản phẩm</a>
-        <a href="lexus-rx500h-detail.html" class="mob-lk">RX Series</a>
-        <a href="#" class="mob-lk active">Công nghệ</a>
-        <a href="lexus-homepage.html#news" class="mob-lk">Tin tức</a>
+        <a href="{{route('web.home')}}" class="mob-lk">Trang chủ</a>
+        <a href="{{route('web.home')}}" class="mob-lk">Sản phẩm</a>
+        <a href="{{route('products.rx')}}" class="mob-lk">RX Series</a>
+        <a href="{{route('tech_car.index')}}" class="mob-lk active">Công nghệ</a>
+        <a href="{{route('web.home')}}" class="mob-lk">Tin tức</a>
     </div>
     <a href="#" style="
         display:block;background:var(--gold);color:var(--black);

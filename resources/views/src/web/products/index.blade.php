@@ -189,7 +189,7 @@
                             </form>
                             <div class="inquiry-divider"><span>Hoặc</span></div>
                             <div class="action-buttons">
-                                <a href="#" class="btn-action primary"><i class="bi bi-calendar-check"></i> Đặt
+                                <a href="{{route('web.home.regis')}}" class="btn-action primary"><i class="bi bi-calendar-check"></i> Đặt
                                     Lịch Lái Thử</a>
                                 <a href="tel:19001234" class="btn-action hotline">
                                     <i class="bi bi-telephone"></i>

@@ -10,4 +10,7 @@ class HomeController extends Controller
     public function index(){
         return view ('src.web.home.index');
     }
+     public function regis(){
+        return view ('src.web.home.regis');
+     }
 }
