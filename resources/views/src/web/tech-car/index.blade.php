@@ -18,7 +18,7 @@
                         trợ lái thế hệ mới — bảo vệ bạn trên mọi hành trình.</p>
                     <div class="h-btns">
                         <a href="#tech-grid" class="btn-pl"><i class="bi bi-grid-3x3-gap"></i> Khám phá tất cả</a>
-                        <a href="lexus-rx500h-detail.html" class="btn-ol"><i class="bi bi-car-front"></i> Xem trên RX</a>
+                        <a href="{{route('products.rx')}}" class="btn-ol"><i class="bi bi-car-front"></i> Xem trên RX</a>
                     </div>
                     <div class="h-stats">
                         <div class="hsi">
@@ -416,7 +416,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="STOP_WARNING" src="" alt="Cảnh báo khi dừng">
+                                <img data-tech="STOP_WARNING" src="{{asset('web/assets/images/rx/stop.png')}}" alt="Cảnh báo khi dừng">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -730,7 +730,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="HUD" src="" alt="Màn hình HUD 24 inch">
+                                <img data-tech="HUD" src="{{asset('web/assets/images/hub.webp')}}" alt="Màn hình HUD 24 inch">
                                 <div class="ph">
                                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80"
                                         fill="none">
@@ -1449,7 +1449,7 @@
                 Đặt lịch lái thử ngay hôm nay.</p>
             <div class="d-flex gap-3 justify-content-center flex-wrap">
                 <a href="{{route('web.home.regis')}}" class="btn-pl"><i class="bi bi-calendar-check"></i> Đặt lịch lái thử</a>
-                <a href="lexus-rx500h-detail.html" class="btn-ol"><i class="bi bi-car-front"></i> Xem trên Lexus
+                <a href="{{route('products.rx')}}" class="btn-ol"><i class="bi bi-car-front"></i> Xem trên Lexus
                     RX</a>
             </div>
         </div>

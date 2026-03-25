@@ -342,7 +342,7 @@
                 </div>
 
                 <div class="succ-btns">
-                    <button class="btn-home" onclick="location.href='lexus-homepage.html'">
+                    <button class="btn-home" onclick="location.href='{{route('web.home')}}'">
                         <i class="bi bi-house"></i> Trang chủ
                     </button>
                     <button class="btn-another" onclick="resetForm()">
