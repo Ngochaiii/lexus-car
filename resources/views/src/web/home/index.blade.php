@@ -75,7 +75,6 @@
                                 <img
                                     src="{{asset('web/assets/images/gallery-ext-03-d.webp')}}"
                                     alt="Lexus RX 500h F SPORT">
-                                <span class="model-badge">F SPORT</span>
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
@@ -111,7 +110,6 @@
                                 <img
                                     src="{{asset('web/assets/images/Lexus NX 350h.jpeg')}}"
                                     alt="Lexus NX 350h Hybrid">
-                                <span class="model-badge hybrid">Hybrid</span>
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
@@ -123,10 +121,10 @@
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
-                                        243 HP</span>
+                                        188 HP</span>
                                     <span class="model-spec"><i
                                             class="bi bi-speedometer2"></i>
-                                        7.2s</span>
+                                        7.7s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-fuel-pump"></i>
                                         Hybrid</span>
@@ -146,7 +144,6 @@
                                 <img
                                     src="{{asset('web/assets/images/Lexus-ES-300h-2025-co-nhung-dong-xe-nao-doi-thu-cung-phan-khuc.jpg')}}"
                                     alt="Lexus ES 300h Ultra Luxury">
-                                <span class="model-badge new">Mới</span>
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
@@ -213,7 +210,6 @@
                                 <img
                                     src="{{asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg')}}"
                                     alt="Lexus LS 500h Flagship">
-                                <span class="model-badge">Flagship</span>
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
@@ -247,7 +243,6 @@
                                 <img
                                     src="{{asset('web/assets/images/640-lexus-rx350h-ra-mat.jpg')}}"
                                     alt="Lexus UX 300e Electric">
-                                <span class="model-badge hybrid">Electric</span>
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
@@ -264,7 +259,7 @@
                                         7.5s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-ev-station"></i>
-                                        Electric</span>
+                                        Hybrid</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
@@ -281,7 +276,6 @@
                                 <img
                                     src="{{asset('web/assets/images/403491-2024-lexus-gx.jpg')}}"
                                     alt="Lexus GX 550 2024">
-                                <span class="model-badge new">Mới 2024</span>
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
@@ -298,7 +292,7 @@
                                         7s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-fuel-pump"></i>
-                                        Turbo</span>
+                                        Petrol</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
@@ -315,7 +309,6 @@
                                 <img
                                     src="{{asset('web/assets/images/lexus-rx-350-overview-mgp.jpg')}}"
                                     alt="Lexus LC 500 Coupe">
-                                <span class="model-badge">Coupe</span>
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
@@ -332,7 +325,7 @@
                                         7.6s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-fuel-pump"></i>
-                                        SUV</span>
+                                        Petrol</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
@@ -349,24 +342,23 @@
                                 <img
                                     src="{{asset('web/assets/images/z7621162084592_597fb5e50862a85a5799e6063f1fe472.jpg')}}"
                                     alt="Lexus UX 300e Electric">
-                                <span class="model-badge hybrid">Electric</span>
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
                             <div class="model-card-body">
                                 <div class="model-series">Crossover Series</div>
-                                <h3 class="model-name">Lexus NX 350h</h3>
+                                <h3 class="model-name">Lexus NX 350</h3>
                                 <div class="model-variant">Full Electric</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
-                                        288 HP</span>
+                                        275 HP</span>
                                     <span class="model-spec"><i
                                             class="bi bi-speedometer2"></i>
-                                        7.7s</span>
+                                        6.6s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-ev-station"></i>
-                                        Hybird+Electric</span>
+                                        Hybird</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
@@ -383,7 +375,6 @@
                                 <img
                                     src="{{asset('web/assets/images/z7621162805885_c3e3469b52ae6daa20b3d3f1fbf7d3cd.jpg')}}"
                                     alt="Lexus GX 550 2024">
-                                <span class="model-badge new">Mới 2024</span>
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
@@ -400,7 +391,7 @@
                                         9.1s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-fuel-pump"></i>
-                                        Sedan</span>
+                                        Petrol</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
@@ -417,7 +408,6 @@
                                 <img
                                     src="{{asset('web/assets/images/z7621163418898_6dfc97686a654b321c1dba840e807cf5.jpg')}}"
                                     alt="Lexus LC 500 Coupe">
-                                <span class="model-badge">Coupe</span>
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
@@ -434,7 +424,7 @@
                                         6.9s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-fuel-pump"></i>
-                                        V8</span>
+                                        Hybird</span>
                                 </div>
                                 <div class="model-footer">
                                     <div

@@ -143,16 +143,11 @@
             <div class="fbar">
                 <button class="fbtn a" data-f="all"><i class="bi bi-grid-3x3-gap-fill"></i> Tất cả <span
                         class="fcnt">19</span></button>
-                <button class="fbtn" data-f="safety"><i class="bi bi-shield-check"></i> An Toàn <span
+                <button class="fbtn" data-f="safety"><i class="bi bi-shield-check"></i> Công nghệ tiên phong <span
                         class="fcnt">7</span></button>
-                <button class="fbtn" data-f="lighting"><i class="bi bi-lightbulb-fill"></i> Chiếu Sáng <span
-                        class="fcnt">2</span></button>
-                <button class="fbtn" data-f="protection"><i class="bi bi-heart-pulse-fill"></i> Bảo Vệ <span
-                        class="fcnt">3</span></button>
-                <button class="fbtn" data-f="comfort"><i class="bi bi-stars"></i> Tiện Nghi <span
-                        class="fcnt">5</span></button>
-                <button class="fbtn" data-f="parking"><i class="bi bi-p-square-fill"></i> Đỗ Xe <span
-                        class="fcnt">2</span></button>
+                <button class="fbtn" data-f="lighting"><i class="bi bi-lightbulb-fill"></i> Các trang bị & tính năng khác <span
+                        class="fcnt">12</span></button>
+
             </div>
         </div>
     </div>
@@ -779,7 +774,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="PVM" src="" alt="Hệ thống quan sát toàn cảnh PVM">
+                                <img data-tech="PVM" src="{{asset('web/assets/images/pvm.png')}}" alt="Hệ thống quan sát toàn cảnh PVM">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -828,7 +823,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="AUTO_SEAT" src="" alt="Ghế sau tự động ngả">
+                                <img data-tech="AUTO_SEAT" src="{{asset('web/assets/images/seat.png')}}" alt="Ghế sau tự động ngả">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -922,7 +917,7 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="ELATCH" src="" alt="Hệ thống e-Latch">
+                                <img data-tech="ELATCH" src="{{asset('web/assets/images/elatch.png')}}" alt="Hệ thống e-Latch">
                                 <div class="ph">
                                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80"
                                         fill="none">

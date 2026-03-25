@@ -79,3 +79,4 @@
                   observer.observe(el);
               });
       </script>
+<script src="{{ asset('web/assets/js/main.js')}}"></script>

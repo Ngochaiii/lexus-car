@@ -272,7 +272,7 @@
             <div class="colour-tabs">
                 <button class="colour-tab active" onclick="switchColour(this,'ct-exterior')">Màu Ngoại Thất</button>
                 <button class="colour-tab" onclick="switchColour(this,'ct-wheels')">Mâm Xe</button>
-                <button class="colour-tab" onclick="switchColour(this,'ct-seat')">Chất Liệu Ghế</button>
+                <button class="colour-tab" onclick="switchColour(this,'ct-seat')">Ghế(Màu & Chất liệu)</button>
                 <button class="colour-tab" onclick="switchColour(this,'ct-trim')">Ốp Nội Thất</button>
                 <button class="colour-tab" onclick="switchColour(this,'ct-wheel')">Vô Lăng</button>
             </div>
@@ -317,7 +317,7 @@
                             <div class="feature-thumb-img">
                                 <img src="{{ asset('web/assets/images/rx/xanhduong.jpg') }}" alt="Front Trim">
                             </div>
-                            <div class="ti-abbr">Xanh dương</div>
+                            <div class="ti-abbr">Xanh rêu</div>
                         </div>
                     </div>
                     <div class="tech-item">
@@ -333,7 +333,7 @@
                             <div class="feature-thumb-img">
                                 <img src="{{ asset('web/assets/images/rx/xanhd1.png') }}" alt="Front Trim">
                             </div>
-                            <div class="ti-abbr">PKSB — Parking Support Brake</div>
+                            <div class="ti-abbr">Xanh dương</div>
                         </div>
                     </div>
                 </div>
@@ -343,7 +343,7 @@
             <div class="colour-pane" id="ct-wheels">
                 <p style="font-size:0.92rem;color:var(--lexus-text-muted);max-width:600px;margin-bottom:32px;">Lexus RX
                     cung cấp nhiều tùy chọn mâm xe từ 18 đến 21 inch với các kiểu thiết kế phù hợp cho từng phiên bản.</p>
-                <div class="item-grid-4">
+                <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/rx/mam-xe.png') }}" alt="Mâm 21 inch Matte Black">
                         <div class="item-card-label">Mâm xe hợp kim nhôm <br><span
@@ -358,10 +358,6 @@
                         <img src="{{ asset('web/assets/images/rx/mam-xe3.png') }}" alt="Mâm 18 inch tiêu chuẩn">
                         <div class="item-card-label">Mâm xe hợp kim nhôm 21 inch <br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX500H F-sport</span></div>
-                    </div>
-                    <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/rx/mam-xe4.png') }}" alt="Mâm 19 inch Sport">
-                        <div class="item-card-label">Mâm 21 Matte Black</div>
                     </div>
                 </div>
                 <div
@@ -398,19 +394,20 @@
                 </div>
                 <div class="item-grid-3 mt-3">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/rx/chatlieughedasemi.webp') }}" alt="Da đen đục lỗ">
+                        <img src="{{ asset('web/assets/images/rx/dasemi.png') }}" alt="Da đen đục lỗ">
                         <div class="item-card-label">Da Semi-aniline<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX 350h LUXURY</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/rx/chatlieughedasmooth.jpg') }}" alt="Da kem cao cấp">
+                        <img src="{{ asset('web/assets/images/rx/dasmooth.png') }}" alt="Da kem cao cấp">
                         <div class="item-card-label">Da Smooth<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX 350 PREMIUM vàRX 350h
                                 PREMIUM </span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/rx/ghexe.jpg') }}" alt="Da nâu Saddle Tan">
-                        <div class="item-card-label">Đen Black</div>
+                        <img src="{{ asset('web/assets/images/rx/gheden.png') }}" alt="Da nâu Saddle Tan">
+                        <div class="item-card-label">Da smooth<br><span
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX500H Performance </span></div>
                     </div>
                 </div>
             </div>
