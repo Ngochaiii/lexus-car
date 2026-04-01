@@ -142,14 +142,14 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/Lexus-ES-300h-2025-co-nhung-dong-xe-nao-doi-thu-cung-phan-khuc.jpg')}}"
+                                    src="{{asset('web/assets/images/LM500h6cho.webp')}}"
                                     alt="Lexus ES 300h Ultra Luxury">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
                             <div class="model-card-body">
                                 <div class="model-series">Sedan Series</div>
-                                <h3 class="model-name">Lexus ES 300h</h3>
+                                <h3 class="model-name">Lexus LM 500h(6 chỗ)</h3>
                                 <div class="model-variant">Ultra Luxury</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
@@ -157,14 +157,14 @@
                                         295 HP</span>
                                     <span class="model-spec"><i
                                             class="bi bi-speedometer2"></i>
-                                        6.7s</span>
+                                        6.9s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-fuel-pump"></i>
                                         Hybrid</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">3.140.000.000đ</div>
+                                        class="model-price">7.530.000.000đ</div>
                                     <a href="#" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
@@ -182,7 +182,7 @@
                             </div>
                             <div class="model-card-body">
                                 <div class="model-series">SUV Series</div>
-                                <h3 class="model-name">Lexus LX 600</h3>
+                                <h3 class="model-name">Lexus LX 600 VIP</h3>
                                 <div class="model-variant">VIP 4 chỗ ngồi</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
@@ -241,14 +241,14 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/640-lexus-rx350h-ra-mat.jpg')}}"
+                                    src="{{asset('web/assets/images/GX550M.webp')}}"
                                     alt="Lexus UX 300e Electric">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
                             <div class="model-card-body">
                                 <div class="model-series">Crossover Series</div>
-                                <h3 class="model-name">Lexus RX 350h</h3>
+                                <h3 class="model-name">Lexus GX550M</h3>
                                 <div class="model-variant">Full Electric</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
@@ -340,29 +340,29 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/z7621162084592_597fb5e50862a85a5799e6063f1fe472.jpg')}}"
+                                    src="{{asset('web/assets/images/LX600FSPORT.webp')}}"
                                     alt="Lexus UX 300e Electric">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
                             <div class="model-card-body">
                                 <div class="model-series">Crossover Series</div>
-                                <h3 class="model-name">Lexus NX 350</h3>
+                                <h3 class="model-name">Lexus LX 600 F SPORT</h3>
                                 <div class="model-variant">Full Electric</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
-                                        275 HP</span>
+                                        409 HP</span>
                                     <span class="model-spec"><i
                                             class="bi bi-speedometer2"></i>
-                                        6.6s</span>
+                                        7s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-ev-station"></i>
-                                        Hybird</span>
+                                        Petrol</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">3.270.000.000đ</div>
+                                        class="model-price">8.840.000.000đ</div>
                                     <a href="#" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
@@ -373,29 +373,29 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/z7621162805885_c3e3469b52ae6daa20b3d3f1fbf7d3cd.jpg')}}"
+                                    src="{{asset('web/assets/images/LX600Urban.webp')}}"
                                     alt="Lexus GX 550 2024">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
                             <div class="model-card-body">
                                 <div class="model-series">SUV Series</div>
-                                <h3 class="model-name">Lexus ES 250</h3>
+                                <h3 class="model-name">Lexus LX 600 Urban</h3>
                                 <div class="model-variant">Overtrail+</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
-                                        204 HP</span>
+                                        409 HP</span>
                                     <span class="model-spec"><i
                                             class="bi bi-speedometer2"></i>
-                                        9.1s</span>
+                                        7s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-fuel-pump"></i>
                                         Petrol</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">2.360.000.000đ</div>
+                                        class="model-price">8.580.000.000đ</div>
                                     <a href="#" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
@@ -413,7 +413,7 @@
                             </div>
                             <div class="model-card-body">
                                 <div class="model-series">Coupe Series</div>
-                                <h3 class="model-name">Lexus LM 500h</h3>
+                                <h3 class="model-name">Lexus LM 500h (4 chỗ)</h3>
                                 <div class="model-variant">Convertible</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
@@ -428,7 +428,7 @@
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">7.530.000.000đ</div>
+                                        class="model-price">8.950.000.000đ</div>
                                     <a href="#" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
