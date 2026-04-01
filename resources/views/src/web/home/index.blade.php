@@ -86,7 +86,7 @@
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
-                                        270 HP</span>
+                                        270.8  HP</span>
                                     <span class="model-spec"><i
                                             class="bi bi-speedometer2"></i>
                                         6.2s</span>
@@ -96,7 +96,7 @@
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">4.940.000.000đ</div>
+                                        class="model-price">4.490.000.000đ</div>
                                     <a href="{{route('products.rx')}}"
                                         class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
@@ -154,7 +154,7 @@
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
-                                        295 HP</span>
+                                        275 HP</span>
                                     <span class="model-spec"><i
                                             class="bi bi-speedometer2"></i>
                                         6.9s</span>
@@ -248,23 +248,23 @@
                             </div>
                             <div class="model-card-body">
                                 <div class="model-series">Crossover Series</div>
-                                <h3 class="model-name">Lexus GX550M</h3>
+                                <h3 class="model-name">Lexus GX 550M</h3>
                                 <div class="model-variant">Full Electric</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
-                                        204 HP</span>
+                                        349 HP</span>
                                     <span class="model-spec"><i
                                             class="bi bi-speedometer2"></i>
-                                        7.5s</span>
+                                        7s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-ev-station"></i>
-                                        Hybrid</span>
+                                        Petrol</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">3.500.000.000đ</div>
-                                    <a href="{{route('products.rx')}}" class="model-link">Chi tiết <i
+                                        class="model-price">6.400.000.000đ</div>
+                                    <a href="" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -307,29 +307,62 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/lexus-rx-350-overview-mgp.jpg')}}"
+                                    src="{{asset('web/assets/images/RX350hPremium.webp')}}"
                                     alt="Lexus LC 500 Coupe">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
                             <div class="model-card-body">
                                 <div class="model-series">Coupe Series</div>
-                                <h3 class="model-name">Lexus RX 350</h3>
+                                <h3 class="model-name">Lexus Rx350h Premium</h3>
                                 <div class="model-variant">Convertible</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
-                                        275 HP</span>
+                                        187,7 HP</span>
                                     <span class="model-spec"><i
                                             class="bi bi-speedometer2"></i>
-                                        7.6s</span>
+                                        7.9s</span>
                                     <span class="model-spec"><i
                                             class="bi bi-fuel-pump"></i>
-                                        Petrol</span>
+                                        Hybrid</span>
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">4.330.000.000đ</div>
+                                        class="model-price">3.350.000.000đ</div>
+                                    <a href="{{route('products.rx')}}" class="model-link">Chi tiết <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="model-card">
+                            <div class="model-card-img">
+                                <img
+                                    src="{{asset('web/assets/images/RX350hLuxury.png')}}"
+                                    alt="Lexus LC 500 Coupe">
+                                <button class="model-fav"><i
+                                        class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="model-card-body">
+                                <div class="model-series">Coupe Series</div>
+                                <h3 class="model-name">Lexus Rx350h luxury</h3>
+                                <div class="model-variant">Convertible</div>
+                                <div class="model-specs">
+                                    <span class="model-spec"><i
+                                            class="bi bi-lightning-charge"></i>
+                                        187,7 HP</span>
+                                    <span class="model-spec"><i
+                                            class="bi bi-speedometer2"></i>
+                                        7.9s</span>
+                                    <span class="model-spec"><i
+                                            class="bi bi-fuel-pump"></i>
+                                        Hybrid</span>
+                                </div>
+                                <div class="model-footer">
+                                    <div
+                                        class="model-price">4.140.000.000đ</div>
                                     <a href="{{route('products.rx')}}" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
