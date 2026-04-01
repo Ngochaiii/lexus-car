@@ -148,9 +148,8 @@
                                         class="bi bi-heart"></i></button>
                             </div>
                             <div class="model-card-body">
-                                <div class="model-series">Sedan Series</div>
+                                <div class="model-series">MPV Series</div>
                                 <h3 class="model-name">Lexus LM 500h(6 chỗ)</h3>
-                                <div class="model-variant">Ultra Luxury</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
@@ -247,9 +246,8 @@
                                         class="bi bi-heart"></i></button>
                             </div>
                             <div class="model-card-body">
-                                <div class="model-series">Crossover Series</div>
+                                <div class="model-series">SUV Series</div>
                                 <h3 class="model-name">Lexus GX 550M</h3>
-                                <div class="model-variant">Full Electric</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
@@ -313,9 +311,8 @@
                                         class="bi bi-heart"></i></button>
                             </div>
                             <div class="model-card-body">
-                                <div class="model-series">Coupe Series</div>
+                                <div class="model-series">SUV Series</div>
                                 <h3 class="model-name">Lexus Rx350h Premium</h3>
-                                <div class="model-variant">Convertible</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
@@ -346,9 +343,8 @@
                                         class="bi bi-heart"></i></button>
                             </div>
                             <div class="model-card-body">
-                                <div class="model-series">Coupe Series</div>
+                                <div class="model-series">SUV Series</div>
                                 <h3 class="model-name">Lexus Rx350h luxury</h3>
-                                <div class="model-variant">Convertible</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
@@ -379,9 +375,8 @@
                                         class="bi bi-heart"></i></button>
                             </div>
                             <div class="model-card-body">
-                                <div class="model-series">Crossover Series</div>
+                                <div class="model-series">SUV Series</div>
                                 <h3 class="model-name">Lexus LX 600 F SPORT</h3>
-                                <div class="model-variant">Full Electric</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
@@ -445,9 +440,8 @@
                                         class="bi bi-heart"></i></button>
                             </div>
                             <div class="model-card-body">
-                                <div class="model-series">Coupe Series</div>
+                                <div class="model-series">SUV Series</div>
                                 <h3 class="model-name">Lexus LM 500h (4 chỗ)</h3>
-                                <div class="model-variant">Convertible</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
