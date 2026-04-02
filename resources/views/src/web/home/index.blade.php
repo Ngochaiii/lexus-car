@@ -81,8 +81,6 @@
                             <div class="model-card-body">
                                 <div class="model-series">SUV Series</div>
                                 <h3 class="model-name">Lexus RX 500h</h3>
-                                <div class="model-variant">F SPORT
-                                    PERFORMANCE</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
@@ -116,8 +114,6 @@
                             <div class="model-card-body">
                                 <div class="model-series">SUV Series</div>
                                 <h3 class="model-name">Lexus NX 350h</h3>
-                                <div class="model-variant">F SPORT Handling
-                                    AWD</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
@@ -182,7 +178,6 @@
                             <div class="model-card-body">
                                 <div class="model-series">SUV Series</div>
                                 <h3 class="model-name">Lexus LX 600 VIP</h3>
-                                <div class="model-variant">VIP 4 chỗ ngồi</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
@@ -215,7 +210,6 @@
                             <div class="model-card-body">
                                 <div class="model-series">Sedan Series</div>
                                 <h3 class="model-name">Lexus LS 500h</h3>
-                                <div class="model-variant">Executive AWD</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
@@ -280,7 +274,6 @@
                             <div class="model-card-body">
                                 <div class="model-series">SUV Series</div>
                                 <h3 class="model-name">Lexus GX 550</h3>
-                                <div class="model-variant">Overtrail+</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
@@ -409,7 +402,6 @@
                             <div class="model-card-body">
                                 <div class="model-series">SUV Series</div>
                                 <h3 class="model-name">Lexus LX 600 Urban</h3>
-                                <div class="model-variant">Overtrail+</div>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
