@@ -128,7 +128,7 @@
                                 <div class="model-footer">
                                     <div
                                         class="model-price">3.270.000.000đ</div>
-                                    <a href="#" class="model-link">Chi tiết <i
+                                    <a href="{{route('products.nx')}}" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -160,7 +160,7 @@
                                 <div class="model-footer">
                                     <div
                                         class="model-price">7.530.000.000đ</div>
-                                    <a href="#" class="model-link">Chi tiết <i
+                                    <a href="{{route('products.lm')}}" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -192,7 +192,7 @@
                                 <div class="model-footer">
                                     <div
                                         class="model-price">9.700.000.000đ</div>
-                                    <a href="#" class="model-link">Chi tiết <i
+                                    <a href="{{route('products.lx')}}" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -224,7 +224,7 @@
                                 <div class="model-footer">
                                     <div
                                         class="model-price">8.030.000.000đ</div>
-                                    <a href="#" class="model-link">Chi tiết <i
+                                    <a href="{{route('products.ls')}}" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -256,7 +256,7 @@
                                 <div class="model-footer">
                                     <div
                                         class="model-price">6.400.000.000đ</div>
-                                    <a href="" class="model-link">Chi tiết <i
+                                    <a href="{{route('products.gx')}}" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -288,7 +288,7 @@
                                 <div class="model-footer">
                                     <div
                                         class="model-price">6.450.000.000đ</div>
-                                    <a href="#" class="model-link">Chi tiết <i
+                                    <a href="{{route('products.gx')}}" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -384,7 +384,7 @@
                                 <div class="model-footer">
                                     <div
                                         class="model-price">8.840.000.000đ</div>
-                                    <a href="#" class="model-link">Chi tiết <i
+                                    <a href="{{route('products.lx')}}" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -416,7 +416,7 @@
                                 <div class="model-footer">
                                     <div
                                         class="model-price">8.580.000.000đ</div>
-                                    <a href="#" class="model-link">Chi tiết <i
+                                    <a href="{{route('products.lx')}}" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -448,7 +448,7 @@
                                 <div class="model-footer">
                                     <div
                                         class="model-price">8.950.000.000đ</div>
-                                    <a href="#" class="model-link">Chi tiết <i
+                                    <a href="{{route('products.lm')}}" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>

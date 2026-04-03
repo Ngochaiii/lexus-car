@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\web;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 
 class ProductsController extends Controller
 {
@@ -12,7 +11,19 @@ class ProductsController extends Controller
     }
 
 
-    public function detail(){
-        return view('src.web.products.detail');
+    public function lm(){
+        return view('src.web.products.lm');
+    }
+
+    public function nx(){
+        return view('src.web.products.nx');
+    }
+
+    public function lx(){
+        return view('src.web.products.lx');
+    }
+
+    public function ls(){
+        return view('src.web.products.ls');
     }
 }

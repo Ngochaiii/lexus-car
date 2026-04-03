@@ -1,78 +1,105 @@
-LM
-Bảng màu nội thất & ngoại thất
-Màu ngoại thất
-
-Thiết kế bánh xe
+LS
+Bảng màu ngoại thất & nội thất
+Ngoại thất
+ 
 
 Nội thất
 
-Giới thiệu 
-Với yêu cầu về độ tỉ mỉ của LM thế hệ thứ hai, sự yên tĩnh chính là yếu tố được đề cao hàng đầu. Không gian nội thất mang đến cảm giác thư giãn, yên bình để nạp lại năng lượng. Thiết kế tối ưu, tạo điều kiện thích hợp giúp chủ nhân có thể điều hành các hoạt động kinh doanh ngay cả khi không ở văn phòng. Thiết kế nội thất độc đáo, yên tĩnh nhưng vẫn đảm bảo vận hành mạnh mẽ và tiết kiệm nhiên liệu nhờ động cơ 2,4L I4 Turbo Tăng áp. Lấy cảm hứng từ trải nghiệm trực quan đặt con người làm trung tâm, dấu ấn trải nghiệm lái Lexus – Lexus Driving Signature (LDS) mang tới trải nghiệm lái xe khác biệt và đầy thú vị. Lexus LM tiếp tục nâng tầm LDS với tư duy thiết kế mới, giúp nâng cao trải nghiệm trên mọi hành trình cho hành khách. Bằng cách điều chỉnh hoạt động của các bộ phận thiết yếu như hệ thống lái, hệ thống phanh và hệ thống treo, LM mang đến trải nghiệm lái yên tĩnh hơn và thoải mái hơn. Chỉ tại Lexus, sự tỉ mỉ, chú ý đến từng chi tiết mới có thể tạo nên một không gian tinh tế như vậy
+Ốp trang trí
 
-Hình  1 Lexus LM500h
+Phiên bản đặc biệt kỷ niệm 30 năm ra mắt dòng xe LS
+
+ 
+
+ 
+
+
+Giới thiệu
+Đối với Lexus, thiết kế một chiếc sedan hàng đầu không chỉ là tạo ra một chiếc xe sang trọng. Không đơn thuần chỉ tượng trưng cho Lexus, chiếc xe còn là chuẩn mực cho định nghĩa về xe sang trong tương lai, mẫu xe tiên phong với sự kết tinh của văn hóa Nhật Bản và vượt xa mọi kỳ vọng của khách hàng. Để đạt được điều này, chiếc LS được phát triển dựa trên sự hợp nhất giữa thiết kế ấn tượng giàu cảm xúc của một chiếc sedan đầu bảng với khả năng vận hành đạt đến đỉnh cao của sự thanh lịch, thoải mái và thân thiện môi trường, cùng chất lượng hoàn mỹ, đến từ nghệ thuật chế tác bậc thầy của những nghệ nhân (Takumi) Nhật Bản và các công nghệ sản xuất hiện đại nhất. 
+
+Hình  1 Lexus LS500h
 Hệ truyền động
-2.4T-HEV DIRECT4 Pin nickel hydride kim loại lưỡng cực 
-Hệ dẫn động 2.4T-HEV DIRECT 4 bao gồm động cơ xăng tăng áp 4 xy lanh thẳng hàng dung tích 2,4L tích hợp bộ điều khiển công suất (PCU) và mô tơ điện 64 kW, ghép nối với hộp số tự động 6 cấp. Cầu sau được trang bị cụm dẫn động eAxle công suất 76 kW cung cấp sức kéo tức thời cho bánh sau. Hệ dẫn động 4 bánh DIRECT 4 tiêu chuẩn điều phối lực truyền động giữa cầu trước và cầu sau chỉ trong một phần nghìn giây trong mọi tình huống, giúp nâng cao khả năng điều khiển, khả năng xử lý và cảm giác lái. Nhờ đó chuyển động cơ thể của người lái và hành khách trên xe được giảm thiểu tối đa, mang lại cảm giác thoải mái và thư thái trên mọi hành trình.
+Động cơ tăng áp kép V6 3.5L (V35A-FTS) 
+Được phát triển dành riêng cho Lexus, động cơ LS mới đã được thiết kế lại, sử dụng công nghệ đốt cháy tốc độ cao và bộ tăng áp hiệu suất cao mang đến công suất vượt trội cùng hiệu quả nhiên liệu tuyệt vời. Động cơ tạo ra mô-men xoắn cực đại ngay tại vòng tua thấp cùng khả năng tăng tốc mạnh mẽ ngay khi đạp ga. Thêm vào đó, hộp số tự động 10 cấp sang số trực tiếp, giúp chuyển số chính xác với phản ứng tức thì, nâng tầm cảm giác lái đầy hứng khởi.
 
-Hình  2 2.4T-HEV DIRECT4 Pin nickel hydride kim loại lưỡng cực
+Hình  2 Động cơ tăng áp kép V6 3.5L (V35A-FTS)
+Động cơ V6 3.5L (8GR-FXS) 
+Động cơ Hybrid V6 tích hợp nhiều công nghệ hiện đại như: hệ thống điều phối van biến thiên thông minh kép Dual VVT-i (với cửa nạp loại mở rộng VVT-iW) và hệ thống phun nhiên liệu trực tiếp D-4S. Các chi tiết có trọng lượng nhẹ được sử dụng mang đến khả năng vận hành mạnh mẽ cũng như hiệu suất thân thiện với môi trường tuyệt vời. Việc tập trung vào giảm tiêu hao ma sát trong động cơ giúp gia tăng tốc độ vòng tua tối đa từ 6000 lên đến 6600 vòng/phút.
+
+Hình  3 Động cơ V6 3.5L (8GR-FXS)
+Hệ thống Multi Stage Hybrid 
+Cơ chế điều khiển sang số 10 cấp của hệ thống Multi Stage Hybrid mang đến cảm giác tăng tốc ngay lập tức, đồng bộ với sự gia tăng tốc độ vòng quay động cơ và nhịp chuyển số tuyệt vời. Thiết bị điều khiển chuyển số Multi Stage điều chỉnh sự phối hợp của động cơ xăng và động cơ điện, giúp tối đa hóa mô-men xoắn của động cơ và gia tăng lực kéo thêm 24%. Hệ thống này tối ưu hóa tốc độ vận hành của động cơ từ vòng quay thấp đến cao, giúp đạt được công suất tối đa ngay từ vận tốc 50km/h, cũng như cho phép lái xe tốc độ cao với tốc độ vòng quay thấp, mang đến khả năng vận hành êm ái.
+
+Hình  4 Hệ thống Multi Stage Hybrid
 Khung gầm
-Cấu trúc khung gầm và thân xe của LM sử dụng hệ thống thanh giằng được gia cố, mang đến cảm giác lái thoải mái và an toàn hơn.
-Độ cứng tổng thể được cải thiện, giảm đáng kể chuyển động vặn xoắn, lắc dọc và lắc ngang. Phần gia cố bổ sung nằm ở hệ thống treo trước và sau (cấu trúc bổ trợ), lưới tản nhiệt (cấu trúc hình khuyên phía trước), khu vực chân kính (bộ phận tăng cứng và thanh giằng gia cố hệ thống lái) và các cột B, C và D.
+Thân xe đa vật liệu
+Thân xe đạt đến độ cứng cao, trọng lượng nhẹ và hiệu quả an toàn xuất sắc nhờ cấu trúc thiết kế được tối ưu hóa, kết hợp cùng việc sử dụng thép dập nóng chịu lực cho các chi tiết quan trọng như thanh dọc gầm xe, trụ bên và trần xe.
 
-Hình  3 Cấu trúc khung gầm
+Hình  5 Cấu trúc vật liệu thân xe
+Hệ dẫn động cầu sau FR (Động cơ đặt trước, dẫn động cầu sau)
+LS thừa hưởng hệ dẫn động cầu sau được tinh chỉnh từ chiếc coupe thể thao LC của Lexus để tối ưu hóa phân bổ trọng lượng trước-sau, cũng như tối ưu hóa mô-men quán tính của xe, mang lại khả năng chuyển đổi mượt mà, tự nhiên của động năng thân xe khi vào cua, khi tăng hay giảm tốc
+Hệ thống treo trước sử dụng dầu ma sát thấp trong giảm xóc mang đến cảm giác êm dịu. Hệ thống treo sau sử dụng công nghệ liên kết tay đòn loại trụ nối được phát triển mới, góp phần tạo ra một sự kết hợp tinh tế giữa khả năng xử lý ổn định và cảm giác thoải mái khi lái xe.
 
-KHUNG XE NHẸ
-LM thế hệ mới sử dụng các tấm ốp mỏng hơn, giúp giảm 12,3 kg trọng lượng xe. Cửa trượt bằng nhôm thiết kế mới dày 0,7 mm, giúp giảm thêm 18,5 kg nhưng vẫn đảm bảo an toàn.
-Hệ thống treo
+Hình  6 Hệ thống treo trước sau
+Hệ thống quản lý động lực học hợp nhất VDIM (tích hợp hệ thống quản lý lái chủ động) + LDH
+VDIM quản lý cùng lúc động cơ, hệ thống phanh, hệ thống lái và các hệ thống khác, bao gồm cả
+hệ thống lái trợ lực điện EPS và hệ thống kiểm soát động lực chủ động của Lexus LDH (điều khiển góc lái của bánh trước và sau) như một thể thống nhất, góp phần mang lại mức độ an toàn chủ động cao cũng như niềm hứng khởi sau tay lái. Hệ thống LDH tối ưu hóa góc lái của cả bốn bánh xe dựa trên các yếu tố như tốc độ xe và góc xoay vô-lăng để tìm ra động lực học lý tưởng nhất, phù hợp với mọi điều khiển của người lái, mang đến sự ổn định tuyệt vời của xe ở tốc độ cao và phản ứng lái nhạy bén ở tốc độ trung bình trên các cung đường quanh co như đường đồi núi.
 
-Hình  4 KẾT CẤU HỆ THỐNG TREO
-CẢI TIẾN KẾT CẤU HỆ THỐNG TREO
-Kết cấu của hệ thống treo MacPherson phía trước và tay đòn kép phía sau được cải tiến để gia tăng khả năng hấp thụ lực tác động từ mặt đường
-HỆ THỐNG TREO NHẸ
-Hệ thống treo trước và sau làm bằng nhôm, kết hợp cùng hệ thống siết bulông moay ơ cải tiến mới góp phần giúp khối lượng tổng thể của LM nhẹ hơn nhưng không làm mất đi độ ổn định cần thiết. Hệ thống siết bu lông moay ơ mới cung cấp lực siết lớn hơn, giúp tăng cường sự liên kết giữa bánh xe và khung xe, từ đó cải thiện độ phản hồi đánh lái.
-HỆ THỐNG TREO THÍCH ỨNG (AVS)
-Hệ thống treo AVS giúp cải thiện độ ổn định để mang lại trải nghiệm lái xe thoải mái hơn. Hệ thống này sử dụng bộ truyền động kiểu điện từ tuyến tính, điều chỉnh tức thời lực giảm chấn của bộ giảm chấn dựa trên hoạt động lái xe và điều kiện đường xá. Bộ giảm chấn được trang bị cơ cấu van siêu nhạy theo tần số đầu tiên trên thế giới, giúp tăng hiệu quả giảm tiếng ồn và độ rung bên trong cabin.
-
-Hình  5 HỆ THỐNG TREO THÍCH ỨNG (AVS)
+Hình  7Hệ thống quản lý động lực học hợp nhất VDIM + LDH
 Thiết kế
 Ngoại thất
-Các kỹ sư đã tạo nên ngoại hình của LM với một góc nhìn mới mẻ. Thay vì sử dụng thiết kế lưới tản nhiệt hình con suốt cổ điển, cấu trúc liền mạch thế hệ mới bắt đầu được áp dụng — tạo điểm nhấn cho Phong thái mạnh mẽ của xe. Với thay đổi này, các tỷ lệ của LM vẫn được đảm bảo với kiểu dáng đẹp, rộng và tập trung vào tính thẩm mỹ tối ưu cho hàng ghế sau, mang lại sự thoải mái và hiệu suất vượt trội.
+Thể hiện ý tưởng thiết kế “Táo bạo đầy đam mê”, ngoại thất LS hợp nhất những đường nét gợi cảm với nền tảng khung gầm trọng tâm thấp nhằm khơi gợi những trải nghiệm hứng khởi sau tay lái, từ đó ghi dấu ấn độc đáo về phong cách và cá tính của 1 chiếc sedan hạng sang đầu bảng.
 
-Hình  6 Góc chính diện phía trước
 
-Hình  7 Góc chính diện phía sau
+        Hình  8 Đầu xe
 
-Hình  8 Mặt bên xe
+          Hình  9 Mâm bánh xe
 
-Hình  9 Thiết kế khí động học
-Nội thất
-Nội thất LM là sự hội tụ giữa không gian thoải mái của phòng khách và sự yên tĩnh tại văn phòng. Đặc biệt, phía sau cabin là sự hòa quyện hoàn hảo giữa hai thế giới riêng biệt trong không gian rộng rãi, đầy đủ tiện nghi. Khách hàng có thể lựa chọn phiên bản bốn hoặc sáu chỗ tùy theo nhu cầu cá nhân. Phiên bản bốn chỗ tập trung vào các tiện ích của ghế hành khách, phù hợp chủ nhân có tài xế riêng; Phiên bản sáu chỗ lại hướng đến phục vụ nhu cầu di chuyển của doanh nghiệp và hộ gia đình. Các lựa chọn đều có thiết kế tối giản, ngăn nắp, tầm nhìn ngoại vi rộng được trang bị những công nghệ tiên tiến phục vụ con người, đảm bảo sự thoải mái tối ưu nhất
 
-Hình  10 Nội thất
+            Hình  10 Đuôi xe
 
-Hình  11 Nội thất hàng ghế sau
-Phiên bản 4 chỗ
 
-Hình  12 Nội thất phiên bản 4 chỗ
-Phiên bản 6 chỗ
+            Hình  11 Gương chiếu hậu
 
-Hình  13 Nội thất phiên bản 7 chỗ
+Nội thất:
+Với ý tưởng “Sự tiện nghi tiên phong”, không gian nội thất kết hợp giữa khoang lái được thiết kế thuận tiện cho việc tập trung lái xe và khoang hành khách tiện nghi tinh tế xứng tầm một chiếc sedan sang trọng hàng đầu. Các tính năng và chi tiết hoàn thiện tinh xảo còn mang giá trị thẩm mỹ cao của nghệ thuật chế tác Nhật Bản, dệt nên một không gian nội thất độc đáo chạm đến mọi giác quan.
+
+
+Hình  12 Vô lăng
+
+Hình  13 Cần số
+
+
+  Hình  14 Công tắc chọn chế độ lái
+
+Hình  15 Táp li cửa
+
+
+Hình  16 Ghế
+
+Hình  17 Màn hình giải trí ghế sau
+
+Hình  18 Màn hình điều khiển phía sau
 
 Các phiên bản khác (nếu có)
-Công nghệ tiên tiến
-PCS (Hệ thống cảnh báo tiền va chạm)
-DRCC (Hệ thống điều khiển hành trình chủ động với chức năng theo dõi tốc độ)
-LDA (Hệ thống cảnh báo lệch làn đường)
- LTA (Hệ thống hỗ trợ theo dõi làn đường)
-AHS (Hệ thống đèn pha thích ứng)
-TÍNH NĂNG HỖ TRỢ ĐỖ XE THÔNG MINH LEXUS TEAMMATE
-SEA (Hệ thống hỗ trợ rời xe an toàn)
-BSM (Hệ thống cảnh báo điểm mù)
+Công nghệ tiên phong
+Hệ thống hỗ trợ theo dõi làn đường LTA
+Hệ thống điều khiển hành trình chủ động DRCC
+Hệ thống cảnh báo điểm mù BSM
+Hệ thống hỗ trợ cảnh báo đỗ xe PKSA
+Hệ thống an toàn tiền va chạm PCS
+Hệ thống đèn pha tự động thích ứng AHS
+Đèn góc dạng LED/ Chế độ chiết sáng đa thời tiết
+Kết cấu mui xe an toàn PUH
+Hệ thống túi khí SRS
+…
 Các trang bị khác
-Hệ thống chốt điện tử e-Latch có cơ cấu hỗ trợ đóng cửa
-Gương chiếu hậu kỹ thuật số
-Hệ thống cửa hít
+Màn hình kích thước lớn hiển thị thông tin trên kính chắn gió
+Ghế sau tự động ngả
+Hệ thống quan sát toàn cảnh
+…
 Bảng thông số chi tiết
 
 
-Hình  14 Kích thước xe
+Hình  19 Thông số kích thước
+

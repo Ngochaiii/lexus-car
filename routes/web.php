@@ -22,6 +22,10 @@ Route::get('/', [HomeController::class, 'index'])->name('web.home');
 Route::get('/regis', [HomeController::class, 'regis'])->name('web.home.regis');
 
 Route::get('/lexus-rx', [ProductsController::class, 'index'])->name('products.rx');
+Route::get('/lexus-lm', [ProductsController::class, 'lm'])->name('products.lm');
+Route::get('/lexus-nx', [ProductsController::class, 'nx'])->name('products.nx');
+Route::get('/lexus-lx', [ProductsController::class, 'lx'])->name('products.lx');
+Route::get('/lexus-ls', [ProductsController::class, 'ls'])->name('products.ls');
 
 Route::get('/technolory-lexus', [TechnogoryLexusController::class, 'index'])->name('tech_car.index');
 
