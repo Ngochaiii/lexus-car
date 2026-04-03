@@ -26,6 +26,7 @@ Route::get('/lexus-lm', [ProductsController::class, 'lm'])->name('products.lm');
 Route::get('/lexus-nx', [ProductsController::class, 'nx'])->name('products.nx');
 Route::get('/lexus-lx', [ProductsController::class, 'lx'])->name('products.lx');
 Route::get('/lexus-ls', [ProductsController::class, 'ls'])->name('products.ls');
+Route::get('/lexus-gx', [ProductsController::class, 'gx'])->name('products.gx');
 
 Route::get('/technolory-lexus', [TechnogoryLexusController::class, 'index'])->name('tech_car.index');
 

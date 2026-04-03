@@ -26,4 +26,8 @@ class ProductsController extends Controller
     public function ls(){
         return view('src.web.products.ls');
     }
+
+    public function gx(){
+        return view('src.web.products.gx');
+    }
 }
