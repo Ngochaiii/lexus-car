@@ -69,21 +69,21 @@
                             <div class="option-label"><span><i class="bi bi-gear me-2"></i>Phiên bản</span></div>
                             <div class="version-options">
                                 <div class="version-option active"
-                                    onclick="selectVersion(this,'7.430.000.000','LS 500h V6 Hybrid AWD',354,'5.4s','7.5L','AWD')">
+                                    onclick="selectVersion(this,'8.030.000.000','LS 500 V6 Twin Turbo RWD',415,'5.4s','10.4L','RWD')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
-                                        <div class="vo-name">LS 500h — V6 3.5L Multi Stage Hybrid AWD</div>
+                                        <div class="vo-name">LS 500 — V6 3.5L Twin Turbo RWD</div>
                                     </div>
-                                    <div class="vo-price">7.430.000.000đ</div>
+                                    <div class="vo-price">8.030.000.000đ</div>
                                 </div>
-                                <div class="version-option"
+                                {{-- <div class="version-option"
                                     onclick="selectVersion(this,'7.030.000.000','LS 500 V6 Twin Turbo RWD',415,'5.4s','10.4L','RWD')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">LS 500 — V6 3.5L Twin Turbo RWD</div>
                                     </div>
                                     <div class="vo-price">7.030.000.000đ</div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
 
@@ -92,7 +92,7 @@
                             <div class="price-row">
                                 <div>
                                     <div class="price-label">Giá niêm yết</div>
-                                    <div class="price-value" id="priceDisplay">7.430.000.000<span> VNĐ</span></div>
+                                    <div class="price-value" id="priceDisplay">8.030.000.000<span> VNĐ</span></div>
                                 </div>
                             </div>
                             <div class="price-installment">
@@ -138,7 +138,7 @@
                             </div>
                             <div class="qs-item">
                                 <div class="qs-icon"><i class="bi bi-fuel-pump"></i></div>
-                                <div class="qs-value" id="qs-fuel">7.5L</div>
+                                <div class="qs-value" id="qs-fuel">6.7L</div>
                                 <div class="qs-label">/ 100km</div>
                             </div>
                             <div class="qs-item">
@@ -193,8 +193,8 @@
                             <div class="dealer-avatar"><i class="bi bi-building"></i></div>
                             <div class="dealer-content">
                                 <div class="dealer-name">Lexus Thăng Long</div>
-                                <div class="dealer-location"><i class="bi bi-geo-alt"></i> 68 Trần Duy Hưng, Cầu Giấy, Hà
-                                    Nội</div>
+                                <div class="dealer-location"><i class="bi bi-geo-alt"></i> Ngã tư Phạm Hùng + Dương Đình Nghệ Tổ dân, phố số 8, Phường, Cầu Giấy, Hà Nội 100000, Việt Nam
+</div>
                                 <div class="dealer-status">Đang mở cửa • Đóng cửa lúc 19:00</div>
                             </div>
                         </div>
@@ -434,11 +434,11 @@
                             đa hóa mô-men xoắn và gia tăng lực kéo thêm 24%.</p>
                         <div class="powertrain-specs">
                             <div class="pt-spec">
-                                <div class="pt-spec-value">354 HP</div>
+                                <div class="pt-spec-value">295 HP</div>
                                 <div class="pt-spec-label">Công suất</div>
                             </div>
                             <div class="pt-spec">
-                                <div class="pt-spec-value">5.4s</div>
+                                <div class="pt-spec-value">6.7s</div>
                                 <div class="pt-spec-label">0-100 km/h</div>
                             </div>
                             <div class="pt-spec">

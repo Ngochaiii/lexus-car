@@ -53,7 +53,7 @@
                         <div class="product-badge"><i class="bi bi-lightning-charge-fill"></i> Hybrid Performance — E-Four
                         </div>
                         <h1 class="product-title">Lexus NX</h1>
-                        <p class="product-subtitle">F SPORT PERFORMANCE 2.4L-T AWD / 2.5L HEV E-Four</p>
+                        <p class="product-subtitle"> 2.5L HEV E-Four</p>
 
                         <div class="product-rating">
                             <div class="rating-stars">
@@ -69,21 +69,21 @@
                             <div class="option-label"><span><i class="bi bi-gear me-2"></i>Phiên bản</span></div>
                             <div class="version-options">
                                 <div class="version-option active"
-                                    onclick="selectVersion(this,'2.590.000.000','NX 350 F SPORT 2.4L-T AWD',279,'7.7s','9.8L','AWD')">
+                                    onclick="selectVersion(this,'3.270.000.000','NX 350h — 2.5L Hybrid E-Four',243,'8.1s','6.0L','E-Four')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
-                                        <div class="vo-name">NX 350 — F SPORT 2.4L Turbo AWD</div>
+                                        <div class="vo-name">NX 350h — 2.5L Hybrid E-Four</div>
                                     </div>
-                                    <div class="vo-price">2.590.000.000đ</div>
+                                    <div class="vo-price">3.270.000.000đ</div>
                                 </div>
-                                <div class="version-option"
+                                {{-- <div class="version-option"
                                     onclick="selectVersion(this,'2.340.000.000','NX 350h 2.5L HEV E-Four',243,'8.1s','6.0L','E-Four')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">NX 350h — 2.5L Hybrid E-Four</div>
                                     </div>
                                     <div class="vo-price">2.340.000.000đ</div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
 
@@ -92,7 +92,7 @@
                             <div class="price-row">
                                 <div>
                                     <div class="price-label">Giá niêm yết</div>
-                                    <div class="price-value" id="priceDisplay">2.590.000.000<span> VNĐ</span></div>
+                                    <div class="price-value" id="priceDisplay">3.270.000.000<span> VNĐ</span></div>
                                 </div>
                             </div>
                             <div class="price-installment">
@@ -128,7 +128,7 @@
                         <div class="quick-specs">
                             <div class="qs-item">
                                 <div class="qs-icon"><i class="bi bi-lightning-charge"></i></div>
-                                <div class="qs-value" id="qs-hp">279</div>
+                                <div class="qs-value" id="qs-hp">188</div>
                                 <div class="qs-label">Mã lực</div>
                             </div>
                             <div class="qs-item">
@@ -193,8 +193,8 @@
                             <div class="dealer-avatar"><i class="bi bi-building"></i></div>
                             <div class="dealer-content">
                                 <div class="dealer-name">Lexus Thăng Long</div>
-                                <div class="dealer-location"><i class="bi bi-geo-alt"></i> 68 Trần Duy Hưng, Cầu Giấy, Hà
-                                    Nội</div>
+                                <div class="dealer-location"><i class="bi bi-geo-alt"></i>Ngã tư Phạm Hùng + Dương Đình Nghệ Tổ dân, phố số 8, Phường, Cầu Giấy, Hà Nội 100000, Việt Nam
+</div>
                                 <div class="dealer-status">Đang mở cửa • Đóng cửa lúc 19:00</div>
                             </div>
                         </div>
@@ -318,6 +318,14 @@
                             <div class="ti-abbr">Xanh dương</div>
                         </div>
                     </div>
+                    <div class="tech-item">
+                        <div class="ti-content">
+                            <div class="feature-thumb-img">
+                                <img src="{{ asset('web/assets/images/nx/mau-cam.jpg') }}" alt="Xanh cam">
+                            </div>
+                            <div class="ti-abbr">Xanh dương</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -336,11 +344,6 @@
                         <div class="item-card-label">Mâm xe hợp kim nhôm 20 inch<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản NX 350 F SPORT</span></div>
                     </div>
-                    <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/mam-xe-3.jpg') }}" alt="Mâm xe Matte Black">
-                        <div class="item-card-label">Mâm xe hợp kim nhôm 20 inch Matte Black<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản NX 350 F SPORT độc quyền</span></div>
-                    </div>
                 </div>
                 <div
                     style="margin-top:16px;background:var(--lexus-dark-2);border:1px solid var(--lexus-gray);border-radius:var(--radius-lg);padding:18px 22px;">
@@ -358,12 +361,11 @@
                 <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/nx/ghe-den.jpg') }}" alt="Ghế đen">
-                        <div class="item-card-label">Đen Black<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">F SPORT độc quyền</span></div>
+                        <div class="item-card-label">Đen & Kem - Black & Rich Cream<br></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/nx/ghe-trang.jpg') }}" alt="Ghế trắng">
-                        <div class="item-card-label">Trắng Solis White</div>
+                        <div class="item-card-label">Trắng White (Phiên bản F SPORT)</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/nx/ghe-nau.jpg') }}" alt="Ghế nâu">
@@ -373,28 +375,34 @@
                         <img src="{{ asset('web/assets/images/nx/ghe-do.jpg') }}" alt="Ghế đỏ">
                         <div class="item-card-label">Đỏ Dank ROSE</div>
                     </div>
+                    <div class="item-card" onclick="selectCard(this)">
+                        <img src="{{ asset('web/assets/images/nx/ghe-do.jpg') }}" alt="ghế đen black">
+                        <div class="item-card-label">Đen - Black</div>
+                    </div>
+                    <div class="item-card" onclick="selectCard(this)">
+                        <img src="{{ asset('web/assets/images/nx/ghe-do.jpg') }}" alt="ghế đen black">
+                        <div class="item-card-label">Đỏ - Flare Red(Phiên bản F SPORT)</div>
+                    </div>
+                    <div class="item-card" onclick="selectCard(this)">
+                        <img src="{{ asset('web/assets/images/nx/ghe-do.jpg') }}" alt="ghế đen black">
+                        <div class="item-card-label">Đen - Black (Phiên bản F SPORT)</div>
+                    </div>
                 </div>
             </div>
 
             <!-- ỐP NỘI THẤT -->
             <div class="colour-pane" id="ct-trim">
-                <p style="font-size:0.92rem;color:var(--lexus-text-muted);max-width:600px;margin-bottom:32px;">Ốp nội thất
-                    đa dạng phong cách từ gỗ tự nhiên sang trọng đến nhôm thể thao.</p>
+                <p style="font-size:0.92rem;color:var(--lexus-text-muted);max-width:600px;margin-bottom:32px;">Ốp trang trí cánh cửa đa dạng phong cách từ gỗ tự nhiên sang trọng đến nhôm thể thao.</p>
                 <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/nx/op-1.jpg') }}" alt="Ốp gỗ">
-                        <div class="item-card-label">Hoa văn gỗ sang trọng<br><span
+                        <div class="item-card-label">Gỗ Open Pore Ash/Sumi Black Finish<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản NX 350h</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/nx/op-2.jpg') }}" alt="Ốp nhôm">
-                        <div class="item-card-label">Hoa văn hợp kim cao cấp<br><span
+                        <div class="item-card-label">Nhôm Dark Spin Aluminum<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản NX 350 F SPORT</span></div>
-                    </div>
-                    <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/op-3.jpg') }}" alt="Ốp carbon">
-                        <div class="item-card-label">Hoa văn xương cá<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản NX 350h</span></div>
                     </div>
                 </div>
             </div>
@@ -495,11 +503,11 @@
                             vượt trội.</p>
                         <div class="powertrain-specs">
                             <div class="pt-spec">
-                                <div class="pt-spec-value">243 HP</div>
+                                <div class="pt-spec-value">188 HP</div>
                                 <div class="pt-spec-label">Công suất</div>
                             </div>
                             <div class="pt-spec">
-                                <div class="pt-spec-value">8.1s</div>
+                                <div class="pt-spec-value">7,9s</div>
                                 <div class="pt-spec-label">0-100 km/h</div>
                             </div>
                             <div class="pt-spec">
@@ -564,12 +572,12 @@
                             alt="Sơ đồ cấu trúc thân xe Lexus NX TNGA">
                     </div>
                     <div class="chassis-legend">
-                        <div class="legend-item"><span class="legend-color c1"></span>Ma-tít đàn hồi cao</div>
-                        <div class="legend-item"><span class="legend-color c2"></span>Keo dán kết cấu</div>
+                        <div class="legend-item"><span class="legend-color c1"></span>Keo dán kết cấu</div>
+                        <div class="legend-item"><span class="legend-color c2"></span>Cấu trúc khoá đôi lắp ca pô</div>
                         <div class="legend-item"><span class="legend-color c3"></span>Keo dán đàn hồi cao</div>
-                        <div class="legend-item"><span class="legend-color c4"></span>Hàn bước ngắn</div>
-                        <div class="legend-item"><span class="legend-color c5"></span>Hàn vít laser</div>
-                        <div class="legend-item"><span class="legend-color c6"></span>Gia tăng độ cứng vững</div>
+                        <div class="legend-item"><span class="legend-color c4"></span>Cấu trúc khung hẹp phía sau </div>
+                        <div class="legend-item"><span class="legend-color c5"></span>Gia cố băng tap lô độ cứng cao</div>
+                        <div class="legend-item"><span class="legend-color c6"></span>Hàn bước ngắn</div>
                     </div>
                     <div class="chassis-info-box mt-3">
                         <h4 class="chassis-info-title"><i class="bi bi-shield-check"></i>Thân xe trọng lượng nhẹ, độ cứng cao</h4>

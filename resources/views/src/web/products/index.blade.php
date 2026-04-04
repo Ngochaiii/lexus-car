@@ -203,8 +203,8 @@
                             <div class="dealer-avatar"><i class="bi bi-building"></i></div>
                             <div class="dealer-content">
                                 <div class="dealer-name">Lexus Thăng Long</div>
-                                <div class="dealer-location"><i class="bi bi-geo-alt"></i> 68 Trần Duy Hưng, Cầu Giấy, Hà
-                                    Nội</div>
+                                <div class="dealer-location"><i class="bi bi-geo-alt"></i> Ngã tư Phạm Hùng + Dương Đình Nghệ Tổ dân, phố số 8, Phường, Cầu Giấy, Hà Nội 100000, Việt Nam
+</div>
                                 <div class="dealer-status">Đang mở cửa • Đóng cửa lúc 19:00</div>
                             </div>
                         </div>

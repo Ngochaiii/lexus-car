@@ -69,20 +69,20 @@
                             <div class="option-label"><span><i class="bi bi-gear me-2"></i>Phiên bản</span></div>
                             <div class="version-options">
                                 <div class="version-option active"
-                                    onclick="selectVersion(this,'7.890.000.000','LM 500h 4 chỗ',367,'6.8s','8.7L','DIRECT4')">
+                                    onclick="selectVersion(this,'8.950.000.000','LM 500h 4 chỗ',367,'6.8s','8.7L','DIRECT4')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">LM 500h — 4 chỗ VIP</div>
                                     </div>
-                                    <div class="vo-price">7.890.000.000đ</div>
+                                    <div class="vo-price">8.950.000.000đ</div>
                                 </div>
                                 <div class="version-option"
-                                    onclick="selectVersion(this,'6.990.000.000','LM 500h 6 chỗ',367,'6.8s','8.7L','DIRECT4')">
+                                    onclick="selectVersion(this,'7.530.000.000','LM 500h 6 chỗ',367,'6.8s','8.7L','DIRECT4')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">LM 500h — 6 chỗ</div>
                                     </div>
-                                    <div class="vo-price">6.990.000.000đ</div>
+                                    <div class="vo-price">7.530.000.000đ</div>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +92,7 @@
                             <div class="price-row">
                                 <div>
                                     <div class="price-label">Giá niêm yết</div>
-                                    <div class="price-value" id="priceDisplay">7.890.000.000<span> VNĐ</span></div>
+                                    <div class="price-value" id="priceDisplay">8.950.000.000<span> VNĐ</span></div>
                                 </div>
                             </div>
                             <div class="price-installment">
@@ -117,10 +117,6 @@
                                     data-name="Sonic Titanium" onclick="selectColor(this)"></div>
                                 <div class="color-option" style="--color:#8B0000" data-color="red"
                                     data-name="Matador Red Mica" onclick="selectColor(this)"></div>
-                                <div class="color-option" style="--color:#2F4F4F" data-color="green"
-                                    data-name="Nori Green Pearl" onclick="selectColor(this)"></div>
-                                <div class="color-option" style="--color:#191970" data-color="blue"
-                                    data-name="Deep Blue Mica" onclick="selectColor(this)"></div>
                             </div>
                         </div>
 
@@ -128,7 +124,7 @@
                         <div class="quick-specs">
                             <div class="qs-item">
                                 <div class="qs-icon"><i class="bi bi-lightning-charge"></i></div>
-                                <div class="qs-value" id="qs-hp">367</div>
+                                <div class="qs-value" id="qs-hp"></div>
                                 <div class="qs-label">Mã lực</div>
                             </div>
                             <div class="qs-item">
@@ -193,8 +189,8 @@
                             <div class="dealer-avatar"><i class="bi bi-building"></i></div>
                             <div class="dealer-content">
                                 <div class="dealer-name">Lexus Thăng Long</div>
-                                <div class="dealer-location"><i class="bi bi-geo-alt"></i> 68 Trần Duy Hưng, Cầu Giấy, Hà
-                                    Nội</div>
+                                <div class="dealer-location"><i class="bi bi-geo-alt"></i> Ngã tư Phạm Hùng + Dương Đình Nghệ Tổ dân, phố số 8, Phường, Cầu Giấy, Hà Nội 100000, Việt Nam
+</div>
                                 <div class="dealer-status">Đang mở cửa • Đóng cửa lúc 19:00</div>
                             </div>
                         </div>
@@ -231,7 +227,7 @@
                             <div class="ms-label">Phiên bản chỗ ngồi</div>
                         </div>
                         <div class="ms-item">
-                            <div class="ms-num">367</div>
+                            <div class="ms-num">275</div>
                             <div class="ms-label">Mã lực tổng hợp</div>
                         </div>
                         <div class="ms-item">
@@ -265,7 +261,7 @@
                             <div class="feature-thumb-img">
                                 <img src="{{ asset('web/assets/images/lm/mau-den.jpg') }}" alt="Màu đen">
                             </div>
-                            <div class="ti-abbr">Màu đen</div>
+                            <div class="ti-abbr">Đen</div>
                         </div>
                     </div>
                     <div class="tech-item">
@@ -273,7 +269,7 @@
                             <div class="feature-thumb-img">
                                 <img src="{{ asset('web/assets/images/lm/mau-trang.jpg') }}" alt="Màu trắng">
                             </div>
-                            <div class="ti-abbr">Màu trắng</div>
+                            <div class="ti-abbr">Trắng</div>
                         </div>
                     </div>
                     <div class="tech-item">
@@ -281,7 +277,7 @@
                             <div class="feature-thumb-img">
                                 <img src="{{ asset('web/assets/images/lm/mau-xam.jpg') }}" alt="Màu xám">
                             </div>
-                            <div class="ti-abbr">Màu xám</div>
+                            <div class="ti-abbr">Bạc</div>
                         </div>
                     </div>
                     <div class="tech-item">
@@ -289,15 +285,7 @@
                             <div class="feature-thumb-img">
                                 <img src="{{ asset('web/assets/images/lm/mau-do.jpg') }}" alt="Màu đỏ">
                             </div>
-                            <div class="ti-abbr">Màu đỏ</div>
-                        </div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="ti-content">
-                            <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/lm/mau-xanh.jpg') }}" alt="Màu xanh dương">
-                            </div>
-                            <div class="ti-abbr">Xanh dương</div>
+                            <div class="ti-abbr">Đỏ</div>
                         </div>
                     </div>
                 </div>
@@ -310,12 +298,12 @@
                 <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/lm/banh-xe-1.jpg') }}" alt="Bánh xe phiên bản 4 chỗ">
-                        <div class="item-card-label">Mâm xe hợp kim nhôm <br><span
+                        <div class="item-card-label">Bánh xe hợp kim nhôm 19 inch<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản LM 500h 4 chỗ</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/lm/banh-xe-2.jpg') }}" alt="Bánh xe phiên bản 6 chỗ">
-                        <div class="item-card-label">Mâm xe hợp kim nhôm <br><span
+                        <div class="item-card-label">Bánh xe hợp kim nhôm <br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản LM 500h 6 chỗ</span></div>
                     </div>
                 </div>
@@ -492,7 +480,7 @@
                     <div class="feature-chip"><i class="bi bi-grid-3x3"></i> Lưới tản nhiệt liền mạch</div>
                     <div class="feature-chip"><i class="bi bi-rulers"></i> Tỷ lệ xe rộng & thẩm mỹ</div>
                     <div class="feature-chip"><i class="bi bi-wind"></i> Khí động học tối ưu</div>
-                    <div class="feature-chip"><i class="bi bi-circle"></i> Mâm xe hợp kim nhôm</div>
+                    <div class="feature-chip"><i class="bi bi-circle"></i> Bánh xe hợp kim nhôm</div>
                     <div class="feature-chip"><i class="bi bi-arrow-down"></i> Trọng tâm thấp</div>
                 </div>
             </div>
@@ -664,8 +652,6 @@
                     <div class="conv-item"><i class="bi bi-door-closed"></i> Hệ thống chốt điện tử e-Latch có cơ cấu hỗ trợ đóng cửa</div>
                     <div class="conv-item"><i class="bi bi-camera-video"></i> Gương chiếu hậu kỹ thuật số</div>
                     <div class="conv-item"><i class="bi bi-box-arrow-in-down"></i> Hệ thống cửa hít</div>
-                    <div class="conv-item"><i class="bi bi-sliders"></i> Hệ thống treo thích ứng AVS</div>
-                    <div class="conv-item"><i class="bi bi-sun"></i> Cửa sổ trời toàn cảnh Panorama</div>
                     <div class="conv-item"><i class="bi bi-p-square"></i> Phanh đỗ điện tử EPB + Auto Hold</div>
                     <div class="conv-item"><i class="bi bi-arrows-fullscreen"></i> Lexus Driving Signature (LDS)</div>
                     <div class="conv-item"><i class="bi bi-broadcast-pin"></i> Hệ thống âm thanh cao cấp</div>

@@ -69,28 +69,28 @@
                             <div class="option-label"><span><i class="bi bi-gear me-2"></i>Phiên bản</span></div>
                             <div class="version-options">
                                 <div class="version-option active"
-                                    onclick="selectVersion(this,'9.760.000.000','LX 600 Urban 7 chỗ',409,'6.7s','12.2L','AWD')">
+                                    onclick="selectVersion(this,'8.590.000.000','LX 600 Urban 7 chỗ',409,'6.7s','12.2L','AWD')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">LX 600 — Urban 7 chỗ</div>
                                     </div>
-                                    <div class="vo-price">9.760.000.000đ</div>
+                                    <div class="vo-price">8.590.000.000đ</div>
                                 </div>
                                 <div class="version-option"
-                                    onclick="selectVersion(this,'10.620.000.000','LX 600 F SPORT',409,'6.7s','12.2L','AWD')">
+                                    onclick="selectVersion(this,'8.840.000.000','LX 600 F SPORT',409,'6.7s','12.2L','AWD')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">LX 600 — F SPORT</div>
                                     </div>
-                                    <div class="vo-price">10.620.000.000đ</div>
+                                    <div class="vo-price">8.840.000.000đ</div>
                                 </div>
                                 <div class="version-option"
-                                    onclick="selectVersion(this,'12.650.000.000','LX 600 VIP 4 chỗ',409,'6.7s','12.2L','AWD')">
+                                    onclick="selectVersion(this,'9.700.000.000','LX 600 VIP 4 chỗ',409,'6.7s','12.2L','AWD')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">LX 600 — VIP 4 chỗ</div>
                                     </div>
-                                    <div class="vo-price">12.650.000.000đ</div>
+                                    <div class="vo-price">9.700.000.000đ</div>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                             <div class="price-row">
                                 <div>
                                     <div class="price-label">Giá niêm yết</div>
-                                    <div class="price-value" id="priceDisplay">9.760.000.000<span> VNĐ</span></div>
+                                    <div class="price-value" id="priceDisplay">8.590.000.000<span> VNĐ</span></div>
                                 </div>
                             </div>
                             <div class="price-installment">
@@ -127,7 +127,7 @@
                                     data-name="Matador Red Mica" onclick="selectColor(this)"></div>
                                 <div class="color-option" style="--color:#2F4F4F" data-color="green"
                                     data-name="Nori Green Pearl" onclick="selectColor(this)"></div>
-                                <div class="color-option" style="--color:#8B6914" data-color="gold"
+                                <div class="color-option" style="--color:#174ec2" data-color="gold"
                                     data-name="Sunset Gold" onclick="selectColor(this)"></div>
                             </div>
                         </div>
@@ -201,8 +201,8 @@
                             <div class="dealer-avatar"><i class="bi bi-building"></i></div>
                             <div class="dealer-content">
                                 <div class="dealer-name">Lexus Thăng Long</div>
-                                <div class="dealer-location"><i class="bi bi-geo-alt"></i> 68 Trần Duy Hưng, Cầu Giấy, Hà
-                                    Nội</div>
+                                <div class="dealer-location"><i class="bi bi-geo-alt"></i> Ngã tư Phạm Hùng + Dương Đình Nghệ Tổ dân, phố số 8, Phường, Cầu Giấy, Hà Nội 100000, Việt Nam
+</div>
                                 <div class="dealer-status">Đang mở cửa • Đóng cửa lúc 19:00</div>
                             </div>
                         </div>
@@ -351,23 +351,31 @@
                 <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế nâu">
-                        <div class="item-card-label">Da màu nâu Chestnut<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản Urban & VIP</span></div>
+                        <div class="item-card-label">Đen black</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế đen">
-                        <div class="item-card-label">Da màu đen Black<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Tất cả phiên bản</span></div>
+                        <div class="item-card-label">Nâu Sunflare Brown</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế đỏ F SPORT">
-                        <div class="item-card-label">Da đỏ Flare Red<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">F SPORT độc quyền</span></div>
+                        <div class="item-card-label">Trắng White & Dark Sepia</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế đen F SPORT">
-                        <div class="item-card-label">Da đen đục lỗ<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">F SPORT — da thật đục lỗ</span></div>
+                        <div class="item-card-label">Nâu Hazel</div>
+                    </div>
+                    <div class="item-card" onclick="selectCard(this)">
+                        <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế đen F SPORT">
+                        <div class="item-card-label">Đen black</div>
+                    </div>
+                    <div class="item-card" onclick="selectCard(this)">
+                        <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế đen F SPORT">
+                        <div class="item-card-label">Đổ thẫm Crimson</div>
+                    </div>
+                    <div class="item-card" onclick="selectCard(this)">
+                        <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế đen F SPORT">
+                        <div class="item-card-label">Đỏ Flare Red</div>
                     </div>
                 </div>
             </div>
@@ -434,7 +442,7 @@
                                 <div class="pt-spec-label">Mô-men xoắn</div>
                             </div>
                             <div class="pt-spec">
-                                <div class="pt-spec-value">6.7s</div>
+                                <div class="pt-spec-value">7s</div>
                                 <div class="pt-spec-label">0-100 km/h</div>
                             </div>
                             <div class="pt-spec">
