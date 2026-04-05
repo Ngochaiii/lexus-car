@@ -124,7 +124,7 @@
                         <div class="quick-specs">
                             <div class="qs-item">
                                 <div class="qs-icon"><i class="bi bi-lightning-charge"></i></div>
-                                <div class="qs-value" id="qs-hp"></div>
+                                <div class="qs-value" id="qs-hp">275</div>
                                 <div class="qs-label">Mã lực</div>
                             </div>
                             <div class="qs-item">
@@ -299,13 +299,13 @@
                     <div class="item-card active" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/lm/banh-xe-1.jpg') }}" alt="Bánh xe phiên bản 4 chỗ">
                         <div class="item-card-label">Bánh xe hợp kim nhôm 19 inch<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản LM 500h 4 chỗ</span></div>
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Dành cho LM 500h</span></div>
                     </div>
-                    <div class="item-card" onclick="selectCard(this)">
+                    {{-- <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/lm/banh-xe-2.jpg') }}" alt="Bánh xe phiên bản 6 chỗ">
                         <div class="item-card-label">Bánh xe hợp kim nhôm <br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản LM 500h 6 chỗ</span></div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
@@ -661,66 +661,146 @@
     </section>
 
     <!-- ==================== THÔNG SỐ KỸ THUẬT ==================== -->
-    <section class="specs-section section-padding" id="specs">
-        <div class="container">
-            <div class="section-tag">Dữ liệu kỹ thuật</div>
-            <h2 class="section-title">Thông Số Kỹ Thuật</h2>
-            <div class="specs-grid">
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-lightning-charge"></i> Động Cơ & Hiệu Năng</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Loại động cơ</span><span class="spec-value">2.4L I4 Turbo HEV DIRECT4</span></div>
-                        <div class="spec-row"><span class="spec-name">Mô tơ điện trước</span><span class="spec-value">64 kW</span></div>
-                        <div class="spec-row"><span class="spec-name">cụm eAxle cầu sau</span><span class="spec-value">76 kW</span></div>
-                        <div class="spec-row"><span class="spec-name">Hộp số</span><span class="spec-value">Tự động 6 cấp</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ dẫn động</span><span class="spec-value">AWD DIRECT4</span></div>
-                        <div class="spec-row"><span class="spec-name">Tăng tốc 0-100 km/h</span><span class="spec-value">6.8 giây</span></div>
-                        <div class="spec-row"><span class="spec-name">Pin hybrid</span><span class="spec-value">Nickel hydride kim loại lưỡng cực</span></div>
-                    </div>
+<section class="specs-section section-padding" id="specs">
+    <div class="container">
+        <div class="section-tag">Dữ liệu kỹ thuật</div>
+        <h2 class="section-title">Thông Số Kỹ Thuật</h2>
+        <div class="specs-grid">
+
+            <!-- CARD 1: Động Cơ & Hiệu Năng -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-lightning-charge"></i> Động Cơ & Hiệu Năng</h4>
                 </div>
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-rulers"></i> Kích Thước & Không Gian</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Kích thước xe</span><span class="spec-value">Xem hình kích thước</span></div>
-                        <div class="spec-row"><span class="spec-name">Số chỗ ngồi</span><span class="spec-value">4 hoặc 6 người</span></div>
-                        <div class="spec-row"><span class="spec-name">Phiên bản 4 chỗ</span><span class="spec-value">VIP Executive</span></div>
-                        <div class="spec-row"><span class="spec-name">Phiên bản 6 chỗ</span><span class="spec-value">Doanh nghiệp & Gia đình</span></div>
-                        <div class="spec-row"><span class="spec-name">Cửa trượt</span><span class="spec-value">Nhôm 0.7mm — nhẹ hơn 18.5 kg</span></div>
-                        <div class="spec-row"><span class="spec-name">Giảm trọng lượng tổng</span><span class="spec-value">-12.3 kg (tấm ốp mỏng hơn)</span></div>
-                    </div>
-                </div>
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-gear-wide-connected"></i> Khung Gầm & Treo</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Hệ thống treo trước</span><span class="spec-value">MacPherson cải tiến</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ thống treo sau</span><span class="spec-value">Tay đòn kép cải tiến</span></div>
-                        <div class="spec-row"><span class="spec-name">Treo thích ứng</span><span class="spec-value">AVS — van siêu nhạy theo tần số</span></div>
-                        <div class="spec-row"><span class="spec-name">Vật liệu treo</span><span class="spec-value">Nhôm — giảm khối lượng</span></div>
-                        <div class="spec-row"><span class="spec-name">Phanh trước / sau</span><span class="spec-value">Đĩa thông gió</span></div>
-                        <div class="spec-row"><span class="spec-name">Thanh giằng</span><span class="spec-value">Gia cố — tăng độ cứng tổng thể</span></div>
-                    </div>
-                </div>
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-fuel-pump"></i> Nhiên Liệu & Môi Trường</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Loại nhiên liệu</span><span class="spec-value">Xăng RON 95 + Hybrid</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ thống hybrid</span><span class="spec-value">2.4T-HEV DIRECT4</span></div>
-                        <div class="spec-row"><span class="spec-name">Động cơ điện trước</span><span class="spec-value">Có — 64 kW</span></div>
-                        <div class="spec-row"><span class="spec-name">Động cơ điện sau</span><span class="spec-value">Có — eAxle 76 kW</span></div>
-                        <div class="spec-row"><span class="spec-name">Tiêu chuẩn khí thải</span><span class="spec-value">Euro 6</span></div>
-                    </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Loại động cơ</span><span class="spec-value">I4 2.4L Turbo + 2 Mô tơ điện (Trước/sau)</span></div>
+                    <div class="spec-row"><span class="spec-name">Tổng công suất</span><span class="spec-value"><strong>366 Hp</strong></span></div>
+                    <div class="spec-row"><span class="spec-name">Mô tơ điện trước</span><span class="spec-value">64 kW</span></div>
+                    <div class="spec-row"><span class="spec-name">cụm eAxle cầu sau</span><span class="spec-value">76 kW</span></div>
+                    <div class="spec-row"><span class="spec-name">Hộp số</span><span class="spec-value">Parallel Hybrid 6AT</span></div>
+                    <div class="spec-row"><span class="spec-name">Hệ dẫn động</span><span class="spec-value">AWD DIRECT4</span></div>
+                    <div class="spec-row"><span class="spec-name">Tăng tốc 0-100 km/h</span><span class="spec-value">6.8 giây</span></div>
                 </div>
             </div>
+
+            <!-- CARD 2: Kích Thước & Không Gian -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-rulers"></i> Kích Thước & Không Gian</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Kích thước xe</span><span class="spec-value">Xem hình kích thước</span></div>
+                    <div class="spec-row"><span class="spec-name">Số chỗ ngồi</span><span class="spec-value">4 hoặc 6 người</span></div>
+                    <div class="spec-row"><span class="spec-name">Phiên bản 4 chỗ</span><span class="spec-value">VIP Executive</span></div>
+                    <div class="spec-row"><span class="spec-name">Phiên bản 6 chỗ</span><span class="spec-value">Doanh nghiệp & Gia đình</span></div>
+                    <div class="spec-row"><span class="spec-name">Hàng ghế 3 (6 chỗ)</span><span class="spec-value">Gập 2 bên linh hoạt nhiều vị trí</span></div>
+                    <div class="spec-row"><span class="spec-name">Cửa trượt</span><span class="spec-value">Nhôm 0.7mm — nhẹ hơn 18.5 kg</span></div>
+                    <div class="spec-row"><span class="spec-name">Giảm trọng lượng tổng</span><span class="spec-value">-12.3 kg (tấm ốp mỏng hơn)</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 3: Khung Gầm & Treo -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-gear-wide-connected"></i> Khung Gầm & Treo</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Hệ thống treo trước</span><span class="spec-value">MacPherson cải tiến</span></div>
+                    <div class="spec-row"><span class="spec-name">Hệ thống treo sau</span><span class="spec-value">Tay đòn kép cải tiến</span></div>
+                    <div class="spec-row"><span class="spec-name">Treo thích ứng</span><span class="spec-value">AVS — van siêu nhạy theo tần số</span></div>
+                    <div class="spec-row"><span class="spec-name">Vật liệu treo</span><span class="spec-value">Nhôm — giảm khối lượng</span></div>
+                    <div class="spec-row"><span class="spec-name">HT Phanh</span><span class="spec-value">ECB + Kiểm soát tư thế thân xe</span></div>
+                    <div class="spec-row"><span class="spec-name">Phanh trước / sau</span><span class="spec-value">Đĩa thông gió</span></div>
+                    <div class="spec-row"><span class="spec-name">Thanh giằng</span><span class="spec-value">Gia cố — tăng độ cứng tổng thể</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 4: Nhiên Liệu & Vận Hành -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-fuel-pump"></i> Nhiên Liệu & Vận Hành</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Loại nhiên liệu</span><span class="spec-value">Xăng RON 95 + Hybrid</span></div>
+                    <div class="spec-row"><span class="spec-name">Hệ thống hybrid</span><span class="spec-value">2.4T-HEV DIRECT4</span></div>
+                    <div class="spec-row"><span class="spec-name">Pin hybrid</span><span class="spec-value">Nickel hydride kim loại lưỡng cực</span></div>
+                    <div class="spec-row"><span class="spec-name">Động cơ điện trước</span><span class="spec-value">Có — 64 kW</span></div>
+                    <div class="spec-row"><span class="spec-name">Động cơ điện sau</span><span class="spec-value">Có — eAxle 76 kW</span></div>
+                    <div class="spec-row"><span class="spec-name">Tiêu chuẩn khí thải</span><span class="spec-value">Euro 6</span></div>
+                    <div class="spec-row"><span class="spec-name">Chế độ lái</span><span class="spec-value">5 chế độ (Normal / Eco / Sport / Rear Comfort / Custom)</span></div>
+                    <div class="spec-row"><span class="spec-name">Chống ồn chủ động ANC</span><span class="spec-value">Có</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 5: Ngoại Thất (MỚI) -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-car-front"></i> Ngoại Thất</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">HT Đèn</span><span class="spec-value">Full LED + AHS</span></div>
+                    <div class="spec-row"><span class="spec-name">Bánh xe</span><span class="spec-value">225/55R19</span></div>
+                    <div class="spec-row"><span class="spec-name">Tay nắm cửa</span><span class="spec-value">E-latch + Cửa hít</span></div>
+                    <div class="spec-row"><span class="spec-name">Cửa sổ trời</span><span class="spec-value">Trước: Đơn / Sau: Kép</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 6a: Nội Thất — Ghế, Âm Thanh & Màn Hình -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-stars"></i> Nội Thất — Ghế & Giải Trí</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Chất liệu ghế (4 chỗ)</span><span class="spec-value">Da Semi-Aniline + L-Aniline</span></div>
+                    <div class="spec-row"><span class="spec-name">Chất liệu ghế (6 chỗ)</span><span class="spec-value">Da Semi-Aniline + L-Aniline + Da lớn Ultrasuede</span></div>
+                    <div class="spec-row"><span class="spec-name">HT âm thanh (4 chỗ)</span><span class="spec-value">Mark Levinson 23 loa — Màn hình vách ngăn 48"</span></div>
+                    <div class="spec-row"><span class="spec-name">HT âm thanh (6 chỗ)</span><span class="spec-value">Mark Levinson 21 loa — Màn hình trần xe 14"</span></div>
+                    <div class="spec-row"><span class="spec-name">Điều hòa</span><span class="spec-value">Tự động 4 vùng độc lập</span></div>
+                    <div class="spec-row"><span class="spec-name">Điều chỉnh mục tiêu phía sau</span><span class="spec-value">Có (4 chỗ)</span></div>
+                    <div class="spec-row"><span class="spec-name">Bảng đồng hồ</span><span class="spec-value">12.3" Full Digital</span></div>
+                    <div class="spec-row"><span class="spec-name">HUD</span><span class="spec-value">Không (4 chỗ) / Có (6 chỗ)</span></div>
+                    <div class="spec-row"><span class="spec-name">Gương chiếu hậu</span><span class="spec-value">Digital</span></div>
+                    <div class="spec-row"><span class="spec-name">Màn hình trung tâm</span><span class="spec-value">14 inch</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 6b: Nội Thất — Vô Lăng, Tiện Ích & Điều Khiển -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-joystick"></i> Nội Thất — Tiện Ích & Điều Khiển</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Vô lăng (4 chỗ)</span><span class="spec-value">Bọc da + Nút bấm cơ</span></div>
+                    <div class="spec-row"><span class="spec-name">Vô lăng (6 chỗ)</span><span class="spec-value">Bọc da + Ốp gỗ Bengala + Nút bấm cảm ứng</span></div>
+                    <div class="spec-row"><span class="spec-name">Ốp nội thất</span><span class="spec-value">Gỗ Yabane</span></div>
+                    <div class="spec-row"><span class="spec-name">Đèn nội thất</span><span class="spec-value">64 màu</span></div>
+                    <div class="spec-row"><span class="spec-name">Sạc không dây (4 chỗ)</span><span class="spec-value">Hàng ghế 2 (2 vị trí)</span></div>
+                    <div class="spec-row"><span class="spec-name">Sạc không dây (6 chỗ)</span><span class="spec-value">Hàng ghế trước</span></div>
+                    <div class="spec-row"><span class="spec-name">Rèm che nắng</span><span class="spec-value">Chỉnh điện</span></div>
+                    <div class="spec-row"><span class="spec-name">Chức năng mát-xa (4 chỗ)</span><span class="spec-value">Hàng ghế 2 — 7 chế độ</span></div>
+                    <div class="spec-row"><span class="spec-name">Chức năng mát-xa (6 chỗ)</span><span class="spec-value">Hàng ghế 2 — 1 chế độ</span></div>
+                    <div class="spec-row"><span class="spec-name">Điều khiển hàng ghế 2</span><span class="spec-value">2 màn hình cảm ứng độc lập</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 7: An Toàn (MỚI) -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-shield-check"></i> An Toàn</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">PCS</span><span class="spec-value">LSS+ 3</span></div>
+                    <div class="spec-row"><span class="spec-name">Camera</span><span class="spec-value">360°</span></div>
+                    <div class="spec-row"><span class="spec-name">PKSB</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">SEA</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Hỗ trợ đỗ xe tự động</span><span class="spec-value">Có — Lexus Teammate Advanced Park</span></div>
+                    <div class="spec-row"><span class="spec-name">Túi khí</span><span class="spec-value">6 túi khí</span></div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ==================== NEWSLETTER ==================== -->
     <section class="newsletter-section">

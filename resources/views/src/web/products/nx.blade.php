@@ -986,88 +986,94 @@
 
     <!-- ==================== THÔNG SỐ KỸ THUẬT ==================== -->
     <section class="specs-section section-padding" id="specs">
-        <div class="container">
-            <div class="section-tag">Dữ liệu kỹ thuật</div>
-            <h2 class="section-title">Thông Số Kỹ Thuật</h2>
-            <div class="specs-grid">
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-lightning-charge"></i> Động Cơ & Hiệu Năng</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Loại động cơ</span><span class="spec-value">2.4L
-                                Turbo AWD / 2.5L HEV E-Four</span></div>
-                        <div class="spec-row"><span class="spec-name">Công suất (NX 350)</span><span
-                                class="spec-value">279 HP</span></div>
-                        <div class="spec-row"><span class="spec-name">Công suất (NX 350h)</span><span
-                                class="spec-value">243 HP</span></div>
-                        <div class="spec-row"><span class="spec-name">Mô-men xoắn</span><span class="spec-value">430
-                                Nm</span></div>
-                        <div class="spec-row"><span class="spec-name">Hộp số (NX 350)</span><span class="spec-value">Tự động 8 cấp</span></div>
-                        <div class="spec-row"><span class="spec-name">Tăng tốc 0-100 km/h</span><span
-                                class="spec-value">7.7s (NX 350) / 8.1s (NX 350h)</span></div>
-                    </div>
+    <div class="container">
+        <div class="section-tag">Dữ liệu kỹ thuật</div>
+        <h2 class="section-title">Thông Số Kỹ Thuật — NX 350h & NX 350 F SPORT</h2>
+        <div class="specs-grid">
+
+            <!-- CARD 1: Kích Thước & Không Gian -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-rulers"></i> Kích Thước & Không Gian</h4>
                 </div>
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-rulers"></i> Kích Thước & Không Gian</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Dài × Rộng × Cao</span><span
-                                class="spec-value">4,660 × 1,865 × 1,660 mm</span></div>
-                        <div class="spec-row"><span class="spec-name">Chiều dài cơ sở</span><span
-                                class="spec-value">2,690 mm</span></div>
-                        <div class="spec-row"><span class="spec-name">Khoảng sáng gầm</span><span class="spec-value">177
-                                mm</span></div>
-                        <div class="spec-row"><span class="spec-name">Dung tích khoang hành lý</span><span
-                                class="spec-value">520 lít</span></div>
-                        <div class="spec-row"><span class="spec-name">Dung tích bình nhiên liệu</span><span
-                                class="spec-value">55 lít</span></div>
-                        <div class="spec-row"><span class="spec-name">Số chỗ ngồi</span><span class="spec-value">5
-                                người</span></div>
-                    </div>
-                </div>
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-gear-wide-connected"></i> Khung Gầm & Lốp</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Nền tảng khung gầm</span><span
-                                class="spec-value">TNGA-K</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ thống treo trước</span><span
-                                class="spec-value">MacPherson</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ thống treo sau</span><span
-                                class="spec-value">Multi-link đa liên kết</span></div>
-                        <div class="spec-row"><span class="spec-name">Phanh trước / sau</span><span
-                                class="spec-value">Đĩa thông gió</span></div>
-                        <div class="spec-row"><span class="spec-name">Kích thước lốp</span><span
-                                class="spec-value">235/50R20</span></div>
-                        <div class="spec-row"><span class="spec-name">Phanh đỗ xe</span><span class="spec-value">EPB điện
-                                tử + Auto Hold</span></div>
-                    </div>
-                </div>
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-fuel-pump"></i> Nhiên Liệu & Môi Trường</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Tiêu thụ (NX 350)</span><span
-                                class="spec-value">9.8 L/100km</span></div>
-                        <div class="spec-row"><span class="spec-name">Tiêu thụ (NX 350h)</span><span
-                                class="spec-value">6.0 L/100km</span></div>
-                        <div class="spec-row"><span class="spec-name">Loại nhiên liệu</span><span class="spec-value">Xăng
-                                RON 95</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ thống Hybrid</span><span
-                                class="spec-value">VVT-iE + E-Four AWD</span></div>
-                        <div class="spec-row"><span class="spec-name">Tiêu chuẩn khí thải</span><span
-                                class="spec-value">Euro 6</span></div>
-                        <div class="spec-row"><span class="spec-name">Kích thước xe</span><span
-                                class="spec-value">Xem hình kích thước</span></div>
-                    </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Dài × Rộng × Cao</span><span class="spec-value">4,660 × 1,865 × 1,670 mm</span></div>
+                    <div class="spec-row"><span class="spec-name">Chiều dài cơ sở</span><span class="spec-value">2,690 mm</span></div>
+                    <div class="spec-row"><span class="spec-name">Chiều rộng cơ sở</span><span class="spec-value">1,610 mm (trước) / 1,635 mm (sau)</span></div>
+                    <div class="spec-row"><span class="spec-name">Số chỗ ngồi</span><span class="spec-value">5</span></div>
+                    <div class="spec-row"><span class="spec-name">Khoảng sáng gầm xe</span><span class="spec-value">195 mm</span></div>
+                    <div class="spec-row"><span class="spec-name">Dung tích khoang hành lý</span><span class="spec-value">520 L / 1,411 L (tối đa)</span></div>
+                    <div class="spec-row"><span class="spec-name">Dung tích bình nhiên liệu</span><span class="spec-value">55 L</span></div>
                 </div>
             </div>
+
+            <!-- CARD 2: Động Cơ — NX 350h -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-lightning-charge"></i> Động Cơ — NX 350h</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Mã động cơ</span><span class="spec-value">A25A-FXS</span></div>
+                    <div class="spec-row"><span class="spec-name">Loại</span><span class="spec-value">I4, 4 strokes (Hybrid)</span></div>
+                    <div class="spec-row"><span class="spec-name">Dung tích</span><span class="spec-value">2,487 cm³</span></div>
+                    <div class="spec-row"><span class="spec-name">Công suất cực đại</span><span class="spec-value">188 Hp (140 kW) / 6,000 RPM</span></div>
+                    <div class="spec-row"><span class="spec-name">Mô-men xoắn cực đại</span><span class="spec-value">239 Nm / 4,300–4,500 RPM</span></div>
+                    <div class="spec-row"><span class="spec-name">Mô tơ điện trước / sau</span><span class="spec-value">180 Hp (134 kW) / 54 Hp (40 kW)</span></div>
+                    <div class="spec-row"><span class="spec-name">Tổng công suất hệ thống</span><span class="spec-value"><strong>240 Hp (179 kW)</strong></span></div>
+                </div>
+            </div>
+
+            <!-- CARD 3: Động Cơ — NX 350 F SPORT -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-lightning-charge-fill"></i> Động Cơ — NX 350 F SPORT</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Mã động cơ</span><span class="spec-value">T24A-FTS</span></div>
+                    <div class="spec-row"><span class="spec-name">Loại</span><span class="spec-value">I4, 4 strokes Turbo</span></div>
+                    <div class="spec-row"><span class="spec-name">Dung tích</span><span class="spec-value">2,393 cm³</span></div>
+                    <div class="spec-row"><span class="spec-name">Công suất cực đại</span><span class="spec-value"><strong>275 Hp (205 kW)</strong> / 6,000 RPM</span></div>
+                    <div class="spec-row"><span class="spec-name">Mô-men xoắn cực đại</span><span class="spec-value">430 Nm / 1,700–3,600 RPM</span></div>
+                    <div class="spec-row"><span class="spec-name">Hộp số</span><span class="spec-value">8AT</span></div>
+                    <div class="spec-row"><span class="spec-name">Chế độ lái</span><span class="spec-value">Eco / Normal / Sport S / Sport S+ / Customize</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 4: Vận Hành & Tiêu Thụ Nhiên Liệu -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-fuel-pump"></i> Vận Hành & Tiêu Thụ Nhiên Liệu</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Hệ thống truyền động</span><span class="spec-value">AWD</span></div>
+                    <div class="spec-row"><span class="spec-name">Tiêu chuẩn khí thải</span><span class="spec-value">EURO 6</span></div>
+                    <div class="spec-row"><span class="spec-name">Tiêu thụ NL ngoài đô thị</span><span class="spec-value">6.77 (350h) / 9.43 (F SPORT) L/100km</span></div>
+                    <div class="spec-row"><span class="spec-name">Tiêu thụ NL trong đô thị</span><span class="spec-value">6.44 (350h) / 13.02 (F SPORT) L/100km</span></div>
+                    <div class="spec-row"><span class="spec-name">Tiêu thụ NL kết hợp</span><span class="spec-value">6.65 (350h) / 10.75 (F SPORT) L/100km</span></div>
+                    <div class="spec-row"><span class="spec-name">Trọng lượng không tải</span><span class="spec-value">1,830 (350h) / 1,810 (F SPORT) kg</span></div>
+                    <div class="spec-row"><span class="spec-name">Trọng lượng toàn tải</span><span class="spec-value">2,380 (350h) / 2,370 (F SPORT) kg</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 5: Khung Gầm & Treo -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-gear-wide-connected"></i> Khung Gầm & Treo</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Hệ thống treo trước</span><span class="spec-value">MacPherson</span></div>
+                    <div class="spec-row"><span class="spec-name">Hệ thống treo sau</span><span class="spec-value">Double Wishbone</span></div>
+                    <div class="spec-row"><span class="spec-name">Treo thích ứng (AVS)</span><span class="spec-value">Không (350h) / Có (F SPORT)</span></div>
+                    <div class="spec-row"><span class="spec-name">Phanh trước / sau</span><span class="spec-value">Đĩa</span></div>
+                    <div class="spec-row"><span class="spec-name">Hệ thống lái</span><span class="spec-value">Trợ lực điện</span></div>
+                    <div class="spec-row"><span class="spec-name">Mâm xe & Lốp</span><span class="spec-value">235/50R20 — Run flat</span></div>
+                    <div class="spec-row"><span class="spec-name">Bán kính quay vòng tối thiểu</span><span class="spec-value">5.8 m</span></div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ==================== NEWSLETTER ==================== -->
     <section class="newsletter-section">

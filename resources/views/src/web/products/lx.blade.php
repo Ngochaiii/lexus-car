@@ -956,89 +956,95 @@
 
     <!-- ==================== THÔNG SỐ KỸ THUẬT ==================== -->
     <section class="specs-section section-padding" id="specs">
-        <div class="container">
-            <div class="section-tag">Dữ liệu kỹ thuật</div>
-            <h2 class="section-title">Thông Số Kỹ Thuật</h2>
-            <div class="specs-grid">
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-lightning-charge"></i> Động Cơ & Hiệu Năng</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Loại động cơ</span><span class="spec-value">3.5L V6
-                                Twin Turbo D-4ST</span></div>
-                        <div class="spec-row"><span class="spec-name">Công suất cực đại</span><span
-                                class="spec-value">409 HP (305 kW)</span></div>
-                        <div class="spec-row"><span class="spec-name">Mô-men xoắn cực đại</span><span
-                                class="spec-value">650 Nm</span></div>
-                        <div class="spec-row"><span class="spec-name">Hộp số</span><span class="spec-value">Tự động 10
-                                cấp sang số trực tiếp</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ dẫn động</span><span
-                                class="spec-value">4WD toàn thời gian</span></div>
-                        <div class="spec-row"><span class="spec-name">Tăng tốc 0-100 km/h</span><span
-                                class="spec-value">6.7 giây</span></div>
-                    </div>
+    <div class="container">
+        <div class="section-tag">Dữ liệu kỹ thuật</div>
+        <h2 class="section-title">Thông Số Kỹ Thuật — LX 600</h2>
+        <div class="specs-grid">
+
+            <!-- CARD 1: Kích Thước & Trọng Lượng -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-rulers"></i> Kích Thước & Trọng Lượng</h4>
                 </div>
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-rulers"></i> Kích Thước & Không Gian</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Dài × Rộng × Cao</span><span
-                                class="spec-value">5,100 × 1,990 × 1,885 mm</span></div>
-                        <div class="spec-row"><span class="spec-name">Chiều dài cơ sở</span><span
-                                class="spec-value">2,850 mm</span></div>
-                        <div class="spec-row"><span class="spec-name">Khoảng sáng gầm</span><span
-                                class="spec-value">230 mm (High 2)</span></div>
-                        <div class="spec-row"><span class="spec-name">Số chỗ ngồi</span><span class="spec-value">7
-                                chỗ (Urban) / 4 chỗ (VIP)</span></div>
-                        <div class="spec-row"><span class="spec-name">Dung tích bình nhiên liệu</span><span
-                                class="spec-value">93 lít</span></div>
-                        <div class="spec-row"><span class="spec-name">Trọng lượng xe</span><span
-                                class="spec-value">~2,700 kg</span></div>
-                    </div>
-                </div>
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-gear-wide-connected"></i> Khung Gầm & Lốp</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Hệ thống treo</span><span
-                                class="spec-value">AVS thích ứng điện tử tuyến tính</span></div>
-                        <div class="spec-row"><span class="spec-name">Kiểm soát độ cao</span><span
-                                class="spec-value">AHC — 4 mức (Normal/H1/H2/Low)</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ thống lái</span><span
-                                class="spec-value">EPS trợ lực điện</span></div>
-                        <div class="spec-row"><span class="spec-name">Kích thước mâm</span><span
-                                class="spec-value">22 inch (lớn nhất Lexus)</span></div>
-                        <div class="spec-row"><span class="spec-name">Địa hình MTS</span><span
-                                class="spec-value">6 chế độ (Auto/Dirt/Sand/Mud/Rock/Snow)</span></div>
-                        <div class="spec-row"><span class="spec-name">Phanh</span><span class="spec-value">ECB điều
-                                khiển điện tử + EPB</span></div>
-                    </div>
-                </div>
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-fuel-pump"></i> Nhiên Liệu & Môi Trường</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Tiêu thụ nhiên liệu</span><span
-                                class="spec-value">12.2 L/100km</span></div>
-                        <div class="spec-row"><span class="spec-name">Loại nhiên liệu</span><span class="spec-value">Xăng
-                                RON 95</span></div>
-                        <div class="spec-row"><span class="spec-name">Dung tích xi-lanh</span><span
-                                class="spec-value">3,445 cc</span></div>
-                        <div class="spec-row"><span class="spec-name">Tỷ số nén</span><span
-                                class="spec-value">10.5:1</span></div>
-                        <div class="spec-row"><span class="spec-name">Tiêu chuẩn khí thải</span><span
-                                class="spec-value">Euro 6</span></div>
-                        <div class="spec-row"><span class="spec-name">Kích thước xe</span><span
-                                class="spec-value">Xem hình kích thước</span></div>
-                    </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Dài × Rộng × Cao (VIP / URBAN)</span><span class="spec-value">5,100 × 1,990 × 1,865 mm</span></div>
+                    <div class="spec-row"><span class="spec-name">Dài × Rộng × Cao (F SPORT)</span><span class="spec-value">5,090 × 1,990 × 1,865 mm</span></div>
+                    <div class="spec-row"><span class="spec-name">Chiều dài cơ sở</span><span class="spec-value">2,850 mm</span></div>
+                    <div class="spec-row"><span class="spec-name">Chiều rộng cơ sở</span><span class="spec-value">1,675 mm (trước) / 1,680 mm (sau)</span></div>
+                    <div class="spec-row"><span class="spec-name">Số chỗ ngồi</span><span class="spec-value">4 (VIP) / 7 (URBAN) / 5 (F SPORT)</span></div>
+                    <div class="spec-row"><span class="spec-name">Trọng lượng không tải</span><span class="spec-value">2,660 (VIP) / 2,650 (URBAN) / 2,615 (F SPORT) kg</span></div>
+                    <div class="spec-row"><span class="spec-name">Trọng lượng toàn tải</span><span class="spec-value">3,280 kg</span></div>
+                    <div class="spec-row"><span class="spec-name">Khoảng sáng gầm xe</span><span class="spec-value">205 mm</span></div>
                 </div>
             </div>
+
+            <!-- CARD 2: Không Gian & Nhiên Liệu -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-box-seam"></i> Không Gian & Nhiên Liệu</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Dung tích hành lý (thường)</span><span class="spec-value">767 L (VIP) / 174 L (URBAN) / 1,109 L (F SPORT)</span></div>
+                    <div class="spec-row"><span class="spec-name">Dung tích hành lý (gập ghế 3)</span><span class="spec-value">982 L (URBAN)</span></div>
+                    <div class="spec-row"><span class="spec-name">Dung tích hành lý (gập ghế 2&3)</span><span class="spec-value">1,960 L (VIP & F SPORT) / 1,871 L (URBAN)</span></div>
+                    <div class="spec-row"><span class="spec-name">Bình nhiên liệu chính</span><span class="spec-value">80 L</span></div>
+                    <div class="spec-row"><span class="spec-name">Bình nhiên liệu phụ</span><span class="spec-value">30 L</span></div>
+                    <div class="spec-row"><span class="spec-name">Bán kính quay vòng tối thiểu</span><span class="spec-value">6 m</span></div>
+                    <div class="spec-row"><span class="spec-name">Lốp dự phòng</span><span class="spec-value">Lốp thường</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 3: Động Cơ -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-lightning-charge"></i> Động Cơ</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Mã động cơ</span><span class="spec-value">V35A-FTS</span></div>
+                    <div class="spec-row"><span class="spec-name">Loại động cơ</span><span class="spec-value">V6, tăng áp kép, Twin Turbo</span></div>
+                    <div class="spec-row"><span class="spec-name">Dung tích</span><span class="spec-value">3,445 cm³</span></div>
+                    <div class="spec-row"><span class="spec-name">Công suất cực đại</span><span class="spec-value">409 Hp (305 kW) / 5,200 RPM</span></div>
+                    <div class="spec-row"><span class="spec-name">Mô-men xoắn cực đại</span><span class="spec-value">650 Nm / 2,000–3,600 RPM</span></div>
+                    <div class="spec-row"><span class="spec-name">Hộp số</span><span class="spec-value">10AT</span></div>
+                    <div class="spec-row"><span class="spec-name">Tiêu chuẩn khí thải</span><span class="spec-value">EURO 5</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 4: Vận Hành & Tiêu Thụ Nhiên Liệu -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-fuel-pump"></i> Vận Hành & Tiêu Thụ Nhiên Liệu</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Hệ thống truyền động</span><span class="spec-value">AWD</span></div>
+                    <div class="spec-row"><span class="spec-name">Chế độ lái</span><span class="spec-value">Normal / Eco / Comfort / Sport S / Sport S+ / Customize</span></div>
+                    <div class="spec-row"><span class="spec-name">Tiêu thụ NL ngoài đô thị</span><span class="spec-value">11.59 / 12.01 / 12.12 L/100km</span></div>
+                    <div class="spec-row"><span class="spec-name">Tiêu thụ NL trong đô thị</span><span class="spec-value">17.98 / 18.88 / 18.89 L/100km</span></div>
+                    <div class="spec-row"><span class="spec-name">Tiêu thụ NL kết hợp</span><span class="spec-value">13.94 / 14.53 / 14.59 L/100km</span></div>
+                    <div class="spec-row"><span class="spec-name">Tự động ngắt động cơ</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Thứ tự: VIP / URBAN / F SPORT</span><span class="spec-value">—</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 5: Khung Gầm & Treo -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-gear-wide-connected"></i> Khung Gầm & Treo</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Hệ thống treo trước</span><span class="spec-value">Tay đòn kép</span></div>
+                    <div class="spec-row"><span class="spec-name">Hệ thống treo sau</span><span class="spec-value">Đa điểm</span></div>
+                    <div class="spec-row"><span class="spec-name">Treo thích ứng (AVS)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Điều chỉnh chiều cao chủ động (AHC)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Phanh trước / sau</span><span class="spec-value">Đĩa</span></div>
+                    <div class="spec-row"><span class="spec-name">Hệ thống lái</span><span class="spec-value">Trợ lực điện</span></div>
+                    <div class="spec-row"><span class="spec-name">Bánh xe & Lốp</span><span class="spec-value">265/50R22 — Lốp thường</span></div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ==================== NEWSLETTER ==================== -->
     <section class="newsletter-section">

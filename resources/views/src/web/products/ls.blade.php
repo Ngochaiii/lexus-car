@@ -858,90 +858,95 @@
     </section>
 
     <!-- ==================== THÔNG SỐ KỸ THUẬT ==================== -->
-    <section class="specs-section section-padding" id="specs">
-        <div class="container">
-            <div class="section-tag">Dữ liệu kỹ thuật</div>
-            <h2 class="section-title">Thông Số Kỹ Thuật</h2>
-            <div class="specs-grid">
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-lightning-charge"></i> Động Cơ & Hiệu Năng</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">LS 500h</span><span class="spec-value">V6 3.5L
-                                Multi Stage Hybrid AWD</span></div>
-                        <div class="spec-row"><span class="spec-name">LS 500</span><span class="spec-value">V6 3.5L
-                                Twin Turbo RWD</span></div>
-                        <div class="spec-row"><span class="spec-name">Công suất (LS 500h)</span><span
-                                class="spec-value">354 HP</span></div>
-                        <div class="spec-row"><span class="spec-name">Công suất (LS 500)</span><span
-                                class="spec-value">415 HP / 650 Nm</span></div>
-                        <div class="spec-row"><span class="spec-name">Hộp số</span><span class="spec-value">10 cấp
-                                sang số trực tiếp</span></div>
-                        <div class="spec-row"><span class="spec-name">Tăng tốc 0-100 km/h</span><span
-                                class="spec-value">5.4 giây</span></div>
-                    </div>
+<section class="specs-section section-padding" id="specs">
+    <div class="container">
+        <div class="section-tag">Dữ liệu kỹ thuật</div>
+        <h2 class="section-title">Thông Số Kỹ Thuật — LS 500 & LS 500h</h2>
+        <div class="specs-grid">
+
+            <!-- CARD 1: Kích Thước & Không Gian -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-rulers"></i> Kích Thước & Không Gian</h4>
                 </div>
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-rulers"></i> Kích Thước & Không Gian</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Dài × Rộng × Cao</span><span
-                                class="spec-value">5,235 × 1,900 × 1,450 mm</span></div>
-                        <div class="spec-row"><span class="spec-name">Chiều dài cơ sở</span><span
-                                class="spec-value">3,000 mm</span></div>
-                        <div class="spec-row"><span class="spec-name">Khoảng sáng gầm</span><span
-                                class="spec-value">135 mm</span></div>
-                        <div class="spec-row"><span class="spec-name">Dung tích khoang hành lý</span><span
-                                class="spec-value">430 lít</span></div>
-                        <div class="spec-row"><span class="spec-name">Dung tích bình nhiên liệu</span><span
-                                class="spec-value">82 lít</span></div>
-                        <div class="spec-row"><span class="spec-name">Số chỗ ngồi</span><span class="spec-value">4–5
-                                người</span></div>
-                    </div>
-                </div>
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-gear-wide-connected"></i> Khung Gầm & Vận Hành</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Cấu hình khung gầm</span><span
-                                class="spec-value">GA-L TNGA (đa vật liệu)</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ dẫn động</span><span class="spec-value">FR
-                                (LS 500) / AWD (LS 500h)</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ thống treo trước</span><span
-                                class="spec-value">Multi-link (dầu ma sát thấp)</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ thống treo sau</span><span
-                                class="spec-value">Multi-link tay đòn trụ nối mới</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ thống lái</span><span
-                                class="spec-value">EPS + VDIM + LDH (4 bánh)</span></div>
-                        <div class="spec-row"><span class="spec-name">Phanh</span><span class="spec-value">Đĩa thông
-                                gió + ABS + EBD</span></div>
-                    </div>
-                </div>
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-fuel-pump"></i> Nhiên Liệu & Môi Trường</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Tiêu thụ (LS 500h)</span><span
-                                class="spec-value">7.5 L/100km</span></div>
-                        <div class="spec-row"><span class="spec-name">Tiêu thụ (LS 500)</span><span
-                                class="spec-value">10.4 L/100km</span></div>
-                        <div class="spec-row"><span class="spec-name">Loại nhiên liệu</span><span
-                                class="spec-value">Xăng RON 95</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ thống Hybrid</span><span
-                                class="spec-value">Multi Stage Hybrid 10 cấp</span></div>
-                        <div class="spec-row"><span class="spec-name">Tiêu chuẩn khí thải</span><span
-                                class="spec-value">Euro 6</span></div>
-                        <div class="spec-row"><span class="spec-name">Kích thước xe</span><span
-                                class="spec-value">Xem hình kích thước</span></div>
-                    </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Dài × Rộng × Cao</span><span class="spec-value">5,235 × 1,900 × 1,450 mm</span></div>
+                    <div class="spec-row"><span class="spec-name">Chiều dài cơ sở</span><span class="spec-value">3,125 mm</span></div>
+                    <div class="spec-row"><span class="spec-name">Số chỗ ngồi</span><span class="spec-value">5</span></div>
+                    <div class="spec-row"><span class="spec-name">Khoảng sáng gầm xe</span><span class="spec-value">144 mm (LS 500) / 147 mm (LS 500h)</span></div>
+                    <div class="spec-row"><span class="spec-name">Dung tích khoang hành lý</span><span class="spec-value">440 L</span></div>
+                    <div class="spec-row"><span class="spec-name">Dung tích bình nhiên liệu</span><span class="spec-value">82 L</span></div>
+                    <div class="spec-row"><span class="spec-name">Bán kính quay vòng tối thiểu</span><span class="spec-value">5.7 m</span></div>
                 </div>
             </div>
+
+            <!-- CARD 2: Động Cơ — LS 500 -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-lightning-charge"></i> Động Cơ — LS 500</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Loại động cơ</span><span class="spec-value">V6, D4-S, Twin Turbo</span></div>
+                    <div class="spec-row"><span class="spec-name">Dung tích</span><span class="spec-value">3,445 cm³</span></div>
+                    <div class="spec-row"><span class="spec-name">Công suất cực đại</span><span class="spec-value">415 Hp / 6,000 RPM</span></div>
+                    <div class="spec-row"><span class="spec-name">Mô-men xoắn cực đại</span><span class="spec-value">599 Nm / 1,600–4,800 RPM</span></div>
+                    <div class="spec-row"><span class="spec-name">Hộp số</span><span class="spec-value">10AT</span></div>
+                    <div class="spec-row"><span class="spec-name">Tiêu chuẩn khí thải</span><span class="spec-value">EURO 5</span></div>
+                    <div class="spec-row"><span class="spec-name">Tự động ngắt động cơ</span><span class="spec-value">Có</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 3: Động Cơ — LS 500h -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-lightning-charge-fill"></i> Động Cơ — LS 500h</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Loại động cơ</span><span class="spec-value">V6, D4-S (Hybrid)</span></div>
+                    <div class="spec-row"><span class="spec-name">Dung tích</span><span class="spec-value">3,456 cm³</span></div>
+                    <div class="spec-row"><span class="spec-name">Công suất động cơ xăng</span><span class="spec-value">295 Hp / 5,800 RPM</span></div>
+                    <div class="spec-row"><span class="spec-name">Mô-men xoắn cực đại</span><span class="spec-value">350 Nm / 5,100 RPM</span></div>
+                    <div class="spec-row"><span class="spec-name">Tổng công suất hệ thống</span><span class="spec-value"><strong>354 Hp</strong></span></div>
+                    <div class="spec-row"><span class="spec-name">Hộp số</span><span class="spec-value">Multi Stage Hybrid</span></div>
+                    <div class="spec-row"><span class="spec-name">Tiêu chuẩn khí thải</span><span class="spec-value">EURO 5</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 4: Vận Hành & Tiêu Thụ Nhiên Liệu -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-fuel-pump"></i> Vận Hành & Tiêu Thụ Nhiên Liệu</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Hệ thống truyền động</span><span class="spec-value">RWD</span></div>
+                    <div class="spec-row"><span class="spec-name">Chế độ lái</span><span class="spec-value">Eco / Normal / Comfort / Sport / Sport+ / Customize</span></div>
+                    <div class="spec-row"><span class="spec-name">Tiêu thụ NL ngoài đô thị</span><span class="spec-value">7.8 (LS 500) / 7.84 (LS 500h) L/100km</span></div>
+                    <div class="spec-row"><span class="spec-name">Tiêu thụ NL trong đô thị</span><span class="spec-value">16.66 (LS 500) / 3.52 (LS 500h) L/100km</span></div>
+                    <div class="spec-row"><span class="spec-name">Tiêu thụ NL kết hợp</span><span class="spec-value">11.07 (LS 500) / 6.24 (LS 500h) L/100km</span></div>
+                    <div class="spec-row"><span class="spec-name">Trọng lượng không tải</span><span class="spec-value">2,235–2,290 kg (LS 500) / 2,295 kg (LS 500h)</span></div>
+                    <div class="spec-row"><span class="spec-name">Trọng lượng toàn tải</span><span class="spec-value">2,670 kg (LS 500) / 2,725 kg (LS 500h)</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 5: Khung Gầm & Treo -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-gear-wide-connected"></i> Khung Gầm & Treo</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Hệ thống treo trước</span><span class="spec-value">Khí nén</span></div>
+                    <div class="spec-row"><span class="spec-name">Hệ thống treo sau</span><span class="spec-value">Khí nén</span></div>
+                    <div class="spec-row"><span class="spec-name">Treo thích ứng (AVS)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Phanh trước</span><span class="spec-value">Đĩa thông gió</span></div>
+                    <div class="spec-row"><span class="spec-name">Phanh sau</span><span class="spec-value">Đĩa thông gió</span></div>
+                    <div class="spec-row"><span class="spec-name">Hệ thống lái</span><span class="spec-value">Trợ lực điện</span></div>
+                    <div class="spec-row"><span class="spec-name">Mâm xe & Lốp xe</span><span class="spec-value">245/45R20 — Run flat</span></div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ==================== NEWSLETTER ==================== -->
     <section class="newsletter-section">

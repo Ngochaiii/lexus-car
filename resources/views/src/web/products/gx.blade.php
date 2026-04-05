@@ -672,13 +672,6 @@
                     <div class="equipment-card"><span class="ec-badge"
                             style="background:var(--lexus-dark-3);border:1px solid var(--lexus-gold);color:var(--lexus-gold);">Độc
                             quyền</span>
-                        <div class="ec-letter">C</div>
-                        <h4 class="ec-title">KDSS — Cân Bằng Lực Chống Lắc</h4>
-                        <p class="ec-desc">Kinetic Dynamic Suspension System tự động cân bằng lực chống lắc giữa treo trước và sau, tối ưu khả năng vượt địa hình gồ ghề trong khi duy trì sự ổn định đường trường.</p>
-                    </div>
-                    <div class="equipment-card"><span class="ec-badge"
-                            style="background:var(--lexus-dark-3);border:1px solid var(--lexus-gold);color:var(--lexus-gold);">Độc
-                            quyền</span>
                         <div class="ec-letter">D</div>
                         <h4 class="ec-title">Thân Xe Đa Vật Liệu</h4>
                         <p class="ec-desc">Thân xe cứng vững được cấu tạo từ đa vật liệu cao cấp, đồng thời tăng cường độ cứng xoắn, nâng cao khả năng hấp thụ va chạm trên địa hình khắc nghiệt.</p>
@@ -689,27 +682,10 @@
             <!-- HỆ THỐNG HỖ TRỢ ĐỊA HÌNH -->
             <div class="equipment-content" id="off-tech">
                 <div class="equipment-grid">
-                    <div class="equipment-card"><span class="ec-badge">MTS</span>
-                        <div class="ec-letter">A</div>
-                        <h4 class="ec-title">Multi-Terrain Select</h4>
-                        <p class="ec-desc">Hệ thống lựa chọn địa hình đa dạng cho phép tối ưu hóa lực kéo và phân bổ moment cho từng loại địa hình: Mud, Sand, Loose Rock, Rock & Dirt, Snow.</p>
-                    </div>
-                    <div class="equipment-card"><span class="ec-badge">CC</span>
-                        <div class="ec-letter">B</div>
-                        <h4 class="ec-title">Crawl Control</h4>
-                        <p class="ec-desc">Hệ thống điều khiển vượt địa hình tốc độ thấp tự động, người lái chỉ cần điều khiển vô lăng trong khi hệ thống tự quản lý phanh và ga, tối ưu cho địa hình khó khăn.</p>
-                    </div>
                     <div class="equipment-card"><span class="ec-badge">HAC</span>
                         <div class="ec-letter">C</div>
                         <h4 class="ec-title">Hỗ Trợ Leo Dốc HAC</h4>
                         <p class="ec-desc">Hill-start Assist Control tự động giữ phanh khi dừng trên dốc, ngăn xe bị trôi về phía sau khi khởi hành, đặc biệt hữu ích khi vượt địa hình dốc đứng.</p>
-                    </div>
-                    <div class="equipment-card"><span class="ec-badge"
-                            style="background:var(--lexus-dark-3);border:1px solid var(--lexus-gold);color:var(--lexus-gold);">Độc
-                            quyền</span>
-                        <div class="ec-letter">D</div>
-                        <h4 class="ec-title">Phanh Bám Dốc DAC</h4>
-                        <p class="ec-desc">Downhill Assist Control tự động duy trì tốc độ an toàn khi xuống dốc dốc đứng, giúp người lái tập trung hoàn toàn vào điều khiển hướng đi.</p>
                     </div>
                     <div class="equipment-card"><span class="ec-badge">4WD</span>
                         <div class="ec-letter">E</div>
@@ -859,85 +835,162 @@
     </section>
 
     <!-- ==================== THÔNG SỐ KỸ THUẬT ==================== -->
-    <section class="specs-section section-padding" id="specs">
-        <div class="container">
-            <div class="section-tag">Dữ liệu kỹ thuật</div>
-            <h2 class="section-title">Thông Số Kỹ Thuật</h2>
-            <div class="specs-grid">
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-lightning-charge"></i> Động Cơ & Hiệu Năng</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Loại động cơ</span><span class="spec-value">3.5L V6 V35A-FTS</span></div>
-                        <div class="spec-row"><span class="spec-name">Công suất cực đại</span><span
-                                class="spec-value">349 HP (260 kW)</span></div>
-                        <div class="spec-row"><span class="spec-name">Mô-men xoắn cực đại</span><span
-                                class="spec-value">479 Nm</span></div>
-                        <div class="spec-row"><span class="spec-name">Hộp số</span><span class="spec-value">DirectShift-10AT — tự động 10 cấp</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ dẫn động</span><span
-                                class="spec-value">4WD — Part-time H4/L4</span></div>
-                        <div class="spec-row"><span class="spec-name">Tăng tốc 0-100 km/h</span><span
-                                class="spec-value">7.0 giây</span></div>
-                    </div>
+<section class="specs-section section-padding" id="specs">
+    <div class="container">
+        <div class="section-tag">Dữ liệu kỹ thuật</div>
+        <h2 class="section-title">Thông Số Kỹ Thuật — GX 550</h2>
+        <div class="specs-grid">
+
+            <!-- CARD 1: Động Cơ & Hiệu Năng -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-lightning-charge"></i> Động Cơ & Hiệu Năng</h4>
                 </div>
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-rulers"></i> Kích Thước & Không Gian</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Dài × Rộng × Cao</span><span
-                                class="spec-value">4,935 × 1,980 × 1,870 mm</span></div>
-                        <div class="spec-row"><span class="spec-name">Chiều dài cơ sở</span><span
-                                class="spec-value">2,850 mm</span></div>
-                        <div class="spec-row"><span class="spec-name">Khoảng sáng gầm</span><span
-                                class="spec-value">220 mm</span></div>
-                        <div class="spec-row"><span class="spec-name">Số chỗ ngồi</span><span class="spec-value">7 chỗ</span></div>
-                        <div class="spec-row"><span class="spec-name">Dung tích bình nhiên liệu</span><span
-                                class="spec-value">87 lít</span></div>
-                        <div class="spec-row"><span class="spec-name">Trọng lượng xe</span><span
-                                class="spec-value">~2,490 kg</span></div>
-                    </div>
-                </div>
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-gear-wide-connected"></i> Khung Gầm & Lốp</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Loại khung gầm</span><span
-                                class="spec-value">Body-on-Frame — nền tảng GA-F</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ thống treo trước</span><span
-                                class="spec-value">Đòn kép độc lập</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ thống treo sau</span><span
-                                class="spec-value">Cầu cứng liên kết 4 điểm</span></div>
-                        <div class="spec-row"><span class="spec-name">Địa hình MTS</span><span
-                                class="spec-value">Mud / Sand / Loose Rock / Snow</span></div>
-                        <div class="spec-row"><span class="spec-name">Hỗ trợ địa hình</span><span
-                                class="spec-value">Crawl Control + HAC + DAC</span></div>
-                        <div class="spec-row"><span class="spec-name">KDSS</span><span class="spec-value">Có — cân bằng lực chống lắc</span></div>
-                    </div>
-                </div>
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-fuel-pump"></i> Nhiên Liệu & Môi Trường</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Tiêu thụ nhiên liệu</span><span
-                                class="spec-value">10.5 L/100km</span></div>
-                        <div class="spec-row"><span class="spec-name">Loại nhiên liệu</span><span class="spec-value">Xăng RON 95</span></div>
-                        <div class="spec-row"><span class="spec-name">Dung tích xi-lanh</span><span
-                                class="spec-value">3,456 cc</span></div>
-                        <div class="spec-row"><span class="spec-name">Số xi-lanh</span><span
-                                class="spec-value">V6 — 6 xi-lanh</span></div>
-                        <div class="spec-row"><span class="spec-name">Tiêu chuẩn khí thải</span><span
-                                class="spec-value">Euro 6</span></div>
-                        <div class="spec-row"><span class="spec-name">Kích thước xe</span><span
-                                class="spec-value">Xem hình kích thước</span></div>
-                    </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Loại động cơ</span><span class="spec-value">V35A-FTS, 6 xi lanh chữ V, tăng áp</span></div>
+                    <div class="spec-row"><span class="spec-name">Dung tích</span><span class="spec-value">3,445 cm³</span></div>
+                    <div class="spec-row"><span class="spec-name">Công suất cực đại</span><span class="spec-value">260 kW (349 HP) / 4,800–5,200 RPM</span></div>
+                    <div class="spec-row"><span class="spec-name">Mô-men xoắn cực đại</span><span class="spec-value">650 Nm / 2,000–3,600 RPM</span></div>
+                    <div class="spec-row"><span class="spec-name">Hộp số</span><span class="spec-value">Tự động</span></div>
+                    <div class="spec-row"><span class="spec-name">Tốc độ cực đại</span><span class="spec-value">175 km/h</span></div>
+                    <div class="spec-row"><span class="spec-name">Tăng tốc 0–100 km/h</span><span class="spec-value">7 giây</span></div>
                 </div>
             </div>
+
+            <!-- CARD 2: Kích Thước & Không Gian -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-rulers"></i> Kích Thước & Không Gian</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Dài × Rộng × Cao</span><span class="spec-value">4,960 × 1,980 × 1,865 mm</span></div>
+                    <div class="spec-row"><span class="spec-name">Chiều dài cơ sở</span><span class="spec-value">2,850 mm</span></div>
+                    <div class="spec-row"><span class="spec-name">Số chỗ ngồi</span><span class="spec-value">7</span></div>
+                    <div class="spec-row"><span class="spec-name">Khoảng sáng gầm xe</span><span class="spec-value">220 mm</span></div>
+                    <div class="spec-row"><span class="spec-name">Trọng lượng toàn tải</span><span class="spec-value">3,175 kg</span></div>
+                    <div class="spec-row"><span class="spec-name">Dung tích khoang hành lý</span><span class="spec-value">2,178 L (tối đa)</span></div>
+                    <div class="spec-row"><span class="spec-name">Hệ số lực cản</span><span class="spec-value">0.40</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 3: Khung Gầm & Vận Hành -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-gear-wide-connected"></i> Khung Gầm & Vận Hành</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Hệ thống treo trước</span><span class="spec-value">Tay đòn kép</span></div>
+                    <div class="spec-row"><span class="spec-name">Hệ thống treo sau</span><span class="spec-value">Liên kết 4 điểm với lò xo</span></div>
+                    <div class="spec-row"><span class="spec-name">Hệ thống lái</span><span class="spec-value">Trợ lực điện</span></div>
+                    <div class="spec-row"><span class="spec-name">Phanh trước</span><span class="spec-value">Đĩa thông gió</span></div>
+                    <div class="spec-row"><span class="spec-name">Phanh sau</span><span class="spec-value">Đĩa thông gió</span></div>
+                    <div class="spec-row"><span class="spec-name">Bậc lên xuống</span><span class="spec-value">Chỉnh điện</span></div>
+                    <div class="spec-row"><span class="spec-name">Thanh giá nóc</span><span class="spec-value">Dạng thanh ray</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 4: Ghế & Tiện Nghi Nội Thất -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-stars"></i> Ghế & Tiện Nghi Nội Thất</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Chất liệu ghế</span><span class="spec-value">Da Semi-Aniline</span></div>
+                    <div class="spec-row"><span class="spec-name">Ghế người lái</span><span class="spec-value">Chỉnh điện 10 hướng — nhớ 3 vị trí</span></div>
+                    <div class="spec-row"><span class="spec-name">Sưởi / Làm mát ghế</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Mát-xa ghế</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Hàng ghế sau</span><span class="spec-value">Gập 60:40 — Chỉnh cơ</span></div>
+                    <div class="spec-row"><span class="spec-name">Gương chiếu hậu kỹ thuật số</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Hộp lạnh</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Ốp trang trí Tsuyasumi</span><span class="spec-value">Có</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 5: Ngoại Thất -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-car-front"></i> Ngoại Thất</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Đèn chiếu gần / xa</span><span class="spec-value">3 LED</span></div>
+                    <div class="spec-row"><span class="spec-name">Đèn báo rẽ trước</span><span class="spec-value">LED Sequential</span></div>
+                    <div class="spec-row"><span class="spec-name">Đèn ban ngày / sương mù</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Tự động điều chỉnh góc chiếu & pha-cốt</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Đèn báo rẽ sau / phanh cao</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Gương chiếu hậu ngoài</span><span class="spec-value">Chống chói, sấy gương, nhớ vị trí</span></div>
+                    <div class="spec-row"><span class="spec-name">Cửa sổ trời toàn cảnh</span><span class="spec-value">Làm mờ — Chỉnh điện</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 6: Điều Hòa & Màn Hình -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-thermometer-half"></i> Điều Hòa & Màn Hình</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Điều hòa</span><span class="spec-value">3 vùng tự động</span></div>
+                    <div class="spec-row"><span class="spec-name">Chức năng Nano-e</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Lọc bụi phấn hoa</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Bảng đồng hồ kỹ thuật số</span><span class="spec-value">12.3 inch</span></div>
+                    <div class="spec-row"><span class="spec-name">Màn hình hiển thị đa thông tin</span><span class="spec-value">3 màn hình</span></div>
+                    <div class="spec-row"><span class="spec-name">Màn hình HUD</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Màn hình trung tâm</span><span class="spec-value">14 inch</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 7: Giải Trí & Kết Nối -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-music-note-beamed"></i> Giải Trí & Kết Nối</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Hệ thống âm thanh Mark Levinson</span><span class="spec-value">21 loa — vòm 3D</span></div>
+                    <div class="spec-row"><span class="spec-name">Apple CarPlay & Android Auto</span><span class="spec-value">Có (không dây)</span></div>
+                    <div class="spec-row"><span class="spec-name">Hệ thống dẫn đường</span><span class="spec-value">Bản đồ Việt Nam</span></div>
+                    <div class="spec-row"><span class="spec-name">Chìa khóa điện tử / dạng thẻ</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Cổng sạc USB (Type C)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">AM/FM / USB / Bluetooth</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Tấm che nắng cửa sau</span><span class="spec-value">Có</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 8: An Toàn Chủ Động -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-shield-check"></i> An Toàn Chủ Động</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Chống bó cứng phanh (ABS)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Hỗ trợ lực phanh (BA)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Phân phối lực phanh (EBD)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Ổn định thân xe (VSC)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Kiểm soát lực bám (TRC)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Đèn báo phanh khẩn cấp (EBS)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Hỗ trợ khởi hành ngang dốc (HAC)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Hỗ trợ vào cua chủ động (ACA)</span><span class="spec-value">Có</span></div>
+                </div>
+            </div>
+
+            <!-- CARD 9: Hỗ Trợ Lái Thông Minh & Đỗ Xe -->
+            <div class="specs-card">
+                <div class="specs-card-header">
+                    <h4><i class="bi bi-eye"></i> Hỗ Trợ Lái Thông Minh</h4>
+                </div>
+                <div class="specs-card-body">
+                    <div class="spec-row"><span class="spec-name">Điều khiển hành trình chủ động (DRCC)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">An toàn tiền va chạm (PCS)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Cảnh báo & hỗ trợ làn đường (LDA / LTA)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Hỗ trợ ra khỏi xe (SEA)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Cảnh báo điểm mù (BSM)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Cảnh báo phương tiện cắt ngang (RCTA)</span><span class="spec-value">Có</span></div>
+                    <div class="spec-row"><span class="spec-name">Hỗ trợ đỗ xe</span><span class="spec-value">Camera 360</span></div>
+                    <div class="spec-row"><span class="spec-name">Túi khí SRS</span><span class="spec-value">8 túi khí</span></div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ==================== NEWSLETTER ==================== -->
     <section class="newsletter-section">
