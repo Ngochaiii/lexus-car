@@ -85,7 +85,7 @@
                                     <div class="vo-price">4.140.000.000đ</div>
                                 </div>
                                 <div class="version-option active"
-                                    onclick="selectVersion(this,'4.490.000.000','RX 500h F SPORT',371,'6,2s','8.1L','DIRECT4')">
+                                    onclick="selectVersion(this,'4.490.000.000','RX 500h F SPORT',270.8,'6,2s','8.1L','DIRECT4')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">RX 500h — F SPORT PERFORMANCE</div>
