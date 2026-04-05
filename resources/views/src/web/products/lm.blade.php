@@ -69,7 +69,7 @@
                             <div class="option-label"><span><i class="bi bi-gear me-2"></i>Phiên bản</span></div>
                             <div class="version-options">
                                 <div class="version-option active"
-                                    onclick="selectVersion(this,'8.950.000.000','LM 500h 4 chỗ',275,'6.8s','8.7L','DIRECT4')">
+                                    onclick="selectVersion(this,'8.950.000.000','LM 500h 4 chỗ',367,'6.8s','8.7L','DIRECT4')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">LM 500h — 4 chỗ VIP</div>

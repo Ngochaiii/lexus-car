@@ -98,7 +98,7 @@
                             <div class="quick-specs" style="margin:16px 0 0;padding:12px 0 0;background:none;border:none;border-top:1px solid var(--lexus-gray);border-radius:0;">
                                 <div class="qs-item">
                                     <div class="qs-icon"><i class="bi bi-lightning-charge"></i></div>
-                                    <div class="qs-value" id="qs-hp">415</div>
+                                    <div class="qs-value" id="qs-hp">295</div>
                                     <div class="qs-label">Mã lực</div>
                                 </div>
                                 <div class="qs-item">
