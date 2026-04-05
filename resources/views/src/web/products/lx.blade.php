@@ -103,6 +103,28 @@
                                     <div class="price-value" id="priceDisplay">8.590.000.000<span> VNĐ</span></div>
                                 </div>
                             </div>
+                            <div class="quick-specs" style="margin:16px 0 0;padding:12px 0 0;background:none;border:none;border-top:1px solid var(--lexus-gray);border-radius:0;">
+                                <div class="qs-item">
+                                    <div class="qs-icon"><i class="bi bi-lightning-charge"></i></div>
+                                    <div class="qs-value" id="qs-hp">409</div>
+                                    <div class="qs-label">Mã lực</div>
+                                </div>
+                                <div class="qs-item">
+                                    <div class="qs-icon"><i class="bi bi-speedometer2"></i></div>
+                                    <div class="qs-value" id="qs-acc">6.7s</div>
+                                    <div class="qs-label">0-100 km/h</div>
+                                </div>
+                                <div class="qs-item">
+                                    <div class="qs-icon"><i class="bi bi-fuel-pump"></i></div>
+                                    <div class="qs-value" id="qs-fuel">12.2L</div>
+                                    <div class="qs-label">/ 100km</div>
+                                </div>
+                                <div class="qs-item">
+                                    <div class="qs-icon"><i class="bi bi-gear-wide-connected"></i></div>
+                                    <div class="qs-value" id="qs-drive">AWD</div>
+                                    <div class="qs-label">4WD</div>
+                                </div>
+                            </div>
                             <div class="price-installment">
                                 <i class="bi bi-calculator"></i>
                                 <div class="price-installment-text">Trả góp từ <strong>~105 triệu/tháng</strong> với lãi suất
@@ -129,30 +151,6 @@
                                     data-name="Nori Green Pearl" onclick="selectColor(this)"></div>
                                 <div class="color-option" style="--color:#174ec2" data-color="gold"
                                     data-name="Sunset Gold" onclick="selectColor(this)"></div>
-                            </div>
-                        </div>
-
-                        <!-- Quick Specs -->
-                        <div class="quick-specs">
-                            <div class="qs-item">
-                                <div class="qs-icon"><i class="bi bi-lightning-charge"></i></div>
-                                <div class="qs-value" id="qs-hp">409</div>
-                                <div class="qs-label">Mã lực</div>
-                            </div>
-                            <div class="qs-item">
-                                <div class="qs-icon"><i class="bi bi-speedometer2"></i></div>
-                                <div class="qs-value" id="qs-acc">6.7s</div>
-                                <div class="qs-label">0-100 km/h</div>
-                            </div>
-                            <div class="qs-item">
-                                <div class="qs-icon"><i class="bi bi-fuel-pump"></i></div>
-                                <div class="qs-value" id="qs-fuel">12.2L</div>
-                                <div class="qs-label">/ 100km</div>
-                            </div>
-                            <div class="qs-item">
-                                <div class="qs-icon"><i class="bi bi-gear-wide-connected"></i></div>
-                                <div class="qs-value" id="qs-drive">AWD</div>
-                                <div class="qs-label">4WD</div>
                             </div>
                         </div>
 

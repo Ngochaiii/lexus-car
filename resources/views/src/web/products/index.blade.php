@@ -103,6 +103,28 @@
                                     <div class="price-value" id="priceDisplay">4.490.000.000<span> VNĐ</span></div>
                                 </div>
                             </div>
+                            <div class="quick-specs" style="margin:16px 0 0;padding:12px 0 0;background:none;border:none;border-top:1px solid var(--lexus-gray);border-radius:0;">
+                                <div class="qs-item">
+                                    <div class="qs-icon"><i class="bi bi-lightning-charge"></i></div>
+                                    <div class="qs-value" id="qs-hp">371</div>
+                                    <div class="qs-label">Mã lực</div>
+                                </div>
+                                <div class="qs-item">
+                                    <div class="qs-icon"><i class="bi bi-speedometer2"></i></div>
+                                    <div class="qs-value" id="qs-acc">6,2s</div>
+                                    <div class="qs-label">0-100 km/h</div>
+                                </div>
+                                <div class="qs-item">
+                                    <div class="qs-icon"><i class="bi bi-fuel-pump"></i></div>
+                                    <div class="qs-value" id="qs-fuel">8.1L</div>
+                                    <div class="qs-label">/ 100km</div>
+                                </div>
+                                <div class="qs-item">
+                                    <div class="qs-icon"><i class="bi bi-gear-wide-connected"></i></div>
+                                    <div class="qs-value" id="qs-drive">DIRECT4</div>
+                                    <div class="qs-label">DIRECT4</div>
+                                </div>
+                            </div>
                             <div class="price-installment">
                                 <i class="bi bi-calculator"></i>
                                 <div class="price-installment-text">Trả góp từ <strong>~45 triệu/tháng</strong> với lãi suất
@@ -131,30 +153,6 @@
                                     data-name="Copper Crest" onclick="selectColor(this)"></div>
                                 <div class="color-option" style="--color:#191970" data-color="blue"
                                     data-name="Deep Blue Mica" onclick="selectColor(this)"></div>
-                            </div>
-                        </div>
-
-                        <!-- Quick Specs -->
-                        <div class="quick-specs">
-                            <div class="qs-item">
-                                <div class="qs-icon"><i class="bi bi-lightning-charge"></i></div>
-                                <div class="qs-value" id="qs-hp">270,8</div>
-                                <div class="qs-label">Mã lực</div>
-                            </div>
-                            <div class="qs-item">
-                                <div class="qs-icon"><i class="bi bi-speedometer2"></i></div>
-                                <div class="qs-value" id="qs-acc">6,2s</div>
-                                <div class="qs-label">0-100 km/h</div>
-                            </div>
-                            <div class="qs-item">
-                                <div class="qs-icon"><i class="bi bi-fuel-pump"></i></div>
-                                <div class="qs-value" id="qs-fuel">8.1L</div>
-                                <div class="qs-label">/ 100km</div>
-                            </div>
-                            <div class="qs-item">
-                                <div class="qs-icon"><i class="bi bi-gear-wide-connected"></i></div>
-                                <div class="qs-value" id="qs-drive">AWD</div>
-                                <div class="qs-label">DIRECT4</div>
                             </div>
                         </div>
 
@@ -540,7 +538,7 @@
                             kiệm nhiên liệu vượt trội.</p>
                         <div class="powertrain-specs">
                             <div class="pt-spec">
-                                <div class="pt-spec-value">246 HP</div>
+                                <div class="pt-spec-value">188 HP</div>
                                 <div class="pt-spec-label">Công suất</div>
                             </div>
                             <div class="pt-spec">
@@ -1281,6 +1279,8 @@
         }
 
         /* ===================== VERSION SELECTOR ===================== */
+        let selectedVersion = {};
+
         function selectVersion(el, price, name, hp, acc, fuel, drive) {
             document.querySelectorAll('.version-option').forEach(v => v.classList.remove('active'));
             el.classList.add('active');
@@ -1289,6 +1289,15 @@
             document.getElementById('qs-acc').textContent = acc;
             document.getElementById('qs-fuel').textContent = fuel;
             document.getElementById('qs-drive').textContent = drive;
+            selectedVersion = { price, name };
+        }
+
+        const _activeVer = document.querySelector('.version-option.active');
+        if (_activeVer) {
+            selectedVersion = {
+                price: _activeVer.querySelector('.vo-price').textContent,
+                name: _activeVer.querySelector('.vo-name').textContent
+            };
         }
 
         /* ===================== FAVOURITE ===================== */
@@ -1396,23 +1405,6 @@
             });
     </script>
     <script>
-        let selectedVersion = {};
-
-        function selectVersion(el, price, name) {
-            document.querySelectorAll('.version-option').forEach(v => v.classList.remove('active'));
-            el.classList.add('active');
-            selectedVersion = {
-                price,
-                name
-            };
-        }
-
-        const active = document.querySelector('.version-option.active');
-        selectedVersion = {
-            price: active.querySelector('.vo-price').textContent,
-            name: active.querySelector('.vo-name').textContent
-        };
-
         function showToast(success = true) {
             const toast = document.createElement('div');
             toast.className = 'toast-notify';

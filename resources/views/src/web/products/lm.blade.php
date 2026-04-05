@@ -95,6 +95,28 @@
                                     <div class="price-value" id="priceDisplay">8.950.000.000<span> VNĐ</span></div>
                                 </div>
                             </div>
+                            <div class="quick-specs" style="margin:16px 0 0;padding:12px 0 0;background:none;border:none;border-top:1px solid var(--lexus-gray);border-radius:0;">
+                                <div class="qs-item">
+                                    <div class="qs-icon"><i class="bi bi-lightning-charge"></i></div>
+                                    <div class="qs-value" id="qs-hp">367</div>
+                                    <div class="qs-label">Mã lực</div>
+                                </div>
+                                <div class="qs-item">
+                                    <div class="qs-icon"><i class="bi bi-speedometer2"></i></div>
+                                    <div class="qs-value" id="qs-acc">6.8s</div>
+                                    <div class="qs-label">0-100 km/h</div>
+                                </div>
+                                <div class="qs-item">
+                                    <div class="qs-icon"><i class="bi bi-fuel-pump"></i></div>
+                                    <div class="qs-value" id="qs-fuel">8.7L</div>
+                                    <div class="qs-label">/ 100km</div>
+                                </div>
+                                <div class="qs-item">
+                                    <div class="qs-icon"><i class="bi bi-gear-wide-connected"></i></div>
+                                    <div class="qs-value" id="qs-drive">DIRECT4</div>
+                                    <div class="qs-label">DIRECT4</div>
+                                </div>
+                            </div>
                             <div class="price-installment">
                                 <i class="bi bi-calculator"></i>
                                 <div class="price-installment-text">Trả góp từ <strong>~85 triệu/tháng</strong> với lãi suất
@@ -117,30 +139,6 @@
                                     data-name="Sonic Titanium" onclick="selectColor(this)"></div>
                                 <div class="color-option" style="--color:#8B0000" data-color="red"
                                     data-name="Matador Red Mica" onclick="selectColor(this)"></div>
-                            </div>
-                        </div>
-
-                        <!-- Quick Specs -->
-                        <div class="quick-specs">
-                            <div class="qs-item">
-                                <div class="qs-icon"><i class="bi bi-lightning-charge"></i></div>
-                                <div class="qs-value" id="qs-hp">275</div>
-                                <div class="qs-label">Mã lực</div>
-                            </div>
-                            <div class="qs-item">
-                                <div class="qs-icon"><i class="bi bi-speedometer2"></i></div>
-                                <div class="qs-value" id="qs-acc">6.8s</div>
-                                <div class="qs-label">0-100 km/h</div>
-                            </div>
-                            <div class="qs-item">
-                                <div class="qs-icon"><i class="bi bi-fuel-pump"></i></div>
-                                <div class="qs-value" id="qs-fuel">8.7L</div>
-                                <div class="qs-label">/ 100km</div>
-                            </div>
-                            <div class="qs-item">
-                                <div class="qs-icon"><i class="bi bi-gear-wide-connected"></i></div>
-                                <div class="qs-value" id="qs-drive">AWD</div>
-                                <div class="qs-label">DIRECT4</div>
                             </div>
                         </div>
 
