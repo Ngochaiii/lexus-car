@@ -69,7 +69,7 @@
                             <div class="option-label"><span><i class="bi bi-gear me-2"></i>Phiên bản</span></div>
                             <div class="version-options">
                                 <div class="version-option"
-                                    onclick="selectVersion(this,'3.350.000.000','RX 350H Premium',187.7,'7.9s','9.8L','AWD')">
+                                    onclick="selectVersion(this,'3.350.000.000','RX 350H Premium',187.7,'7.9s','5.0L','AWD e-Four')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">RX 350H Premium</div>
@@ -77,7 +77,7 @@
                                     <div class="vo-price">3.350.000.000đ</div>
                                 </div>
                                 <div class="version-option"
-                                    onclick="selectVersion(this,'4.140.000.000','RX 350h Luxury',187.7,'7.9s','6.0L','E-Four')">
+                                    onclick="selectVersion(this,'4.140.000.000','RX 350h Luxury',187.7,'7.9s','5.0L','E-Four')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">RX 350h Luxury</div>

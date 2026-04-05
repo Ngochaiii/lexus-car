@@ -69,7 +69,7 @@
                             <div class="option-label"><span><i class="bi bi-gear me-2"></i>Phiên bản</span></div>
                             <div class="version-options">
                                 <div class="version-option active"
-                                    onclick="selectVersion(this,'8.030.000.000','LS 500 V6 Twin Turbo RWD',415,'5.4s','10.4L','RWD')">
+                                    onclick="selectVersion(this,'8.030.000.000','LS 500 V6 Twin Turbo RWD',295,'5.4s','10.4L','RWD')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">LS 500h — V6 3.5L Twin Turbo RWD</div>
