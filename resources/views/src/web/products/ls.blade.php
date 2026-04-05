@@ -72,7 +72,7 @@
                                     onclick="selectVersion(this,'8.030.000.000','LS 500 V6 Twin Turbo RWD',415,'5.4s','10.4L','RWD')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
-                                        <div class="vo-name">LS 500 — V6 3.5L Twin Turbo RWD</div>
+                                        <div class="vo-name">LS 500h — V6 3.5L Twin Turbo RWD</div>
                                     </div>
                                     <div class="vo-price">8.030.000.000đ</div>
                                 </div>
@@ -128,7 +128,7 @@
                         <div class="quick-specs">
                             <div class="qs-item">
                                 <div class="qs-icon"><i class="bi bi-lightning-charge"></i></div>
-                                <div class="qs-value" id="qs-hp">354</div>
+                                <div class="qs-value" id="qs-hp">295</div>
                                 <div class="qs-label">Mã lực</div>
                             </div>
                             <div class="qs-item">

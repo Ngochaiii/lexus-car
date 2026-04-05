@@ -69,28 +69,28 @@
                             <div class="option-label"><span><i class="bi bi-gear me-2"></i>Phiên bản</span></div>
                             <div class="version-options">
                                 <div class="version-option"
-                                    onclick="selectVersion(this,'3.080.000.000','RX 350 2.4L-T AWD',279,'7.4s','9.8L','AWD')">
+                                    onclick="selectVersion(this,'3.350.000.000','RX 350H Premium',187.7,'7.9s','9.8L','AWD')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
-                                        <div class="vo-name">RX 350 — 2.4L Turbo AWD</div>
+                                        <div class="vo-name">RX 350H Premium</div>
                                     </div>
-                                    <div class="vo-price">3.080.000.000đ</div>
+                                    <div class="vo-price">3.350.000.000đ</div>
                                 </div>
                                 <div class="version-option"
-                                    onclick="selectVersion(this,'3.850.000.000','RX 350h 2.5L HEV',243,'7.2s','6.0L','E-Four')">
+                                    onclick="selectVersion(this,'4.140.000.000','RX 350h Luxury',187.7,'7.9s','6.0L','E-Four')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
-                                        <div class="vo-name">RX 350h — 2.5L Hybrid</div>
+                                        <div class="vo-name">RX 350h Luxury</div>
                                     </div>
-                                    <div class="vo-price">3.850.000.000đ</div>
+                                    <div class="vo-price">4.140.000.000đ</div>
                                 </div>
                                 <div class="version-option active"
-                                    onclick="selectVersion(this,'4.310.000.000','RX 500h F SPORT',371,'5.9s','8.1L','DIRECT4')">
+                                    onclick="selectVersion(this,'4.490.000.000','RX 500h F SPORT',371,'6,2s','8.1L','DIRECT4')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">RX 500h — F SPORT PERFORMANCE</div>
                                     </div>
-                                    <div class="vo-price">4.310.000.000đ</div>
+                                    <div class="vo-price">4.490.000.000đ</div>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                             <div class="price-row">
                                 <div>
                                     <div class="price-label">Giá niêm yết</div>
-                                    <div class="price-value" id="priceDisplay">4.310.000.000<span> VNĐ</span></div>
+                                    <div class="price-value" id="priceDisplay">4.490.000.000<span> VNĐ</span></div>
                                 </div>
                             </div>
                             <div class="price-installment">
@@ -138,12 +138,12 @@
                         <div class="quick-specs">
                             <div class="qs-item">
                                 <div class="qs-icon"><i class="bi bi-lightning-charge"></i></div>
-                                <div class="qs-value" id="qs-hp">371</div>
+                                <div class="qs-value" id="qs-hp">270,8</div>
                                 <div class="qs-label">Mã lực</div>
                             </div>
                             <div class="qs-item">
                                 <div class="qs-icon"><i class="bi bi-speedometer2"></i></div>
-                                <div class="qs-value" id="qs-acc">5.9s</div>
+                                <div class="qs-value" id="qs-acc">6,2s</div>
                                 <div class="qs-label">0-100 km/h</div>
                             </div>
                             <div class="qs-item">
@@ -491,7 +491,7 @@
                             gian AWD mang đến độ bám đường xuất sắc trong mọi điều kiện thời tiết và địa hình.</p>
                         <div class="powertrain-specs">
                             <div class="pt-spec">
-                                <div class="pt-spec-value">279 HP</div>
+                                <div class="pt-spec-value">275 HP</div>
                                 <div class="pt-spec-label">Công suất</div>
                             </div>
                             <div class="pt-spec">
@@ -540,7 +540,7 @@
                             kiệm nhiên liệu vượt trội.</p>
                         <div class="powertrain-specs">
                             <div class="pt-spec">
-                                <div class="pt-spec-value">243 HP</div>
+                                <div class="pt-spec-value">246 HP</div>
                                 <div class="pt-spec-label">Công suất</div>
                             </div>
                             <div class="pt-spec">
