@@ -972,60 +972,60 @@
                 name: 'Sonic White Pearl',
                 images: [
                     '{{ asset('web/assets/images/ls/mau-trang.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-trang.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-trang.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-trang.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-trang.jpg') }}'
+                    '{{ asset('web/assets/images/ls/mau-trang1.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-trang2.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-trang3.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-trang4.jpg') }}'
                 ]
             },
             black: {
                 name: 'Caviar Black',
                 images: [
-                    '{{ asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg') }}',
                     '{{ asset('web/assets/images/ls/mau-den.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-den.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-den.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-den.jpg') }}'
+                    '{{ asset('web/assets/images/ls/mau-den1.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-den2.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-den3.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-den4.jpg') }}'
                 ]
             },
             silver: {
                 name: 'Sonic Titanium',
                 images: [
                     '{{ asset('web/assets/images/ls/mau-xam.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xam.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xam.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xam.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xam.jpg') }}'
+                    '{{ asset('web/assets/images/ls/mau-xam1.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-xam2.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-xam3.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-xam4.jpg') }}'
                 ]
             },
             red: {
                 name: 'Passion Red Mica',
                 images: [
                     '{{ asset('web/assets/images/ls/mau-do.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-do.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-do.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-do.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-do.jpg') }}'
+                    '{{ asset('web/assets/images/ls/mau-do1.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-do2.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-do3.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-do4.jpg') }}'
                 ]
             },
             blue: {
                 name: 'Structural Blue',
                 images: [
                     '{{ asset('web/assets/images/ls/mau-xanh.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xanh.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xanh.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xanh.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xanh.jpg') }}'
+                    '{{ asset('web/assets/images/ls/mau-xanh1.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-xanh2.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-xanh3.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-xanh4.jpg') }}'
                 ]
             },
             brown: {
                 name: 'Terracotta Brown',
                 images: [
                     '{{ asset('web/assets/images/ls/mau-nau.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-nau.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-nau.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-nau.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-nau.jpg') }}'
+                    '{{ asset('web/assets/images/ls/mau-nau1.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-nau2.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-nau3.jpg') }}',
+                    '{{ asset('web/assets/images/ls/mau-nau4.jpg') }}'
                 ]
             }
         };

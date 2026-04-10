@@ -22,7 +22,7 @@
                                 <button class="gallery-action-btn" title="Chia sẻ"><i class="bi bi-share"></i></button>
                             </div>
                             <div class="gallery-main">
-                                <img src="{{ asset('web/assets/images/LX600FSPORT.webp') }}"
+                                <img src="{{ asset('web/assets/images/lx/anh-main.webp') }}"
                                     alt="Lexus LX 600 F SPORT" id="mainImage">
                             </div>
                             <button class="gallery-nav prev" onclick="changeImage(-1)"><i
@@ -34,15 +34,15 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img
-                                    src="{{ asset('web/assets/images/LX600FSPORT.webp') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/lx/anh-main.webp') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img
-                                    src="{{ asset('web/assets/images/LX600Urban.webp') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/lx/anh-2.webp') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img
-                                    src="{{ asset('web/assets/images/lx600vip.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/lx/anh-3.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img
-                                    src="{{ asset('web/assets/images/lx600-vip-overview.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/lx/anh-4.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(4,this)"><img
-                                    src="{{ asset('web/assets/images/lx600-urban-gallery-ext-06-d.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/lx/anh-5.jpg') }}" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -215,7 +215,7 @@
         <div class="container">
             <div class="intro-grid">
                 <div class="intro-img-wrap">
-                    <img src="{{ asset('web/assets/images/lx600-vip-overview.jpg') }}"
+                    <img src="{{ asset('web/assets/images/lx/intro.jpg') }}"
                         alt="Lexus LX 600 — SUV địa hình hạng sang tiên phong">
                     <div class="intro-year-badge">
                         <div class="iyb-year">1996</div>
@@ -278,7 +278,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/LX600FSPORT.webp') }}" alt="Màu đen">
+                                <img src="{{ asset('web/assets/images/lx/mau-den.webp') }}" alt="Màu đen">
                             </div>
                             <div class="ti-abbr">Màu đen — Caviar Black</div>
                         </div>
@@ -286,7 +286,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/LX600Urban.webp') }}" alt="Màu trắng">
+                                <img src="{{ asset('web/assets/images/lx/mau-trang.webp') }}" alt="Màu trắng">
                             </div>
                             <div class="ti-abbr">Màu trắng — Sonic White</div>
                         </div>
@@ -294,7 +294,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/lx600-urban-gallery-ext-06-d.jpg') }}" alt="Màu xám">
+                                <img src="{{ asset('web/assets/images/lx/mau-xam.jpg') }}" alt="Màu xám">
                             </div>
                             <div class="ti-abbr">Màu xám — Sonic Titanium</div>
                         </div>
@@ -302,7 +302,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/lx600vip.jpg') }}" alt="Màu đỏ">
+                                <img src="{{ asset('web/assets/images/lx/mau-do.jpg') }}" alt="Màu đỏ">
                             </div>
                             <div class="ti-abbr">Màu đỏ — Matador Red</div>
                         </div>
@@ -317,17 +317,17 @@
                     kế phù hợp cho từng phiên bản.</p>
                 <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/LX600Urban.webp') }}" alt="Mâm 22 inch Urban">
+                        <img src="{{ asset('web/assets/images/lx/mam-urban.webp') }}" alt="Mâm 22 inch Urban">
                         <div class="item-card-label">Mâm hợp kim nhôm 22 inch<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản LX 600 Urban</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/LX600FSPORT.webp') }}" alt="Mâm 22 inch F SPORT">
+                        <img src="{{ asset('web/assets/images/lx/mam-fsport.webp') }}" alt="Mâm 22 inch F SPORT">
                         <div class="item-card-label">Mâm hợp kim nhôm 22 inch dập nguyên khối<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản LX 600 F SPORT</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/lx600vip.jpg') }}" alt="Mâm 22 inch VIP">
+                        <img src="{{ asset('web/assets/images/lx/mam-vip.jpg') }}" alt="Mâm 22 inch VIP">
                         <div class="item-card-label">Mâm hợp kim nhôm 22 inch sang trọng<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản LX 600 VIP</span></div>
                     </div>
@@ -348,31 +348,31 @@
                     mái tối đa.</p>
                 <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế nâu">
+                        <img src="{{ asset('web/assets/images/lx/ghe-den.png') }}" alt="Ghế đen">
                         <div class="item-card-label">Đen black</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế đen">
+                        <img src="{{ asset('web/assets/images/lx/ghe-nau.png') }}" alt="Ghế nâu">
                         <div class="item-card-label">Nâu Sunflare Brown</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế đỏ F SPORT">
+                        <img src="{{ asset('web/assets/images/lx/ghe-trang.png') }}" alt="Ghế trắng">
                         <div class="item-card-label">Trắng White & Dark Sepia</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế đen F SPORT">
+                        <img src="{{ asset('web/assets/images/lx/ghe-hazel.png') }}" alt="Ghế Hazel">
                         <div class="item-card-label">Nâu Hazel</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế đen F SPORT">
+                        <img src="{{ asset('web/assets/images/lx/ghe-den2.png') }}" alt="Ghế đen 2">
                         <div class="item-card-label">Đen black</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế đen F SPORT">
+                        <img src="{{ asset('web/assets/images/lx/ghe-crimson.png') }}" alt="Ghế Crimson">
                         <div class="item-card-label">Đổ thẫm Crimson</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế đen F SPORT">
+                        <img src="{{ asset('web/assets/images/lx/ghe-do.png') }}" alt="Ghế đỏ">
                         <div class="item-card-label">Đỏ Flare Red</div>
                     </div>
                 </div>
@@ -385,17 +385,17 @@
                     cabin đẳng cấp theo từng phiên bản.</p>
                 <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/lx600-vip-overview.jpg') }}" alt="Ốp gỗ VIP">
+                        <img src="{{ asset('web/assets/images/lx/op-go.jpg') }}" alt="Ốp gỗ VIP">
                         <div class="item-card-label">Ốp gỗ sang trọng<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản LX 600 VIP</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/LX600FSPORT.webp') }}" alt="Ốp nhôm Hadori F SPORT">
+                        <img src="{{ asset('web/assets/images/lx/op-nhom.webp') }}" alt="Ốp nhôm Hadori F SPORT">
                         <div class="item-card-label">Nhôm Hadori — họa tiết kiếm Nhật<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản F SPORT độc quyền</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/LX600Urban.webp') }}" alt="Ốp nội thất Urban">
+                        <img src="{{ asset('web/assets/images/lx/op-noi-that.webp') }}" alt="Ốp nội thất Urban">
                         <div class="item-card-label">Ốp nội thất cao cấp<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản Urban</span></div>
                     </div>
@@ -421,7 +421,7 @@
             <div class="variant-pane active" id="vt-engine">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{ asset('web/assets/images/LX600FSPORT.webp') }}" alt="Động cơ LX 600 3.5L V6 Twin Turbo">
+                        <img src="{{ asset('web/assets/images/lx/dong-co.webp') }}" alt="Động cơ LX 600 3.5L V6 Twin Turbo">
                         <div class="powertrain-badge">3.5L V6 TT</div>
                     </div>
                     <div class="powertrain-content">
@@ -469,7 +469,7 @@
             <div class="variant-pane" id="vt-transmission">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{ asset('web/assets/images/lx600-urban-gallery-ext-06-d.jpg') }}" alt="Hệ dẫn động 4 bánh LX 600">
+                        <img src="{{ asset('web/assets/images/lx/hop-so.jpg') }}" alt="Hệ dẫn động 4 bánh LX 600">
                         <div class="powertrain-badge">10AT 4WD</div>
                     </div>
                     <div class="powertrain-content">
@@ -523,13 +523,13 @@
             <div class="chassis-grid">
                 <div class="chassis-images">
                     <div class="chassis-img-card">
-                        <img src="{{ asset('web/assets/images/lx600-urban-gallery-ext-06-d.jpg') }}"
+                        <img src="{{ asset('web/assets/images/lx/treo-avs.jpg') }}"
                             alt="Hệ thống treo thích ứng AVS Lexus LX">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Hệ thống treo thích ứng AVS</div>
                     </div>
                     <div class="chassis-img-card">
-                        <img src="{{ asset('web/assets/images/LX600Urban.webp') }}"
+                        <img src="{{ asset('web/assets/images/lx/treo-ahc.webp') }}"
                             alt="Kiểm soát độ cao chủ động AHC Lexus LX">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Kiểm soát độ cao chủ động AHC</div>
@@ -544,7 +544,7 @@
 
                 <div class="chassis-diagram">
                     <div class="chassis-diagram-img">
-                        <img src="{{ asset('web/assets/images/LX600FSPORT.webp') }}"
+                        <img src="{{ asset('web/assets/images/lx/khung-gam.webp') }}"
                             alt="Hệ thống khung gầm Lexus LX 600">
                     </div>
                     <div class="chassis-info-box mt-3">
@@ -586,7 +586,7 @@
             <div class="design-pane active" id="dp-exterior">
                 <div class="design-row">
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/LX600FSPORT.webp')}}"
+                        <img src="{{asset('web/assets/images/lx/ngoai-that-fsport.webp')}}"
                             alt="Ngoại thất Lexus LX 600 F SPORT">
                         <div class="design-caption">
                             <h4>Ngoại Thất F SPORT — Mạnh Mẽ & Thể Thao</h4>
@@ -595,7 +595,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/LX600Urban.webp')}}"
+                        <img src="{{asset('web/assets/images/lx/ngoai-that-urban.webp')}}"
                             alt="Ngoại thất Lexus LX 600 Urban">
                         <div class="design-caption">
                             <h4>Ngoại Thất Urban — Thanh Lịch & Đô Thị</h4>
@@ -604,7 +604,7 @@
                         </div>
                     </div>
                     <div class="design-card wide">
-                        <img src="{{asset('web/assets/images/lx600-urban-gallery-ext-06-d.jpg')}}"
+                        <img src="{{asset('web/assets/images/lx/ngoai-that-ben.jpg')}}"
                             alt="Góc nhìn tổng thể Lexus LX 600">
                         <div class="design-caption">
                             <h4>Thân Xe — Chiều Dài Cơ Sở 2,850mm</h4>
@@ -627,7 +627,7 @@
             <div class="design-pane" id="dp-interior">
                 <div class="design-row">
                     <div class="design-card wide">
-                        <img src="{{asset('web/assets/images/lx600-vip-overview.jpg')}}"
+                        <img src="{{asset('web/assets/images/lx/noi-that-1.jpg')}}"
                             alt="Nội thất Lexus LX 600">
                         <div class="design-caption">
                             <h4>Nội Thất — Sang Trọng & Tiên Tiến</h4>
@@ -636,7 +636,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/LX600Urban.webp')}}"
+                        <img src="{{asset('web/assets/images/lx/noi-that-urban.webp')}}"
                             alt="Nội thất 7 chỗ Lexus LX 600 Urban">
                         <div class="design-caption">
                             <h4>Cabin 7 Chỗ — Phiên Bản Urban</h4>
@@ -645,7 +645,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/LX600FSPORT.webp')}}"
+                        <img src="{{asset('web/assets/images/lx/noi-that-fsport.webp')}}"
                             alt="Nội thất F SPORT Lexus LX 600">
                         <div class="design-caption">
                             <h4>Nội Thất F SPORT — Flare Red & Black</h4>
@@ -668,7 +668,7 @@
             <div class="design-pane" id="dp-vip">
                 <div class="design-row">
                     <div class="design-card wide">
-                        <img src="{{asset('web/assets/images/lx600vip.jpg')}}"
+                        <img src="{{asset('web/assets/images/lx/vip-1.jpg')}}"
                             alt="Phiên bản VIP Lexus LX 600">
                         <div class="design-caption">
                             <h4>Phiên Bản VIP — Không Gian Thư Giãn Đỉnh Cao</h4>
@@ -678,7 +678,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/lx600-vip-overview.jpg')}}"
+                        <img src="{{asset('web/assets/images/lx/vip-ghe.jpg')}}"
                             alt="Ghế VIP Lexus LX 600">
                         <div class="design-caption">
                             <h4>Ghế Sau Chỉnh Điện — Góc Ngả 48°</h4>
@@ -687,7 +687,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/lx600vip.jpg')}}"
+                        <img src="{{asset('web/assets/images/lx/vip-rse.jpg')}}"
                             alt="RSE Lexus LX 600 VIP">
                         <div class="design-caption">
                             <h4>Hệ Thống Giải Trí RSE & Bảng Điều Khiển Sau</h4>
@@ -1068,56 +1068,62 @@
         const colorGalleries = {
             white: {
                 name: 'Sonic White',
-                images: ['{{ asset('web/assets/images/LX600Urban.webp') }}',
-                    '{{ asset('web/assets/images/LX600Urban.webp') }}',
-                    '{{ asset('web/assets/images/lx600-urban-gallery-ext-06-d.jpg') }}',
-                    '{{ asset('web/assets/images/lx600-vip-overview.jpg') }}',
-                    '{{ asset('web/assets/images/lx600vip.jpg') }}'
+                images: [
+                    '{{ asset('web/assets/images/lx/mau-trang1.webp') }}',
+                    '{{ asset('web/assets/images/lx/mau-trang2.webp') }}',
+                    '{{ asset('web/assets/images/lx/mau-trang3.jpg') }}',
+                    '{{ asset('web/assets/images/lx/mau-trang4.jpg') }}',
+                    '{{ asset('web/assets/images/lx/mau-trang5.jpg') }}'
                 ]
             },
             black: {
                 name: 'Caviar Black',
-                images: ['{{ asset('web/assets/images/LX600FSPORT.webp') }}',
-                    '{{ asset('web/assets/images/LX600Urban.webp') }}',
-                    '{{ asset('web/assets/images/lx600vip.jpg') }}',
-                    '{{ asset('web/assets/images/lx600-vip-overview.jpg') }}',
-                    '{{ asset('web/assets/images/lx600-urban-gallery-ext-06-d.jpg') }}'
+                images: [
+                    '{{ asset('web/assets/images/lx/mau-den1.webp') }}',
+                    '{{ asset('web/assets/images/lx/mau-den2.webp') }}',
+                    '{{ asset('web/assets/images/lx/mau-den3.jpg') }}',
+                    '{{ asset('web/assets/images/lx/mau-den4.jpg') }}',
+                    '{{ asset('web/assets/images/lx/mau-den5.jpg') }}'
                 ]
             },
             silver: {
                 name: 'Sonic Titanium',
-                images: ['{{ asset('web/assets/images/lx600-urban-gallery-ext-06-d.jpg') }}',
-                    '{{ asset('web/assets/images/LX600Urban.webp') }}',
-                    '{{ asset('web/assets/images/LX600FSPORT.webp') }}',
-                    '{{ asset('web/assets/images/lx600-vip-overview.jpg') }}',
-                    '{{ asset('web/assets/images/lx600vip.jpg') }}'
+                images: [
+                    '{{ asset('web/assets/images/lx/mau-xam1.jpg') }}',
+                    '{{ asset('web/assets/images/lx/mau-xam2.webp') }}',
+                    '{{ asset('web/assets/images/lx/mau-xam3.webp') }}',
+                    '{{ asset('web/assets/images/lx/mau-xam4.jpg') }}',
+                    '{{ asset('web/assets/images/lx/mau-xam5.jpg') }}'
                 ]
             },
             red: {
                 name: 'Matador Red Mica',
-                images: ['{{ asset('web/assets/images/lx600vip.jpg') }}',
-                    '{{ asset('web/assets/images/LX600FSPORT.webp') }}',
-                    '{{ asset('web/assets/images/lx600-vip-overview.jpg') }}',
-                    '{{ asset('web/assets/images/LX600Urban.webp') }}',
-                    '{{ asset('web/assets/images/lx600-urban-gallery-ext-06-d.jpg') }}'
+                images: [
+                    '{{ asset('web/assets/images/lx/mau-do1.jpg') }}',
+                    '{{ asset('web/assets/images/lx/mau-do2.webp') }}',
+                    '{{ asset('web/assets/images/lx/mau-do3.jpg') }}',
+                    '{{ asset('web/assets/images/lx/mau-do4.webp') }}',
+                    '{{ asset('web/assets/images/lx/mau-do5.jpg') }}'
                 ]
             },
             green: {
                 name: 'Nori Green Pearl',
-                images: ['{{ asset('web/assets/images/LX600Urban.webp') }}',
-                    '{{ asset('web/assets/images/lx600-urban-gallery-ext-06-d.jpg') }}',
-                    '{{ asset('web/assets/images/LX600FSPORT.webp') }}',
-                    '{{ asset('web/assets/images/lx600vip.jpg') }}',
-                    '{{ asset('web/assets/images/lx600-vip-overview.jpg') }}'
+                images: [
+                    '{{ asset('web/assets/images/lx/mau-xanh1.webp') }}',
+                    '{{ asset('web/assets/images/lx/mau-xanh2.jpg') }}',
+                    '{{ asset('web/assets/images/lx/mau-xanh3.webp') }}',
+                    '{{ asset('web/assets/images/lx/mau-xanh4.jpg') }}',
+                    '{{ asset('web/assets/images/lx/mau-xanh5.jpg') }}'
                 ]
             },
             gold: {
                 name: 'Sunset Gold',
-                images: ['{{ asset('web/assets/images/lx600-vip-overview.jpg') }}',
-                    '{{ asset('web/assets/images/lx600vip.jpg') }}',
-                    '{{ asset('web/assets/images/LX600Urban.webp') }}',
-                    '{{ asset('web/assets/images/LX600FSPORT.webp') }}',
-                    '{{ asset('web/assets/images/lx600-urban-gallery-ext-06-d.jpg') }}'
+                images: [
+                    '{{ asset('web/assets/images/lx/mau-vang1.jpg') }}',
+                    '{{ asset('web/assets/images/lx/mau-vang2.jpg') }}',
+                    '{{ asset('web/assets/images/lx/mau-vang3.webp') }}',
+                    '{{ asset('web/assets/images/lx/mau-vang4.webp') }}',
+                    '{{ asset('web/assets/images/lx/mau-vang5.jpg') }}'
                 ]
             }
         };

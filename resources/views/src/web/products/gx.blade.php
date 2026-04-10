@@ -22,7 +22,7 @@
                                 <button class="gallery-action-btn" title="Chia sẻ"><i class="bi bi-share"></i></button>
                             </div>
                             <div class="gallery-main">
-                                <img src="{{ asset('web/assets/images/GX550M.webp') }}"
+                                <img src="{{ asset('web/assets/images/gx/anh-main.webp') }}"
                                     alt="Lexus GX 550" id="mainImage">
                             </div>
                             <button class="gallery-nav prev" onclick="changeImage(-1)"><i
@@ -34,13 +34,13 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img
-                                    src="{{ asset('web/assets/images/GX550M.webp') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/gx/anh-main.webp') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img
-                                    src="{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/gx/anh-2.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img
-                                    src="{{ asset('web/assets/images/GX550M.webp') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/gx/anh-3.webp') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img
-                                    src="{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/gx/anh-4.jpg') }}" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -205,7 +205,7 @@
         <div class="container">
             <div class="intro-grid">
                 <div class="intro-img-wrap">
-                    <img src="{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}"
+                    <img src="{{ asset('web/assets/images/gx/intro.jpg') }}"
                         alt="Lexus GX 550 — SUV địa hình hạng sang biểu tượng">
                     <div class="intro-year-badge">
                         <div class="iyb-year">2002</div>
@@ -260,7 +260,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/GX550M.webp') }}" alt="Màu đen">
+                                <img src="{{ asset('web/assets/images/gx/mau-den.webp') }}" alt="Màu đen">
                             </div>
                             <div class="ti-abbr">Màu đen — Caviar Black</div>
                         </div>
@@ -268,7 +268,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}" alt="Màu trắng">
+                                <img src="{{ asset('web/assets/images/gx/mau-trang.jpg') }}" alt="Màu trắng">
                             </div>
                             <div class="ti-abbr">Màu trắng — Sonic White</div>
                         </div>
@@ -276,7 +276,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/GX550M.webp') }}" alt="Màu xám">
+                                <img src="{{ asset('web/assets/images/gx/mau-xam.webp') }}" alt="Màu xám">
                             </div>
                             <div class="ti-abbr">Màu xám — Sonic Titanium</div>
                         </div>
@@ -284,7 +284,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}" alt="Màu xanh">
+                                <img src="{{ asset('web/assets/images/gx/mau-xanh.jpg') }}" alt="Màu xanh">
                             </div>
                             <div class="ti-abbr">Màu xanh — Graphite Blue</div>
                         </div>
@@ -299,12 +299,12 @@
                     và địa hình off-road.</p>
                 <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/GX550M.webp') }}" alt="Mâm GX 550 Luxury">
+                        <img src="{{ asset('web/assets/images/gx/mam1.webp') }}" alt="Mâm GX 550 Luxury">
                         <div class="item-card-label">Mâm hợp kim nhôm — Phiên bản Luxury<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">GX 550 Luxury</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}" alt="Mâm GX 550 Overtrail">
+                        <img src="{{ asset('web/assets/images/gx/mam2.jpg') }}" alt="Mâm GX 550 Overtrail">
                         <div class="item-card-label">Mâm hợp kim địa hình — Phiên bản Overtrail<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">GX 550 Overtrail</span></div>
                     </div>
@@ -325,22 +325,22 @@
                     mái tối đa ngay cả trong hành trình địa hình dài.</p>
                 <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế nâu">
+                        <img src="{{ asset('web/assets/images/gx/seat1.png') }}" alt="Ghế nâu">
                         <div class="item-card-label">Da màu nâu Flaxen<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản Luxury</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế đen">
+                        <img src="{{ asset('web/assets/images/gx/seat2.png') }}" alt="Ghế đen">
                         <div class="item-card-label">Da màu đen Black<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Tất cả phiên bản</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế bò Overtrail">
+                        <img src="{{ asset('web/assets/images/gx/seat3.png') }}" alt="Ghế bò Overtrail">
                         <div class="item-card-label">Da tổng hợp bền bỉ<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Overtrail — kháng bẩn</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/seat.png') }}" alt="Ghế kem">
+                        <img src="{{ asset('web/assets/images/gx/seat4.png') }}" alt="Ghế kem">
                         <div class="item-card-label">Da màu kem Parchment<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Luxury — nội thất sáng</span></div>
                     </div>
@@ -353,12 +353,12 @@
                     trí cánh cửa và nội thất đa dạng, tạo nên bầu không khí cabin sang trọng và cá tính theo từng phiên bản.</p>
                 <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}" alt="Ốp gỗ Luxury">
+                        <img src="{{ asset('web/assets/images/gx/noithat1.jpg') }}" alt="Ốp gỗ Luxury">
                         <div class="item-card-label">Ốp gỗ sang trọng<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản GX 550 Luxury</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/GX550M.webp') }}" alt="Ốp nhôm Overtrail">
+                        <img src="{{ asset('web/assets/images/gx/noithat2.webp') }}" alt="Ốp nhôm Overtrail">
                         <div class="item-card-label">Nhôm brushed — phong cách địa hình<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản Overtrail</span></div>
                     </div>
@@ -383,7 +383,7 @@
             <div class="variant-pane active" id="vt-engine">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{ asset('web/assets/images/GX550M.webp') }}" alt="Động cơ GX 550 3.5L V6">
+                        <img src="{{ asset('web/assets/images/gx/dongco.webp') }}" alt="Động cơ GX 550 3.5L V6">
                         <div class="powertrain-badge">3.5L V6</div>
                     </div>
                     <div class="powertrain-content">
@@ -425,7 +425,7 @@
             <div class="variant-pane" id="vt-transmission">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}" alt="Hệ dẫn động 4 bánh GX 550">
+                        <img src="{{ asset('web/assets/images/gx/hop-so.jpg') }}" alt="Hệ dẫn động 4 bánh GX 550">
                         <div class="powertrain-badge">10AT 4WD</div>
                     </div>
                     <div class="powertrain-content">
@@ -473,13 +473,13 @@
             <div class="chassis-grid">
                 <div class="chassis-images">
                     <div class="chassis-img-card">
-                        <img src="{{ asset('web/assets/images/GX550M.webp') }}"
+                        <img src="{{ asset('web/assets/images/gx/khung-gam.webp') }}"
                             alt="Khung gầm Body-on-frame Lexus GX 550">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Khung gầm rời Body-on-frame GA-F</div>
                     </div>
                     <div class="chassis-img-card">
-                        <img src="{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}"
+                        <img src="{{ asset('web/assets/images/gx/treo-cau-cung.jpg') }}"
                             alt="Hệ thống treo cầu cứng GX 550">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Hệ thống treo cầu cứng liên kết 4 điểm</div>
@@ -492,7 +492,7 @@
 
                 <div class="chassis-diagram">
                     <div class="chassis-diagram-img">
-                        <img src="{{ asset('web/assets/images/GX550M.webp') }}"
+                        <img src="{{ asset('web/assets/images/gx/khung-gam.webp') }}"
                             alt="Hệ thống khung gầm Lexus GX 550">
                     </div>
                     <div class="chassis-info-box mt-3">
@@ -528,7 +528,7 @@
             <div class="design-pane active" id="dp-exterior">
                 <div class="design-row">
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/GX550M.webp')}}"
+                        <img src="{{asset('web/assets/images/gx/mat-truoc.webp')}}"
                             alt="Ngoại thất Lexus GX 550 Overtrail">
                         <div class="design-caption">
                             <h4>Nhìn Chính Diện — Mạnh Mẽ & Khí Chất</h4>
@@ -536,7 +536,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/403491-2024-lexus-gx.jpg')}}"
+                        <img src="{{asset('web/assets/images/gx/mat-sau.jpg')}}"
                             alt="Ngoại thất Lexus GX 550 Luxury">
                         <div class="design-caption">
                             <h4>Đuôi Xe — Thanh Lịch & Cân Đối</h4>
@@ -544,7 +544,7 @@
                         </div>
                     </div>
                     <div class="design-card wide">
-                        <img src="{{asset('web/assets/images/GX550M.webp')}}"
+                        <img src="{{asset('web/assets/images/gx/tong-quat.webp')}}"
                             alt="Góc nhìn tổng quan Lexus GX 550">
                         <div class="design-caption">
                             <h4>Hình Ảnh Tổng Quan — SUV Off-Road Đích Thực</h4>
@@ -566,7 +566,7 @@
             <div class="design-pane" id="dp-interior">
                 <div class="design-row">
                     <div class="design-card wide">
-                        <img src="{{asset('web/assets/images/403491-2024-lexus-gx.jpg')}}"
+                        <img src="{{asset('web/assets/images/gx/noi-that-1.jpg')}}"
                             alt="Nội thất khoang cabin Lexus GX 550">
                         <div class="design-caption">
                             <h4>Nội Thất Khoang Cabin — Sang Trọng & Tiên Tiến</h4>
@@ -574,7 +574,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/GX550M.webp')}}"
+                        <img src="{{asset('web/assets/images/gx/noi-that-7cho.webp')}}"
                             alt="Nội thất 7 chỗ Lexus GX 550">
                         <div class="design-caption">
                             <h4>Cabin 7 Chỗ — Không Gian Rộng Rãi</h4>
@@ -582,7 +582,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/403491-2024-lexus-gx.jpg')}}"
+                        <img src="{{asset('web/assets/images/gx/noi-that-overtrail.jpg')}}"
                             alt="Nội thất Overtrail Lexus GX 550">
                         <div class="design-caption">
                             <h4>Nội Thất Overtrail — Bền Bỉ & Cá Tính</h4>
@@ -604,7 +604,7 @@
             <div class="design-pane" id="dp-overtrail">
                 <div class="design-row">
                     <div class="design-card wide">
-                        <img src="{{asset('web/assets/images/GX550M.webp')}}"
+                        <img src="{{asset('web/assets/images/gx/overtrail.webp')}}"
                             alt="GX 550 Overtrail địa hình">
                         <div class="design-caption">
                             <h4>GX 550 Overtrail — Chinh Phục Mọi Địa Hình</h4>
@@ -612,7 +612,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/GX550M.webp')}}"
+                        <img src="{{asset('web/assets/images/gx/overtrail-mat-truoc.webp')}}"
                             alt="Cản trước Overtrail GX 550">
                         <div class="design-caption">
                             <h4>Cản Trước — Góc Tiếp Cận Tối Ưu</h4>
@@ -620,7 +620,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/403491-2024-lexus-gx.jpg')}}"
+                        <img src="{{asset('web/assets/images/gx/khoang-hanh-ly.jpg')}}"
                             alt="Khoang hành lý GX 550 Overtrail">
                         <div class="design-caption">
                             <h4>Khoang Hành Lý — Thực Dụng & Rộng Rãi</h4>
@@ -720,7 +720,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/RRCC.webp') }}" alt="PCS">
+                                    <img src="{{ asset('web/assets/images/gx/RRCC.webp') }}" alt="PCS">
                                 </div>
                                 <div class="ti-name">Hệ Thống An Toàn Tiền Va Chạm</div>
                                 <div class="ti-abbr">PCS — Camera đơn + Ra-đa milimet</div>
@@ -1015,55 +1015,55 @@
             white: {
                 name: 'Sonic White',
                 images: [
-                    '{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}',
-                    '{{ asset('web/assets/images/GX550M.webp') }}',
-                    '{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}',
-                    '{{ asset('web/assets/images/GX550M.webp') }}'
+                    '{{ asset('web/assets/images/gx/mau-trang1.jpg') }}',
+                    '{{ asset('web/assets/images/gx/mau-trang2.webp') }}',
+                    '{{ asset('web/assets/images/gx/mau-trang3.jpg') }}',
+                    '{{ asset('web/assets/images/gx/mau-trang4.webp') }}'
                 ]
             },
             black: {
                 name: 'Caviar Black',
                 images: [
-                    '{{ asset('web/assets/images/GX550M.webp') }}',
-                    '{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}',
-                    '{{ asset('web/assets/images/GX550M.webp') }}',
-                    '{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}'
+                    '{{ asset('web/assets/images/gx/mau-den1.webp') }}',
+                    '{{ asset('web/assets/images/gx/mau-den2.jpg') }}',
+                    '{{ asset('web/assets/images/gx/mau-den3.webp') }}',
+                    '{{ asset('web/assets/images/gx/mau-den4.jpg') }}'
                 ]
             },
             silver: {
                 name: 'Sonic Titanium',
                 images: [
-                    '{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}',
-                    '{{ asset('web/assets/images/GX550M.webp') }}',
-                    '{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}',
-                    '{{ asset('web/assets/images/GX550M.webp') }}'
+                    '{{ asset('web/assets/images/gx/mau-xam1.jpg') }}',
+                    '{{ asset('web/assets/images/gx/mau-xam2.webp') }}',
+                    '{{ asset('web/assets/images/gx/mau-xam3.jpg') }}',
+                    '{{ asset('web/assets/images/gx/mau-xam4.webp') }}'
                 ]
             },
             blue: {
                 name: 'Graphite Blue',
                 images: [
-                    '{{ asset('web/assets/images/GX550M.webp') }}',
-                    '{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}',
-                    '{{ asset('web/assets/images/GX550M.webp') }}',
-                    '{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}'
+                    '{{ asset('web/assets/images/gx/mau-xanh1.webp') }}',
+                    '{{ asset('web/assets/images/gx/mau-xanh2.jpg') }}',
+                    '{{ asset('web/assets/images/gx/mau-xanh3.webp') }}',
+                    '{{ asset('web/assets/images/gx/mau-xanh4.jpg') }}'
                 ]
             },
             green: {
                 name: 'Nori Green Pearl',
                 images: [
-                    '{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}',
-                    '{{ asset('web/assets/images/GX550M.webp') }}',
-                    '{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}',
-                    '{{ asset('web/assets/images/GX550M.webp') }}'
+                    '{{ asset('web/assets/images/gx/mau-xanhla1.jpg') }}',
+                    '{{ asset('web/assets/images/gx/mau-xanhla2.webp') }}',
+                    '{{ asset('web/assets/images/gx/mau-xanhla3.jpg') }}',
+                    '{{ asset('web/assets/images/gx/mau-xanhla4.webp') }}'
                 ]
             },
             red: {
                 name: 'Matador Red Mica',
                 images: [
-                    '{{ asset('web/assets/images/GX550M.webp') }}',
-                    '{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}',
-                    '{{ asset('web/assets/images/GX550M.webp') }}',
-                    '{{ asset('web/assets/images/403491-2024-lexus-gx.jpg') }}'
+                    '{{ asset('web/assets/images/gx/mau-do1.webp') }}',
+                    '{{ asset('web/assets/images/gx/mau-do2.jpg') }}',
+                    '{{ asset('web/assets/images/gx/mau-do3.webp') }}',
+                    '{{ asset('web/assets/images/gx/mau-do4.jpg') }}'
                 ]
             }
         };

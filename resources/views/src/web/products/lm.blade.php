@@ -321,7 +321,7 @@
                         <div class="item-card-label">Nội thất hàng ghế sau</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/lm/noi-that-4-cho.jpg') }}" alt="Nội thất phiên bản 4 chỗ">
+                        <img src="{{ asset('web/assets/images/lm/noi-that-4cho.jpg') }}" alt="Nội thất phiên bản 4 chỗ">
                         <div class="item-card-label">Phiên bản 4 chỗ<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Tập trung tiện ích hành khách VIP</span></div>
                     </div>
@@ -825,10 +825,10 @@
             white: {
                 name: 'Màu trắng',
                 images: ['{{ asset('web/assets/images/lm/mau-trang.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-trang.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-trang.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-trang.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-trang.jpg') }}'
+                    '{{ asset('web/assets/images/lm/mau-trang1.jpg') }}',
+                    '{{ asset('web/assets/images/lm/mau-trang2.jpg') }}',
+                    '{{ asset('web/assets/images/lm/mau-trang3.jpg') }}',
+                    '{{ asset('web/assets/images/lm/mau-trang4.jpg') }}'
                 ]
             },
             black: {
@@ -843,37 +843,37 @@
             silver: {
                 name: 'Màu xám',
                 images: ['{{ asset('web/assets/images/lm/mau-xam.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-xam.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-xam.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-xam.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-xam.jpg') }}'
+                    '{{ asset('web/assets/images/lm/mau-xam1.jpg') }}',
+                    '{{ asset('web/assets/images/lm/mau-xam2.jpg') }}',
+                    '{{ asset('web/assets/images/lm/mau-xam3.jpg') }}',
+                    '{{ asset('web/assets/images/lm/mau-xam4.jpg') }}'
                 ]
             },
             red: {
                 name: 'Màu đỏ',
                 images: ['{{ asset('web/assets/images/lm/mau-do.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-do.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-do.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-do.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-do.jpg') }}'
+                    '{{ asset('web/assets/images/lm/mau-do1.jpg') }}',
+                    '{{ asset('web/assets/images/lm/mau-do2.jpg') }}',
+                    '{{ asset('web/assets/images/lm/mau-do3.jpg') }}',
+                    '{{ asset('web/assets/images/lm/mau-do4.jpg') }}'
                 ]
             },
             green: {
                 name: 'Màu xanh',
                 images: ['{{ asset('web/assets/images/lm/mau-xanh.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-xanh.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-xanh.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-xanh.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-xanh.jpg') }}'
+                    '{{ asset('web/assets/images/lm/mau-xanh1.jpg') }}',
+                    '{{ asset('web/assets/images/lm/mau-xanh2.jpg') }}',
+                    '{{ asset('web/assets/images/lm/mau-xanh3.jpg') }}',
+                    '{{ asset('web/assets/images/lm/mau-xanh4.jpg') }}'
                 ]
             },
             blue: {
                 name: 'Màu xanh dương',
                 images: ['{{ asset('web/assets/images/lm/mau-xanh.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-xanh.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-xanh.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-xanh.jpg') }}',
-                    '{{ asset('web/assets/images/lm/mau-xanh.jpg') }}'
+                    '{{ asset('web/assets/images/lm/mau-xanh1.jpg') }}',
+                    '{{ asset('web/assets/images/lm/mau-xanh2.jpg') }}',
+                    '{{ asset('web/assets/images/lm/mau-xanh3.jpg') }}',
+                    '{{ asset('web/assets/images/lm/mau-xanh4.jpg') }}'
                 ]
             }
         };

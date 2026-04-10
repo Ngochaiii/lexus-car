@@ -1116,37 +1116,37 @@
             silver: {
                 name: 'Màu xám',
                 images: ['{{ asset('web/assets/images/nx/mau-xam.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xam.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xam.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xam.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xam.jpg') }}'
+                    '{{ asset('web/assets/images/nx/mau-xam1.jpg') }}',
+                    '{{ asset('web/assets/images/nx/mau-xam2.jpg') }}',
+                    '{{ asset('web/assets/images/nx/mau-xam3.jpg') }}',
+                    '{{ asset('web/assets/images/nx/mau-xam4.jpg') }}'
                 ]
             },
             red: {
                 name: 'Màu đỏ',
                 images: ['{{ asset('web/assets/images/nx/mau-do.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-do.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-do.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-do.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-do.jpg') }}'
+                    '{{ asset('web/assets/images/nx/mau-do1.jpg') }}',
+                    '{{ asset('web/assets/images/nx/mau-do2.jpg') }}',
+                    '{{ asset('web/assets/images/nx/mau-do3.jpg') }}',
+                    '{{ asset('web/assets/images/nx/mau-do4.jpg') }}'
                 ]
             },
             green: {
                 name: 'Xanh rêu',
                 images: ['{{ asset('web/assets/images/nx/mau-xanh-reu.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-reu.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-reu.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-reu.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-reu.jpg') }}'
+                    '{{ asset('web/assets/images/nx/mau-xanh-reu1.jpg') }}',
+                    '{{ asset('web/assets/images/nx/mau-xanh-reu2.jpg') }}',
+                    '{{ asset('web/assets/images/nx/mau-xanh-reu3.jpg') }}',
+                    '{{ asset('web/assets/images/nx/mau-xanh-reu4.jpg') }}'
                 ]
             },
             blue: {
                 name: 'Màu xanh dương',
                 images: ['{{ asset('web/assets/images/nx/mau-xanh-duong.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-duong.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-duong.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-duong.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-duong.jpg') }}'
+                    '{{ asset('web/assets/images/nx/mau-xanh-duong1.jpg') }}',
+                    '{{ asset('web/assets/images/nx/mau-xanh-duong2.jpg') }}',
+                    '{{ asset('web/assets/images/nx/mau-xanh-duong3.jpg') }}',
+                    '{{ asset('web/assets/images/nx/mau-xanh-duong4.jpg') }}'
                 ]
             }
         };
