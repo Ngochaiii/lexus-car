@@ -1098,10 +1098,10 @@
             white: {
                 name: 'Màu trắng',
                 images: ['{{ asset('web/assets/images/nx/mau-trang.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-trang.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-trang.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-trang.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-trang.jpg') }}'
+                    '{{ asset('web/assets/images/nx/mau-trang1.jpg') }}',
+                    '{{ asset('web/assets/images/nx/mau-trang2.jpg') }}',
+                    '{{ asset('web/assets/images/nx/mau-trang3.jpg') }}',
+                    '{{ asset('web/assets/images/nx/mau-trang4.jpg') }}'
                 ]
             },
             black: {
