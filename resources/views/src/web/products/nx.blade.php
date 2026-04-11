@@ -370,19 +370,19 @@
                         <div class="item-card-label">Nâu Hazel</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/ghe-do.jpg') }}" alt="Ghế đỏ">
+                        <img src="{{ asset('web/assets/images/nx/ghe-do1.jpg') }}" alt="Ghế đỏ">
                         <div class="item-card-label">Đỏ Dank ROSE</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/ghe-do.jpg') }}" alt="ghế đen black">
+                        <img src="{{ asset('web/assets/images/nx/ghe-do2.jpg') }}" alt="ghế đen black">
                         <div class="item-card-label">Đen - Black</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/ghe-do.jpg') }}" alt="ghế đen black">
+                        <img src="{{ asset('web/assets/images/nx/ghe-do3.jpg') }}" alt="ghế đen black">
                         <div class="item-card-label">Đỏ - Flare Red(Phiên bản F SPORT)</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/ghe-do.jpg') }}" alt="ghế đen black">
+                        <img src="{{ asset('web/assets/images/nx/ghe-do4.jpg') }}" alt="ghế đen black">
                         <div class="item-card-label">Đen - Black (Phiên bản F SPORT)</div>
                     </div>
                 </div>
