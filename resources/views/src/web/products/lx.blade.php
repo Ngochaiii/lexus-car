@@ -145,12 +145,8 @@
                                     data-name="Caviar Black" onclick="selectColor(this)"></div>
                                 <div class="color-option" style="--color:#C0C0C0" data-color="silver"
                                     data-name="Sonic Titanium" onclick="selectColor(this)"></div>
-                                <div class="color-option" style="--color:#8B0000" data-color="red"
-                                    data-name="Matador Red Mica" onclick="selectColor(this)"></div>
                                 <div class="color-option" style="--color:#2F4F4F" data-color="green"
                                     data-name="Nori Green Pearl" onclick="selectColor(this)"></div>
-                                <div class="color-option" style="--color:#174ec2" data-color="gold"
-                                    data-name="Sunset Gold" onclick="selectColor(this)"></div>
                             </div>
                         </div>
 
@@ -1096,16 +1092,6 @@
                     '{{ asset('web/assets/images/lx/mau-xam5.jpg') }}'
                 ]
             },
-            red: {
-                name: 'Matador Red Mica',
-                images: [
-                    '{{ asset('web/assets/images/lx/mau-do1.jpg') }}',
-                    '{{ asset('web/assets/images/lx/mau-do2.webp') }}',
-                    '{{ asset('web/assets/images/lx/mau-do3.jpg') }}',
-                    '{{ asset('web/assets/images/lx/mau-do4.webp') }}',
-                    '{{ asset('web/assets/images/lx/mau-do5.jpg') }}'
-                ]
-            },
             green: {
                 name: 'Nori Green Pearl',
                 images: [
@@ -1116,16 +1102,6 @@
                     '{{ asset('web/assets/images/lx/mau-xanh5.jpg') }}'
                 ]
             },
-            gold: {
-                name: 'Sunset Gold',
-                images: [
-                    '{{ asset('web/assets/images/lx/mau-vang1.jpg') }}',
-                    '{{ asset('web/assets/images/lx/mau-vang2.jpg') }}',
-                    '{{ asset('web/assets/images/lx/mau-vang3.webp') }}',
-                    '{{ asset('web/assets/images/lx/mau-vang4.webp') }}',
-                    '{{ asset('web/assets/images/lx/mau-vang5.jpg') }}'
-                ]
-            }
         };
         let currentColor = 'black',
             currentImageIndex = 0;
