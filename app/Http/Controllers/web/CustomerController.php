@@ -14,13 +14,15 @@ class CustomerController extends Controller
             'name'  => 'required|string',
             'phone' => 'required|string',
             'car'   => 'required|string',
-            'price' => 'required|string',
+            'price' => 'nullable|string',
             'url'   => 'required|string',
             'email' => 'nullable|email',
             'note'  => 'nullable|string',
+            'date'  => 'nullable|string',
+            'time'  => 'nullable|string',
         ]);
 
-        Customer::create($request->only('name', 'phone', 'car', 'price', 'url', 'email', 'note'));
+        Customer::create($request->only('name', 'phone', 'car', 'price', 'url', 'email', 'note', 'date', 'time'));
 
         return response()->json(['success' => true], 201);
     }

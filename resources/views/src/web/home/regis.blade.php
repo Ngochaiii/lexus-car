@@ -496,11 +496,36 @@
         btn.classList.add('loading');
         btn.disabled=true;
 
-        // Simulate API call
-        setTimeout(()=>{
+        const data={
+            name,
+            phone,
+            email:email||null,
+            note:document.getElementById('note').value.trim()||null,
+            car:car.value,
+            date:date||null,
+            time:time||null,
+            url:window.location.href
+        };
+
+        fetch('/api/customers',{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body:JSON.stringify(data)
+        })
+        .then(res=>{
             btn.classList.remove('loading');
-            showSuccess({name,phone,email,car:car.value,date,time});
-        },1600);
+            if(res.ok){
+                showSuccess(data);
+            } else {
+                btn.disabled=false;
+                alert('Gửi thất bại, vui lòng thử lại.');
+            }
+        })
+        .catch(()=>{
+            btn.classList.remove('loading');
+            btn.disabled=false;
+            alert('Lỗi kết nối, vui lòng thử lại.');
+        });
     }
 
     // ═══════════════════════════
