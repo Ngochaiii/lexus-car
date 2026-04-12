@@ -313,17 +313,17 @@
                     mái tối đa ngay cả trong hành trình địa hình dài.</p>
                 <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/gx/seat1.png') }}" alt="Ghế nâu">
+                        <img src="{{ asset('web/assets/images/gx/seat-1.png') }}" alt="Ghế nâu">
                         <div class="item-card-label">Da màu nâu Flaxen<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản Luxury</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/gx/seat2.png') }}" alt="Ghế đen">
+                        <img src="{{ asset('web/assets/images/gx/seat-22.png') }}" alt="Ghế đen">
                         <div class="item-card-label">Da màu đen Black<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Tất cả phiên bản</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/gx/seat3.png') }}" alt="Ghế bò Overtrail">
+                        <img src="{{ asset('web/assets/images/gx/seat-3.png') }}" alt="Ghế bò Overtrail">
                         <div class="item-card-label">Da tổng hợp bền bỉ<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Overtrail — kháng bẩn</span></div>
                     </div>
