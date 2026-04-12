@@ -296,11 +296,6 @@
                         <div class="item-card-label">Mâm hợp kim nhôm — Phiên bản Luxury<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">GX 550 Luxury</span></div>
                     </div>
-                    <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/gx/mam2.jpg') }}" alt="Mâm GX 550 Overtrail">
-                        <div class="item-card-label">Mâm hợp kim địa hình — Phiên bản Overtrail<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">GX 550 Overtrail</span></div>
-                    </div>
                 </div>
                 <div
                     style="margin-top:16px;background:var(--lexus-dark-2);border:1px solid var(--lexus-gray);border-radius:var(--radius-lg);padding:18px 22px;">
@@ -331,11 +326,6 @@
                         <img src="{{ asset('web/assets/images/gx/seat3.png') }}" alt="Ghế bò Overtrail">
                         <div class="item-card-label">Da tổng hợp bền bỉ<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Overtrail — kháng bẩn</span></div>
-                    </div>
-                    <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/gx/seat4.png') }}" alt="Ghế kem">
-                        <div class="item-card-label">Da màu kem Parchment<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Luxury — nội thất sáng</span></div>
                     </div>
                 </div>
             </div>
