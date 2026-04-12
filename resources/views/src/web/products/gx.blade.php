@@ -340,11 +340,6 @@
                         <div class="item-card-label">Ốp gỗ sang trọng<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản GX 550 Luxury</span></div>
                     </div>
-                    <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/gx/noithat2.webp') }}" alt="Ốp nhôm Overtrail">
-                        <div class="item-card-label">Nhôm brushed — phong cách địa hình<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản Overtrail</span></div>
-                    </div>
                 </div>
             </div>
         </div>
