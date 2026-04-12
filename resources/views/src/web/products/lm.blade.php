@@ -41,8 +41,7 @@
                                     src="{{ asset('web/assets/images/lm/anh-3.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img
                                     src="{{ asset('web/assets/images/lm/anh-4.jpg') }}" alt=""></div>
-                            <div class="gallery-thumb" onclick="setImage(4,this)"><img
-                                    src="{{ asset('web/assets/images/lm/anh-5.jpg') }}" alt=""></div>
+
                         </div>
                     </div>
                 </div>

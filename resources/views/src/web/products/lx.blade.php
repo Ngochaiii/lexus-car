@@ -34,15 +34,13 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img
-                                    src="{{ asset('web/assets/images/lx/anh-main.webp') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/lx/mau-den.webp') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img
-                                    src="{{ asset('web/assets/images/lx/anh-2.webp') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/lx/mau-trang.webp') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img
-                                    src="{{ asset('web/assets/images/lx/anh-3.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/lx/mau-xam.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img
-                                    src="{{ asset('web/assets/images/lx/anh-4.jpg') }}" alt=""></div>
-                            <div class="gallery-thumb" onclick="setImage(4,this)"><img
-                                    src="{{ asset('web/assets/images/lx/anh-5.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/lx/mau-do.jpg') }}" alt=""></div>
                         </div>
                     </div>
                 </div>

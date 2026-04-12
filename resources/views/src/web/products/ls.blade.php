@@ -22,7 +22,7 @@
                                 <button class="gallery-action-btn" title="Chia sẻ"><i class="bi bi-share"></i></button>
                             </div>
                             <div class="gallery-main">
-                                <img src="{{ asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg') }}"
+                                <img src="{{ asset('web/assets/images/ls/mau-den.jpg') }}"
                                     alt="Lexus LS 500h" id="mainImage">
                             </div>
                             <button class="gallery-nav prev" onclick="changeImage(-1)"><i
@@ -34,15 +34,15 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img
-                                    src="{{ asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/ls/mau-den.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img
-                                    src="{{ asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/ls/mau-trang.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img
-                                    src="{{ asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/ls/mau-xam.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img
-                                    src="{{ asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/ls/mau-do.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(4,this)"><img
-                                    src="{{ asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/ls/mau-xanh.jpg') }}" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -517,13 +517,13 @@
             <div class="chassis-grid">
                 <div class="chassis-images">
                     <div class="chassis-img-card">
-                        <img src="{{ asset('web/assets/images/treo-truoc.jpg') }}"
+                        <img src="{{ asset('web/assets/images/ls/treo-truoc.jpg') }}"
                             alt="Hệ thống treo LS">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Hệ thống treo trước — Dầu ma sát thấp</div>
                     </div>
                     <div class="chassis-img-card">
-                        <img src="{{ asset('web/assets/images/treo-sau.jpg.jpg') }}"
+                        <img src="{{ asset('web/assets/images/ls/treo-sau.jpg') }}"
                             alt="Hệ thống treo sau LS">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Hệ thống treo sau — Liên kết tay đòn mới</div>
@@ -538,7 +538,7 @@
 
                 <div class="chassis-diagram">
                     <div class="chassis-diagram-img">
-                        <img src="{{ asset('web/assets/images/vdim-ldh.jpg') }}"
+                        <img src="{{ asset('web/assets/images/ls/vdim-ldh.jpg') }}"
                             alt="VDIM + LDH Lexus LS">
                     </div>
                     <div class="chassis-info-box mt-3">
@@ -598,7 +598,7 @@
                         </div>
                     </div>
                     <div class="design-card wide">
-                        <img src="{{asset('web/assets/images/than-xe.jpg')}}"
+                        <img src="{{asset('web/assets/images/ls/than-xe.jpg')}}"
                             alt="Tổng thể Lexus LS">
                         <div class="design-caption">
                             <h4>Thân Xe — Trọng Tâm Thấp & Đường Nét Gợi Cảm</h4>
@@ -724,7 +724,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/PCS.webp') }}" alt="PCS">
+                                    <img src="{{ asset('web/assets/images/ls/PCS.webp') }}" alt="PCS">
                                 </div>
                                 <div class="ti-name">Hệ Thống An Toàn Tiền Va Chạm</div>
                                 <div class="ti-abbr">PCS — Pre-Collision System</div>

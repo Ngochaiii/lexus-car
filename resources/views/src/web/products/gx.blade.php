@@ -22,7 +22,7 @@
                                 <button class="gallery-action-btn" title="Chia sẻ"><i class="bi bi-share"></i></button>
                             </div>
                             <div class="gallery-main">
-                                <img src="{{ asset('web/assets/images/gx/anh-main.webp') }}"
+                                <img src="{{ asset('web/assets/images/gx/mau-den.webp') }}"
                                     alt="Lexus GX 550" id="mainImage">
                             </div>
                             <button class="gallery-nav prev" onclick="changeImage(-1)"><i
@@ -34,13 +34,13 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img
-                                    src="{{ asset('web/assets/images/gx/anh-main.webp') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/gx/mau-den.webp') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img
-                                    src="{{ asset('web/assets/images/gx/anh-2.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/gx/mau-trang.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img
-                                    src="{{ asset('web/assets/images/gx/anh-3.webp') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/gx/mau-xam.webp') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img
-                                    src="{{ asset('web/assets/images/gx/anh-4.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/gx/mau-xanh.jpg') }}" alt=""></div>
                         </div>
                     </div>
                 </div>
