@@ -415,7 +415,7 @@
             <div class="variant-pane active" id="vt-500h">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{ asset('web/assets/images/tong-quan-1.jpg') }}" alt="Hệ thống Multi Stage Hybrid LS 500h">
+                        <img src="{{ asset('web/assets/images/ls/tong-quan-1.jpg') }}" alt="Hệ thống Multi Stage Hybrid LS 500h">
                         <div class="powertrain-badge">Multi Stage Hybrid</div>
                     </div>
                     <div class="powertrain-content">
@@ -460,7 +460,7 @@
             <div class="variant-pane" id="vt-500">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{ asset('web/assets/images/tong-quan-2.jpg') }}" alt="Động cơ LS 500 V6 Twin Turbo">
+                        <img src="{{ asset('web/assets/images/ls/tong-quan-2.jpg') }}" alt="Động cơ LS 500 V6 Twin Turbo">
                         <div class="powertrain-badge">V6 3.5L TT</div>
                     </div>
                     <div class="powertrain-content">

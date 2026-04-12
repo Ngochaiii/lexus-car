@@ -318,7 +318,7 @@
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản Luxury</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/gx/seat-22.png') }}" alt="Ghế đen">
+                        <img src="{{ asset('web/assets/images/gx/seat-2.png') }}" alt="Ghế đen">
                         <div class="item-card-label">Da màu đen Black<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Tất cả phiên bản</span></div>
                     </div>
@@ -556,14 +556,6 @@
                         <div class="design-caption">
                             <h4>Cabin 7 Chỗ — Không Gian Rộng Rãi</h4>
                             <p>Không gian cabin rộng rãi 7 chỗ ngồi với hàng ghế thứ ba linh hoạt, vật liệu cao cấp và trang bị tiện nghi đầy đủ cho cả hành trình đô thị và khám phá thiên nhiên.</p>
-                        </div>
-                    </div>
-                    <div class="design-card">
-                        <img src="{{asset('web/assets/images/gx/noi-that-overtrail.jpg')}}"
-                            alt="Nội thất Overtrail Lexus GX 550">
-                        <div class="design-caption">
-                            <h4>Nội Thất Overtrail — Bền Bỉ & Cá Tính</h4>
-                            <p>Phiên bản Overtrail sử dụng vật liệu nội thất kháng bẩn, ghế bọc da tổng hợp bền bỉ và các điểm nhấn màu Orange Copper đặc trưng tạo nên cá tính địa hình riêng biệt.</p>
                         </div>
                     </div>
                 </div>
