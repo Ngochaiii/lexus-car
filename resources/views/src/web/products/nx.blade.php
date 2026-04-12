@@ -203,7 +203,7 @@
         <div class="container">
             <div class="intro-grid">
                 <div class="intro-img-wrap">
-                    <img src="{{ asset('web/assets/images/nx/gioi-thieu.jpg') }}"
+                    <img src="{{ asset('web/assets/images/nx/tong-quan.jpg') }}"
                         alt="Lexus NX — Crossover hạng sang thế hệ mới">
                     <div class="intro-year-badge">
                         <div class="iyb-year">2014</div>

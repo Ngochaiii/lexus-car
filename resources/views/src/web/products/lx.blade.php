@@ -386,11 +386,6 @@
                         <div class="item-card-label">Nhôm Hadori — họa tiết kiếm Nhật<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản F SPORT độc quyền</span></div>
                     </div>
-                    <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/lx/op-noi-that.webp') }}" alt="Ốp nội thất Urban">
-                        <div class="item-card-label">Ốp nội thất cao cấp<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản Urban</span></div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -832,7 +827,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/PCS.webp') }}" alt="PCS">
+                                    <img src="{{ asset('web/assets/images/lx/PCS.webp') }}" alt="PCS">
                                 </div>
                                 <div class="ti-name">Hệ Thống An Toàn Tiền Va Chạm</div>
                                 <div class="ti-abbr">PCS — Camera đơn + Ra-đa milimet</div>
@@ -845,7 +840,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/RRCC.webp') }}" alt="DRCC">
+                                    <img src="{{ asset('web/assets/images/lx/RRCC.webp') }}" alt="DRCC">
                                 </div>
                                 <div class="ti-name">Điều Khiển Hành Trình Thích Ứng</div>
                                 <div class="ti-abbr">DRCC — Ở mọi tốc độ</div>
@@ -858,7 +853,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/LTA.webp') }}" alt="LTA/LDA">
+                                    <img src="{{ asset('web/assets/images/lx/LTA.webp') }}" alt="LTA/LDA">
                                 </div>
                                 <div class="ti-name">Hỗ Trợ & Cảnh Báo Làn Đường</div>
                                 <div class="ti-abbr">LTA + LDA + Giữ trung tâm làn</div>
@@ -871,7 +866,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/AHB.webp') }}" alt="BladeScan AHS">
+                                    <img src="{{ asset('web/assets/images/lx/AHB.webp') }}" alt="BladeScan AHS">
                                 </div>
                                 <div class="ti-name">Đèn Pha Tự Động BladeScan</div>
                                 <div class="ti-abbr">BladeScan AHS — Quét tốc độ cao</div>
@@ -884,7 +879,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/BSM.webp') }}" alt="BSM/RCTA">
+                                    <img src="{{ asset('web/assets/images/lx/BSM.webp') }}" alt="BSM/RCTA">
                                 </div>
                                 <div class="ti-name">Cảnh Báo Điểm Mù & Cắt Ngang</div>
                                 <div class="ti-abbr">BSM + RCTA — Phương tiện cắt ngang khi lùi</div>
@@ -910,7 +905,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/SEA.webp') }}" alt="Túi khí SRS">
+                                    <img src="{{ asset('web/assets/images/lx/SEA.webp') }}" alt="Túi khí SRS">
                                 </div>
                                 <div class="ti-name">Hệ Thống Túi Khí SRS</div>
                                 <div class="ti-abbr">SRS Airbag System</div>
