@@ -728,7 +728,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/AHB.webp') }}" alt="AHB">
+                                    <img src="{{ asset('web/assets/images/gx/AHS.webp') }}" alt="AHB">
                                 </div>
                                 <div class="ti-name">Đèn Pha — Cốt Tự Động</div>
                                 <div class="ti-abbr">AHB — Automatic High Beam</div>

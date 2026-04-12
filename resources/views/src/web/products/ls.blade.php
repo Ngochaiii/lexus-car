@@ -737,7 +737,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/RRCC.webp') }}" alt="DRCC">
+                                    <img src="{{ asset('web/assets/images/ls/RRCC.webp') }}" alt="DRCC">
                                 </div>
                                 <div class="ti-name">Điều Khiển Hành Trình Thích Ứng</div>
                                 <div class="ti-abbr">DRCC — Dynamic Radar Cruise Control</div>
@@ -750,7 +750,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/LTA.webp') }}" alt="LTA">
+                                    <img src="{{ asset('web/assets/images/ls/LTA.webp') }}" alt="LTA">
                                 </div>
                                 <div class="ti-name">Hỗ Trợ Theo Dõi Làn Đường</div>
                                 <div class="ti-abbr">LTA — Lane Tracing Assist</div>
@@ -763,7 +763,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/AHB.webp') }}" alt="AHS">
+                                    <img src="{{ asset('web/assets/images/ls/AHB.webp') }}" alt="AHS">
                                 </div>
                                 <div class="ti-name">Đèn Pha Tự Động Thích Ứng</div>
                                 <div class="ti-abbr">AHS + Đèn góc LED / Đa thời tiết</div>
@@ -776,7 +776,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/BSM.webp') }}" alt="BSM">
+                                    <img src="{{ asset('web/assets/images/ls/BSM.webp') }}" alt="BSM">
                                 </div>
                                 <div class="ti-name">Cảnh Báo Điểm Mù</div>
                                 <div class="ti-abbr">BSM — Blind Spot Monitor</div>
