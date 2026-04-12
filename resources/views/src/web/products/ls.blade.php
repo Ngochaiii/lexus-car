@@ -141,8 +141,6 @@
                                     data-name="Passion Red Mica" onclick="selectColor(this)"></div>
                                 <div class="color-option" style="--color:#191970" data-color="blue"
                                     data-name="Structural Blue" onclick="selectColor(this)"></div>
-                                <div class="color-option" style="--color:#6B4226" data-color="brown"
-                                    data-name="Terracotta Brown" onclick="selectColor(this)"></div>
                             </div>
                         </div>
 
@@ -307,14 +305,6 @@
                             <div class="ti-abbr">Structural Blue</div>
                         </div>
                     </div>
-                    <div class="tech-item">
-                        <div class="ti-content">
-                            <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/ls/mau-nau.jpg') }}" alt="Nâu Terracotta">
-                            </div>
-                            <div class="ti-abbr">Terracotta Brown</div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -326,22 +316,22 @@
                 <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/ls/noi-that-den.jpg') }}" alt="Nội thất đen">
-                        <div class="item-card-label">Da đen Black<br><span
+                        <div class="item-card-label">Đen Black<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Tất cả phiên bản</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/noi-that-trang.jpg') }}" alt="Nội thất trắng kem">
-                        <div class="item-card-label">Kem Flaxen<br><span
+                        <img src="{{ asset('web/assets/images/ls/noi-that-doden.jpg') }}" alt="Nội thất trắng kem">
+                        <div class="item-card-label">Đỏ & đen<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phong cách sang trọng</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/noi-that-nau.jpg') }}" alt="Nội thất nâu">
-                        <div class="item-card-label">Nâu Chestnut<br><span
+                        <img src="{{ asset('web/assets/images/ls/noi-that-vangnau.jpg') }}" alt="Nội thất nâu">
+                        <div class="item-card-label">Vàng nâu<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phong cách ấm áp</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/noi-that-xanh.jpg') }}" alt="Nội thất xanh navy">
-                        <div class="item-card-label">Xanh Navy<br><span
+                        <img src="{{ asset('web/assets/images/ls/noi-that-hatde.jpg') }}" alt="Nội thất xanh navy">
+                        <div class="item-card-label">Hạt dẻ<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản đặc biệt</span></div>
                     </div>
                 </div>
@@ -354,18 +344,23 @@
                     trong từng chi tiết nhỏ nhất.</p>
                 <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/op-go.jpg') }}" alt="Ốp gỗ">
-                        <div class="item-card-label">Gỗ Bamboo cao cấp<br><span
+                        <img src="{{ asset('web/assets/images/ls/op-1.jpg') }}" alt="Ốp gỗ">
+                        <div class="item-card-label">Ốp gỗ art wood (vân hữu cơ)   <br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phong cách truyền thống Nhật Bản</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/op-nhom.jpg') }}" alt="Ốp nhôm">
-                        <div class="item-card-label">Nhôm xước cao cấp<br><span
+                        <img src="{{ asset('web/assets/images/ls/op-2.jpg') }}" alt="Ốp nhôm">
+                        <div class="item-card-label">Ốp gỗ art wood (vân herringbone)  <br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phong cách hiện đại</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/op-carbon.jpg') }}" alt="Ốp carbon">
-                        <div class="item-card-label">Sợi carbon<br><span
+                        <img src="{{ asset('web/assets/images/ls/op-3.jpg') }}" alt="Ốp carbon">
+                        <div class="item-card-label">Ốp gỗ cắt la-ze  <br><span
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phong cách thể thao</span></div>
+                    </div>
+                    <div class="item-card" onclick="selectCard(this)">
+                        <img src="{{ asset('web/assets/images/ls/op-4.jpg') }}" alt="Ốp carbon">
+                        <div class="item-card-label">Kính chạm khắc kiriko<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phong cách thể thao</span></div>
                     </div>
                 </div>
@@ -466,7 +461,7 @@
             <div class="variant-pane" id="vt-500">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{ asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg') }}" alt="Động cơ LS 500 V6 Twin Turbo">
+                        <img src="{{ asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-2.jpg') }}" alt="Động cơ LS 500 V6 Twin Turbo">
                         <div class="powertrain-badge">V6 3.5L TT</div>
                     </div>
                     <div class="powertrain-content">
@@ -523,13 +518,13 @@
             <div class="chassis-grid">
                 <div class="chassis-images">
                     <div class="chassis-img-card">
-                        <img src="{{ asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg') }}"
+                        <img src="{{ asset('web/assets/images/treo-truoc.jpg') }}"
                             alt="Hệ thống treo LS">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Hệ thống treo trước — Dầu ma sát thấp</div>
                     </div>
                     <div class="chassis-img-card">
-                        <img src="{{ asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg') }}"
+                        <img src="{{ asset('web/assets/images/treo-sau.jpg.jpg') }}"
                             alt="Hệ thống treo sau LS">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Hệ thống treo sau — Liên kết tay đòn mới</div>
@@ -544,7 +539,7 @@
 
                 <div class="chassis-diagram">
                     <div class="chassis-diagram-img">
-                        <img src="{{ asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg') }}"
+                        <img src="{{ asset('web/assets/images/vdim-ldh.jpg') }}"
                             alt="VDIM + LDH Lexus LS">
                     </div>
                     <div class="chassis-info-box mt-3">
@@ -604,7 +599,7 @@
                         </div>
                     </div>
                     <div class="design-card wide">
-                        <img src="{{asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg')}}"
+                        <img src="{{asset('web/assets/images/than-xe.jpg')}}"
                             alt="Tổng thể Lexus LS">
                         <div class="design-caption">
                             <h4>Thân Xe — Trọng Tâm Thấp & Đường Nét Gợi Cảm</h4>
@@ -730,7 +725,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/RRCC.webp') }}" alt="PCS">
+                                    <img src="{{ asset('web/assets/images/rx/PCS.webp') }}" alt="PCS">
                                 </div>
                                 <div class="ti-name">Hệ Thống An Toàn Tiền Va Chạm</div>
                                 <div class="ti-abbr">PCS — Pre-Collision System</div>
@@ -1018,16 +1013,6 @@
                     '{{ asset('web/assets/images/ls/mau-xanh4.jpg') }}'
                 ]
             },
-            brown: {
-                name: 'Terracotta Brown',
-                images: [
-                    '{{ asset('web/assets/images/ls/mau-nau.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-nau1.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-nau2.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-nau3.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-nau4.jpg') }}'
-                ]
-            }
         };
         let currentColor = 'black',
             currentImageIndex = 0;

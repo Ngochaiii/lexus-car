@@ -316,14 +316,6 @@
                             <div class="ti-abbr">Xanh dương</div>
                         </div>
                     </div>
-                    <div class="tech-item">
-                        <div class="ti-content">
-                            <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/nx/mau-cam.jpg') }}" alt="Xanh cam">
-                            </div>
-                            <div class="ti-abbr">Xanh dương</div>
-                        </div>
-                    </div>
                 </div>
             </div>
 

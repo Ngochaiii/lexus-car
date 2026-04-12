@@ -135,12 +135,8 @@
                                     data-name="Caviar Black" onclick="selectColor(this)"></div>
                                 <div class="color-option" style="--color:#C0C0C0" data-color="silver"
                                     data-name="Sonic Titanium" onclick="selectColor(this)"></div>
-                                <div class="color-option" style="--color:#2B4C7E" data-color="blue"
-                                    data-name="Graphite Blue" onclick="selectColor(this)"></div>
                                 <div class="color-option" style="--color:#2F4F4F" data-color="green"
                                     data-name="Nori Green Pearl" onclick="selectColor(this)"></div>
-                                <div class="color-option" style="--color:#8B0000" data-color="red"
-                                    data-name="Matador Red Mica" onclick="selectColor(this)"></div>
                             </div>
                         </div>
 
@@ -286,7 +282,7 @@
                             <div class="feature-thumb-img">
                                 <img src="{{ asset('web/assets/images/gx/mau-xanh.jpg') }}" alt="Màu xanh">
                             </div>
-                            <div class="ti-abbr">Màu xanh — Graphite Blue</div>
+                            <div class="ti-abbr">Màu xanh — Terrane kaki</div>
                         </div>
                     </div>
                 </div>
@@ -521,7 +517,6 @@
             <div class="design-tabs">
                 <button class="design-tab active" onclick="switchDesign(this,'dp-exterior')">Ngoại Thất</button>
                 <button class="design-tab" onclick="switchDesign(this,'dp-interior')">Nội Thất</button>
-                <button class="design-tab" onclick="switchDesign(this,'dp-overtrail')">Overtrail</button>
             </div>
 
             <!-- NGOẠI THẤT -->
@@ -529,7 +524,7 @@
                 <div class="design-row">
                     <div class="design-card">
                         <img src="{{asset('web/assets/images/gx/mat-truoc.webp')}}"
-                            alt="Ngoại thất Lexus GX 550 Overtrail">
+                            alt="Ngoại thất Lexus GX 550 ">
                         <div class="design-caption">
                             <h4>Nhìn Chính Diện — Mạnh Mẽ & Khí Chất</h4>
                             <p>Lưới tản nhiệt Spindle thế hệ mới với đèn pha LED sắc nét, cản trước được thiết kế tối ưu cho góc tiếp cận địa hình, tạo nên ấn tượng mạnh mẽ và uy lực.</p>
@@ -600,7 +595,7 @@
                 </div>
             </div>
 
-            <!-- OVERTRAIL -->
+            {{-- <!-- OVERTRAIL -->
             <div class="design-pane" id="dp-overtrail">
                 <div class="design-row">
                     <div class="design-card wide">
@@ -636,7 +631,7 @@
                     <div class="feature-chip"><i class="bi bi-water"></i> KDSS — cân bằng địa hình</div>
                     <div class="feature-chip"><i class="bi bi-bookmark-check"></i> Orange Copper — màu đặc trưng</div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
 
@@ -720,7 +715,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/gx/RRCC.webp') }}" alt="PCS">
+                                    <img src="{{ asset('web/assets/images/gx/PCS.webp') }}" alt="PCS">
                                 </div>
                                 <div class="ti-name">Hệ Thống An Toàn Tiền Va Chạm</div>
                                 <div class="ti-abbr">PCS — Camera đơn + Ra-đa milimet</div>
@@ -794,7 +789,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="tech-item">
+                    {{-- <div class="tech-item">
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
@@ -806,7 +801,7 @@
                                     điều khiển, bảo vệ tính mạng trong tình huống nguy cấp.</div>
                             </a>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
@@ -1039,15 +1034,6 @@
                     '{{ asset('web/assets/images/gx/mau-xam4.webp') }}'
                 ]
             },
-            blue: {
-                name: 'Graphite Blue',
-                images: [
-                    '{{ asset('web/assets/images/gx/mau-xanh1.webp') }}',
-                    '{{ asset('web/assets/images/gx/mau-xanh2.jpg') }}',
-                    '{{ asset('web/assets/images/gx/mau-xanh3.webp') }}',
-                    '{{ asset('web/assets/images/gx/mau-xanh4.jpg') }}'
-                ]
-            },
             green: {
                 name: 'Nori Green Pearl',
                 images: [
@@ -1055,15 +1041,6 @@
                     '{{ asset('web/assets/images/gx/mau-xanhla2.webp') }}',
                     '{{ asset('web/assets/images/gx/mau-xanhla3.jpg') }}',
                     '{{ asset('web/assets/images/gx/mau-xanhla4.webp') }}'
-                ]
-            },
-            red: {
-                name: 'Matador Red Mica',
-                images: [
-                    '{{ asset('web/assets/images/gx/mau-do1.webp') }}',
-                    '{{ asset('web/assets/images/gx/mau-do2.jpg') }}',
-                    '{{ asset('web/assets/images/gx/mau-do3.webp') }}',
-                    '{{ asset('web/assets/images/gx/mau-do4.jpg') }}'
                 ]
             }
         };

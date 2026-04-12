@@ -300,7 +300,7 @@
                             <div class="feature-thumb-img">
                                 <img src="{{ asset('web/assets/images/lx/mau-do.jpg') }}" alt="Màu đỏ">
                             </div>
-                            <div class="ti-abbr">Màu đỏ — Matador Red</div>
+                            <div class="ti-abbr">Màu xanh rêu — Terrane kaki</div>
                         </div>
                     </div>
                 </div>
@@ -836,7 +836,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/RRCC.webp') }}" alt="PCS">
+                                    <img src="{{ asset('web/assets/images/rx/PCS.webp') }}" alt="PCS">
                                 </div>
                                 <div class="ti-name">Hệ Thống An Toàn Tiền Va Chạm</div>
                                 <div class="ti-abbr">PCS — Camera đơn + Ra-đa milimet</div>
