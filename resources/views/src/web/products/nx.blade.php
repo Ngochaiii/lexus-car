@@ -42,7 +42,7 @@
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img
                                     src="{{ asset('web/assets/images/nx/anh-4.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(4,this)"><img
-                                    src="{{ asset('web/assets/images/nx/anh-5.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/nx/anh-4.jpg') }}" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,27 @@
                             </div>
                             <span class="rating-text"><strong>4.8</strong> (198 đánh giá)</span>
                         </div>
-
+                        <!-- Colour -->
+                        <div class="option-group">
+                            <div class="option-label">
+                                <span><i class="bi bi-palette me-2"></i>Màu ngoại thất</span>
+                                <span class="selected-value" id="selectedColor">Caviar Black</span>
+                            </div>
+                            <div class="color-options">
+                                <div class="color-option" style="--color:#F5F5F5" data-color="white"
+                                    data-name="Sonic White" onclick="selectColor(this)"></div>
+                                <div class="color-option active" style="--color:#1A1A1A" data-color="black"
+                                    data-name="Caviar Black" onclick="selectColor(this)"></div>
+                                <div class="color-option" style="--color:#C0C0C0" data-color="silver"
+                                    data-name="Sonic Titanium" onclick="selectColor(this)"></div>
+                                <div class="color-option" style="--color:#8B0000" data-color="red"
+                                    data-name="Matador Red Mica" onclick="selectColor(this)"></div>
+                                <div class="color-option" style="--color:#2F4F4F" data-color="green"
+                                    data-name="Nori Green Pearl" onclick="selectColor(this)"></div>
+                                <div class="color-option" style="--color:#191970" data-color="blue"
+                                    data-name="Deep Blue Mica" onclick="selectColor(this)"></div>
+                            </div>
+                        </div>
                         <!-- Version Selector -->
                         <div class="option-group">
                             <div class="option-label"><span><i class="bi bi-gear me-2"></i>Phiên bản</span></div>
@@ -121,28 +141,6 @@
                                 <i class="bi bi-calculator"></i>
                                 <div class="price-installment-text">Trả góp từ <strong>~28 triệu/tháng</strong> với lãi suất
                                     ưu đãi</div>
-                            </div>
-                        </div>
-
-                        <!-- Colour -->
-                        <div class="option-group">
-                            <div class="option-label">
-                                <span><i class="bi bi-palette me-2"></i>Màu ngoại thất</span>
-                                <span class="selected-value" id="selectedColor">Caviar Black</span>
-                            </div>
-                            <div class="color-options">
-                                <div class="color-option" style="--color:#F5F5F5" data-color="white"
-                                    data-name="Sonic White" onclick="selectColor(this)"></div>
-                                <div class="color-option active" style="--color:#1A1A1A" data-color="black"
-                                    data-name="Caviar Black" onclick="selectColor(this)"></div>
-                                <div class="color-option" style="--color:#C0C0C0" data-color="silver"
-                                    data-name="Sonic Titanium" onclick="selectColor(this)"></div>
-                                <div class="color-option" style="--color:#8B0000" data-color="red"
-                                    data-name="Matador Red Mica" onclick="selectColor(this)"></div>
-                                <div class="color-option" style="--color:#2F4F4F" data-color="green"
-                                    data-name="Nori Green Pearl" onclick="selectColor(this)"></div>
-                                <div class="color-option" style="--color:#191970" data-color="blue"
-                                    data-name="Deep Blue Mica" onclick="selectColor(this)"></div>
                             </div>
                         </div>
 

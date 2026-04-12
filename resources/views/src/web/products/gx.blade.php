@@ -61,7 +61,23 @@
                             </div>
                             <span class="rating-text"><strong>4.8</strong> (98 đánh giá)</span>
                         </div>
-
+                        <!-- Colour -->
+                        <div class="option-group">
+                            <div class="option-label">
+                                <span><i class="bi bi-palette me-2"></i>Màu ngoại thất</span>
+                                <span class="selected-value" id="selectedColor">Caviar Black</span>
+                            </div>
+                            <div class="color-options">
+                                <div class="color-option" style="--color:#F5F5F5" data-color="white"
+                                    data-name="Sonic White" onclick="selectColor(this)"></div>
+                                <div class="color-option active" style="--color:#1A1A1A" data-color="black"
+                                    data-name="Caviar Black" onclick="selectColor(this)"></div>
+                                <div class="color-option" style="--color:#C0C0C0" data-color="silver"
+                                    data-name="Sonic Titanium" onclick="selectColor(this)"></div>
+                                <div class="color-option" style="--color:#2F4F4F" data-color="green"
+                                    data-name="Nori Green Pearl" onclick="selectColor(this)"></div>
+                            </div>
+                        </div>
                         <!-- Version Selector -->
                         <div class="option-group">
                             <div class="option-label"><span><i class="bi bi-gear me-2"></i>Phiên bản</span></div>
@@ -121,25 +137,6 @@
                                     ưu đãi</div>
                             </div>
                         </div>
-
-                        <!-- Colour -->
-                        <div class="option-group">
-                            <div class="option-label">
-                                <span><i class="bi bi-palette me-2"></i>Màu ngoại thất</span>
-                                <span class="selected-value" id="selectedColor">Caviar Black</span>
-                            </div>
-                            <div class="color-options">
-                                <div class="color-option" style="--color:#F5F5F5" data-color="white"
-                                    data-name="Sonic White" onclick="selectColor(this)"></div>
-                                <div class="color-option active" style="--color:#1A1A1A" data-color="black"
-                                    data-name="Caviar Black" onclick="selectColor(this)"></div>
-                                <div class="color-option" style="--color:#C0C0C0" data-color="silver"
-                                    data-name="Sonic Titanium" onclick="selectColor(this)"></div>
-                                <div class="color-option" style="--color:#2F4F4F" data-color="green"
-                                    data-name="Nori Green Pearl" onclick="selectColor(this)"></div>
-                            </div>
-                        </div>
-
                         <!-- Inquiry Form -->
                         <div class="inquiry-box">
                             <div class="inquiry-header">
