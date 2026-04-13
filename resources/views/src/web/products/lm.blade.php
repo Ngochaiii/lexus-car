@@ -500,7 +500,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/lm/noi-that-6cho.jpg')}}"
+                        <img src="{{asset('web/assets/images/lm/noi-that-6-cho.jpg')}}"
                             alt="Nội thất phiên bản 6 chỗ Lexus LM">
                         <div class="design-caption">
                             <h4>Phiên bản 6 chỗ — Gia đình & Doanh nghiệp</h4>
