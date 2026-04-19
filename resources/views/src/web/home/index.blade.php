@@ -362,7 +362,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/LX600Fsport.webp')}}"
+                                    src="{{asset('web/assets/images/lx600fsport.webp')}}"
                                     alt="Lexus UX 300e Electric">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
