@@ -73,7 +73,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/gallery-ext-03-d.webp')}}"
+                                    src="{{asset('web/assets/images/rx500hfsport.webp')}}"
                                     alt="Lexus RX 500h F SPORT">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -106,7 +106,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/Lexus NX 350h.jpeg')}}"
+                                    src="{{asset('web/assets/images/nx350h.jpeg')}}"
                                     alt="Lexus NX 350h Hybrid">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -170,7 +170,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/lx600-vip-overview.jpg')}}"
+                                    src="{{asset('web/assets/images/lx600vip.jpg')}}"
                                     alt="Lexus LX 600 VIP">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -202,7 +202,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg')}}"
+                                    src="{{asset('web/assets/images/ls500h.jpg')}}"
                                     alt="Lexus LS 500h Flagship">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -234,7 +234,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/GX550M.webp')}}"
+                                    src="{{asset('web/assets/images/GX550-M.webp')}}"
                                     alt="Lexus UX 300e Electric">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -266,7 +266,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/403491-2024-lexus-gx.jpg')}}"
+                                    src="{{asset('web/assets/images/GX550.jpg')}}"
                                     alt="Lexus GX 550 2024">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -298,7 +298,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/RX350hPremium.webp')}}"
+                                    src="{{asset('web/assets/images/RX350h-premium.webp')}}"
                                     alt="Lexus LC 500 Coupe">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -330,14 +330,14 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/RX350hLuxury.png')}}"
+                                    src="{{asset('web/assets/images/rx350hluxury.png')}}"
                                     alt="Lexus LC 500 Coupe">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
                             </div>
                             <div class="model-card-body">
                                 <div class="model-series">SUV Series</div>
-                                <h3 class="model-name">Lexus Rx350h luxury</h3>
+                                <h3 class="model-name">Lexus Rx350h Luxury</h3>
                                 <div class="model-specs">
                                     <span class="model-spec"><i
                                             class="bi bi-lightning-charge"></i>
@@ -362,7 +362,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/LX600FSPORT.webp')}}"
+                                    src="{{asset('web/assets/images/LX600Fsport.webp')}}"
                                     alt="Lexus UX 300e Electric">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -394,7 +394,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/LX600Urban.webp')}}"
+                                    src="{{asset('web/assets/images/lx600urban.webp')}}"
                                     alt="Lexus GX 550 2024">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -426,7 +426,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/z7621163418898_6dfc97686a654b321c1dba840e807cf5.jpg')}}"
+                                    src="{{asset('web/assets/images/Lm500h4cho.jpg')}}"
                                     alt="Lexus LC 500 Coupe">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>

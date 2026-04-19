@@ -34,7 +34,7 @@ html {
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Nobel', sans-serif !important;
     background: var(--lexus-black);
     color: var(--lexus-text);
     -webkit-font-smoothing: antialiased;

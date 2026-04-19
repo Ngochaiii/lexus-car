@@ -343,7 +343,7 @@
                     <div class="item-card active" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/rx/mam-xe.png') }}" alt="Mâm 21 inch Matte Black">
                         <div class="item-card-label">Mâm xe hợp kim nhôm <br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX350 luxury</span></div>
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản RX350 Luxury</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/rx/mam-xe2.png') }}" alt="Mâm 20 inch Nhôm đánh bóng">
