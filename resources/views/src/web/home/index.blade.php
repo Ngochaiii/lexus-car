@@ -394,6 +394,38 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
+                                    src="{{asset('web/assets/images/es.jpg')}}"
+                                    alt="Lexus UX 300e Electric">
+                                <button class="model-fav"><i
+                                        class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="model-card-body">
+                                <div class="model-series">SUV Series</div>
+                                <h3 class="model-name">Lexus ES 350h</h3>
+                                <div class="model-specs">
+                                    <span class="model-spec"><i
+                                            class="bi bi-lightning-charge"></i>
+                                        243 HP</span>
+                                    <span class="model-spec"><i
+                                            class="bi bi-speedometer2"></i>
+                                        7.5s</span>
+                                    <span class="model-spec"><i
+                                            class="bi bi-ev-station"></i>
+                                        Hybrid</span>
+                                </div>
+                                <div class="model-footer">
+                                    <div
+                                        class="model-price">ĐANG CẬP NHẬP</div>
+                                    <a href="{{route('products.es')}}" class="model-link">Chi tiết <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="model-card">
+                            <div class="model-card-img">
+                                <img
                                     src="{{asset('web/assets/images/lx600urban.webp')}}"
                                     alt="Lexus GX 550 2024">
                                 <button class="model-fav"><i

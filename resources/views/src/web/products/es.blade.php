@@ -89,28 +89,28 @@
                             <div class="option-label"><span><i class="bi bi-gear me-2"></i>Phiên bản</span></div>
                             <div class="version-options">
                                 <div class="version-option"
-                                    onclick="selectVersion(this,'2.490.000.000','ES 350h FWD',244,'8.5s','5.0L','FWD')">
+                                    onclick="selectVersion(this,'ĐANG CẬP NHẬP','ES 350h FWD',244,'8.5s','5.0L','FWD')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">ES 350h FWD</div>
                                     </div>
-                                    <div class="vo-price">2.490.000.000đ</div>
+                                    <div class="vo-price">ĐANG CẬP NHẬP</div>
                                 </div>
                                 <div class="version-option active"
-                                    onclick="selectVersion(this,'2.790.000.000','ES 350h AWD Premium',244,'8.3s','5.2L','AWD')">
+                                    onclick="selectVersion(this,'ĐANG CẬP NHẬP','ES 350h AWD Premium',244,'8.3s','5.2L','AWD')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">ES 350h AWD Premium</div>
                                     </div>
-                                    <div class="vo-price">2.790.000.000đ</div>
+                                    <div class="vo-price">ĐANG CẬP NHẬP</div>
                                 </div>
                                 <div class="version-option"
-                                    onclick="selectVersion(this,'3.090.000.000','ES 350h AWD Luxury',244,'8.3s','5.2L','AWD')">
+                                    onclick="selectVersion(this,'ĐANG CẬP NHẬP','ES 350h AWD Luxury',244,'8.3s','5.2L','AWD')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">ES 350h AWD Luxury</div>
                                     </div>
-                                    <div class="vo-price">3.090.000.000đ</div>
+                                    <div class="vo-price">ĐANG CẬP NHẬP</div>
                                 </div>
                             </div>
                         </div>
