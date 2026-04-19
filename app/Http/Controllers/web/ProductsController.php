@@ -30,4 +30,8 @@ class ProductsController extends Controller
     public function gx(){
         return view('src.web.products.gx');
     }
+
+    public function es(){
+        return view('src.web.products.es');
+    }
 }
