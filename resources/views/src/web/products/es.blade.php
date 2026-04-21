@@ -34,15 +34,15 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img
-                                    src="{{ asset('web/assets/images/es/anh-1.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/es/mau-trang.jpg') }}" alt="chiếc ES mang dấu ấn riêng"></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img
-                                    src="{{ asset('web/assets/images/es/anh-2.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/es/mau-den.jpg') }}" alt="chiếc ES mang dấu ấn riêng"></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img
-                                    src="{{ asset('web/assets/images/es/anh-3.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/es/mau-xam.jpg') }}" alt="chiếc ES mang dấu ấn riêng"></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img
-                                    src="{{ asset('web/assets/images/es/anh-4.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/es/mau-xanh-duong.jpg') }}" alt="chiếc ES mang dấu ấn riêng"></div>
                             <div class="gallery-thumb" onclick="setImage(4,this)"><img
-                                    src="{{ asset('web/assets/images/es/anh-5.jpg') }}" alt=""></div>
+                                    src="{{ asset('web/assets/images/es/mau-dong.jpg') }}" alt="chiếc ES mang dấu ấn riêng"></div>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                             <div class="price-row">
                                 <div>
                                     <div class="price-label">Giá niêm yết</div>
-                                    <div class="price-value" id="priceDisplay">2.790.000.000<span> VNĐ</span></div>
+                                    <div class="price-value" id="priceDisplay">ĐANG CẬP NHẬP <span> </span></div>
                                 </div>
                             </div>
                             <div class="quick-specs"
