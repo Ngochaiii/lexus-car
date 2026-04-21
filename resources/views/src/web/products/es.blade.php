@@ -22,7 +22,7 @@
                                 <button class="gallery-action-btn" title="Chia sẻ"><i class="bi bi-share"></i></button>
                             </div>
                             <div class="gallery-main">
-                                <img src="{{ asset('web/assets/images/es/anh-1.jpg') }}" alt="Lexus ES 350h 2026"
+                                <img src="{{ asset('web/assets/images/es/mau-trang.jpg') }}" alt="Lexus ES 350h 2026"
                                     id="mainImage">
                             </div>
                             <button class="gallery-nav prev" onclick="changeImage(-1)"><i
@@ -217,7 +217,7 @@
         <div class="container">
             <div class="intro-grid">
                 <div class="intro-img-wrap">
-                    <img src="{{ asset('web/assets/images/es/gioi-thieu.jpg') }}"
+                    <img src="{{ asset('web/assets/images/es/mau-trang.jpg') }}"
                         alt="Lexus ES 350h 2026 — Thế hệ thứ 8 hoàn toàn mới">
                     <div class="intro-year-badge">
                         <div class="iyb-year">2026</div>
