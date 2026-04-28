@@ -1354,25 +1354,6 @@
             document.getElementById(paneId).classList.add('active');
         }
 
-        /* ===================== INQUIRY FORM ===================== */
-        function submitInquiry(e) {
-            e.preventDefault();
-            const btn = document.getElementById('submitBtn');
-            const orig = btn.innerHTML;
-            btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Đang gửi...';
-            btn.disabled = true;
-            setTimeout(() => {
-                btn.innerHTML = '<i class="bi bi-check-circle-fill me-2"></i>Đã gửi thành công!';
-                btn.style.background = 'var(--lexus-green)';
-                setTimeout(() => {
-                    btn.innerHTML = orig;
-                    btn.style.background = '';
-                    btn.disabled = false;
-                    e.target.reset();
-                }, 3000);
-            }, 1500);
-        }
-
         /* ===================== NAVBAR + BACK TO TOP ===================== */
         window.addEventListener('scroll', () => {
             document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 100);
@@ -1439,8 +1420,8 @@
                 phone: form.querySelector('input[type="tel"]').value,
                 email: form.querySelector('input[type="email"]').value || null,
                 note: form.querySelector('textarea').value || null,
-                car: selectedVersion.name,
-                price: selectedVersion.price,
+                car: selectedVersion.name || document.title || "Đăng ký tư vấn",
+                price: selectedVersion.price || null,
                 url: window.location.href
             };
 

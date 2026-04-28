@@ -1160,8 +1160,8 @@
                 phone: form.querySelector('input[type="tel"]').value,
                 email: form.querySelector('input[type="email"]').value || null,
                 note: form.querySelector('textarea').value || null,
-                car: selectedVersion.name,
-                price: selectedVersion.price,
+                car: selectedVersion.name || document.title || "Đăng ký tư vấn",
+                price: selectedVersion.price || null,
                 url: window.location.href
             };
 
