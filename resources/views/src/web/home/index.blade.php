@@ -202,7 +202,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/ls500h.jpg')}}"
+                                    src="{{asset('web/assets/images/ls500.jpg')}}"
                                     alt="Lexus LS 500h Flagship">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
