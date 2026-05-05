@@ -32,7 +32,7 @@ Route::get('/lexus-es', [ProductsController::class, 'es'])->name('products.es');
 Route::get('/technolory-lexus', [TechnogoryLexusController::class, 'index'])->name('tech_car.index');
 
 
- Route::group(['prefix' => 'blogs'], function () {
-        Route::get('/', [BlogsController::class, 'index'])->name('web.blogs');
-        Route::get('/detail', [BlogsController::class, 'detail'])->name('web.blogs.detail');
-    });
+Route::group(['prefix' => 'blogs'], function () {
+    Route::get('/', [BlogsController::class, 'index'])->name('web.blogs');
+    Route::get('/{post:slug}', [BlogsController::class, 'detail'])->name('web.blogs.detail');
+});
