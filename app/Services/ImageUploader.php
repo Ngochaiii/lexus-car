@@ -3,13 +3,13 @@
 namespace App\Services;
 
 use Illuminate\Http\UploadedFile;
-use Illuminate\Support\Facades\Storage;
 
 /**
  * Upload ảnh KHÔNG phụ thuộc ext-fileinfo.
  *
  * Validate qua: tên file (extension) + magic bytes thay vì $file->getMimeType().
- * Lưu raw bytes qua Storage::put() (không dùng putFile/store).
+ * Lưu file bằng PHP file_put_contents() thay vì Storage::put() — tránh hoàn toàn
+ * Symfony Mime + Flysystem detector (vì những lib này có thể `new finfo()` ngầm).
  */
 class ImageUploader
 {
@@ -51,27 +51,33 @@ class ImageUploader
             throw new \RuntimeException('File không phải ảnh hợp lệ (header sai).');
         }
 
-        // Riêng webp cần check thêm "WEBP" tại offset 8
         if ($ext === 'webp' && substr($bytes, 8, 4) !== 'WEBP') {
             throw new \RuntimeException('File webp không hợp lệ.');
         }
 
         $folder = trim($folder, '/');
         $filename = md5($bytes . microtime(true)) . '.' . $ext;
-        $path = $folder . '/' . $filename;
+        $relativePath = $folder . '/' . $filename;
 
-        Storage::disk('public')->put($path, $bytes);
+        $publicDiskRoot = $this->publicDiskRoot();
+        $absoluteDir = $publicDiskRoot . '/' . $folder;
+        $absolutePath = $publicDiskRoot . '/' . $relativePath;
 
-        return $path;
-    }
-
-    private function hasValidSignature(string $ext, string $bytes): bool
-    {
-        $head = bin2hex(substr($bytes, 0, 8));
-        foreach (self::SIGNATURES[$ext] ?? [] as $sig) {
-            if (str_starts_with($head, $sig)) return true;
+        // Tạo folder nếu chưa có
+        if (!is_dir($absoluteDir)) {
+            if (!mkdir($absoluteDir, 0775, true) && !is_dir($absoluteDir)) {
+                throw new \RuntimeException("Không tạo được thư mục: {$absoluteDir}");
+            }
         }
-        return false;
+
+        // Ghi raw bytes — PHP native, KHÔNG đụng Symfony Mime / Flysystem
+        $written = file_put_contents($absolutePath, $bytes);
+        if ($written === false) {
+            throw new \RuntimeException('Không ghi được file: ' . $absolutePath);
+        }
+        @chmod($absolutePath, 0664);
+
+        return $relativePath;
     }
 
     /**
@@ -79,9 +85,30 @@ class ImageUploader
      */
     public function delete(?string $path): void
     {
-        if (!$path) return;
-        if (Storage::disk('public')->exists($path)) {
-            Storage::disk('public')->delete($path);
+        if (!$path) {
+            return;
         }
+        $absolute = $this->publicDiskRoot() . '/' . ltrim($path, '/');
+        if (is_file($absolute)) {
+            @unlink($absolute);
+        }
+    }
+
+    private function publicDiskRoot(): string
+    {
+        // Lấy root của disk 'public' từ config — fallback storage_path('app/public')
+        $configured = config('filesystems.disks.public.root');
+        return rtrim($configured ?: storage_path('app/public'), '/');
+    }
+
+    private function hasValidSignature(string $ext, string $bytes): bool
+    {
+        $head = bin2hex(substr($bytes, 0, 8));
+        foreach (self::SIGNATURES[$ext] ?? [] as $sig) {
+            if (str_starts_with($head, $sig)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

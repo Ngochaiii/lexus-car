@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Support\Facades\Storage;
 
 class PostImage extends Model
 {
@@ -14,10 +13,15 @@ class PostImage extends Model
 
     protected static function booted(): void
     {
-        // Khi xoá record ảnh thì xoá file vật lý trên disk public
+        // Khi xoá record ảnh thì xoá file vật lý — dùng PHP native, không qua Storage
         static::deleting(function (self $image) {
-            if ($image->path && Storage::disk('public')->exists($image->path)) {
-                Storage::disk('public')->delete($image->path);
+            if (!$image->path) {
+                return;
+            }
+            $root = config('filesystems.disks.public.root') ?: storage_path('app/public');
+            $absolute = rtrim($root, '/') . '/' . ltrim($image->path, '/');
+            if (is_file($absolute)) {
+                @unlink($absolute);
             }
         });
     }

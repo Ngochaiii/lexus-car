@@ -536,3 +536,4 @@ php artisan migrate
 ---
 
 **Hết spec. Hãy generate code đầy đủ theo đúng yêu cầu trên.**
+
