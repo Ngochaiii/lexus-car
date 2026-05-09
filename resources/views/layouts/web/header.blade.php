@@ -49,7 +49,11 @@
                         <div class="hero-image">
                             <img
                                 src="{{asset('web/assets/images/image-20210204180128-1.jpeg')}}"
-                                alt="Lexus RX 500h F Sport — Xe SUV Hybrid cao cấp">
+                                alt="Lexus RX 500h F Sport — Xe SUV Hybrid cao cấp"
+                                width="1200" height="800"
+                                fetchpriority="high"
+                                loading="eager"
+                                decoding="async">
                         </div>
                     </div>
                 </div>

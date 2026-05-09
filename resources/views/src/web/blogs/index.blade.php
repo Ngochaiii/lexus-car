@@ -5,8 +5,6 @@
     $totalPosts = $featured ? $posts->total() + 1 : $posts->total();
 @endphp
 
-@section('page_title', 'Blog & Tin Tức — Lexus Vietnam')
-
 @section('content')
     <!-- ==================== PAGE HERO ==================== -->
     <section class="page-hero">

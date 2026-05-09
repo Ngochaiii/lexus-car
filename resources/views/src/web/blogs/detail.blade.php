@@ -12,46 +12,6 @@
     $url = url('/blogs/' . $post->slug);
 @endphp
 
-@section('page_title', $post->effectiveMetaTitle() . ' — Lexus Vietnam')
-
-@section('seo_meta')
-    <meta name="description" content="{{ $post->effectiveMetaDescription() }}">
-    @if ($post->meta_keywords)
-        <meta name="keywords" content="{{ $post->meta_keywords }}">
-    @endif
-    @if ($post->noindex)
-        <meta name="robots" content="noindex,nofollow">
-    @endif
-    <link rel="canonical" href="{{ $post->canonical_url ?: $url }}">
-
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="{{ $post->og_title ?: $post->effectiveMetaTitle() }}">
-    <meta property="og:description" content="{{ $post->og_description ?: $post->effectiveMetaDescription() }}">
-    <meta property="og:url" content="{{ $url }}">
-    <meta property="og:image" content="{{ $ogImage }}">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <script type="application/ld+json">
-    {!! json_encode([
-        '@context' => 'https://schema.org',
-        '@type' => 'Article',
-        'headline' => $post->title,
-        'description' => $post->effectiveMetaDescription(),
-        'image' => [$ogImage],
-        'datePublished' => optional($post->published_at)->toIso8601String(),
-        'dateModified' => $post->updated_at->toIso8601String(),
-        'mainEntityOfPage' => ['@type' => 'WebPage', '@id' => $url],
-        'publisher' => [
-            '@type' => 'Organization',
-            'name' => 'Lexus Vietnam',
-            'logo' => ['@type' => 'ImageObject', 'url' => asset('web/assets/images/lexus_logo.png')],
-        ],
-    ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) !!}
-    </script>
-@endsection
-
 @section('content')
     <!-- ==================== ARTICLE HERO ==================== -->
     <section class="article-hero">

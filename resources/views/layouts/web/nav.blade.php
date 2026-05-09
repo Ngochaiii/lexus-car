@@ -5,10 +5,13 @@
             <a href="{{ route('web.home') }}" class="n-brand">LEXUS</a>
             <div class="d-none d-lg-flex align-items-center gap-1">
                 <a href="{{ route('web.home') }}" class="n-link">Trang chủ</a>
-                <a href="{{ route('web.home') }}" class="n-link">Sản phẩm</a>
-                <a href="{{ route('products.rx') }}" class="n-link">RX Series</a>
-                <a href="{{ route('tech_car.index') }}" class="n-link a">Công nghệ</a>
-                <a href="{{ route('web.home') }}" class="n-link">Tin tức</a>
+                <a href="{{ route('products.rx') }}" class="n-link">RX</a>
+                <a href="{{ route('products.nx') }}" class="n-link">NX</a>
+                <a href="{{ route('products.es') }}" class="n-link">ES</a>
+                <a href="{{ route('products.lx') }}" class="n-link">LX</a>
+                <a href="{{ route('products.ls') }}" class="n-link">LS</a>
+                <a href="{{ route('tech_car.index') }}" class="n-link">Công nghệ</a>
+                <a href="{{ route('web.blogs') }}" class="n-link">Tin tức</a>
             </div>
             <div class="d-flex align-items-center gap-3">
                 <a href="{{ route('web.home.regis') }}" class="btn-gold d-none d-md-inline-flex">Đặt lịch lái thử</a>
@@ -42,10 +45,15 @@
     </button>
     <div style="flex:1;display:flex;flex-direction:column;gap:4px">
         <a href="{{ route('web.home') }}" class="mob-lk">Trang chủ</a>
-        <a href="{{ route('web.home') }}" class="mob-lk">Sản phẩm</a>
-        <a href="{{ route('products.rx') }}" class="mob-lk">RX Series</a>
-        <a href="{{ route('tech_car.index') }}" class="mob-lk active">Công nghệ</a>
-        <a href="{{ route('web.home') }}" class="mob-lk">Tin tức</a>
+        <a href="{{ route('products.rx') }}" class="mob-lk">Lexus RX</a>
+        <a href="{{ route('products.nx') }}" class="mob-lk">Lexus NX</a>
+        <a href="{{ route('products.es') }}" class="mob-lk">Lexus ES</a>
+        <a href="{{ route('products.lx') }}" class="mob-lk">Lexus LX</a>
+        <a href="{{ route('products.ls') }}" class="mob-lk">Lexus LS</a>
+        <a href="{{ route('products.gx') }}" class="mob-lk">Lexus GX</a>
+        <a href="{{ route('products.lm') }}" class="mob-lk">Lexus LM</a>
+        <a href="{{ route('tech_car.index') }}" class="mob-lk">Công nghệ</a>
+        <a href="{{ route('web.blogs') }}" class="mob-lk">Tin tức</a>
     </div>
     <a href="{{ route('web.home.regis') }}" style="
         display:block;background:var(--gold);color:var(--black);

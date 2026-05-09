@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\web\AboutController;
 use App\Http\Controllers\web\BlogsController;
 use App\Http\Controllers\web\HomeController;
+use App\Http\Controllers\web\LegalController;
 use App\Http\Controllers\web\ProductsController;
+use App\Http\Controllers\web\SitemapController;
 use App\Http\Controllers\web\TechnogoryLexusController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +21,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('web.home');
+
+Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('web.sitemap');
 
 Route::get('/regis', [HomeController::class, 'regis'])->name('web.home.regis');
 
@@ -36,3 +41,11 @@ Route::group(['prefix' => 'blogs'], function () {
     Route::get('/', [BlogsController::class, 'index'])->name('web.blogs');
     Route::get('/{post:slug}', [BlogsController::class, 'detail'])->name('web.blogs.detail');
 });
+
+Route::get('/gioi-thieu', [AboutController::class, 'index'])->name('web.about');
+
+Route::get('/chinh-sach-bao-mat', [LegalController::class, 'privacy'])->name('legal.privacy');
+Route::get('/dieu-khoan-su-dung', [LegalController::class, 'terms'])->name('legal.terms');
+Route::get('/chinh-sach-bao-hanh', [LegalController::class, 'warranty'])->name('legal.warranty');
+Route::get('/chinh-sach-doi-tra', [LegalController::class, 'returnPolicy'])->name('legal.return');
+Route::get('/chinh-sach-giao-xe', [LegalController::class, 'delivery'])->name('legal.delivery');

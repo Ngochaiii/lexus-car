@@ -1,5 +1,9 @@
 @extends('layouts.web.default')
 
+@push('preload')
+    <link rel="preload" as="image" href="{{ asset('web/assets/images/es/mau-trang.jpg') }}" fetchpriority="high">
+@endpush
+
 @section('content')
     <!-- ==================== PRODUCT SECTION ==================== -->
     <section class="product-section">
@@ -22,8 +26,8 @@
                                 <button class="gallery-action-btn" title="Chia sẻ"><i class="bi bi-share"></i></button>
                             </div>
                             <div class="gallery-main">
-                                <img src="{{ asset('web/assets/images/es/mau-trang.jpg') }}" alt="Lexus ES 350h 2026"
-                                    id="mainImage">
+                                <img src="{{ asset('web/assets/images/es/mau-trang.jpg') }}" alt="Lexus ES 350h 2026 màu trắng - Sedan hybrid hạng sang"
+                                    id="mainImage" width="1200" height="800" fetchpriority="high" loading="eager" decoding="async">
                             </div>
                             <button class="gallery-nav prev" onclick="changeImage(-1)"><i
                                     class="bi bi-chevron-left"></i></button>

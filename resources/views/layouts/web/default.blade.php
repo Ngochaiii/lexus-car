@@ -1,53 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('page_title', 'Lexus Vietnam — Experience Amazing | Xe Sang Trọng Chính Hãng')</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-    <!-- ✅ FAVICON -->
-    <link rel="icon" type="image/png" href="{{ asset('web/assets/images/lexus_logo.png') }}">
-    <link rel="apple-touch-icon" href="{{ asset('web/assets/images/lexus_logo.png') }}">
+    @include('partials.seo')
 
-    @hasSection('seo_meta')
-        @yield('seo_meta')
-    @else
-        <meta name="description" content="Khám phá bộ sưu tập xe Lexus chính hãng tại Việt Nam. RX 500h, NX 350h, ES 300h, LX 600 và nhiều dòng xe sang trọng khác. Dịch vụ hậu mãi đẳng cấp 5 sao.">
-        <meta name="keywords" content="Lexus Vietnam, xe Lexus, RX 500h, NX 350h, ES 300h, xe sang trọng, xe hybrid, xe điện">
-        <meta property="og:title" content="Lexus Vietnam — Experience Amazing">
-        <meta property="og:description" content="Trải nghiệm sự hoàn hảo trong từng chi tiết với các mẫu xe sang trọng từ Lexus Vietnam.">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://lexus-es.com">
-        <meta property="og:image" content="https://lexus-es.com/web/assets/images/es-250-overview.jpg">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="630">
-        <link rel="canonical" href="https://lexus-es.com">
+    {{-- Performance hints --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
 
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "AutoDealer",
-                "name": "Lexus Vietnam",
-                "description": "Đại lý xe Lexus chính hãng tại Việt Nam",
-                "url": "https://lexus-es.com",
-                "telephone": "1900123456",
-                "address": {"@type":"PostalAddress","streetAddress":"360 Điện Biên Phủ","addressLocality":"Hà Nội","addressCountry":"VN"},
-                "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"2500"},
-                "openingHours": "Mo-Su 08:00-18:00",
-                "sameAs": ["https://facebook.com/lexusvn","https://youtube.com/lexusvn"]
-            }
-        </script>
-    @endif
-
+    @stack('preload')
     @stack('css')
     @include('layouts.web.header_css')
+
+    @include('partials.tracking-head')
 </head>
 
 <body>
+    @include('partials.tracking-body')
     @include('layouts.web.nav')
+    @hasSection('hero')
+        @yield('hero')
+    @endif
     @include('layouts.web.breadrumb')
-    @yield('content')
+    <main>
+        @yield('content')
+    </main>
     @include('layouts.web.footer')
     @include('layouts.web.footer_js')
     @stack('js')

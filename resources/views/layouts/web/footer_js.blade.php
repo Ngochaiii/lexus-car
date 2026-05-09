@@ -1,15 +1,19 @@
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+      <script defer>
           // Navbar scroll
           window.addEventListener('scroll', () => {
-              const nb = document.getElementById('navbar');
+              const nb = document.getElementById('nav') || document.getElementById('navbar');
               const bt = document.getElementById('backToTop');
-              nb.classList.toggle('scrolled', window.scrollY > 100);
-              bt.classList.toggle('show', window.scrollY > 400);
+              if (nb) nb.classList.toggle('scrolled', window.scrollY > 100);
+              if (bt) bt.classList.toggle('show', window.scrollY > 400);
           });
 
           // ==================== SEARCH ENGINE ====================
           (function () {
+              const searchInput = document.getElementById('searchInput');
+              const liveResults = document.getElementById('liveResults');
+              if (!searchInput || !liveResults) return; // chỉ chạy ở trang có search box
+
               const modelsSection = document.querySelector('.models-section');
               const carCols = modelsSection
                   ? Array.from(modelsSection.querySelectorAll('.col-xl-3, .col-lg-4, .col-md-6'))
@@ -59,9 +63,6 @@
               }
 
               // --- Live search dropdown ---
-              const searchInput = document.getElementById('searchInput');
-              const liveResults = document.getElementById('liveResults');
-
               function renderLiveResults(query) {
                   const q = query.trim().toLowerCase();
                   if (!q) { liveResults.classList.remove('show'); return; }
@@ -203,4 +204,4 @@
                   observer.observe(el);
               });
       </script>
-<script src="{{ asset('web/assets/js/main.js')}}"></script>
+<script src="{{ asset('web/assets/js/main.js')}}" defer></script>
