@@ -164,8 +164,11 @@
     .post-content p { margin-bottom: 1rem; line-height: 1.7; }
     .post-content h2, .post-content h3, .post-content h4 { margin-top: 1.5rem; margin-bottom: 0.75rem; }
     .post-content blockquote { border-left: 4px solid #ddd; padding-left: 1rem; color: #666; margin: 1rem 0; }
-    .post-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
-    .post-content table td, .post-content table th { border: 1px solid #ddd; padding: 0.5rem; }
+    /* Bảng — giữ style Word, fallback border xám */
+    .post-content { overflow-x: auto; }
+    .post-content table { border-collapse: collapse; margin: 1rem 0; max-width: 100%; }
+    .post-content td, .post-content th { border: 1px solid #ddd; padding: 0.5rem 0.65rem; vertical-align: top; }
+    .post-content th { background: #f6f7f9; font-weight: 600; }
 </style>
 @endpush
 @endsection

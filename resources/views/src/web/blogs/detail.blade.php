@@ -230,6 +230,39 @@
 
 @push('css')
 <style>
+    /* ===== Word-paste color normalizer =====
+       Word/Office hay set inline color "black/windowtext/#000/rgb(0,0,0)" và
+       background "white/#fff" — trên dark theme sẽ thành đen-trên-đen.
+       Selectors dưới đây bắt các pattern đó và remap về màu theme,
+       các màu CHỦ Ý khác (đỏ/xanh/vàng v.v...) vẫn được giữ nguyên. */
+    .article-body [style*="color:#000"],
+    .article-body [style*="color: #000"],
+    .article-body [style*="color:black"],
+    .article-body [style*="color: black"],
+    .article-body [style*="color:#111"],
+    .article-body [style*="color: #111"],
+    .article-body [style*="color:#222"],
+    .article-body [style*="color: #222"],
+    .article-body [style*="color:windowtext"],
+    .article-body [style*="color: windowtext"],
+    .article-body [style*="color:rgb(0, 0, 0)"],
+    .article-body [style*="color:rgb(0,0,0)"] {
+        color: var(--lexus-text) !important;
+    }
+    /* Background trắng/sáng từ Word → nền card tối ấm, giữ chữ vẫn đọc được */
+    .article-body [style*="background:#fff"],
+    .article-body [style*="background: #fff"],
+    .article-body [style*="background:white"],
+    .article-body [style*="background: white"],
+    .article-body [style*="background-color:#fff"],
+    .article-body [style*="background-color: #fff"],
+    .article-body [style*="background-color:white"],
+    .article-body [style*="background-color: white"],
+    .article-body [style*="background-color:#FFFFFF"],
+    .article-body [style*="background-color: #FFFFFF"] {
+        background: transparent !important;
+    }
+
     /* CKEditor 5 default classes → map sang style template Lexus */
     .article-body figure.image,
     .article-body figure.image-style-block-align-left,
@@ -242,23 +275,66 @@
     .article-body figure.image img { width: 100%; height: auto; display: block; }
     .article-body figure.image figcaption {
         font-size: 0.85rem;
-        color: var(--lexus-text-muted, #888);
+        color: #6c757d;
         text-align: center;
         padding: 8px 12px;
         font-style: italic;
     }
     .article-body img { max-width: 100%; height: auto; }
+
+    /* ===== Bảng — dark card đồng bộ theme Lexus, accent gold cho header ===== */
+    .article-body .table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 1.75rem 0;
+        border-radius: var(--radius-lg, 12px);
+        background: var(--lexus-dark-3);
+        border: 1px solid var(--lexus-gray);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+    .article-body .table-wrap table { margin: 0; }
     .article-body table {
-        width: 100%;
         border-collapse: collapse;
-        margin: 1.5rem 0;
+        margin: 1.75rem 0;
         font-size: 0.95rem;
+        max-width: 100%;
+        width: 100%;
+        background: transparent;
+        color: var(--lexus-text);
     }
-    .article-body table td, .article-body table th {
-        border: 1px solid rgba(255,255,255,0.1);
-        padding: 0.75rem;
+    .article-body td,
+    .article-body th {
+        border: 1px solid var(--lexus-gray-light);
+        padding: 0.75rem 1rem;
+        vertical-align: top;
+        color: var(--lexus-text);
+        line-height: 1.6;
     }
-    .article-body table th { background: rgba(255,255,255,0.05); font-weight: 600; }
+    .article-body th {
+        background: var(--lexus-gold-light);
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        color: var(--lexus-gold);
+        letter-spacing: 0.3px;
+        border-bottom: 2px solid var(--lexus-gold);
+    }
+    /* Zebra cho dễ đọc */
+    .article-body table tbody tr:nth-child(even) td {
+        background: rgba(255,255,255,0.02);
+    }
+    .article-body table tbody tr:hover td {
+        background: rgba(196,160,82,0.05);
+    }
+    /* Mọi inline element kế thừa màu của cell — không bị Word inline color phá */
+    .article-body table p,
+    .article-body table span,
+    .article-body table strong,
+    .article-body table em,
+    .article-body table li,
+    .article-body table div { color: inherit; margin: 0; }
+    .article-body table p + p { margin-top: 0.4rem; }
+    .article-body table a { color: var(--lexus-gold); text-decoration: underline; }
+    .article-body table a:hover { color: var(--lexus-gold-dark); }
     .article-body ul, .article-body ol { padding-left: 1.5rem; margin-bottom: 1rem; }
     .article-body li { margin-bottom: 0.4rem; line-height: 1.7; }
     .article-body h2, .article-body h3, .article-body h4 { scroll-margin-top: 90px; }
@@ -280,6 +356,19 @@
         const fs = document.getElementById('floatShare');
         if (fs) fs.classList.toggle('show', window.scrollY > 600);
     });
+
+    // ====== Bọc table trong div scroll ngang (tránh vỡ layout mobile) ======
+    (function wrapTables() {
+        const body = document.getElementById('articleBody');
+        if (!body) return;
+        body.querySelectorAll('table').forEach(t => {
+            if (t.parentElement && t.parentElement.classList.contains('table-wrap')) return;
+            const w = document.createElement('div');
+            w.className = 'table-wrap';
+            t.parentNode.insertBefore(w, t);
+            w.appendChild(t);
+        });
+    })();
 
     // ====== Auto-build TOC từ <h2> trong article body ======
     (function buildTOC() {

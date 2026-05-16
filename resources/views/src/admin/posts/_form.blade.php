@@ -227,12 +227,15 @@
 @endpush
 
 @push('js')
-{{-- CKEditor 4 standard-all — đầy đủ font/size/color, không cần license, không phụ thuộc plugin commercial --}}
-<script src="https://cdn.ckeditor.com/4.22.1/full-all/ckeditor.js"></script>
+{{-- CKEditor 4 (jsdelivr — ít bị adblocker chặn hơn cdn.ckeditor.com) --}}
+<script>window.CKEDITOR_BASEPATH = 'https://cdn.jsdelivr.net/npm/ckeditor4@4.22.1/';</script>
+<script src="https://cdn.jsdelivr.net/npm/ckeditor4@4.22.1/ckeditor.js"
+        onerror="document.body.insertAdjacentHTML('beforeend','<div style=\'position:fixed;top:10px;right:10px;background:#dc3545;color:#fff;padding:10px;z-index:9999;border-radius:6px\'>Không tải được CKEditor. Kiểm tra mạng/adblocker.</div>')"></script>
 <script>
 (function () {
     if (!window.CKEDITOR) {
-        console.error('CKEditor 4 chưa load. Kiểm tra CDN / mạng.');
+        console.error('CKEditor 4 chưa load. Kiểm tra CDN / adblocker / mạng.');
+        alert('CKEditor chưa load — có thể bị adblocker chặn. Hãy tắt adblocker cho trang admin và refresh.');
         return;
     }
 
@@ -240,7 +243,7 @@
         height: 500,
         language: 'vi',
         removePlugins: 'elementspath,resize',
-        extraPlugins: 'colorbutton,colordialog,font,justify,uploadimage,image2',
+        extraPlugins: 'colorbutton,colordialog,font,justify,uploadimage,image2,tableresize',
         // Endpoint upload ảnh (CKEditor 4 dùng key uploadUrl + filebrowserUploadUrl)
         filebrowserUploadUrl: "{{ route('admin.media.upload') }}?_token={{ csrf_token() }}&_ck=1",
         filebrowserImageUploadUrl: "{{ route('admin.media.upload') }}?_token={{ csrf_token() }}&_ck=1",
@@ -260,8 +263,17 @@
             { name: 'insert', items: ['Image', 'Table', 'HorizontalRule', 'SpecialChar'] },
             { name: 'tools', items: ['Maximize'] }
         ],
-        // Cho phép giữ class/style/iframe khi paste
+        // Cho phép giữ class/style/iframe/table-attrs khi paste
         allowedContent: true,
+        // ===== Paste from Word: giữ nguyên style, font, màu, border của bảng =====
+        pasteFromWordRemoveFontStyles: false,
+        pasteFromWordRemoveStyles: false,
+        pasteFromWordPromptCleanup: false,
+        pasteFromWordNumberedHeadingToList: true,
+        forcePasteAsPlainText: false,
+        pasteFilter: null,
+        // Giữ thuộc tính border/cellspacing/cellpadding của <table>
+        removeFormatAttributes: '',
         format_tags: 'p;h2;h3;h4;pre',
         fontSize_sizes: '10/10px;12/12px;14/14px;16/16px;18/18px;20/20px;24/24px;28/28px;32/32px;36/36px;48/48px',
         font_names: 'Mặc định/inherit;DM Sans/DM Sans, sans-serif;Playfair Display/Playfair Display, serif;'
