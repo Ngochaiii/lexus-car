@@ -17,7 +17,16 @@
 
     {{-- Preload hero image (homepage LCP) --}}
     <link rel="preload" as="image" href="{{ asset('web/assets/images/image-20210204180128-1.jpeg') }}" fetchpriority="high">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17996413595">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'AW-17996413595');
+</script>
     @stack('preload')
     @stack('css')
     @include('layouts.web.header_css')
