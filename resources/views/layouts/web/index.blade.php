@@ -27,6 +27,9 @@
 
   gtag('config', 'AW-17996413595');
 </script>
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-17996413595/5MkvCLybt7ccEJv1rYVD'});
+</script>
     @stack('preload')
     @stack('css')
     @include('layouts.web.header_css')
