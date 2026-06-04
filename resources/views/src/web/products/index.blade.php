@@ -107,12 +107,12 @@
                                     <div class="vo-price">4.140.000.000đ</div>
                                 </div>
                                 <div class="version-option active"
-                                    onclick="selectVersion(this,'4.490.000.000','RX 500h F SPORT',270.8,'6,2s','8.1L','DIRECT4')">
+                                    onclick="selectVersion(this,'4.940.000.000','RX 500h F SPORT',270.8,'6,2s','8.1L','DIRECT4')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">RX 500h — F SPORT PERFORMANCE</div>
                                     </div>
-                                    <div class="vo-price">4.490.000.000đ</div>
+                                    <div class="vo-price">4.940.000.000đ</div>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +122,7 @@
                             <div class="price-row">
                                 <div>
                                     <div class="price-label">Giá niêm yết</div>
-                                    <div class="price-value" id="priceDisplay">4.490.000.000<span> VNĐ</span></div>
+                                    <div class="price-value" id="priceDisplay">4.940.000.000<span> VNĐ</span></div>
                                 </div>
                             </div>
                             <div class="quick-specs" style="margin:16px 0 0;padding:12px 0 0;background:none;border:none;border-top:1px solid var(--lexus-gray);border-radius:0;">
@@ -189,7 +189,7 @@
                                     Lịch Lái Thử</a>
                                 <a href="tel:19001234" class="btn-action hotline">
                                     <i class="bi bi-telephone"></i>
-                                    <span>Hotline: </span><span class="hotline-number">1900 1234 56</span>
+                                    <span>Hotline: </span><span class="hotline-number">0962896582</span>
                                 </a>
                             </div>
                         </div>
