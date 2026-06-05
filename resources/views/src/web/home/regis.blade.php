@@ -532,6 +532,9 @@
     // SUCCESS
     // ═══════════════════════════
     function showSuccess(data){
+        // Báo lượt chuyển đổi "Người liên hệ" về Google Ads
+        if(typeof gtagReportContact==='function'){gtagReportContact();}
+
         document.getElementById('formState').classList.add('hide');
 
         const info=document.getElementById('succInfo');

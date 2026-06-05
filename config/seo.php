@@ -8,6 +8,10 @@ return [
         'gtm_id' => env('GTM_ID'),
         'ga4_id' => env('GA4_ID'),
         'gads_id' => env('GADS_ID'),
+        'gads_conversion_contact' => env('GADS_CONVERSION_CONTACT'),
+        // Nếu chưa tạo hành động chuyển đổi riêng, dùng chung nhãn "Người liên hệ".
+        'gads_conversion_phone' => env('GADS_CONVERSION_PHONE', env('GADS_CONVERSION_CONTACT')),
+        'gads_conversion_zalo' => env('GADS_CONVERSION_ZALO', env('GADS_CONVERSION_CONTACT')),
     ],
     'default_locale' => 'vi_VN',
     'default_title' => 'Tư Vấn Mua Xe Lexus Chính Hãng | Lexus Thăng Long Hà Nội',
