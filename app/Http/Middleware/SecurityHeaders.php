@@ -40,12 +40,12 @@ class SecurityHeaders
     {
         $directives = [
             "default-src 'self'",
-            "script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com",
+            "script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.google.com https://googleads.g.doubleclick.net",
             "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net",
             "font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net data:",
             "img-src 'self' data: blob: https:",
             "frame-src https://www.google.com https://www.googletagmanager.com",
-            "connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://*.googletagmanager.com https://cdn.jsdelivr.net",
+            "connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://*.googletagmanager.com https://cdn.jsdelivr.net https://www.google.com https://googleads.g.doubleclick.net https://www.googleadservices.com",
             "object-src 'none'",
             "base-uri 'self'",
             "form-action 'self'",
