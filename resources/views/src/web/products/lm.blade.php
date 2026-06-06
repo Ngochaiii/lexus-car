@@ -172,7 +172,7 @@
                             <div class="action-buttons">
                                 <a href="{{route('web.home.regis')}}" class="btn-action primary"><i class="bi bi-calendar-check"></i> Đặt
                                     Lịch Lái Thử</a>
-                                <a href="tel:19001234" class="btn-action hotline">
+                                <a href="tel:0962896582" class="btn-action hotline">
                                     <i class="bi bi-telephone"></i>
                                     <span>Hotline: </span><span class="hotline-number">0962896582</span>
                                 </a>
