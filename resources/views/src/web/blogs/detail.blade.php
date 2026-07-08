@@ -15,7 +15,7 @@
 @section('content')
     <!-- ==================== ARTICLE HERO ==================== -->
     <section class="article-hero">
-        <img src="{{ $heroImage }}" alt="{{ $post->title }}">
+        <img loading="lazy" decoding="async" src="{{ $heroImage }}" alt="{{ $post->title }}">
         <div class="ah-overlay">
             <div class="container">
                 <div class="ah-content">
@@ -125,7 +125,7 @@
                         @foreach ($recent as $rp)
                             <div class="recent-post">
                                 <div class="rp-img">
-                                    <img src="{{ $rp->featured_image ? asset('storage/'.$rp->featured_image) : asset_v('web/assets/images/blog/default.jpg') }}" alt="{{ $rp->title }}">
+                                    <img loading="lazy" decoding="async" src="{{ $rp->featured_image ? asset('storage/'.$rp->featured_image) : asset_v('web/assets/images/blog/default.jpg') }}" alt="{{ $rp->title }}">
                                 </div>
                                 <div>
                                     <div class="rp-title"><a href="{{ route('web.blogs.detail', $rp) }}">{{ $rp->title }}</a></div>
@@ -178,7 +178,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="blog-card">
                                 <div class="bc-img">
-                                    <img src="{{ $rel->featured_image ? asset('storage/'.$rel->featured_image) : asset_v('web/assets/images/blog/default.jpg') }}" alt="{{ $rel->title }}">
+                                    <img loading="lazy" decoding="async" src="{{ $rel->featured_image ? asset('storage/'.$rel->featured_image) : asset_v('web/assets/images/blog/default.jpg') }}" alt="{{ $rel->title }}">
                                     @if ($rel->tags->first())
                                         <span class="bc-tag">{{ $rel->tags->first()->name }}</span>
                                     @endif

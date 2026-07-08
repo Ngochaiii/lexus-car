@@ -78,7 +78,7 @@
                   } else {
                       liveResults.innerHTML = matches.map(c => `
                           <div class="slr-item" onclick="window.location.href='${c.link}'" style="cursor:pointer">
-                              <img class="slr-thumb" src="${c.img}" alt="${c.name}">
+                              <img loading="lazy" decoding="async" class="slr-thumb" src="${c.img}" alt="${c.name}">
                               <div>
                                   <div class="slr-name">${c.name}</div>
                                   <div class="slr-series">${c.series} · ${c.price}</div>

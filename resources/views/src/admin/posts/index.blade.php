@@ -70,7 +70,7 @@
                                     <td>{{ $loop->iteration + ($posts->firstItem() - 1) }}</td>
                                     <td>
                                         @if ($post->featured_image)
-                                            <img src="{{ asset('storage/' . $post->featured_image) }}"
+                                            <img loading="lazy" decoding="async" src="{{ asset('storage/' . $post->featured_image) }}"
                                                  alt="" style="width:60px;height:40px;object-fit:cover;border-radius:4px">
                                         @else
                                             <div class="bg-light text-muted d-flex align-items-center justify-content-center"

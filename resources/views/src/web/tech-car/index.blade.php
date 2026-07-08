@@ -170,7 +170,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="LTA" src="{{asset_v('web/assets/images/lta.webp')}}" alt="Hệ thống LTA — Theo dõi làn đường">
+                                <img loading="lazy" decoding="async" data-tech="LTA" src="{{asset_v('web/assets/images/lta.webp')}}" alt="Hệ thống LTA — Theo dõi làn đường">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -215,7 +215,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="DRCC" src="{{ asset_v('web/assets/images/rx/RRCC.webp') }}" alt="Hệ thống DRCC">
+                                <img loading="lazy" decoding="async" data-tech="DRCC" src="{{ asset_v('web/assets/images/rx/RRCC.webp') }}" alt="Hệ thống DRCC">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -256,7 +256,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="PCS" src="{{asset_v('web/assets/images/pcs.webp')}}" alt="Hệ thống PCS">
+                                <img loading="lazy" decoding="async" data-tech="PCS" src="{{asset_v('web/assets/images/pcs.webp')}}" alt="Hệ thống PCS">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -296,7 +296,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="BSM" src="{{asset_v('web/assets/images/canh-bao-diem-mu-5.webp')}}" alt="Hệ thống BSM">
+                                <img loading="lazy" decoding="async" data-tech="BSM" src="{{asset_v('web/assets/images/canh-bao-diem-mu-5.webp')}}" alt="Hệ thống BSM">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -335,7 +335,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="LDA" src="{{asset_v('web/assets/images/anh-2-4.jpg')}}" alt="Hệ thống LDA">
+                                <img loading="lazy" decoding="async" data-tech="LDA" src="{{asset_v('web/assets/images/anh-2-4.jpg')}}" alt="Hệ thống LDA">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -377,7 +377,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="RCTA" src="{{asset_v('web/assets/images/he-thong-rcta-1.webp')}}" alt="Hệ thống RCTA">
+                                <img loading="lazy" decoding="async" data-tech="RCTA" src="{{asset_v('web/assets/images/he-thong-rcta-1.webp')}}" alt="Hệ thống RCTA">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -416,7 +416,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="STOP_WARNING" src="{{asset_v('web/assets/images/rx/stop.png')}}" alt="Cảnh báo khi dừng">
+                                <img loading="lazy" decoding="async" data-tech="STOP_WARNING" src="{{asset_v('web/assets/images/rx/stop.png')}}" alt="Cảnh báo khi dừng">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -475,7 +475,7 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="AHS" src="{{asset_v('web/assets/images/ahs.png')}}" alt="Hệ thống AHS BladeScan">
+                                <img loading="lazy" decoding="async" data-tech="AHS" src="{{asset_v('web/assets/images/ahs.png')}}" alt="Hệ thống AHS BladeScan">
                                 <div class="ph">
                                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80"
                                         fill="none">
@@ -521,7 +521,7 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="LED_CORNER" src="{{asset_v('web/assets/images/led.png')}}" alt="Đèn góc LED">
+                                <img loading="lazy" decoding="async" data-tech="LED_CORNER" src="{{asset_v('web/assets/images/led.png')}}" alt="Đèn góc LED">
                                 <div class="ph">
                                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80"
                                         fill="none">
@@ -583,7 +583,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="PUH" src="{{asset_v('web/assets/images/puh.png')}}" alt="Kết cấu mui xe an toàn PUH">
+                                <img loading="lazy" decoding="async" data-tech="PUH" src="{{asset_v('web/assets/images/puh.png')}}" alt="Kết cấu mui xe an toàn PUH">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -628,7 +628,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="SRS" src="{{asset_v('web/assets/images/srs.png')}}" alt="Hệ thống túi khí SRS">
+                                <img loading="lazy" decoding="async" data-tech="SRS" src="{{asset_v('web/assets/images/srs.png')}}" alt="Hệ thống túi khí SRS">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -671,7 +671,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="PKSB" src="{{asset_v('web/assets/images/pksb.png')}}" alt="Hệ thống PKSB">
+                                <img loading="lazy" decoding="async" data-tech="PKSB" src="{{asset_v('web/assets/images/pksb.png')}}" alt="Hệ thống PKSB">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -730,7 +730,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="HUD" src="{{asset_v('web/assets/images/hub.webp')}}" alt="Màn hình HUD 24 inch">
+                                <img loading="lazy" decoding="async" data-tech="HUD" src="{{asset_v('web/assets/images/hub.webp')}}" alt="Màn hình HUD 24 inch">
                                 <div class="ph">
                                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80"
                                         fill="none">
@@ -774,7 +774,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="PVM" src="{{asset_v('web/assets/images/pvm.png')}}" alt="Hệ thống quan sát toàn cảnh PVM">
+                                <img loading="lazy" decoding="async" data-tech="PVM" src="{{asset_v('web/assets/images/pvm.png')}}" alt="Hệ thống quan sát toàn cảnh PVM">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -823,7 +823,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="AUTO_SEAT" src="{{asset_v('web/assets/images/seat.png')}}" alt="Ghế sau tự động ngả">
+                                <img loading="lazy" decoding="async" data-tech="AUTO_SEAT" src="{{asset_v('web/assets/images/seat.png')}}" alt="Ghế sau tự động ngả">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -872,7 +872,7 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="SEA" src="{{asset_v('web/assets/images/sea.png')}}" alt="Hệ thống SEA">
+                                <img loading="lazy" decoding="async" data-tech="SEA" src="{{asset_v('web/assets/images/sea.png')}}" alt="Hệ thống SEA">
                                 <div class="ph">
                                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80"
                                         fill="none">
@@ -917,7 +917,7 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="ELATCH" src="{{asset_v('web/assets/images/elatch.png')}}" alt="Hệ thống e-Latch">
+                                <img loading="lazy" decoding="async" data-tech="ELATCH" src="{{asset_v('web/assets/images/elatch.png')}}" alt="Hệ thống e-Latch">
                                 <div class="ph">
                                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80"
                                         fill="none">
@@ -980,7 +980,7 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="TEAMMATE" src="{{asset_v('web/assets/images/teammate.png')}}" alt="Lexus Teammate Advanced Park">
+                                <img loading="lazy" decoding="async" data-tech="TEAMMATE" src="{{asset_v('web/assets/images/teammate.png')}}" alt="Lexus Teammate Advanced Park">
                                 <div class="ph">
                                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80"
                                         fill="none">
@@ -1030,7 +1030,7 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img data-tech="PKSA" src="{{asset_v('web/assets/images/pksa.png')}}" alt="Hệ thống hỗ trợ đỗ xe PKSA">
+                                <img loading="lazy" decoding="async" data-tech="PKSA" src="{{asset_v('web/assets/images/pksa.png')}}" alt="Hệ thống hỗ trợ đỗ xe PKSA">
                                 <div class="ph">
                                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80"
                                         fill="none">
@@ -1109,7 +1109,7 @@
                     <div class="col-lg-5">
                         <div class="sp-img" style="min-height:360px">
                             <!-- SPOTLIGHT IMAGE SLOT: DRCC -->
-                            <img data-tech="DRCC_SPOTLIGHT" src="{{asset_v('web/assets/images/drcc.png')}}" alt="DRCC Spotlight"
+                            <img loading="lazy" decoding="async" data-tech="DRCC_SPOTLIGHT" src="{{asset_v('web/assets/images/drcc.png')}}" alt="DRCC Spotlight"
                                 style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
                             <div class="sp-ph">
                                 <svg width="100" height="100" viewBox="0 0 100 100" fill="none"
@@ -1178,7 +1178,7 @@
                     <div class="col-lg-5">
                         <div class="sp-img" style="min-height:360px">
                             <!-- SPOTLIGHT IMAGE SLOT: TEAMMATE -->
-                            <img data-tech="TEAMMATE_SPOTLIGHT" src="{{asset_v('web/assets/images/teammate.png')}}" alt="Teammate Spotlight"
+                            <img loading="lazy" decoding="async" data-tech="TEAMMATE_SPOTLIGHT" src="{{asset_v('web/assets/images/teammate.png')}}" alt="Teammate Spotlight"
                                 style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
                             <div class="sp-ph">
                                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
@@ -1265,7 +1265,7 @@
                             <div>
                                 <div class="tl-cnt" onclick="toggleTL(this.closest('.tl-item'))">
                                     <div class="tl-img">
-                                        <img data-tech="LTA_TL" src="{{asset_v('web/assets/images/lta.webp')}}" alt="LTA">
+                                        <img loading="lazy" decoding="async" data-tech="LTA_TL" src="{{asset_v('web/assets/images/lta.webp')}}" alt="LTA">
                                         <div class="tl-ph"><svg width="60" height="40" viewBox="0 0 60 40"
                                                 fill="none" opacity=".3">
                                                 <line x1="20" y1="0" x2="20" y2="40"
@@ -1301,7 +1301,7 @@
                             <div>
                                 <div class="tl-cnt" onclick="toggleTL(this.closest('.tl-item'))">
                                     <div class="tl-img">
-                                        <img data-tech="DRCC_TL" src="{{asset_v('web/assets/images/drcc.png')}}" alt="DRCC">
+                                        <img loading="lazy" decoding="async" data-tech="DRCC_TL" src="{{asset_v('web/assets/images/drcc.png')}}" alt="DRCC">
                                         <div class="tl-ph"><svg width="60" height="40" viewBox="0 0 60 40"
                                                 fill="none" opacity=".3">
                                                 <path d="M5 20 Q15 12 30 15 Q45 18 55 12" stroke="#C4A052"
@@ -1334,7 +1334,7 @@
                             <div>
                                 <div class="tl-cnt" onclick="toggleTL(this.closest('.tl-item'))">
                                     <div class="tl-img">
-                                        <img data-tech="PCS_TL" src="{{asset_v('web/assets/images/pcs.webp')}}" alt="PCS">
+                                        <img loading="lazy" decoding="async" data-tech="PCS_TL" src="{{asset_v('web/assets/images/pcs.webp')}}" alt="PCS">
                                         <div class="tl-ph"><svg width="60" height="40" viewBox="0 0 60 40"
                                                 fill="none" opacity=".3">
                                                 <circle cx="45" cy="15" r="10" stroke="#ef4444"
@@ -1369,7 +1369,7 @@
                             <div>
                                 <div class="tl-cnt" onclick="toggleTL(this.closest('.tl-item'))">
                                     <div class="tl-img">
-                                        <img data-tech="SEA_TL" src="{{asset_v('web/assets/images/sea.png')}}" alt="SEA">
+                                        <img loading="lazy" decoding="async" data-tech="SEA_TL" src="{{asset_v('web/assets/images/sea.png')}}" alt="SEA">
                                         <div class="tl-ph"><svg width="60" height="40" viewBox="0 0 60 40"
                                                 fill="none" opacity=".3">
                                                 <rect x="20" y="10" width="30" height="20" rx="3"
@@ -1405,7 +1405,7 @@
                             <div>
                                 <div class="tl-cnt" onclick="toggleTL(this.closest('.tl-item'))">
                                     <div class="tl-img">
-                                        <img data-tech="PKSB_TL" src="{{asset_v('web/assets/images/pksb.png')}}" alt="PKSB">
+                                        <img loading="lazy" decoding="async" data-tech="PKSB_TL" src="{{asset_v('web/assets/images/pksb.png')}}" alt="PKSB">
                                         <div class="tl-ph"><svg width="60" height="40" viewBox="0 0 60 40"
                                                 fill="none" opacity=".3">
                                                 <rect x="18" y="5" width="24" height="16" rx="3"
@@ -1577,7 +1577,7 @@
         // ══════════════════════════════════════
         // IMAGE SWAP UTILITY
         // Để thêm ảnh thật, gọi: swapImage('LTA', 'path/to/lta.jpg')
-        // Hoặc thêm src trực tiếp vào thẻ <img data-tech="LTA">
+        // Hoặc thêm src trực tiếp vào thẻ <img loading="lazy" decoding="async" data-tech="LTA">
         // ══════════════════════════════════════
         window.swapImage = function(techName, src) {
             document.querySelectorAll(`img[data-tech="${techName}"]`).forEach(img => {

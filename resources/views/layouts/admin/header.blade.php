@@ -487,7 +487,7 @@
                                         <!--! [Start] v-pills-general !-->
                                         <div class="tab-pane fade show active" id="v-pills-general" role="tabpanel">
                                             <div class="mb-4 rounded-3 border">
-                                                <img src="{{asset_v('admin/assets/images/banner/mockup.png')}}" alt=""
+                                                <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/mockup.png')}}" alt=""
                                                     class="img-fluid rounded-3" />
                                             </div>
                                             <h6 class="fw-bolder">Duralux - Admin Dashboard UiKit</h6>
@@ -530,7 +530,7 @@
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="nxl-mega-menu-image">
-                                                        <img src="{{asset_v('admin/assets/images/general/full-avatar.png')}}"
+                                                        <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/general/full-avatar.png')}}"
                                                             alt="" class="img-fluid full-user-avtar" />
                                                     </div>
                                                 </div>
@@ -568,7 +568,7 @@
                                                 <div class="col-lg-4">
                                                     <a href="javascript:void(0);" class="dropdown-item">
                                                         <div class="menu-item-icon">
-                                                            <img src="{{asset_v('admin/assets/images/brand/app-store.png')}}"
+                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/brand/app-store.png')}}"
                                                                 alt="" class="img-fluid" />
                                                         </div>
                                                         <div class="menu-item-title">App Store</div>
@@ -578,7 +578,7 @@
                                                     </a>
                                                     <a href="javascript:void(0);" class="dropdown-item">
                                                         <div class="menu-item-icon">
-                                                            <img src="{{asset_v('admin/assets/images/brand/spotify.png')}}" alt=""
+                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/brand/spotify.png')}}" alt=""
                                                                 class="img-fluid" />
                                                         </div>
                                                         <div class="menu-item-title">Spotify</div>
@@ -588,7 +588,7 @@
                                                     </a>
                                                     <a href="javascript:void(0);" class="dropdown-item">
                                                         <div class="menu-item-icon">
-                                                            <img src="{{asset_v('admin/assets/images/brand/figma.png')}}" alt=""
+                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/brand/figma.png')}}" alt=""
                                                                 class="img-fluid" />
                                                         </div>
                                                         <div class="menu-item-title">Figma</div>
@@ -598,7 +598,7 @@
                                                     </a>
                                                     <a href="javascript:void(0);" class="dropdown-item">
                                                         <div class="menu-item-icon">
-                                                            <img src="{{asset_v('admin/assets/images/brand/shopify.png')}}" alt=""
+                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/brand/shopify.png')}}" alt=""
                                                                 class="img-fluid" />
                                                         </div>
                                                         <div class="menu-item-title">Shopify</div>
@@ -608,7 +608,7 @@
                                                     </a>
                                                     <a href="javascript:void(0);" class="dropdown-item">
                                                         <div class="menu-item-icon">
-                                                            <img src="{{asset_v('admin/assets/images/brand/paypal.png')}}" alt=""
+                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/brand/paypal.png')}}" alt=""
                                                                 class="img-fluid" />
                                                         </div>
                                                         <div class="menu-item-title">Paypal</div>
@@ -620,7 +620,7 @@
                                                 <div class="col-lg-4">
                                                     <a href="javascript:void(0);" class="dropdown-item">
                                                         <div class="menu-item-icon">
-                                                            <img src="{{asset_v('admin/assets/images/brand/gmail.png')}}" alt=""
+                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/brand/gmail.png')}}" alt=""
                                                                 class="img-fluid" />
                                                         </div>
                                                         <div class="menu-item-title">Gmail</div>
@@ -630,7 +630,7 @@
                                                     </a>
                                                     <a href="javascript:void(0);" class="dropdown-item">
                                                         <div class="menu-item-icon">
-                                                            <img src="{{asset_v('admin/assets/images/brand/dropbox.png')}}" alt=""
+                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/brand/dropbox.png')}}" alt=""
                                                                 class="img-fluid" />
                                                         </div>
                                                         <div class="menu-item-title">Dropbox</div>
@@ -640,7 +640,7 @@
                                                     </a>
                                                     <a href="javascript:void(0);" class="dropdown-item">
                                                         <div class="menu-item-icon">
-                                                            <img src="{{asset_v('admin/assets/images/brand/google-drive.png')}}"
+                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/brand/google-drive.png')}}"
                                                                 alt="" class="img-fluid" />
                                                         </div>
                                                         <div class="menu-item-title">Google Drive</div>
@@ -650,7 +650,7 @@
                                                     </a>
                                                     <a href="javascript:void(0);" class="dropdown-item">
                                                         <div class="menu-item-icon">
-                                                            <img src="{{asset_v('admin/assets/images/brand/github.png')}}" alt=""
+                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/brand/github.png')}}" alt=""
                                                                 class="img-fluid" />
                                                         </div>
                                                         <div class="menu-item-title">Github</div>
@@ -660,7 +660,7 @@
                                                     </a>
                                                     <a href="javascript:void(0);" class="dropdown-item">
                                                         <div class="menu-item-icon">
-                                                            <img src="{{asset_v('admin/assets/images/brand/gitlab.png')}}" alt=""
+                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/brand/gitlab.png')}}" alt=""
                                                                 class="img-fluid" />
                                                         </div>
                                                         <div class="menu-item-title">Gitlab</div>
@@ -672,7 +672,7 @@
                                                 <div class="col-lg-4">
                                                     <a href="javascript:void(0);" class="dropdown-item">
                                                         <div class="menu-item-icon">
-                                                            <img src="{{asset_v('admin/assets/images/brand/facebook.png')}}" alt=""
+                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/brand/facebook.png')}}" alt=""
                                                                 class="img-fluid" />
                                                         </div>
                                                         <div class="menu-item-title">Facebook</div>
@@ -682,7 +682,7 @@
                                                     </a>
                                                     <a href="javascript:void(0);" class="dropdown-item">
                                                         <div class="menu-item-icon">
-                                                            <img src="{{asset_v('admin/assets/images/brand/pinterest.png')}}"
+                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/brand/pinterest.png')}}"
                                                                 alt="" class="img-fluid" />
                                                         </div>
                                                         <div class="menu-item-title">Pinterest</div>
@@ -692,7 +692,7 @@
                                                     </a>
                                                     <a href="javascript:void(0);" class="dropdown-item">
                                                         <div class="menu-item-icon">
-                                                            <img src="{{asset_v('admin/assets/images/brand/instagram.png')}}"
+                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/brand/instagram.png')}}"
                                                                 alt="" class="img-fluid" />
                                                         </div>
                                                         <div class="menu-item-title">Instagram</div>
@@ -702,7 +702,7 @@
                                                     </a>
                                                     <a href="javascript:void(0);" class="dropdown-item">
                                                         <div class="menu-item-icon">
-                                                            <img src="{{asset_v('admin/assets/images/brand/twitter.png')}}" alt=""
+                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/brand/twitter.png')}}" alt=""
                                                                 class="img-fluid" />
                                                         </div>
                                                         <div class="menu-item-title">Twitter</div>
@@ -712,7 +712,7 @@
                                                     </a>
                                                     <a href="javascript:void(0);" class="dropdown-item">
                                                         <div class="menu-item-icon">
-                                                            <img src="{{asset_v('admin/assets/images/brand/youtube.png')}}" alt=""
+                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/brand/youtube.png')}}" alt=""
                                                                 class="img-fluid" />
                                                         </div>
                                                         <div class="menu-item-title">Youtube</div>
@@ -782,7 +782,7 @@
                                                 </div>
                                                 <div class="col-xl-4">
                                                     <div class="nxl-mega-menu-image">
-                                                        <img src="{{asset_v('admin/assets/images/banner/1.jpg')}}" alt=""
+                                                        <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/1.jpg')}}" alt=""
                                                             class="img-fluid" />
                                                     </div>
                                                     <div class="mt-4">
@@ -937,7 +937,7 @@
                                                         <div class="carousel-inner rounded-3">
                                                             <div class="carousel-item active">
                                                                 <div class="nxl-mega-menu-image">
-                                                                    <img src="{{asset_v('admin/assets/images/banner/6.jpg')}}"
+                                                                    <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/6.jpg')}}"
                                                                         alt=""
                                                                         class="img-fluid d-block w-100" />
                                                                 </div>
@@ -952,7 +952,7 @@
                                                             </div>
                                                             <div class="carousel-item">
                                                                 <div class="nxl-mega-menu-image">
-                                                                    <img src="{{asset_v('admin/assets/images/banner/5.jpg')}}"
+                                                                    <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/5.jpg')}}"
                                                                         alt=""
                                                                         class="img-fluid d-block w-100" />
                                                                 </div>
@@ -967,7 +967,7 @@
                                                             </div>
                                                             <div class="carousel-item">
                                                                 <div class="nxl-mega-menu-image">
-                                                                    <img src="{{asset_v('admin/assets/images/banner/4.jpg')}}"
+                                                                    <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/4.jpg')}}"
                                                                         alt=""
                                                                         class="img-fluid d-block w-100" />
                                                                 </div>
@@ -982,7 +982,7 @@
                                                             </div>
                                                             <div class="carousel-item">
                                                                 <div class="nxl-mega-menu-image">
-                                                                    <img src="{{asset_v('admin/assets/images/banner/3.jpg')}}"
+                                                                    <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/3.jpg')}}"
                                                                         alt=""
                                                                         class="img-fluid d-block w-100" />
                                                                 </div>
@@ -997,7 +997,7 @@
                                                             </div>
                                                             <div class="carousel-item">
                                                                 <div class="nxl-mega-menu-image">
-                                                                    <img src="{{asset_v('admin/assets/images/banner/2.jpg')}}"
+                                                                    <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/2.jpg')}}"
                                                                         alt=""
                                                                         class="img-fluid d-block w-100" />
                                                                 </div>
@@ -1012,7 +1012,7 @@
                                                             </div>
                                                             <div class="carousel-item">
                                                                 <div class="nxl-mega-menu-image">
-                                                                    <img src="{{asset_v('admin/assets/images/banner/1.jpg')}}"
+                                                                    <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/1.jpg')}}"
                                                                         alt=""
                                                                         class="img-fluid d-block w-100" />
                                                                 </div>
@@ -1117,7 +1117,7 @@
                                                                 <div class="col-xl-6">
                                                                     <div class="d-lg-flex align-items-center gap-3">
                                                                         <div class="wd-150 rounded-3">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/1.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/1.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid rounded-3" />
                                                                         </div>
@@ -1135,7 +1135,7 @@
                                                                                 maiores veritatis?</p>
                                                                             <div class="hstack gap-2 mt-3">
                                                                                 <div class="avatar-image avatar-sm">
-                                                                                    <img src="{{asset_v('admin/assets/images/avatar/1.png')}}"
+                                                                                    <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/avatar/1.png')}}"
                                                                                         alt=""
                                                                                         class="img-fluid" />
                                                                                 </div>
@@ -1148,7 +1148,7 @@
                                                                 <div class="col-xl-6">
                                                                     <div class="d-lg-flex align-items-center gap-3">
                                                                         <div class="wd-150 rounded-3">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/2.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/2.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid rounded-3" />
                                                                         </div>
@@ -1166,7 +1166,7 @@
                                                                                 maiores veritatis?</p>
                                                                             <div class="hstack gap-2 mt-3">
                                                                                 <div class="avatar-image avatar-sm">
-                                                                                    <img src="{{asset_v('admin/assets/images/avatar/2.png')}}"
+                                                                                    <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/avatar/2.png')}}"
                                                                                         alt=""
                                                                                         class="img-fluid" />
                                                                                 </div>
@@ -1179,7 +1179,7 @@
                                                                 <div class="col-xl-6">
                                                                     <div class="d-lg-flex align-items-center gap-3">
                                                                         <div class="wd-150 rounded-3">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/3.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/3.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid rounded-3" />
                                                                         </div>
@@ -1197,7 +1197,7 @@
                                                                                 maiores veritatis?</p>
                                                                             <div class="hstack gap-2 mt-3">
                                                                                 <div class="avatar-image avatar-sm">
-                                                                                    <img src="{{asset_v('admin/assets/images/avatar/3.png')}}"
+                                                                                    <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/avatar/3.png')}}"
                                                                                         alt=""
                                                                                         class="img-fluid" />
                                                                                 </div>
@@ -1210,7 +1210,7 @@
                                                                 <div class="col-xl-6">
                                                                     <div class="d-lg-flex align-items-center gap-3">
                                                                         <div class="wd-150 rounded-3">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/4.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/4.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid rounded-3" />
                                                                         </div>
@@ -1228,7 +1228,7 @@
                                                                                 maiores veritatis?</p>
                                                                             <div class="hstack gap-2 mt-3">
                                                                                 <div class="avatar-image avatar-sm">
-                                                                                    <img src="{{asset_v('admin/assets/images/avatar/4.png')}}"
+                                                                                    <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/avatar/4.png')}}"
                                                                                         alt=""
                                                                                         class="img-fluid" />
                                                                                 </div>
@@ -1417,7 +1417,7 @@
                                                                 <div class="carousel-inner rounded-3">
                                                                     <div class="carousel-item active">
                                                                         <div class="nxl-mega-menu-image">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/6.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/6.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid d-block w-100" />
                                                                         </div>
@@ -1432,7 +1432,7 @@
                                                                     </div>
                                                                     <div class="carousel-item">
                                                                         <div class="nxl-mega-menu-image">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/5.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/5.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid d-block w-100" />
                                                                         </div>
@@ -1447,7 +1447,7 @@
                                                                     </div>
                                                                     <div class="carousel-item">
                                                                         <div class="nxl-mega-menu-image">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/4.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/4.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid d-block w-100" />
                                                                         </div>
@@ -1462,7 +1462,7 @@
                                                                     </div>
                                                                     <div class="carousel-item">
                                                                         <div class="nxl-mega-menu-image">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/3.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/3.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid d-block w-100" />
                                                                         </div>
@@ -1477,7 +1477,7 @@
                                                                     </div>
                                                                     <div class="carousel-item">
                                                                         <div class="nxl-mega-menu-image">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/2.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/2.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid d-block w-100" />
                                                                         </div>
@@ -1492,7 +1492,7 @@
                                                                     </div>
                                                                     <div class="carousel-item">
                                                                         <div class="nxl-mega-menu-image">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/1.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/1.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid d-block w-100" />
                                                                         </div>
@@ -1659,7 +1659,7 @@
                                                         </div>
                                                         <div class="col-xxl-3 offset-xxl-1 col-xl-4">
                                                             <div class="nxl-mega-menu-image">
-                                                                <img src="{{asset_v('admin/assets/images/banner/1.jpg')}}" alt=""
+                                                                <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/1.jpg')}}" alt=""
                                                                     class="img-fluid" />
                                                             </div>
                                                             <div class="mt-4">
@@ -1692,7 +1692,7 @@
                                                                 <div class="col-xxl-4 col-lg-6">
                                                                     <div class="d-flex align-items-center gap-3">
                                                                         <div class="wd-100 rounded-3">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/1.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/1.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid rounded-3 border border-3" />
                                                                         </div>
@@ -1715,7 +1715,7 @@
                                                                 <div class="col-xxl-4 col-lg-6">
                                                                     <div class="d-flex align-items-center gap-3">
                                                                         <div class="wd-100 rounded-3">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/2.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/2.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid rounded-3 border border-3" />
                                                                         </div>
@@ -1738,7 +1738,7 @@
                                                                 <div class="col-xxl-4 col-lg-6">
                                                                     <div class="d-flex align-items-center gap-3">
                                                                         <div class="wd-100 rounded-3">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/3.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/3.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid rounded-3 border border-3" />
                                                                         </div>
@@ -1761,7 +1761,7 @@
                                                                 <div class="col-xxl-4 col-lg-6">
                                                                     <div class="d-flex align-items-center gap-3">
                                                                         <div class="wd-100 rounded-3">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/4.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/4.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid rounded-3 border border-3" />
                                                                         </div>
@@ -1784,7 +1784,7 @@
                                                                 <div class="col-xxl-4 col-lg-6">
                                                                     <div class="d-flex align-items-center gap-3">
                                                                         <div class="wd-100 rounded-3">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/5.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/5.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid rounded-3 border border-3" />
                                                                         </div>
@@ -1807,7 +1807,7 @@
                                                                 <div class="col-xxl-4 col-lg-6">
                                                                     <div class="d-flex align-items-center gap-3">
                                                                         <div class="wd-100 rounded-3">
-                                                                            <img src="{{asset_v('admin/assets/images/banner/6.jpg')}}"
+                                                                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/banner/6.jpg')}}"
                                                                                 alt=""
                                                                                 class="img-fluid rounded-3 border border-3" />
                                                                         </div>
@@ -1971,7 +1971,7 @@
                                     <div class="d-flex align-items-center justify-content-between mb-4">
                                         <div class="d-flex align-items-center gap-3">
                                             <div class="avatar-image rounded">
-                                                <img src="{{asset_v('admin/assets/images/avatar/1.png')}}" alt=""
+                                                <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/avatar/1.png')}}" alt=""
                                                     class="img-fluid" />
                                             </div>
                                             <div>
@@ -1987,7 +1987,7 @@
                                     <div class="d-flex align-items-center justify-content-between mb-4">
                                         <div class="d-flex align-items-center gap-3">
                                             <div class="avatar-image rounded">
-                                                <img src="{{asset_v('admin/assets/images/avatar/2.png')}}" alt=""
+                                                <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/avatar/2.png')}}" alt=""
                                                     class="img-fluid" />
                                             </div>
                                             <div>
@@ -2003,7 +2003,7 @@
                                     <div class="d-flex align-items-center justify-content-between mb-4">
                                         <div class="d-flex align-items-center gap-3">
                                             <div class="avatar-image rounded">
-                                                <img src="{{asset_v('admin/assets/images/avatar/3.png')}}" alt=""
+                                                <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/avatar/3.png')}}" alt=""
                                                     class="img-fluid" />
                                             </div>
                                             <div>
@@ -2019,7 +2019,7 @@
                                     <div class="d-flex align-items-center justify-content-between mb-4">
                                         <div class="d-flex align-items-center gap-3">
                                             <div class="avatar-image rounded">
-                                                <img src="{{asset_v('admin/assets/images/avatar/4.png')}}" alt=""
+                                                <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/avatar/4.png')}}" alt=""
                                                     class="img-fluid" />
                                             </div>
                                             <div>
@@ -2035,7 +2035,7 @@
                                     <div class="d-flex align-items-center justify-content-between mb-0">
                                         <div class="d-flex align-items-center gap-3">
                                             <div class="avatar-image rounded">
-                                                <img src="{{asset_v('admin/assets/images/avatar/5.png')}}" alt=""
+                                                <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/avatar/5.png')}}" alt=""
                                                     class="img-fluid" />
                                             </div>
                                             <div>
@@ -2056,7 +2056,7 @@
                                     <div class="d-flex align-items-center justify-content-between mb-4">
                                         <div class="d-flex align-items-center gap-3">
                                             <div class="avatar-image bg-gray-200 rounded">
-                                                <img src="{{asset_v('admin/assets/images/file-icons/css.png')}}" alt=""
+                                                <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/file-icons/css.png')}}" alt=""
                                                     class="img-fluid" />
                                             </div>
                                             <div>
@@ -2072,7 +2072,7 @@
                                     <div class="d-flex align-items-center justify-content-between mb-4">
                                         <div class="d-flex align-items-center gap-3">
                                             <div class="avatar-image bg-gray-200 rounded">
-                                                <img src="{{asset_v('admin/assets/images/file-icons/zip.png')}}" alt=""
+                                                <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/file-icons/zip.png')}}" alt=""
                                                     class="img-fluid" />
                                             </div>
                                             <div>
@@ -2088,7 +2088,7 @@
                                     <div class="d-flex align-items-center justify-content-between mb-0">
                                         <div class="d-flex align-items-center gap-3">
                                             <div class="avatar-image bg-gray-200 rounded">
-                                                <img src="{{asset_v('admin/assets/images/file-icons/pdf.png')}}" alt=""
+                                                <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/file-icons/pdf.png')}}" alt=""
                                                     class="img-fluid" />
                                             </div>
                                             <div>
@@ -2111,7 +2111,7 @@
                     <div class="dropdown nxl-h-item nxl-header-language d-none d-sm-flex">
                         <a href="javascript:void(0);" class="nxl-head-link me-0 nxl-language-link"
                             data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                            <img src="{{asset_v('admin/assets/vendors/img/flags/4x3/us.svg')}}" alt=""
+                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/vendors/img/flags/4x3/us.svg')}}" alt=""
                                 class="img-fluid wd-20" />
                         </a>
                         <div class="dropdown-menu dropdown-menu-end nxl-h-dropdown nxl-language-dropdown">
@@ -2131,7 +2131,7 @@
                                 <div class="row px-4 pt-3">
                                     <div class="col-sm-4 col-6 language_select">
                                         <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                            <div class="avatar-image avatar-sm"><img
+                                            <div class="avatar-image avatar-sm"><img loading="lazy" decoding="async"
                                                     src="{{asset_v('admin/assets/vendors/img/flags/1x1/sa.svg')}}" alt=""
                                                     class="img-fluid" /></div>
                                             <span>Arabic</span>
@@ -2139,7 +2139,7 @@
                                     </div>
                                     <div class="col-sm-4 col-6 language_select">
                                         <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                            <div class="avatar-image avatar-sm"><img
+                                            <div class="avatar-image avatar-sm"><img loading="lazy" decoding="async"
                                                     src="{{asset_v('admin/assets/vendors/img/flags/1x1/bd.svg')}}" alt=""
                                                     class="img-fluid" /></div>
                                             <span>Bengali</span>
@@ -2147,7 +2147,7 @@
                                     </div>
                                     <div class="col-sm-4 col-6 language_select">
                                         <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                            <div class="avatar-image avatar-sm"><img
+                                            <div class="avatar-image avatar-sm"><img loading="lazy" decoding="async"
                                                     src="{{asset_v('admin/assets/vendors/img/flags/1x1/ch.svg')}}" alt=""
                                                     class="img-fluid" /></div>
                                             <span>Chinese</span>
@@ -2155,7 +2155,7 @@
                                     </div>
                                     <div class="col-sm-4 col-6 language_select">
                                         <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                            <div class="avatar-image avatar-sm"><img
+                                            <div class="avatar-image avatar-sm"><img loading="lazy" decoding="async"
                                                     src="{{asset_v('admin/assets/vendors/img/flags/1x1/nl.svg')}}" alt=""
                                                     class="img-fluid" /></div>
                                             <span>Dutch</span>
@@ -2163,7 +2163,7 @@
                                     </div>
                                     <div class="col-sm-4 col-6 language_select active">
                                         <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                            <div class="avatar-image avatar-sm"><img
+                                            <div class="avatar-image avatar-sm"><img loading="lazy" decoding="async"
                                                     src="{{asset_v('admin/assets/vendors/img/flags/1x1/us.svg')}}" alt=""
                                                     class="img-fluid" /></div>
                                             <span>English</span>
@@ -2171,7 +2171,7 @@
                                     </div>
                                     <div class="col-sm-4 col-6 language_select">
                                         <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                            <div class="avatar-image avatar-sm"><img
+                                            <div class="avatar-image avatar-sm"><img loading="lazy" decoding="async"
                                                     src="{{asset_v('admin/assets/vendors/img/flags/1x1/fr.svg')}}" alt=""
                                                     class="img-fluid" /></div>
                                             <span>French</span>
@@ -2179,7 +2179,7 @@
                                     </div>
                                     <div class="col-sm-4 col-6 language_select">
                                         <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                            <div class="avatar-image avatar-sm"><img
+                                            <div class="avatar-image avatar-sm"><img loading="lazy" decoding="async"
                                                     src="{{asset_v('admin/assets/vendors/img/flags/1x1/de.svg')}}" alt=""
                                                     class="img-fluid" /></div>
                                             <span>German</span>
@@ -2187,7 +2187,7 @@
                                     </div>
                                     <div class="col-sm-4 col-6 language_select">
                                         <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                            <div class="avatar-image avatar-sm"><img
+                                            <div class="avatar-image avatar-sm"><img loading="lazy" decoding="async"
                                                     src="{{asset_v('admin/assets/vendors/img/flags/1x1/in.svg')}}" alt=""
                                                     class="img-fluid" /></div>
                                             <span>Hindi</span>
@@ -2195,7 +2195,7 @@
                                     </div>
                                     <div class="col-sm-4 col-6 language_select">
                                         <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                            <div class="avatar-image avatar-sm"><img
+                                            <div class="avatar-image avatar-sm"><img loading="lazy" decoding="async"
                                                     src="{{asset_v('admin/assets/vendors/img/flags/1x1/ru.svg')}}" alt=""
                                                     class="img-fluid" /></div>
                                             <span>Russian</span>
@@ -2203,7 +2203,7 @@
                                     </div>
                                     <div class="col-sm-4 col-6 language_select">
                                         <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                            <div class="avatar-image avatar-sm"><img
+                                            <div class="avatar-image avatar-sm"><img loading="lazy" decoding="async"
                                                     src="{{asset_v('admin/assets/vendors/img/flags/1x1/es.svg')}}" alt=""
                                                     class="img-fluid" /></div>
                                             <span>Spanish</span>
@@ -2211,7 +2211,7 @@
                                     </div>
                                     <div class="col-sm-4 col-6 language_select">
                                         <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                            <div class="avatar-image avatar-sm"><img
+                                            <div class="avatar-image avatar-sm"><img loading="lazy" decoding="async"
                                                     src="{{asset_v('admin/assets/vendors/img/flags/1x1/tr.svg')}}" alt=""
                                                     class="img-fluid" /></div>
                                             <span>Turkish</span>
@@ -2219,7 +2219,7 @@
                                     </div>
                                     <div class="col-sm-4 col-6 language_select">
                                         <a href="javascript:void(0);" class="d-flex align-items-center gap-2">
-                                            <div class="avatar-image avatar-sm"><img
+                                            <div class="avatar-image avatar-sm"><img loading="lazy" decoding="async"
                                                     src="{{asset_v('admin/assets/vendors/img/flags/1x1/pk.svg')}}" alt=""
                                                     class="img-fluid" /></div>
                                             <span>Urdo</span>
@@ -2290,7 +2290,7 @@
                                 </a>
                             </div>
                             <div class="notifications-item">
-                                <img src="{{asset_v('admin/assets/images/avatar/2.png')}}" alt=""
+                                <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/avatar/2.png')}}" alt=""
                                     class="rounded me-3 border" />
                                 <div class="notifications-desc">
                                     <a href="javascript:void(0);" class="font-body text-truncate-2-line"> <span
@@ -2312,7 +2312,7 @@
                                 </div>
                             </div>
                             <div class="notifications-item">
-                                <img src="{{asset_v('admin/assets/images/avatar/3.png')}}" alt=""
+                                <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/avatar/3.png')}}" alt=""
                                     class="rounded me-3 border" />
                                 <div class="notifications-desc">
                                     <a href="javascript:void(0);" class="font-body text-truncate-2-line"> <span
@@ -2334,7 +2334,7 @@
                                 </div>
                             </div>
                             <div class="notifications-item">
-                                <img src="{{asset_v('admin/assets/images/avatar/4.png')}}" alt=""
+                                <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/avatar/4.png')}}" alt=""
                                     class="rounded me-3 border" />
                                 <div class="notifications-desc">
                                     <a href="javascript:void(0);" class="font-body text-truncate-2-line"> <span
@@ -2364,13 +2364,13 @@
                     <div class="dropdown nxl-h-item">
                         <a href="javascript:void(0);" data-bs-toggle="dropdown" role="button"
                             data-bs-auto-close="outside">
-                            <img src="{{asset_v('admin/assets/images/avatar/1.png')}}" alt="user-image"
+                            <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/avatar/1.png')}}" alt="user-image"
                                 class="img-fluid user-avtar me-0" />
                         </a>
                         <div class="dropdown-menu dropdown-menu-end nxl-h-dropdown nxl-user-dropdown">
                             <div class="dropdown-header">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{asset_v('admin/assets/images/avatar/1.png')}}" alt="user-image"
+                                    <img loading="lazy" decoding="async" src="{{asset_v('admin/assets/images/avatar/1.png')}}" alt="user-image"
                                         class="img-fluid user-avtar" />
                                     <div>
                                         <h6 class="text-dark mb-0">Alexandra Della <span

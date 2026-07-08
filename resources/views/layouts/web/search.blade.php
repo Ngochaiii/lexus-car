@@ -25,7 +25,7 @@
                                 autocomplete="off">
                             <div class="search-live-results" id="liveResults">
                                 <div class="slr-item" onclick="goDetail()">
-                                    <img class="slr-thumb"
+                                    <img loading="lazy" decoding="async" class="slr-thumb"
                                         src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=100"
                                         alt>
                                     <div><div class="slr-name">Lexus RX
@@ -34,7 +34,7 @@
                                             SPORT PERFORMANCE</div></div>
                                 </div>
                                 <div class="slr-item">
-                                    <img class="slr-thumb"
+                                    <img loading="lazy" decoding="async" class="slr-thumb"
                                         src="https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=100"
                                         alt>
                                     <div><div class="slr-name">Lexus NX
@@ -43,7 +43,7 @@
                                             SPORT Handling AWD</div></div>
                                 </div>
                                 <div class="slr-item">
-                                    <img class="slr-thumb"
+                                    <img loading="lazy" decoding="async" class="slr-thumb"
                                         src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=100"
                                         alt>
                                     <div><div class="slr-name">Lexus ES

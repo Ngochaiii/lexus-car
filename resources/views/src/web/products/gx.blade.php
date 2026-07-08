@@ -22,7 +22,7 @@
                                 <button class="gallery-action-btn" title="Chia sẻ"><i class="bi bi-share"></i></button>
                             </div>
                             <div class="gallery-main">
-                                <img src="{{ asset_v('web/assets/images/gx/mau-den.webp') }}"
+                                <img fetchpriority="high" loading="eager" decoding="async" src="{{ asset_v('web/assets/images/gx/mau-den.webp') }}"
                                     alt="Lexus GX 550" id="mainImage">
                             </div>
                             <button class="gallery-nav prev" onclick="changeImage(-1)"><i
@@ -33,13 +33,13 @@
                             </div>
                         </div>
                         <div class="gallery-thumbs">
-                            <div class="gallery-thumb active" onclick="setImage(0,this)"><img
+                            <div class="gallery-thumb active" onclick="setImage(0,this)"><img loading="lazy" decoding="async"
                                     src="{{ asset_v('web/assets/images/gx/mau-den.webp') }}" alt=""></div>
-                            <div class="gallery-thumb" onclick="setImage(1,this)"><img
+                            <div class="gallery-thumb" onclick="setImage(1,this)"><img loading="lazy" decoding="async"
                                     src="{{ asset_v('web/assets/images/gx/mau-trang.jpg') }}" alt=""></div>
-                            <div class="gallery-thumb" onclick="setImage(2,this)"><img
+                            <div class="gallery-thumb" onclick="setImage(2,this)"><img loading="lazy" decoding="async"
                                     src="{{ asset_v('web/assets/images/gx/mau-xam.webp') }}" alt=""></div>
-                            <div class="gallery-thumb" onclick="setImage(3,this)"><img
+                            <div class="gallery-thumb" onclick="setImage(3,this)"><img loading="lazy" decoding="async"
                                     src="{{ asset_v('web/assets/images/gx/mau-xanh.jpg') }}" alt=""></div>
                         </div>
                     </div>
@@ -198,7 +198,7 @@
         <div class="container">
             <div class="intro-grid">
                 <div class="intro-img-wrap">
-                    <img src="{{ asset_v('web/assets/images/gx/intro.jpg') }}"
+                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/intro.jpg') }}"
                         alt="Lexus GX 550 — SUV địa hình hạng sang biểu tượng">
                     <div class="intro-year-badge">
                         <div class="iyb-year">2002</div>
@@ -253,7 +253,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset_v('web/assets/images/gx/mau-den.webp') }}" alt="Màu đen">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/mau-den.webp') }}" alt="Màu đen">
                             </div>
                             <div class="ti-abbr">Màu đen — Caviar Black</div>
                         </div>
@@ -261,7 +261,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset_v('web/assets/images/gx/mau-trang.jpg') }}" alt="Màu trắng">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/mau-trang.jpg') }}" alt="Màu trắng">
                             </div>
                             <div class="ti-abbr">Màu trắng — Sonic White</div>
                         </div>
@@ -269,7 +269,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset_v('web/assets/images/gx/mau-xam.webp') }}" alt="Màu xám">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/mau-xam.webp') }}" alt="Màu xám">
                             </div>
                             <div class="ti-abbr">Màu xám — Sonic Titanium</div>
                         </div>
@@ -277,7 +277,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset_v('web/assets/images/gx/mau-xanh.jpg') }}" alt="Màu xanh">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/mau-xanh.jpg') }}" alt="Màu xanh">
                             </div>
                             <div class="ti-abbr">Màu xanh — Terrane kaki</div>
                         </div>
@@ -292,7 +292,7 @@
                     và địa hình off-road.</p>
                 <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset_v('web/assets/images/gx/mam1.webp') }}" alt="Mâm GX 550 Luxury">
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/mam1.webp') }}" alt="Mâm GX 550 Luxury">
                         <div class="item-card-label">Mâm hợp kim nhôm — Phiên bản Luxury<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">GX 550 Luxury</span></div>
                     </div>
@@ -313,17 +313,17 @@
                     mái tối đa ngay cả trong hành trình địa hình dài.</p>
                 <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset_v('web/assets/images/gx/seat-1.png') }}" alt="Ghế nâu">
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/seat-1.png') }}" alt="Ghế nâu">
                         <div class="item-card-label">Da màu nâu Flaxen<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản Luxury</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset_v('web/assets/images/gx/seat-2.png') }}" alt="Ghế đen">
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/seat-2.png') }}" alt="Ghế đen">
                         <div class="item-card-label">Da màu đen Black<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Tất cả phiên bản</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset_v('web/assets/images/gx/seat-3.png') }}" alt="Ghế bò Overtrail">
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/seat-3.png') }}" alt="Ghế bò Overtrail">
                         <div class="item-card-label">Da tổng hợp bền bỉ<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Overtrail — kháng bẩn</span></div>
                     </div>
@@ -336,7 +336,7 @@
                     trí cánh cửa và nội thất đa dạng, tạo nên bầu không khí cabin sang trọng và cá tính theo từng phiên bản.</p>
                 <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset_v('web/assets/images/gx/noithat1.jpg') }}" alt="Ốp gỗ Luxury">
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/noithat1.jpg') }}" alt="Ốp gỗ Luxury">
                         <div class="item-card-label">Ốp gỗ sang trọng<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản GX 550 Luxury</span></div>
                     </div>
@@ -361,7 +361,7 @@
             <div class="variant-pane active" id="vt-engine">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{ asset_v('web/assets/images/gx/dongco.webp') }}" alt="Động cơ GX 550 3.5L V6">
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/dongco.webp') }}" alt="Động cơ GX 550 3.5L V6">
                         <div class="powertrain-badge">3.5L V6</div>
                     </div>
                     <div class="powertrain-content">
@@ -403,7 +403,7 @@
             <div class="variant-pane" id="vt-transmission">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{ asset_v('web/assets/images/gx/hop-so.jpg') }}" alt="Hệ dẫn động 4 bánh GX 550">
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/hop-so.jpg') }}" alt="Hệ dẫn động 4 bánh GX 550">
                         <div class="powertrain-badge">10AT 4WD</div>
                     </div>
                     <div class="powertrain-content">
@@ -451,13 +451,13 @@
             <div class="chassis-grid">
                 <div class="chassis-images">
                     <div class="chassis-img-card">
-                        <img src="{{ asset_v('web/assets/images/gx/khung-gam.webp') }}"
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/khung-gam.webp') }}"
                             alt="Khung gầm Body-on-frame Lexus GX 550">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Khung gầm rời Body-on-frame GA-F</div>
                     </div>
                     <div class="chassis-img-card">
-                        <img src="{{ asset_v('web/assets/images/gx/treo-cau-cung.jpg') }}"
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/treo-cau-cung.jpg') }}"
                             alt="Hệ thống treo cầu cứng GX 550">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Hệ thống treo cầu cứng liên kết 4 điểm</div>
@@ -470,7 +470,7 @@
 
                 <div class="chassis-diagram">
                     <div class="chassis-diagram-img">
-                        <img src="{{ asset_v('web/assets/images/gx/khung-gam.webp') }}"
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/khung-gam.webp') }}"
                             alt="Hệ thống khung gầm Lexus GX 550">
                     </div>
                     <div class="chassis-info-box mt-3">
@@ -505,7 +505,7 @@
             <div class="design-pane active" id="dp-exterior">
                 <div class="design-row">
                     <div class="design-card">
-                        <img src="{{asset_v('web/assets/images/gx/mat-truoc.webp')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/gx/mat-truoc.webp')}}"
                             alt="Ngoại thất Lexus GX 550 ">
                         <div class="design-caption">
                             <h4>Nhìn Chính Diện — Mạnh Mẽ & Khí Chất</h4>
@@ -513,7 +513,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset_v('web/assets/images/gx/mat-sau.jpg')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/gx/mat-sau.jpg')}}"
                             alt="Ngoại thất Lexus GX 550 Luxury">
                         <div class="design-caption">
                             <h4>Đuôi Xe — Thanh Lịch & Cân Đối</h4>
@@ -521,7 +521,7 @@
                         </div>
                     </div>
                     <div class="design-card wide">
-                        <img src="{{asset_v('web/assets/images/gx/tong-quat.webp')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/gx/tong-quat.webp')}}"
                             alt="Góc nhìn tổng quan Lexus GX 550">
                         <div class="design-caption">
                             <h4>Hình Ảnh Tổng Quan — SUV Off-Road Đích Thực</h4>
@@ -543,7 +543,7 @@
             <div class="design-pane" id="dp-interior">
                 <div class="design-row">
                     <div class="design-card wide">
-                        <img src="{{asset_v('web/assets/images/gx/noi-that-1.jpg')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/gx/noi-that-1.jpg')}}"
                             alt="Nội thất khoang cabin Lexus GX 550">
                         <div class="design-caption">
                             <h4>Nội Thất Khoang Cabin — Sang Trọng & Tiên Tiến</h4>
@@ -551,7 +551,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset_v('web/assets/images/gx/noi-that-7cho.webp')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/gx/noi-that-7cho.webp')}}"
                             alt="Nội thất 7 chỗ Lexus GX 550">
                         <div class="design-caption">
                             <h4>Cabin 7 Chỗ — Không Gian Rộng Rãi</h4>
@@ -573,7 +573,7 @@
             <div class="design-pane" id="dp-overtrail">
                 <div class="design-row">
                     <div class="design-card wide">
-                        <img src="{{asset_v('web/assets/images/gx/overtrail.webp')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/gx/overtrail.webp')}}"
                             alt="GX 550 Overtrail địa hình">
                         <div class="design-caption">
                             <h4>GX 550 Overtrail — Chinh Phục Mọi Địa Hình</h4>
@@ -581,7 +581,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset_v('web/assets/images/gx/overtrail-mat-truoc.webp')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/gx/overtrail-mat-truoc.webp')}}"
                             alt="Cản trước Overtrail GX 550">
                         <div class="design-caption">
                             <h4>Cản Trước — Góc Tiếp Cận Tối Ưu</h4>
@@ -589,7 +589,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset_v('web/assets/images/gx/khoang-hanh-ly.jpg')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/gx/khoang-hanh-ly.jpg')}}"
                             alt="Khoang hành lý GX 550 Overtrail">
                         <div class="design-caption">
                             <h4>Khoang Hành Lý — Thực Dụng & Rộng Rãi</h4>
@@ -689,7 +689,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset_v('web/assets/images/gx/PCS.webp') }}" alt="PCS">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/PCS.webp') }}" alt="PCS">
                                 </div>
                                 <div class="ti-name">Hệ Thống An Toàn Tiền Va Chạm</div>
                                 <div class="ti-abbr">PCS — Camera đơn + Ra-đa milimet</div>
@@ -702,7 +702,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset_v('web/assets/images/rx/RRCC.webp') }}" alt="DRCC">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/RRCC.webp') }}" alt="DRCC">
                                 </div>
                                 <div class="ti-name">Điều Khiển Hành Trình Chủ Động</div>
                                 <div class="ti-abbr">DRCC — Ở mọi tốc độ</div>
@@ -715,7 +715,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset_v('web/assets/images/rx/LTA.webp') }}" alt="LTA">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/LTA.webp') }}" alt="LTA">
                                 </div>
                                 <div class="ti-name">Hỗ Trợ Theo Dõi Làn Đường</div>
                                 <div class="ti-abbr">LTA + LDA — Giữ trung tâm làn</div>
@@ -728,7 +728,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset_v('web/assets/images/gx/AHS.webp') }}" alt="AHB">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/AHS.webp') }}" alt="AHB">
                                 </div>
                                 <div class="ti-name">Đèn Pha — Cốt Tự Động</div>
                                 <div class="ti-abbr">AHB — Automatic High Beam</div>
@@ -741,7 +741,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset_v('web/assets/images/rx/BSM.webp') }}" alt="BSM">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/BSM.webp') }}" alt="BSM">
                                 </div>
                                 <div class="ti-name">Hệ Thống Cảnh Báo Điểm Mù</div>
                                 <div class="ti-abbr">BSM + RCTA — Phương tiện cắt ngang khi lùi</div>
@@ -754,7 +754,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset_v('web/assets/images/rx/SEA.webp') }}" alt="SEA">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/SEA.webp') }}" alt="SEA">
                                 </div>
                                 <div class="ti-name">Hệ Thống Hỗ Trợ Rời Xe An Toàn</div>
                                 <div class="ti-abbr">SEA — Safe Exit Assist</div>
@@ -767,7 +767,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset_v('web/assets/images/rx/RRCC.webp') }}" alt="Dừng khẩn cấp">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/RRCC.webp') }}" alt="Dừng khẩn cấp">
                                 </div>
                                 <div class="ti-name">Hỗ Trợ Dừng Lái Xe Khẩn Cấp</div>
                                 <div class="ti-abbr">Emergency Driving Stop System</div>

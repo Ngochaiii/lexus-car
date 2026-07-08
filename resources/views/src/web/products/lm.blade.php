@@ -22,7 +22,7 @@
                                 <button class="gallery-action-btn" title="Chia sẻ"><i class="bi bi-share"></i></button>
                             </div>
                             <div class="gallery-main">
-                                <img src="{{ asset_v('web/assets/images/lm/anh-3.jpg') }}"
+                                <img fetchpriority="high" loading="eager" decoding="async" src="{{ asset_v('web/assets/images/lm/anh-3.jpg') }}"
                                     alt="Lexus LM 500h" id="mainImage">
                             </div>
                             <button class="gallery-nav prev" onclick="changeImage(-1)"><i
@@ -33,13 +33,13 @@
                             </div>
                         </div>
                         <div class="gallery-thumbs">
-                            <div class="gallery-thumb active" onclick="setImage(0,this)"><img
+                            <div class="gallery-thumb active" onclick="setImage(0,this)"><img loading="lazy" decoding="async"
                                     src="{{ asset_v('web/assets/images/lm/anh-1.jpg') }}" alt=""></div>
-                            <div class="gallery-thumb" onclick="setImage(1,this)"><img
+                            <div class="gallery-thumb" onclick="setImage(1,this)"><img loading="lazy" decoding="async"
                                     src="{{ asset_v('web/assets/images/lm/anh-2.jpg') }}" alt=""></div>
-                            <div class="gallery-thumb" onclick="setImage(2,this)"><img
+                            <div class="gallery-thumb" onclick="setImage(2,this)"><img loading="lazy" decoding="async"
                                     src="{{ asset_v('web/assets/images/lm/anh-3.jpg') }}" alt=""></div>
-                            <div class="gallery-thumb" onclick="setImage(3,this)"><img
+                            <div class="gallery-thumb" onclick="setImage(3,this)"><img loading="lazy" decoding="async"
                                     src="{{ asset_v('web/assets/images/lm/anh-4.jpg') }}" alt=""></div>
 
                         </div>
@@ -200,7 +200,7 @@
         <div class="container">
             <div class="intro-grid">
                 <div class="intro-img-wrap">
-                    <img src="{{ asset_v('web/assets/images/lm/intro.jpg') }}"
+                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/intro.jpg') }}"
                         alt="Lexus LM thế hệ thứ 2 — MPV hạng sang đỉnh cao">
                     <div class="intro-year-badge">
                         <div class="iyb-year">2</div>
@@ -254,7 +254,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset_v('web/assets/images/lm/mau-den.jpg') }}" alt="Màu đen">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/mau-den.jpg') }}" alt="Màu đen">
                             </div>
                             <div class="ti-abbr">Đen</div>
                         </div>
@@ -262,7 +262,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset_v('web/assets/images/lm/mau-trang.jpg') }}" alt="Màu trắng">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/mau-trang.jpg') }}" alt="Màu trắng">
                             </div>
                             <div class="ti-abbr">Trắng</div>
                         </div>
@@ -270,7 +270,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset_v('web/assets/images/lm/mau-xam.jpg') }}" alt="Màu xám">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/mau-xam.jpg') }}" alt="Màu xám">
                             </div>
                             <div class="ti-abbr">Bạc</div>
                         </div>
@@ -278,7 +278,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset_v('web/assets/images/lm/mau-do.jpg') }}" alt="Màu đỏ">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/mau-do.jpg') }}" alt="Màu đỏ">
                             </div>
                             <div class="ti-abbr">Đỏ</div>
                         </div>
@@ -292,12 +292,12 @@
                     cung cấp nhiều tùy chọn thiết kế bánh xe phù hợp với từng phiên bản và phong cách cá nhân.</p>
                 <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset_v('web/assets/images/lm/banh-xe-1.jpg') }}" alt="Bánh xe phiên bản 4 chỗ">
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/banh-xe-1.jpg') }}" alt="Bánh xe phiên bản 4 chỗ">
                         <div class="item-card-label">Bánh xe hợp kim nhôm 19 inch<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Dành cho LM 500h</span></div>
                     </div>
                     {{-- <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset_v('web/assets/images/lm/banh-xe-2.jpg') }}" alt="Bánh xe phiên bản 6 chỗ">
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/banh-xe-2.jpg') }}" alt="Bánh xe phiên bản 6 chỗ">
                         <div class="item-card-label">Bánh xe hợp kim nhôm <br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản LM 500h 6 chỗ</span></div>
                     </div> --}}
@@ -309,21 +309,21 @@
                 <p style="font-size:0.92rem;color:var(--lexus-text-muted);max-width:600px;margin-bottom:32px;">Nội thất LM là sự hội tụ giữa không gian thoải mái của phòng khách và sự yên tĩnh tại văn phòng. Khách hàng có thể lựa chọn phiên bản bốn hoặc sáu chỗ tùy theo nhu cầu cá nhân.</p>
                 <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset_v('web/assets/images/lm/noi-that-1.jpg') }}" alt="Nội thất">
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/noi-that-1.jpg') }}" alt="Nội thất">
                         <div class="item-card-label">Nội thất<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Tổng quan cabin</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset_v('web/assets/images/lm/noi-that-hang-sau.jpg') }}" alt="Nội thất hàng ghế sau">
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/noi-that-hang-sau.jpg') }}" alt="Nội thất hàng ghế sau">
                         <div class="item-card-label">Nội thất hàng ghế sau</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset_v('web/assets/images/lm/noi-that-4cho.jpg') }}" alt="Nội thất phiên bản 4 chỗ">
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/noi-that-4cho.jpg') }}" alt="Nội thất phiên bản 4 chỗ">
                         <div class="item-card-label">Phiên bản 4 chỗ<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Tập trung tiện ích hành khách VIP</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset_v('web/assets/images/lm/noi-that-6-cho.jpg') }}" alt="Nội thất phiên bản 6 chỗ">
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/noi-that-6-cho.jpg') }}" alt="Nội thất phiên bản 6 chỗ">
                         <div class="item-card-label">Phiên bản 6 chỗ<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phục vụ doanh nghiệp & gia đình</span></div>
                     </div>
@@ -347,7 +347,7 @@
             <div class="variant-pane active" id="vt-24t">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{ asset_v('web/assets/images/lm/dong-co.jpg') }}" alt="Hệ dẫn động 2.4T-HEV DIRECT4">
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/dong-co.jpg') }}" alt="Hệ dẫn động 2.4T-HEV DIRECT4">
                         <div class="powertrain-badge">2.4T-HEV DIRECT4</div>
                     </div>
                     <div class="powertrain-content">
@@ -397,13 +397,13 @@
             <div class="chassis-grid">
                 <div class="chassis-images">
                     <div class="chassis-img-card">
-                        <img src="{{ asset_v('web/assets/images/lm/treo-truoc.jpg') }}"
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/treo-truoc.jpg') }}"
                             alt="Hệ thống treo trước MacPherson Lexus LM">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Hệ thống treo trước — MacPherson</div>
                     </div>
                     <div class="chassis-img-card">
-                        <img src="{{ asset_v('web/assets/images/lm/treo-sau.jpg') }}"
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/treo-sau.jpg') }}"
                             alt="Hệ thống treo sau tay đòn kép Lexus LM">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Hệ thống treo sau — Tay đòn kép</div>
@@ -416,7 +416,7 @@
 
                 <div class="chassis-diagram">
                     <div class="chassis-diagram-img">
-                        <img src="{{ asset_v('web/assets/images/lm/khung-gam.jpg') }}"
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/khung-gam.jpg') }}"
                             alt="Cấu trúc khung gầm Lexus LM">
                     </div>
                     <div class="chassis-info-box mt-3">
@@ -447,7 +447,7 @@
             <div class="design-pane active" id="dp-exterior">
                 <div class="design-row">
                     <div class="design-card">
-                        <img src="{{asset_v('web/assets/images/lm/mat-truoc.jpg')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/lm/mat-truoc.jpg')}}"
                             alt="Góc chính diện phía trước Lexus LM">
                         <div class="design-caption">
                             <h4>Mặt trước — Cấu trúc liền mạch thế hệ mới</h4>
@@ -455,7 +455,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset_v('web/assets/images/lm/mat-sau.jpg')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/lm/mat-sau.jpg')}}"
                             alt="Góc chính diện phía sau Lexus LM">
                         <div class="design-caption">
                             <h4>Đuôi xe tinh tế — Thiết kế hướng đến hàng ghế sau</h4>
@@ -463,7 +463,7 @@
                         </div>
                     </div>
                     <div class="design-card wide">
-                        <img src="{{asset_v('web/assets/images/lm/mat-ben.jpg')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/lm/mat-ben.jpg')}}"
                             alt="Mặt bên xe Lexus LM">
                         <div class="design-caption">
                             <h4>Thân xe — Khí động học tối ưu</h4>
@@ -484,7 +484,7 @@
             <div class="design-pane" id="dp-interior">
                 <div class="design-row">
                     <div class="design-card wide">
-                        <img src="{{asset_v('web/assets/images/lm/noi-that-cabin.jpg')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/lm/noi-that-cabin.jpg')}}"
                             alt="Nội thất Lexus LM — Phòng khách di động">
                         <div class="design-caption">
                             <h4>Phòng khách di động — Văn phòng riêng tư</h4>
@@ -492,7 +492,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset_v('web/assets/images/lm/noi-that-4cho.jpg')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/lm/noi-that-4cho.jpg')}}"
                             alt="Nội thất phiên bản 4 chỗ Lexus LM">
                         <div class="design-caption">
                             <h4>Phiên bản 4 chỗ — VIP Executive</h4>
@@ -500,7 +500,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset_v('web/assets/images/lm/noi-that-6-cho.jpg')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/lm/noi-that-6-cho.jpg')}}"
                             alt="Nội thất phiên bản 6 chỗ Lexus LM">
                         <div class="design-caption">
                             <h4>Phiên bản 6 chỗ — Gia đình & Doanh nghiệp</h4>
@@ -540,7 +540,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset_v('web/assets/images/lm/pcs.jpg') }}" alt="PCS">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/pcs.jpg') }}" alt="PCS">
                                 </div>
                                 <div class="ti-name">Hệ Thống Cảnh Báo Tiền Va Chạm</div>
                                 <div class="ti-abbr">PCS — Pre-Collision System</div>
@@ -552,7 +552,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset_v('web/assets/images/lm/drcc.jpg') }}" alt="DRCC">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/drcc.jpg') }}" alt="DRCC">
                                 </div>
                                 <div class="ti-name">Điều Khiển Hành Trình Thích Ứng</div>
                                 <div class="ti-abbr">DRCC — Dynamic Radar Cruise Control</div>
@@ -564,7 +564,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset_v('web/assets/images/lm/lda.jpg') }}" alt="LDA">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/lda.jpg') }}" alt="LDA">
                                 </div>
                                 <div class="ti-name">Cảnh Báo Lệch Làn Đường</div>
                                 <div class="ti-abbr">LDA — Lane Departure Alert</div>
@@ -576,7 +576,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset_v('web/assets/images/lm/lta.jpg') }}" alt="LTA">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/lta.jpg') }}" alt="LTA">
                                 </div>
                                 <div class="ti-name">Hỗ Trợ Theo Dõi Làn Đường</div>
                                 <div class="ti-abbr">LTA — Lane Tracing Assist</div>
@@ -588,7 +588,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset_v('web/assets/images/lm/ahs.jpg') }}" alt="AHS">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/ahs.jpg') }}" alt="AHS">
                                 </div>
                                 <div class="ti-name">Đèn Pha Thích Ứng</div>
                                 <div class="ti-abbr">AHS — Adaptive High-beam System</div>
@@ -600,7 +600,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset_v('web/assets/images/lm/sea.jpg') }}" alt="SEA">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/sea.jpg') }}" alt="SEA">
                                 </div>
                                 <div class="ti-name">Hỗ Trợ Ra Khỏi Xe An Toàn</div>
                                 <div class="ti-abbr">SEA — Safe Exit Assist</div>
@@ -612,7 +612,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset_v('web/assets/images/lm/bsm.jpg') }}" alt="BSM">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/bsm.jpg') }}" alt="BSM">
                                 </div>
                                 <div class="ti-name">Cảnh Báo Điểm Mù</div>
                                 <div class="ti-abbr">BSM — Blind Spot Monitor</div>
@@ -624,7 +624,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset_v('web/assets/images/lm/teammate.jpg') }}" alt="Lexus Teammate">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lm/teammate.jpg') }}" alt="Lexus Teammate">
                                 </div>
                                 <div class="ti-name">Hỗ Trợ Đỗ Xe Thông Minh</div>
                                 <div class="ti-abbr">Lexus Teammate — Advanced Parking</div>

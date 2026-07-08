@@ -131,7 +131,7 @@
                                 <label class="form-label">OG Image (1200×630 khuyến nghị)</label>
                                 @if ($post->og_image)
                                     <div class="mb-2">
-                                        <img src="{{ asset('storage/' . $post->og_image) }}" alt=""
+                                        <img loading="lazy" decoding="async" src="{{ asset('storage/' . $post->og_image) }}" alt=""
                                              style="max-width:300px;border-radius:6px">
                                         <div class="form-check mt-1">
                                             <input type="checkbox" name="remove_og_image" value="1" id="rm-og" class="form-check-input">
@@ -183,7 +183,7 @@
                 <div class="card-header"><strong>Ảnh đại diện</strong></div>
                 <div class="card-body">
                     @if ($post->featured_image)
-                        <img src="{{ asset('storage/' . $post->featured_image) }}" alt=""
+                        <img loading="lazy" decoding="async" src="{{ asset('storage/' . $post->featured_image) }}" alt=""
                              class="img-fluid mb-2" style="border-radius:6px">
                         <div class="form-check mb-2">
                             <input type="checkbox" name="remove_featured_image" value="1" id="rm-feat" class="form-check-input">

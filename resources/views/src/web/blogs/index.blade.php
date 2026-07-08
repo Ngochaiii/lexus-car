@@ -54,7 +54,7 @@
                     <!-- FEATURED POST -->
                     <div class="featured-post anim">
                         <div class="fp-img">
-                            <img src="{{ $featured->featured_image ? asset('storage/'.$featured->featured_image) : $defaultImg }}"
+                            <img loading="lazy" decoding="async" src="{{ $featured->featured_image ? asset('storage/'.$featured->featured_image) : $defaultImg }}"
                                  alt="{{ $featured->title }}">
                             <div class="fp-overlay">
                                 <span class="fp-badge"><i class="bi bi-star-fill"></i> Nổi bật</span>
@@ -84,7 +84,7 @@
                         <div class="col-md-6 blog-item anim anim-d{{ ($loop->index % 5) + 1 }}">
                             <div class="blog-card">
                                 <div class="bc-img">
-                                    <img src="{{ $post->featured_image ? asset('storage/'.$post->featured_image) : $defaultImg }}"
+                                    <img loading="lazy" decoding="async" src="{{ $post->featured_image ? asset('storage/'.$post->featured_image) : $defaultImg }}"
                                          alt="{{ $post->title }}">
                                     @if ($post->tags->first())
                                         <span class="bc-tag">{{ $post->tags->first()->name }}</span>
@@ -145,7 +145,7 @@
                     @forelse ($posts->take(4) as $rp)
                         <div class="recent-post">
                             <div class="rp-img">
-                                <img src="{{ $rp->featured_image ? asset('storage/'.$rp->featured_image) : $defaultImg }}"
+                                <img loading="lazy" decoding="async" src="{{ $rp->featured_image ? asset('storage/'.$rp->featured_image) : $defaultImg }}"
                                      alt="{{ $rp->title }}">
                             </div>
                             <div>

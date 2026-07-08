@@ -61,7 +61,7 @@
 
                 <div class="card-body">
                     @if ($post->featured_image)
-                        <img src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title }}"
+                        <img loading="lazy" decoding="async" src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title }}"
                              class="img-fluid mb-3" style="border-radius:8px">
                     @endif
 
