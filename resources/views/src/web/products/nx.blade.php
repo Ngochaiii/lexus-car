@@ -22,7 +22,7 @@
                                 <button class="gallery-action-btn" title="Chia sẻ"><i class="bi bi-share"></i></button>
                             </div>
                             <div class="gallery-main">
-                                <img src="{{ asset('web/assets/images/nx/anh-1.jpg') }}"
+                                <img src="{{ asset_v('web/assets/images/nx/anh-1.jpg') }}"
                                     alt="Lexus NX 350h F SPORT" id="mainImage">
                             </div>
                             <button class="gallery-nav prev" onclick="changeImage(-1)"><i
@@ -34,13 +34,13 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img
-                                    src="{{ asset('web/assets/images/nx/anh-1.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/nx/anh-1.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img
-                                    src="{{ asset('web/assets/images/nx/anh-2.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/nx/anh-2.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img
-                                    src="{{ asset('web/assets/images/nx/anh-3.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/nx/anh-3.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img
-                                    src="{{ asset('web/assets/images/nx/anh-4.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/nx/anh-4.jpg') }}" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -203,7 +203,7 @@
         <div class="container">
             <div class="intro-grid">
                 <div class="intro-img-wrap">
-                    <img src="{{ asset('web/assets/images/nx/tong-quan.jpg') }}"
+                    <img src="{{ asset_v('web/assets/images/nx/tong-quan.jpg') }}"
                         alt="Lexus NX — Crossover hạng sang thế hệ mới">
                     <div class="intro-year-badge">
                         <div class="iyb-year">2014</div>
@@ -267,7 +267,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/nx/mau-den.jpg') }}" alt="Màu đen">
+                                <img src="{{ asset_v('web/assets/images/nx/mau-den.jpg') }}" alt="Màu đen">
                             </div>
                             <div class="ti-abbr">Màu đen</div>
                         </div>
@@ -275,7 +275,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/nx/mau-trang.jpg') }}" alt="Màu trắng">
+                                <img src="{{ asset_v('web/assets/images/nx/mau-trang.jpg') }}" alt="Màu trắng">
                             </div>
                             <div class="ti-abbr">Màu trắng</div>
                         </div>
@@ -283,7 +283,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/nx/mau-xam.jpg') }}" alt="Màu xám">
+                                <img src="{{ asset_v('web/assets/images/nx/mau-xam.jpg') }}" alt="Màu xám">
                             </div>
                             <div class="ti-abbr">Màu xám</div>
                         </div>
@@ -291,7 +291,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/nx/mau-do.jpg') }}" alt="Màu đỏ">
+                                <img src="{{ asset_v('web/assets/images/nx/mau-do.jpg') }}" alt="Màu đỏ">
                             </div>
                             <div class="ti-abbr">Màu đỏ</div>
                         </div>
@@ -299,7 +299,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/nx/mau-xanh-reu.jpg') }}" alt="Xanh rêu">
+                                <img src="{{ asset_v('web/assets/images/nx/mau-xanh-reu.jpg') }}" alt="Xanh rêu">
                             </div>
                             <div class="ti-abbr">Xanh rêu</div>
                         </div>
@@ -307,7 +307,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/nx/mau-xanh-duong.jpg') }}" alt="Xanh dương">
+                                <img src="{{ asset_v('web/assets/images/nx/mau-xanh-duong.jpg') }}" alt="Xanh dương">
                             </div>
                             <div class="ti-abbr">Xanh dương</div>
                         </div>
@@ -321,12 +321,12 @@
                     cung cấp nhiều tùy chọn mâm xe từ 18 đến 20 inch với các kiểu thiết kế phù hợp cho từng phiên bản.</p>
                 <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/mam-xe-1.jpg') }}" alt="Mâm xe tiêu chuẩn">
+                        <img src="{{ asset_v('web/assets/images/nx/mam-xe-1.jpg') }}" alt="Mâm xe tiêu chuẩn">
                         <div class="item-card-label">Mâm xe hợp kim nhôm 18 inch<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản NX 350h</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/mam-xe-2.jpg') }}" alt="Mâm xe 20 inch">
+                        <img src="{{ asset_v('web/assets/images/nx/mam-xe-2.jpg') }}" alt="Mâm xe 20 inch">
                         <div class="item-card-label">Mâm xe hợp kim nhôm 20 inch<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản NX 350 F SPORT</span></div>
                     </div>
@@ -346,31 +346,31 @@
                     cao cấp với nhiều lựa chọn màu sắc và chất liệu, mang lại sự sang trọng và thoải mái tối đa.</p>
                 <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/ghe-den.jpg') }}" alt="Ghế đen">
+                        <img src="{{ asset_v('web/assets/images/nx/ghe-den.jpg') }}" alt="Ghế đen">
                         <div class="item-card-label">Đen & Kem - Black & Rich Cream<br></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/ghe-trang.jpg') }}" alt="Ghế trắng">
+                        <img src="{{ asset_v('web/assets/images/nx/ghe-trang.jpg') }}" alt="Ghế trắng">
                         <div class="item-card-label">Trắng White (Phiên bản F SPORT)</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/ghe-nau.jpg') }}" alt="Ghế nâu">
+                        <img src="{{ asset_v('web/assets/images/nx/ghe-nau.jpg') }}" alt="Ghế nâu">
                         <div class="item-card-label">Nâu Hazel</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/ghe-do1.jpg') }}" alt="Ghế đỏ">
+                        <img src="{{ asset_v('web/assets/images/nx/ghe-do1.jpg') }}" alt="Ghế đỏ">
                         <div class="item-card-label">Đỏ Dank ROSE</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/ghe-do2.jpg') }}" alt="ghế đen black">
+                        <img src="{{ asset_v('web/assets/images/nx/ghe-do2.jpg') }}" alt="ghế đen black">
                         <div class="item-card-label">Đen - Black</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/ghe-do3.jpg') }}" alt="ghế đen black">
+                        <img src="{{ asset_v('web/assets/images/nx/ghe-do3.jpg') }}" alt="ghế đen black">
                         <div class="item-card-label">Đỏ - Flare Red(Phiên bản F SPORT)</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/ghe-do4.jpg') }}" alt="ghế đen black">
+                        <img src="{{ asset_v('web/assets/images/nx/ghe-do4.jpg') }}" alt="ghế đen black">
                         <div class="item-card-label">Đen - Black (Phiên bản F SPORT)</div>
                     </div>
                 </div>
@@ -381,12 +381,12 @@
                 <p style="font-size:0.92rem;color:var(--lexus-text-muted);max-width:600px;margin-bottom:32px;">Ốp trang trí cánh cửa đa dạng phong cách từ gỗ tự nhiên sang trọng đến nhôm thể thao.</p>
                 <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/op-1.jpg') }}" alt="Ốp gỗ">
+                        <img src="{{ asset_v('web/assets/images/nx/op-1.jpg') }}" alt="Ốp gỗ">
                         <div class="item-card-label">Gỗ Open Pore Ash/Sumi Black Finish<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản NX 350h</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/op-2.jpg') }}" alt="Ốp nhôm">
+                        <img src="{{ asset_v('web/assets/images/nx/op-2.jpg') }}" alt="Ốp nhôm">
                         <div class="item-card-label">Nhôm Dark Spin Aluminum<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản NX 350 F SPORT</span></div>
                     </div>
@@ -399,13 +399,13 @@
                     chấu thiết kế thể thao với các tùy chọn chất liệu bọc da và lẫy chuyển số bằng nhôm F SPORT.</p>
                 <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/volang-1.jpg') }}"
+                        <img src="{{ asset_v('web/assets/images/nx/volang-1.jpg') }}"
                             alt="Vô lăng F SPORT bọc da">
                         <div class="item-card-label">Da bọc F SPORT<br><span style="color:var(--lexus-gold);font-size:0.7rem;">Phiên
                                 bản NX 350 F SPORT</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/nx/volang-2.jpg') }}" alt="Vô lăng gỗ kết hợp da">
+                        <img src="{{ asset_v('web/assets/images/nx/volang-2.jpg') }}" alt="Vô lăng gỗ kết hợp da">
                         <div class="item-card-label">Gỗ kết hợp da (Phiên bản NX 350h)</div>
                     </div>
                 </div>
@@ -430,7 +430,7 @@
             <div class="variant-pane active" id="vt-350">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{ asset('web/assets/images/nx/dongco-24l.jpg') }}" alt="Động cơ NX 350 2.4L Turbo AWD">
+                        <img src="{{ asset_v('web/assets/images/nx/dongco-24l.jpg') }}" alt="Động cơ NX 350 2.4L Turbo AWD">
                         <div class="powertrain-badge">2.4L-T AWD</div>
                     </div>
                     <div class="powertrain-content">
@@ -478,7 +478,7 @@
             <div class="variant-pane" id="vt-350h">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{ asset('web/assets/images/nx/dongco-25l.jpg') }}" alt="Hệ thống Hybrid NX 350h 2.5L HEV">
+                        <img src="{{ asset_v('web/assets/images/nx/dongco-25l.jpg') }}" alt="Hệ thống Hybrid NX 350h 2.5L HEV">
                         <div class="powertrain-badge">2.5L HEV E-Four</div>
                     </div>
                     <div class="powertrain-content">
@@ -533,13 +533,13 @@
             <div class="chassis-grid">
                 <div class="chassis-images">
                     <div class="chassis-img-card">
-                        <img src="{{ asset('web/assets/images/nx/treo-truoc.jpg') }}"
+                        <img src="{{ asset_v('web/assets/images/nx/treo-truoc.jpg') }}"
                             alt="Hệ thống treo trước MacPherson Lexus NX">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Hệ thống treo trước — MacPherson</div>
                     </div>
                     <div class="chassis-img-card">
-                        <img src="{{ asset('web/assets/images/nx/treo-sau.jpg') }}"
+                        <img src="{{ asset_v('web/assets/images/nx/treo-sau.jpg') }}"
                             alt="Hệ thống treo sau đa liên kết Lexus NX">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Hệ thống treo sau — Đa liên kết</div>
@@ -554,7 +554,7 @@
 
                 <div class="chassis-diagram">
                     <div class="chassis-diagram-img">
-                        <img src="{{ asset('web/assets/images/nx/khung-gam.jpg') }}"
+                        <img src="{{ asset_v('web/assets/images/nx/khung-gam.jpg') }}"
                             alt="Sơ đồ cấu trúc thân xe Lexus NX TNGA">
                     </div>
                     <div class="chassis-legend">
@@ -600,7 +600,7 @@
             <div class="design-pane active" id="dp-exterior">
                 <div class="design-row">
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/nx/mat-truoc.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/nx/mat-truoc.jpg')}}"
                             alt="Mặt trước Lexus NX — Lưới Spindle">
                         <div class="design-caption">
                             <h4>Mặt trước mạnh mẽ — Spindle không viền</h4>
@@ -609,7 +609,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/nx/duoi-xe.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/nx/duoi-xe.jpg')}}"
                             alt="Đuôi xe Lexus NX — Đèn hậu liên kết">
                         <div class="design-caption">
                             <h4>Đuôi xe thể thao — Đèn hậu liên kết</h4>
@@ -618,7 +618,7 @@
                         </div>
                     </div>
                     <div class="design-card wide">
-                        <img src="{{asset('web/assets/images/nx/than-xe.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/nx/than-xe.jpg')}}"
                             alt="Góc nhìn bên hông Lexus NX">
                         <div class="design-caption">
                             <h4>Thân xe — Hình khối rắn chắc & sắc nét</h4>
@@ -641,7 +641,7 @@
             <div class="design-pane" id="dp-interior">
                 <div class="design-row">
                     <div class="design-card wide">
-                        <img src="{{asset('web/assets/images/nx/cabin.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/nx/cabin.jpg')}}"
                             alt="Nội thất Lexus NX — Cabin Tazuna">
                         <div class="design-caption">
                             <h4>Cabin lấy cảm hứng từ Tazuna</h4>
@@ -651,7 +651,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/nx/ghe-fsport.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/nx/ghe-fsport.jpg')}}"
                             alt="Ghế thể thao F SPORT Lexus NX">
                         <div class="design-caption">
                             <h4>Ghế thể thao F SPORT</h4>
@@ -660,7 +660,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/nx/bang-dieu-khien.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/nx/bang-dieu-khien.jpg')}}"
                             alt="Màn hình điều khiển trung tâm Lexus NX">
                         <div class="design-caption">
                             <h4>Bảng điều khiển tối giản</h4>
@@ -683,7 +683,7 @@
             <div class="design-pane" id="dp-tech">
                 <div class="design-row">
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/nx/man-hinh.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/nx/man-hinh.jpg')}}"
                             alt="Màn hình cảm ứng Lexus NX">
                         <div class="design-caption">
                             <h4>Màn hình cảm ứng trung tâm</h4>
@@ -692,7 +692,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/nx/dong-ho.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/nx/dong-ho.jpg')}}"
                             alt="Đồng hồ tốc độ F SPORT Lexus NX">
                         <div class="design-caption">
                             <h4>Đồng hồ tốc độ F SPORT</h4>
@@ -701,7 +701,7 @@
                         </div>
                     </div>
                     <div class="design-card wide">
-                        <img src="{{asset('web/assets/images/nx/hud.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/nx/hud.jpg')}}"
                             alt="HUD Lexus NX — Hiển thị trên kính chắn gió">
                         <div class="design-caption">
                             <h4>HUD — Màn hình hiển thị trên kính chắn gió</h4>
@@ -871,7 +871,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/ls/PCS.webp') }}" alt="PCS">
+                                    <img src="{{ asset_v('web/assets/images/ls/PCS.webp') }}" alt="PCS">
                                 </div>
                                 <div class="ti-name">Hệ Thống An Toàn Tiền Va Chạm</div>
                                 <div class="ti-abbr">PCS — Pre-Collision System</div>
@@ -884,7 +884,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/RRCC.webp') }}" alt="DRCC">
+                                    <img src="{{ asset_v('web/assets/images/rx/RRCC.webp') }}" alt="DRCC">
                                 </div>
                                 <div class="ti-name">Điều Khiển Hành Trình Thích Ứng</div>
                                 <div class="ti-abbr">DRCC — Dynamic Radar Cruise Control (ở mọi tốc độ)</div>
@@ -897,7 +897,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/LTA.webp') }}" alt="LDA/LTA">
+                                    <img src="{{ asset_v('web/assets/images/rx/LTA.webp') }}" alt="LDA/LTA">
                                 </div>
                                 <div class="ti-name">Hỗ Trợ Theo Dõi Làn Đường</div>
                                 <div class="ti-abbr">LDA / LTA — Lane Departure & Tracing Assist</div>
@@ -910,7 +910,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/PKSB.webp') }}" alt="PKSB">
+                                    <img src="{{ asset_v('web/assets/images/rx/PKSB.webp') }}" alt="PKSB">
                                 </div>
                                 <div class="ti-name">Phanh An Toàn Khi Đỗ</div>
                                 <div class="ti-abbr">PKSB — Parking Support Brake</div>
@@ -923,7 +923,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/BSM.webp') }}" alt="BSM">
+                                    <img src="{{ asset_v('web/assets/images/rx/BSM.webp') }}" alt="BSM">
                                 </div>
                                 <div class="ti-name">Cảnh Báo Điểm Mù</div>
                                 <div class="ti-abbr">BSM — Blind Spot Monitor</div>
@@ -936,7 +936,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/rx/SEA.webp') }}" alt="Túi khí SRS">
+                                    <img src="{{ asset_v('web/assets/images/rx/SEA.webp') }}" alt="Túi khí SRS">
                                 </div>
                                 <div class="ti-name">Hệ Thống Túi Khí SRS</div>
                                 <div class="ti-abbr">SRS Airbag System</div>
@@ -1085,56 +1085,56 @@
         const colorGalleries = {
             white: {
                 name: 'Màu trắng',
-                images: ['{{ asset('web/assets/images/nx/mau-trang.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-trang1.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-trang2.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-trang3.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-trang4.jpg') }}'
+                images: ['{{ asset_v('web/assets/images/nx/mau-trang.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-trang1.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-trang2.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-trang3.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-trang4.jpg') }}'
                 ]
             },
             black: {
                 name: 'Màu đen',
-                images: ['{{ asset('web/assets/images/nx/mau-den.jpg') }}',
-                    '{{ asset('web/assets/images/nx/anh-1.jpg') }}',
-                    '{{ asset('web/assets/images/nx/anh-2.jpg') }}',
-                    '{{ asset('web/assets/images/nx/anh-3.jpg') }}',
-                    '{{ asset('web/assets/images/nx/anh-4.jpg') }}'
+                images: ['{{ asset_v('web/assets/images/nx/mau-den.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/anh-1.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/anh-2.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/anh-3.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/anh-4.jpg') }}'
                 ]
             },
             silver: {
                 name: 'Màu xám',
-                images: ['{{ asset('web/assets/images/nx/mau-xam.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xam1.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xam2.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xam3.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xam4.jpg') }}'
+                images: ['{{ asset_v('web/assets/images/nx/mau-xam.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-xam1.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-xam2.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-xam3.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-xam4.jpg') }}'
                 ]
             },
             red: {
                 name: 'Màu đỏ',
-                images: ['{{ asset('web/assets/images/nx/mau-do.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-do1.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-do2.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-do3.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-do4.jpg') }}'
+                images: ['{{ asset_v('web/assets/images/nx/mau-do.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-do1.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-do2.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-do3.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-do4.jpg') }}'
                 ]
             },
             green: {
                 name: 'Xanh rêu',
-                images: ['{{ asset('web/assets/images/nx/mau-xanh-reu.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-reu1.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-reu2.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-reu3.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-reu4.jpg') }}'
+                images: ['{{ asset_v('web/assets/images/nx/mau-xanh-reu.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-xanh-reu1.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-xanh-reu2.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-xanh-reu3.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-xanh-reu4.jpg') }}'
                 ]
             },
             blue: {
                 name: 'Màu xanh dương',
-                images: ['{{ asset('web/assets/images/nx/mau-xanh-duong.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-duong1.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-duong2.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-duong3.jpg') }}',
-                    '{{ asset('web/assets/images/nx/mau-xanh-duong4.jpg') }}'
+                images: ['{{ asset_v('web/assets/images/nx/mau-xanh-duong.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-xanh-duong1.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-xanh-duong2.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-xanh-duong3.jpg') }}',
+                    '{{ asset_v('web/assets/images/nx/mau-xanh-duong4.jpg') }}'
                 ]
             }
         };

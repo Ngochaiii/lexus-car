@@ -51,7 +51,7 @@
 
         <div class="footer-trust" style="display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:center;padding:24px 0;border-top:1px solid rgba(255,255,255,.08);margin-top:24px">
             <a href="http://online.gov.vn/" target="_blank" rel="noopener" title="Đã thông báo Bộ Công Thương" style="display:inline-block">
-                <img src="{{ asset('web/assets/images/lexus_logo.png') }}" alt="Đã thông báo Bộ Công Thương" width="120" height="45" loading="lazy" style="height:45px;width:auto;opacity:.85">
+                <img src="{{ asset_v('web/assets/images/lexus_logo.png') }}" alt="Đã thông báo Bộ Công Thương" width="120" height="45" loading="lazy" style="height:45px;width:auto;opacity:.85">
             </a>
             <span style="color:var(--lexus-text-muted);font-size:.85rem">Đại lý ủy quyền chính hãng Lexus Việt Nam</span>
         </div>

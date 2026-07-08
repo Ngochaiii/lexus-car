@@ -3,7 +3,7 @@
 @php
     $heroImage = $post->featured_image
         ? asset('storage/' . $post->featured_image)
-        : asset('web/assets/images/blog/default.jpg');
+        : asset_v('web/assets/images/blog/default.jpg');
 
     $ogImage = $post->effectiveOgImage()
         ? asset('storage/' . $post->effectiveOgImage())
@@ -125,7 +125,7 @@
                         @foreach ($recent as $rp)
                             <div class="recent-post">
                                 <div class="rp-img">
-                                    <img src="{{ $rp->featured_image ? asset('storage/'.$rp->featured_image) : asset('web/assets/images/blog/default.jpg') }}" alt="{{ $rp->title }}">
+                                    <img src="{{ $rp->featured_image ? asset('storage/'.$rp->featured_image) : asset_v('web/assets/images/blog/default.jpg') }}" alt="{{ $rp->title }}">
                                 </div>
                                 <div>
                                     <div class="rp-title"><a href="{{ route('web.blogs.detail', $rp) }}">{{ $rp->title }}</a></div>
@@ -178,7 +178,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="blog-card">
                                 <div class="bc-img">
-                                    <img src="{{ $rel->featured_image ? asset('storage/'.$rel->featured_image) : asset('web/assets/images/blog/default.jpg') }}" alt="{{ $rel->title }}">
+                                    <img src="{{ $rel->featured_image ? asset('storage/'.$rel->featured_image) : asset_v('web/assets/images/blog/default.jpg') }}" alt="{{ $rel->title }}">
                                     @if ($rel->tags->first())
                                         <span class="bc-tag">{{ $rel->tags->first()->name }}</span>
                                     @endif

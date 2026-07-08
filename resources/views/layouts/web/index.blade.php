@@ -16,7 +16,7 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
 
     {{-- Preload hero image (homepage LCP) --}}
-    <link rel="preload" as="image" href="{{ asset('web/assets/images/image-20210204180128-1.jpeg') }}" fetchpriority="high">
+    <link rel="preload" as="image" href="{{ asset_v('web/assets/images/image-20210204180128-1.jpeg') }}" fetchpriority="high">
 
     @stack('preload')
     @stack('css')

@@ -204,4 +204,4 @@
                   observer.observe(el);
               });
       </script>
-<script src="{{ asset('web/assets/js/main.js')}}" defer></script>
+<script src="{{ asset_v('web/assets/js/main.js')}}" defer></script>

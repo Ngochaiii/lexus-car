@@ -1,7 +1,7 @@
 @extends('layouts.web.default')
 
 @php
-    $defaultImg = asset('web/assets/images/blog/default.jpg');
+    $defaultImg = asset_v('web/assets/images/blog/default.jpg');
     $totalPosts = $featured ? $posts->total() + 1 : $posts->total();
 @endphp
 

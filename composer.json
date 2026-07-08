@@ -27,7 +27,8 @@
             "Database\\Seeders\\": "database/seeders/"
         },
         "files": [
-            "app/Support/finfo_polyfill.php"
+            "app/Support/finfo_polyfill.php",
+            "app/Support/helpers.php"
         ]
     },
     "autoload-dev": {

@@ -73,7 +73,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/rx500hfsport.webp')}}"
+                                    src="{{asset_v('web/assets/images/rx500hfsport.webp')}}"
                                     alt="Lexus RX 500h F SPORT" width="800" height="600" loading="lazy" decoding="async">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -106,7 +106,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/nx350h.jpeg')}}"
+                                    src="{{asset_v('web/assets/images/nx350h.jpeg')}}"
                                     alt="Lexus NX 350h Hybrid" width="800" height="600" loading="lazy" decoding="async">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -138,7 +138,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/LM500h6cho.webp')}}"
+                                    src="{{asset_v('web/assets/images/LM500h6cho.webp')}}"
                                     alt="Lexus ES 300h Ultra Luxury" width="800" height="600" loading="lazy" decoding="async">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -170,7 +170,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/lx600vip.jpg')}}"
+                                    src="{{asset_v('web/assets/images/lx600vip.jpg')}}"
                                     alt="Lexus LX 600 VIP" width="800" height="600" loading="lazy" decoding="async">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -202,7 +202,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/ls500.jpg')}}"
+                                    src="{{asset_v('web/assets/images/ls500.jpg')}}"
                                     alt="Lexus LS 500h Flagship" width="800" height="600" loading="lazy" decoding="async">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -234,7 +234,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/GX550-M.webp')}}"
+                                    src="{{asset_v('web/assets/images/GX550-M.webp')}}"
                                     alt="Lexus UX 300e Electric" width="800" height="600" loading="lazy" decoding="async">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -266,7 +266,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/GX550.jpg')}}"
+                                    src="{{asset_v('web/assets/images/GX550.jpg')}}"
                                     alt="Lexus GX 550 2024" width="800" height="600" loading="lazy" decoding="async">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -298,7 +298,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/RX350h-premium.webp')}}"
+                                    src="{{asset_v('web/assets/images/RX350h-premium.webp')}}"
                                     alt="Lexus LC 500 Coupe" width="800" height="600" loading="lazy" decoding="async">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -330,7 +330,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/rx350hluxury.png')}}"
+                                    src="{{asset_v('web/assets/images/rx350hluxury.png')}}"
                                     alt="Lexus LC 500 Coupe" width="800" height="600" loading="lazy" decoding="async">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -362,7 +362,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/lx600fsport.webp')}}"
+                                    src="{{asset_v('web/assets/images/lx600fsport.webp')}}"
                                     alt="Lexus UX 300e Electric" width="800" height="600" loading="lazy" decoding="async">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -394,7 +394,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/es.jpg')}}"
+                                    src="{{asset_v('web/assets/images/es.jpg')}}"
                                     alt="Lexus UX 300e Electric" width="800" height="600" loading="lazy" decoding="async">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -426,7 +426,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/lx600urban.webp')}}"
+                                    src="{{asset_v('web/assets/images/lx600urban.webp')}}"
                                     alt="Lexus GX 550 2024" width="800" height="600" loading="lazy" decoding="async">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -458,7 +458,7 @@
                         <div class="model-card">
                             <div class="model-card-img">
                                 <img
-                                    src="{{asset('web/assets/images/Lm500h4cho.jpg')}}"
+                                    src="{{asset_v('web/assets/images/Lm500h4cho.jpg')}}"
                                     alt="Lexus LC 500 Coupe" width="800" height="600" loading="lazy" decoding="async">
                                 <button class="model-fav"><i
                                         class="bi bi-heart"></i></button>
@@ -513,7 +513,7 @@
                     <div class="col-lg-6">
                         <div class="featured-image">
                             <img
-                                src="{{asset('web/assets/images/z7621772975194_fc0989ca9b2bbbc48645e6346baca801.jpg')}}"
+                                src="{{asset_v('web/assets/images/z7621772975194_fc0989ca9b2bbbc48645e6346baca801.jpg')}}"
                                 alt="Lexus Service Center Vietnam" width="800" height="600" loading="lazy" decoding="async">
                             <div class="featured-play"><i
                                     class="bi bi-play-fill"></i></div>
@@ -660,7 +660,7 @@
                 <div class="testimonial-card">
                     <div class="testimonial-image">
                         <img
-                            src="{{asset('web/assets/images/605698121_865598073103981_4020906297508280360_n.jpg')}}"
+                            src="{{asset_v('web/assets/images/605698121_865598073103981_4020906297508280360_n.jpg')}}"
                             alt="Nguyễn Minh Đức — Khách hàng Lexus RX 500h" width="800" height="600" loading="lazy" decoding="async">
                     </div>
                     <div class="testimonial-content">
@@ -705,7 +705,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="news-card">
                             <div class="news-image"><img
-                                    src="{{asset('web/assets/images/2023RX500hFSPORTPerformanceAWDCopper3scaledjpeg-1676880266.jpg')}}"
+                                    src="{{asset_v('web/assets/images/2023RX500hFSPORTPerformanceAWDCopper3scaledjpeg-1676880266.jpg')}}"
                                     alt="Lexus RX 500h ra mắt Việt Nam" width="800" height="600" loading="lazy" decoding="async"></div>
                             <div class="news-body">
                                 <span class="news-tag">Ra mắt</span>
@@ -721,7 +721,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="news-card">
                             <div class="news-image"><img
-                                    src="{{asset('web/assets/images/2.webp')}}"
+                                    src="{{asset_v('web/assets/images/2.webp')}}"
                                     alt="Công nghệ DIRECT4 Lexus" width="800" height="600" loading="lazy" decoding="async"></div>
                             <div class="news-body">
                                 <span class="news-tag">Công nghệ</span>
@@ -736,7 +736,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="news-card">
                             <div class="news-image"><img
-                                    src="{{asset('web/assets/images/lx600-urban-gallery-ext-06-d.jpg')}}"
+                                    src="{{asset_v('web/assets/images/lx600-urban-gallery-ext-06-d.jpg')}}"
                                     alt="Lexus lái thử toàn quốc 2026" width="800" height="600" loading="lazy" decoding="async"></div>
                             <div class="news-body">
                                 <span class="news-tag">Sự kiện</span>

@@ -88,8 +88,8 @@
 <link rel="alternate" hreflang="vi-VN" href="{{ $canonical }}">
 <link rel="alternate" hreflang="x-default" href="{{ $canonical }}">
 
-<link rel="icon" type="image/png" href="{{ asset('web/assets/images/lexus_logo.png') }}">
-<link rel="apple-touch-icon" href="{{ asset('web/assets/images/lexus_logo.png') }}">
+<link rel="icon" type="image/png" href="{{ asset_v('web/assets/images/lexus_logo.png') }}">
+<link rel="apple-touch-icon" href="{{ asset_v('web/assets/images/lexus_logo.png') }}">
 
 <meta property="og:type" content="{{ $ogType }}">
 <meta property="og:site_name" content="{{ $siteName }}">

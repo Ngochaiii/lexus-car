@@ -22,7 +22,7 @@
                                 <button class="gallery-action-btn" title="Chia sẻ"><i class="bi bi-share"></i></button>
                             </div>
                             <div class="gallery-main">
-                                <img src="{{ asset('web/assets/images/ls/mau-den.jpg') }}"
+                                <img src="{{ asset_v('web/assets/images/ls/mau-den.jpg') }}"
                                     alt="Lexus LS 500h" id="mainImage">
                             </div>
                             <button class="gallery-nav prev" onclick="changeImage(-1)"><i
@@ -34,15 +34,15 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img
-                                    src="{{ asset('web/assets/images/ls/mau-den.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/ls/mau-den.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img
-                                    src="{{ asset('web/assets/images/ls/mau-trang.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/ls/mau-trang.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img
-                                    src="{{ asset('web/assets/images/ls/mau-xam.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/ls/mau-xam.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img
-                                    src="{{ asset('web/assets/images/ls/mau-do.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/ls/mau-do.jpg') }}" alt=""></div>
                             <div class="gallery-thumb" onclick="setImage(4,this)"><img
-                                    src="{{ asset('web/assets/images/ls/mau-xanh.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/ls/mau-xanh.jpg') }}" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -204,7 +204,7 @@
         <div class="container">
             <div class="intro-grid">
                 <div class="intro-img-wrap">
-                    <img src="{{ asset('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg') }}"
+                    <img src="{{ asset_v('web/assets/images/lexus-ls500h-thong-so-tong-quan-1.jpg') }}"
                         alt="Lexus LS 500h — Sedan hạng sang đầu bảng">
                     <div class="intro-year-badge">
                         <div class="iyb-year">1989</div>
@@ -267,7 +267,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/ls/mau-den.jpg') }}" alt="Màu đen">
+                                <img src="{{ asset_v('web/assets/images/ls/mau-den.jpg') }}" alt="Màu đen">
                             </div>
                             <div class="ti-abbr">Caviar Black</div>
                         </div>
@@ -275,7 +275,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/ls/mau-trang.jpg') }}" alt="Màu trắng">
+                                <img src="{{ asset_v('web/assets/images/ls/mau-trang.jpg') }}" alt="Màu trắng">
                             </div>
                             <div class="ti-abbr">Sonic White Pearl</div>
                         </div>
@@ -283,7 +283,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/ls/mau-xam.jpg') }}" alt="Màu xám">
+                                <img src="{{ asset_v('web/assets/images/ls/mau-xam.jpg') }}" alt="Màu xám">
                             </div>
                             <div class="ti-abbr">Sonic Titanium</div>
                         </div>
@@ -291,7 +291,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/ls/mau-do.jpg') }}" alt="Màu đỏ">
+                                <img src="{{ asset_v('web/assets/images/ls/mau-do.jpg') }}" alt="Màu đỏ">
                             </div>
                             <div class="ti-abbr">Passion Red Mica</div>
                         </div>
@@ -299,7 +299,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img src="{{ asset('web/assets/images/ls/mau-xanh.jpg') }}" alt="Xanh Structural">
+                                <img src="{{ asset_v('web/assets/images/ls/mau-xanh.jpg') }}" alt="Xanh Structural">
                             </div>
                             <div class="ti-abbr">Structural Blue</div>
                         </div>
@@ -314,22 +314,22 @@
                     độc đáo chạm đến mọi giác quan.</p>
                 <div class="item-grid-4">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/noi-that-den.jpg') }}" alt="Nội thất đen">
+                        <img src="{{ asset_v('web/assets/images/ls/noi-that-den.jpg') }}" alt="Nội thất đen">
                         <div class="item-card-label">Đen Black<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Tất cả phiên bản</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/noi-that-doden.jpg') }}" alt="Nội thất trắng kem">
+                        <img src="{{ asset_v('web/assets/images/ls/noi-that-doden.jpg') }}" alt="Nội thất trắng kem">
                         <div class="item-card-label">Đỏ & đen<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phong cách sang trọng</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/noi-that-vangnau.jpg') }}" alt="Nội thất nâu">
+                        <img src="{{ asset_v('web/assets/images/ls/noi-that-vangnau.jpg') }}" alt="Nội thất nâu">
                         <div class="item-card-label">Vàng nâu<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phong cách ấm áp</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/noi-that-hatde.jpg') }}" alt="Nội thất xanh navy">
+                        <img src="{{ asset_v('web/assets/images/ls/noi-that-hatde.jpg') }}" alt="Nội thất xanh navy">
                         <div class="item-card-label">Hạt dẻ<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản đặc biệt</span></div>
                     </div>
@@ -343,22 +343,22 @@
                     trong từng chi tiết nhỏ nhất.</p>
                 <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/op-1.jpg') }}" alt="Ốp gỗ">
+                        <img src="{{ asset_v('web/assets/images/ls/op-1.jpg') }}" alt="Ốp gỗ">
                         <div class="item-card-label">Ốp gỗ art wood (vân hữu cơ)   <br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phong cách truyền thống Nhật Bản</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/op-2.jpg') }}" alt="Ốp nhôm">
+                        <img src="{{ asset_v('web/assets/images/ls/op-2.jpg') }}" alt="Ốp nhôm">
                         <div class="item-card-label">Ốp gỗ art wood (vân herringbone)  <br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phong cách hiện đại</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/op-3.jpg') }}" alt="Ốp carbon">
+                        <img src="{{ asset_v('web/assets/images/ls/op-3.jpg') }}" alt="Ốp carbon">
                         <div class="item-card-label">Ốp gỗ cắt la-ze  <br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phong cách thể thao</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/op-4.jpg') }}" alt="Ốp carbon">
+                        <img src="{{ asset_v('web/assets/images/ls/op-4.jpg') }}" alt="Ốp carbon">
                         <div class="item-card-label">Kính chạm khắc kiriko<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phong cách thể thao</span></div>
                     </div>
@@ -372,17 +372,17 @@
                     chưa từng có.</p>
                 <div class="item-grid-3">
                     <div class="item-card active" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/30nam-1.jpg') }}" alt="Phiên bản 30 năm">
+                        <img src="{{ asset_v('web/assets/images/ls/30nam-1.jpg') }}" alt="Phiên bản 30 năm">
                         <div class="item-card-label">Ngoại thất đặc biệt<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Kỷ niệm 30 năm LS</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/30nam-2.jpg') }}" alt="Nội thất 30 năm">
+                        <img src="{{ asset_v('web/assets/images/ls/30nam-2.jpg') }}" alt="Nội thất 30 năm">
                         <div class="item-card-label">Nội thất độc quyền<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Chi tiết kỷ niệm đặc biệt</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img src="{{ asset('web/assets/images/ls/30nam-3.jpg') }}" alt="Logo 30 năm">
+                        <img src="{{ asset_v('web/assets/images/ls/30nam-3.jpg') }}" alt="Logo 30 năm">
                         <div class="item-card-label">Logo kỷ niệm 30 năm<br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản giới hạn</span></div>
                     </div>
@@ -415,7 +415,7 @@
             <div class="variant-pane active" id="vt-500h">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{ asset('web/assets/images/ls/tong-quan-1.jpg') }}" alt="Hệ thống Multi Stage Hybrid LS 500h">
+                        <img src="{{ asset_v('web/assets/images/ls/tong-quan-1.jpg') }}" alt="Hệ thống Multi Stage Hybrid LS 500h">
                         <div class="powertrain-badge">Multi Stage Hybrid</div>
                     </div>
                     <div class="powertrain-content">
@@ -460,7 +460,7 @@
             <div class="variant-pane" id="vt-500">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{ asset('web/assets/images/ls/tong-quan-2.jpg') }}" alt="Động cơ LS 500 V6 Twin Turbo">
+                        <img src="{{ asset_v('web/assets/images/ls/tong-quan-2.jpg') }}" alt="Động cơ LS 500 V6 Twin Turbo">
                         <div class="powertrain-badge">V6 3.5L TT</div>
                     </div>
                     <div class="powertrain-content">
@@ -517,13 +517,13 @@
             <div class="chassis-grid">
                 <div class="chassis-images">
                     <div class="chassis-img-card">
-                        <img src="{{ asset('web/assets/images/ls/treo-truoc.jpg') }}"
+                        <img src="{{ asset_v('web/assets/images/ls/treo-truoc.jpg') }}"
                             alt="Hệ thống treo LS">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Hệ thống treo trước — Dầu ma sát thấp</div>
                     </div>
                     <div class="chassis-img-card">
-                        <img src="{{ asset('web/assets/images/ls/treo-sau.jpg') }}"
+                        <img src="{{ asset_v('web/assets/images/ls/treo-sau.jpg') }}"
                             alt="Hệ thống treo sau LS">
                         <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
                                 style="color:var(--lexus-gold);"></i>Hệ thống treo sau — Liên kết tay đòn mới</div>
@@ -538,7 +538,7 @@
 
                 <div class="chassis-diagram">
                     <div class="chassis-diagram-img">
-                        <img src="{{ asset('web/assets/images/ls/vdim-ldh.jpg') }}"
+                        <img src="{{ asset_v('web/assets/images/ls/vdim-ldh.jpg') }}"
                             alt="VDIM + LDH Lexus LS">
                     </div>
                     <div class="chassis-info-box mt-3">
@@ -580,7 +580,7 @@
             <div class="design-pane active" id="dp-exterior">
                 <div class="design-row">
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/ls/dau-xe.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/ls/dau-xe.jpg')}}"
                             alt="Đầu xe Lexus LS">
                         <div class="design-caption">
                             <h4>Đầu Xe — Spindle Grille Thế Hệ Mới</h4>
@@ -589,7 +589,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/ls/duoi-xe.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/ls/duoi-xe.jpg')}}"
                             alt="Đuôi xe Lexus LS">
                         <div class="design-caption">
                             <h4>Đuôi Xe — Đèn Hậu Liên Kết</h4>
@@ -598,7 +598,7 @@
                         </div>
                     </div>
                     <div class="design-card wide">
-                        <img src="{{asset('web/assets/images/ls/than-xe.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/ls/than-xe.jpg')}}"
                             alt="Tổng thể Lexus LS">
                         <div class="design-caption">
                             <h4>Thân Xe — Trọng Tâm Thấp & Đường Nét Gợi Cảm</h4>
@@ -622,7 +622,7 @@
             <div class="design-pane" id="dp-interior">
                 <div class="design-row">
                     <div class="design-card wide">
-                        <img src="{{asset('web/assets/images/ls/volang.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/ls/volang.jpg')}}"
                             alt="Vô lăng Lexus LS">
                         <div class="design-caption">
                             <h4>Khoang Lái — Thuận Tiện Tập Trung</h4>
@@ -631,7 +631,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/ls/can-so.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/ls/can-so.jpg')}}"
                             alt="Cần số Lexus LS">
                         <div class="design-caption">
                             <h4>Cần Số & Công Tắc Chế Độ Lái</h4>
@@ -640,7 +640,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/ls/tapli-cua.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/ls/tapli-cua.jpg')}}"
                             alt="Táp li cửa Lexus LS">
                         <div class="design-caption">
                             <h4>Táp Li Cửa — Nghệ Thuật Chế Tác Takumi</h4>
@@ -663,7 +663,7 @@
             <div class="design-pane" id="dp-rear">
                 <div class="design-row">
                     <div class="design-card wide">
-                        <img src="{{asset('web/assets/images/ls/ghe-sau.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/ls/ghe-sau.jpg')}}"
                             alt="Ghế sau Lexus LS">
                         <div class="design-caption">
                             <h4>Ghế Sau — Tự Động Ngả & Tiện Nghi Tinh Tế</h4>
@@ -673,7 +673,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/ls/man-hinh-giai-tri.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/ls/man-hinh-giai-tri.jpg')}}"
                             alt="Màn hình giải trí ghế sau Lexus LS">
                         <div class="design-caption">
                             <h4>Màn Hình Giải Trí Hàng Ghế Sau</h4>
@@ -682,7 +682,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img src="{{asset('web/assets/images/ls/man-hinh-dieu-khien.jpg')}}"
+                        <img src="{{asset_v('web/assets/images/ls/man-hinh-dieu-khien.jpg')}}"
                             alt="Màn hình điều khiển phía sau Lexus LS">
                         <div class="design-caption">
                             <h4>Bảng Điều Khiển Hàng Ghế Sau</h4>
@@ -724,7 +724,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/ls/PCS.webp') }}" alt="PCS">
+                                    <img src="{{ asset_v('web/assets/images/ls/PCS.webp') }}" alt="PCS">
                                 </div>
                                 <div class="ti-name">Hệ Thống An Toàn Tiền Va Chạm</div>
                                 <div class="ti-abbr">PCS — Pre-Collision System</div>
@@ -737,7 +737,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/ls/RRCC.webp') }}" alt="DRCC">
+                                    <img src="{{ asset_v('web/assets/images/ls/RRCC.webp') }}" alt="DRCC">
                                 </div>
                                 <div class="ti-name">Điều Khiển Hành Trình Thích Ứng</div>
                                 <div class="ti-abbr">DRCC — Dynamic Radar Cruise Control</div>
@@ -750,7 +750,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/ls/LTA.webp') }}" alt="LTA">
+                                    <img src="{{ asset_v('web/assets/images/ls/LTA.webp') }}" alt="LTA">
                                 </div>
                                 <div class="ti-name">Hỗ Trợ Theo Dõi Làn Đường</div>
                                 <div class="ti-abbr">LTA — Lane Tracing Assist</div>
@@ -763,7 +763,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/ls/AHB.webp') }}" alt="AHS">
+                                    <img src="{{ asset_v('web/assets/images/ls/AHB.webp') }}" alt="AHS">
                                 </div>
                                 <div class="ti-name">Đèn Pha Tự Động Thích Ứng</div>
                                 <div class="ti-abbr">AHS + Đèn góc LED / Đa thời tiết</div>
@@ -776,7 +776,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/ls/BSM.webp') }}" alt="BSM">
+                                    <img src="{{ asset_v('web/assets/images/ls/BSM.webp') }}" alt="BSM">
                                 </div>
                                 <div class="ti-name">Cảnh Báo Điểm Mù</div>
                                 <div class="ti-abbr">BSM — Blind Spot Monitor</div>
@@ -789,7 +789,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/pksa.png') }}" alt="PKSA">
+                                    <img src="{{ asset_v('web/assets/images/pksa.png') }}" alt="PKSA">
                                 </div>
                                 <div class="ti-name">Hỗ Trợ Cảnh Báo Đỗ Xe</div>
                                 <div class="ti-abbr">PKSA — Parking Support Alert</div>
@@ -802,7 +802,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/puh.png') }}" alt="PUH">
+                                    <img src="{{ asset_v('web/assets/images/puh.png') }}" alt="PUH">
                                 </div>
                                 <div class="ti-name">Kết Cấu Mui Xe An Toàn</div>
                                 <div class="ti-abbr">PUH — Pop-Up Hood</div>
@@ -815,7 +815,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img src="{{ asset('web/assets/images/srs.png') }}" alt="SRS">
+                                    <img src="{{ asset_v('web/assets/images/srs.png') }}" alt="SRS">
                                 </div>
                                 <div class="ti-name">Hệ Thống Túi Khí SRS</div>
                                 <div class="ti-abbr">SRS Airbag System</div>
@@ -965,51 +965,51 @@
             white: {
                 name: 'Sonic White Pearl',
                 images: [
-                    '{{ asset('web/assets/images/ls/mau-trang.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-trang1.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-trang2.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-trang3.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-trang4.jpg') }}'
+                    '{{ asset_v('web/assets/images/ls/mau-trang.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-trang1.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-trang2.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-trang3.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-trang4.jpg') }}'
                 ]
             },
             black: {
                 name: 'Caviar Black',
                 images: [
-                    '{{ asset('web/assets/images/ls/mau-den.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-den1.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-den2.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-den3.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-den4.jpg') }}'
+                    '{{ asset_v('web/assets/images/ls/mau-den.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-den1.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-den2.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-den3.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-den4.jpg') }}'
                 ]
             },
             silver: {
                 name: 'Sonic Titanium',
                 images: [
-                    '{{ asset('web/assets/images/ls/mau-xam.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xam1.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xam2.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xam3.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xam4.jpg') }}'
+                    '{{ asset_v('web/assets/images/ls/mau-xam.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-xam1.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-xam2.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-xam3.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-xam4.jpg') }}'
                 ]
             },
             red: {
                 name: 'Passion Red Mica',
                 images: [
-                    '{{ asset('web/assets/images/ls/mau-do.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-do1.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-do2.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-do3.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-do4.jpg') }}'
+                    '{{ asset_v('web/assets/images/ls/mau-do.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-do1.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-do2.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-do3.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-do4.jpg') }}'
                 ]
             },
             blue: {
                 name: 'Structural Blue',
                 images: [
-                    '{{ asset('web/assets/images/ls/mau-xanh.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xanh1.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xanh2.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xanh3.jpg') }}',
-                    '{{ asset('web/assets/images/ls/mau-xanh4.jpg') }}'
+                    '{{ asset_v('web/assets/images/ls/mau-xanh.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-xanh1.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-xanh2.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-xanh3.jpg') }}',
+                    '{{ asset_v('web/assets/images/ls/mau-xanh4.jpg') }}'
                 ]
             },
         };
