@@ -93,28 +93,28 @@
                             <div class="option-label"><span><i class="bi bi-gear me-2"></i>Phiên bản</span></div>
                             <div class="version-options">
                                 <div class="version-option"
-                                    onclick="selectVersion(this,'ĐANG CẬP NHẬP','ES 350h FWD',244,'8.5s','5.0L','FWD')">
+                                    onclick="selectVersion(this,'2.360.000.000','ES350h Premium',244,'8.5s','5.0L','FWD')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
-                                        <div class="vo-name">ES 350h FWD</div>
+                                        <div class="vo-name">ES350h Premium</div>
                                     </div>
-                                    <div class="vo-price">ĐANG CẬP NHẬP</div>
+                                    <div class="vo-price">2.360.000.000</div>
                                 </div>
                                 <div class="version-option active"
-                                    onclick="selectVersion(this,'ĐANG CẬP NHẬP','ES 350h AWD Premium',244,'8.3s','5.2L','AWD')">
+                                    onclick="selectVersion(this,'2.580.000.000','ES350h Luxury',244,'8.3s','5.2L','AWD')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
-                                        <div class="vo-name">ES 350h AWD Premium</div>
+                                        <div class="vo-name">ES350h Luxury</div>
                                     </div>
-                                    <div class="vo-price">ĐANG CẬP NHẬP</div>
+                                    <div class="vo-price">2.580.000.000</div>
                                 </div>
                                 <div class="version-option"
-                                    onclick="selectVersion(this,'ĐANG CẬP NHẬP','ES 350h AWD Luxury',244,'8.3s','5.2L','AWD')">
+                                    onclick="selectVersion(this,'2.980.000.000','ES500e',244,'8.3s','5.2L','AWD')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
-                                        <div class="vo-name">ES 350h AWD Luxury</div>
+                                        <div class="vo-name">ES500e</div>
                                     </div>
-                                    <div class="vo-price">ĐANG CẬP NHẬP</div>
+                                    <div class="vo-price">2.980.000.000</div>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                             <div class="price-row">
                                 <div>
                                     <div class="price-label">Giá niêm yết</div>
-                                    <div class="price-value" id="priceDisplay">ĐANG CẬP NHẬP <span> </span></div>
+                                    <div class="price-value" id="priceDisplay">2.360.000.000<span> </span></div>
                                 </div>
                             </div>
                             <div class="quick-specs"
@@ -364,24 +364,24 @@
                     <div class="item-card active" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/es/mam-1.jpg') }}" alt="Mâm tiêu chuẩn">
                         <div class="item-card-label">Mâm hợp kim nhôm <br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES 350h FWD</span></div>
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES350h Premium</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/es/mam-2.jpg') }}" alt="Mâm cao cấp">
                         <div class="item-card-label">Mâm hợp kim nhôm cao cấp<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES 350h AWD Premium</span>
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES350h Luxury</span>
                         </div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/es/mam-3.jpg') }}" alt="Mâm Luxury">
                         <div class="item-card-label">Mâm hợp kim đa chấu <br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES 350h AWD Luxury</span></div>
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES500e</span></div>
                     </div>
                 </div>
                 <div
                     style="margin-top:16px;background:var(--lexus-dark-2);border:1px solid var(--lexus-gray);border-radius:var(--radius-lg);padding:18px 22px;">
                     <span style="font-size:0.82rem;color:var(--lexus-gold);font-weight:700;"><i
-                            class="bi bi-info-circle me-2"></i>ES 350h AWD Luxury:</span>
+                            class="bi bi-info-circle me-2"></i>ES500e:</span>
                     <span style="font-size:0.82rem;color:var(--lexus-text-muted);"> Thiết kế mâm đa chấu sắc nét, sơn đen
                         bóng đánh bóng độc quyền, tăng tính khí động học.</span>
                 </div>
@@ -401,12 +401,12 @@
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/es/ghe-trang.jpg') }}" alt="Ghế da trắng">
                         <div class="item-card-label">Ghế Da Trắng<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES 350h AWD Luxury</span></div>
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES500e</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/es/ghe-nau.jpg') }}" alt="Ghế da nâu">
                         <div class="item-card-label">Ghế Da Nâu<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES 350h AWD Premium</span>
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES350h Luxury</span>
                         </div>
                     </div>
                 </div>
@@ -421,18 +421,18 @@
                     <div class="item-card active" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/es/op-1.jpg') }}" alt="Ốp gỗ tự nhiên">
                         <div class="item-card-label">Ốp Gỗ Tự Nhiên<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES 350h AWD Luxury</span></div>
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES500e</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/es/op-2.jpg') }}" alt="Ốp hợp kim cao cấp">
                         <div class="item-card-label">Ốp Hợp Kim Cao Cấp <br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES 350h AWD Premium</span>
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES350h Luxury</span>
                         </div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/es/op-3.jpg') }}" alt="Ốp piano black">
                         <div class="item-card-label">Ốp Piano Black<br><span
-                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES 350h FWD</span></div>
+                                style="color:var(--lexus-gold);font-size:0.7rem;">Phiên bản ES350h Premium</span></div>
                     </div>
                 </div>
             </div>
@@ -446,15 +446,15 @@
                         <img src="{{ asset('web/assets/images/es/volang-1.jpg') }}" alt="Vô lăng bọc da">
                         <div class="item-card-label">Vô Lăng Bọc Da <br><span
                                 style="color:var(--lexus-gold);font-size:0.7rem;">Phiên
-                                bản ES 350h FWD</span></div>
+                                bản ES350h Premium</span></div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/es/volang-2.jpg') }}" alt="Vô lăng da kèm tích hợp">
-                        <div class="item-card-label">Vô Lăng Da Đục Lỗ (Phiên bản ES 350h AWD Premium)</div>
+                        <div class="item-card-label">Vô Lăng Da Đục Lỗ (Phiên bản ES350h Luxury)</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
                         <img src="{{ asset('web/assets/images/es/volang-3.jpg') }}" alt="Vô lăng da kết hợp gỗ">
-                        <div class="item-card-label">Vô Lăng Gỗ Kết Hợp Da (Phiên bản ES 350h AWD Luxury)</div>
+                        <div class="item-card-label">Vô Lăng Gỗ Kết Hợp Da (Phiên bản ES500e)</div>
                     </div>
                 </div>
             </div>
@@ -524,11 +524,11 @@
                 </div>
             </div>
 
-            <!-- ES 350h FWD -->
+            <!-- ES350h Premium -->
             <div class="variant-pane" id="vt-350h-fwd">
                 <div class="powertrain-grid">
                     <div class="powertrain-image">
-                        <img src="{{ asset('web/assets/images/es/dong-co-fwd.jpg') }}" alt="Hệ thống Hybrid ES 350h FWD">
+                        <img src="{{ asset('web/assets/images/es/dong-co-fwd.jpg') }}" alt="Hệ thống Hybrid ES350h Premium">
                         <div class="powertrain-badge">2.5L HEV FWD</div>
                     </div>
                     <div class="powertrain-content">

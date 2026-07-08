@@ -22,7 +22,7 @@
                                 <button class="gallery-action-btn" title="Chia sẻ"><i class="bi bi-share"></i></button>
                             </div>
                             <div class="gallery-main">
-                                <img src="{{ asset('web/assets/images/lm/anh-main.jpg') }}"
+                                <img src="{{ asset('web/assets/images/lm/anh-3.jpg') }}"
                                     alt="Lexus LM 500h" id="mainImage">
                             </div>
                             <button class="gallery-nav prev" onclick="changeImage(-1)"><i

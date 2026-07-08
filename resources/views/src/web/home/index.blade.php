@@ -806,13 +806,7 @@
                                             class="bi bi-plus-lg"></i></span>
                                 </div>
                                 <div class="faq-answer">
-                                    <p>Bạn có thể đặt lịch lái thử trực tiếp
-                                        trên website, gọi hotline <strong>1900
-                                            1234 56</strong>, hoặc đến trực tiếp
-                                        bất kỳ đại lý Lexus nào trong hệ thống
-                                        25+ đại lý toàn quốc. Lexus cũng cung
-                                        cấp dịch vụ lái thử tận nơi cho khách
-                                        hàng bận rộn.</p>
+                                    <p>Bạn có thể đặt lịch lái thử trên website, hoặc gọi<strong> 0962896582</strong>, hoặc đến trực tiếp Lexus Thăng Long – Đại lý Lexus chính hãng duy nhất tại miền Bắc</p>
                                 </div>
                             </div>
                             <div class="faq-item">
@@ -889,7 +883,7 @@
                                 <div>
                                     <div class="fci-label">Email hỗ trợ</div>
                                     <div
-                                        class="fci-val">support@lexus.com.vn</div>
+                                        class="fci-val">lapnguyen@lexusthanglong.com.vn</div>
                                 </div>
                             </div>
                             <div class="faq-contact-item">

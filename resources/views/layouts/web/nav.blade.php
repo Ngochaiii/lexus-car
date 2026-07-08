@@ -9,6 +9,8 @@
                 <a href="{{ route('products.nx') }}" class="n-link">NX</a>
                 <a href="{{ route('products.es') }}" class="n-link">ES</a>
                 <a href="{{ route('products.lx') }}" class="n-link">LX</a>
+                <a href="{{ route('products.lm') }}" class="n-link">LM</a>
+                <a href="{{ route('products.gx') }}" class="n-link">GX</a>
                 <a href="{{ route('products.ls') }}" class="n-link">LS</a>
                 <a href="{{ route('tech_car.index') }}" class="n-link">Công nghệ</a>
                 <a href="{{ route('web.blogs') }}" class="n-link">Tin tức</a>
