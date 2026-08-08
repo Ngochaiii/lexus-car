@@ -34,6 +34,7 @@
         @yield('content')
     </main>
     @include('layouts.web.footer')
+    @include('partials.lead-capture')
     @include('layouts.web.footer_js')
     @stack('js')
 </body>

@@ -177,7 +177,7 @@
                             </form>
                             <div class="inquiry-divider"><span>Hoặc</span></div>
                             <div class="action-buttons">
-                                <a href="{{route('web.home.regis')}}" class="btn-action primary"><i class="bi bi-calendar-check"></i> Đặt
+                                <a href="{{route('web.home.regis')}}" class="btn-action primary" data-lead-open data-lead-source="product_cta"><i class="bi bi-calendar-check"></i> Đặt
                                     Lịch Lái Thử</a>
                                 <a href="tel:0962896582" class="btn-action hotline">
                                     <i class="bi bi-telephone"></i>
@@ -1251,6 +1251,14 @@
                 });
 
                 if (res.ok) {
+                    // Báo chuyển đổi về GA4 + Google Ads (LeadTrack nằm ở partials/lead-capture)
+                    if (window.LeadTrack) {
+                        window.LeadTrack.lead({
+                            form_source: 'product_sidebar',
+                            car: data.car,
+                            price: data.price
+                        });
+                    }
                     showToast(true);
                     form.reset();
                 } else {

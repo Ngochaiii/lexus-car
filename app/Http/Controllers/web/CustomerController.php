@@ -12,6 +12,12 @@ class CustomerController extends Controller
 {
     public function store(Request $request)
     {
+        // Honeypot: trường "website" bị ẩn với người dùng thật, chỉ bot mới điền.
+        // Trả về như thành công để bot không thử lại bằng biến thể khác.
+        if ($request->filled('website')) {
+            return response()->json(['success' => true], 201);
+        }
+
         $request->validate([
             'name'  => 'required|string',
             'phone' => 'required|string',

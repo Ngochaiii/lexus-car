@@ -19,4 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/customers', [CustomerController::class, 'store']);
+// Giới hạn 8 lượt gửi/phút/IP — đủ rộng cho khách thật, chặn spam form.
+Route::post('/customers', [CustomerController::class, 'store'])->middleware('throttle:8,1');

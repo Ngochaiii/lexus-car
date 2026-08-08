@@ -44,8 +44,10 @@ class SecurityHeaders
             "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net",
             "font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net data:",
             "img-src 'self' data: blob: https:",
-            "frame-src https://www.google.com https://www.googletagmanager.com",
-            "connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://*.googletagmanager.com https://cdn.jsdelivr.net https://www.google.com https://googleads.g.doubleclick.net https://www.googleadservices.com",
+            "frame-src https://www.google.com https://www.googletagmanager.com https://td.doubleclick.net",
+            // Chuyển đổi Google Ads bắn về ad.doubleclick.net và www.google.<ccTLD>
+            // (VN: www.google.com.vn). Thiếu các domain này thì conversion bị CSP chặn.
+            "connect-src 'self' https://www.google-analytics.com https://*.doubleclick.net https://*.googletagmanager.com https://cdn.jsdelivr.net https://www.google.com https://www.google.com.vn https://*.googleadservices.com https://*.googlesyndication.com",
             "object-src 'none'",
             "base-uri 'self'",
             "form-action 'self'",

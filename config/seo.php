@@ -25,6 +25,7 @@ return [
         'phone' => '+84962896582',
         'phone_display' => '0962.896.582',
         'email' => 'contact@tuvangiaxelexus.com',
+        'zalo' => env('SEO_ZALO_URL', 'https://zalo.me/0962896582'),
         'street' => 'Ngã tư Phạm Hùng giao Dương Đình Nghệ',
         'locality' => 'Mễ Trì, Nam Từ Liêm',
         'region' => 'Hà Nội',
