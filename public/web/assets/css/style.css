@@ -348,6 +348,579 @@ img {
     flex-shrink: 0;
 }
 
+/* ===================== PERSONAL ADVISOR ===================== */
+.advisor-section {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(76px, 9vw, 132px) 0 clamp(68px, 8vw, 112px);
+    background:
+        radial-gradient(circle at 8% 18%, rgba(196, 160, 82, .11), transparent 28%),
+        linear-gradient(145deg, #0a0a0a 0%, #11110f 54%, #090909 100%);
+    border-bottom: 1px solid rgba(196, 160, 82, .16);
+}
+
+.advisor-section::before {
+    content: 'LEXUS';
+    position: absolute;
+    top: 28px;
+    right: -22px;
+    color: rgba(255, 255, 255, .022);
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(7rem, 18vw, 17rem);
+    font-weight: 700;
+    letter-spacing: .08em;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.advisor-shell {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1.03fr) minmax(420px, .97fr);
+    gap: clamp(46px, 7vw, 96px);
+    align-items: center;
+}
+
+.advisor-media {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(150px, .72fr);
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    min-height: 680px;
+}
+
+.advisor-media::before {
+    content: '';
+    position: absolute;
+    inset: -14px auto auto -14px;
+    width: 78px;
+    height: 78px;
+    border-top: 1px solid var(--lexus-gold);
+    border-left: 1px solid var(--lexus-gold);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.advisor-media figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    background: var(--lexus-dark-2);
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.advisor-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .8s cubic-bezier(.2, .7, .2, 1);
+}
+
+.advisor-media figure:hover img {
+    transform: scale(1.025);
+}
+
+.advisor-media__primary {
+    grid-row: 1 / -1;
+}
+
+.advisor-media__primary img {
+    object-position: 47% center;
+}
+
+.advisor-media__secondary--portrait img {
+    object-position: 42% center;
+}
+
+.advisor-media__secondary--detail img {
+    object-position: 33% center;
+}
+
+.advisor-media__caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 52px 18px 18px;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0, 0, 0, .88), transparent);
+}
+
+.advisor-media__caption-mark {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    place-items: center;
+    color: var(--lexus-black);
+    background: var(--lexus-gold);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: .04em;
+}
+
+.advisor-media__caption span:last-child {
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, .68);
+    font-size: .68rem;
+    line-height: 1.45;
+    letter-spacing: .055em;
+    text-transform: uppercase;
+}
+
+.advisor-media__caption strong {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.02rem;
+    font-weight: 600;
+    letter-spacing: .03em;
+    text-transform: none;
+}
+
+.advisor-media__seal {
+    position: absolute;
+    right: -24px;
+    bottom: 26px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 170px;
+    padding: 13px 16px;
+    color: var(--lexus-black);
+    background: linear-gradient(135deg, #d2b673, #b8913f);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .35);
+}
+
+.advisor-media__seal i {
+    font-size: 1.4rem;
+}
+
+.advisor-media__seal span {
+    display: flex;
+    flex-direction: column;
+    font-size: .67rem;
+    line-height: 1.25;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+
+.advisor-media__seal strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.18rem;
+    letter-spacing: .02em;
+}
+
+.advisor-content {
+    position: relative;
+}
+
+.advisor-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    color: var(--lexus-gold);
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+}
+
+.advisor-eyebrow span {
+    width: 34px;
+    height: 1px;
+    background: var(--lexus-gold);
+}
+
+.advisor-title {
+    margin: 0 0 30px;
+    color: var(--lexus-white);
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.15rem, 4.4vw, 4.15rem);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -.025em;
+}
+
+.advisor-title em {
+    color: var(--lexus-gold);
+    font-weight: 400;
+}
+
+.advisor-identity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.advisor-name {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.advisor-role {
+    margin-top: 4px;
+    color: var(--lexus-text-muted);
+    font-size: .74rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.advisor-verified {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    flex: 0 0 auto;
+    padding: 7px 10px;
+    color: #d5bd84;
+    background: rgba(196, 160, 82, .1);
+    border: 1px solid rgba(196, 160, 82, .28);
+    font-size: .66rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.advisor-intro {
+    margin: 25px 0 0;
+    color: #b9b9b9;
+    font-size: .97rem;
+    line-height: 1.85;
+}
+
+.advisor-quote {
+    position: relative;
+    margin: 24px 0;
+    padding: 17px 20px 17px 50px;
+    background: rgba(255, 255, 255, .035);
+    border: 0;
+    border-left: 2px solid var(--lexus-gold);
+}
+
+.advisor-quote i {
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    color: var(--lexus-gold);
+    font-size: 1.25rem;
+}
+
+.advisor-quote p {
+    margin: 0;
+    color: #e8e2d6;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.02rem;
+    font-style: italic;
+    line-height: 1.65;
+}
+
+.advisor-services {
+    display: grid;
+    gap: 11px;
+    margin: 0 0 27px;
+}
+
+.advisor-service {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: var(--lexus-text-muted);
+    font-size: .77rem;
+    line-height: 1.45;
+}
+
+.advisor-service > i {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+    place-items: center;
+    color: var(--lexus-gold);
+    background: var(--lexus-gold-light);
+    border: 1px solid rgba(196, 160, 82, .22);
+}
+
+.advisor-service span {
+    display: flex;
+    flex-direction: column;
+}
+
+.advisor-service strong {
+    color: var(--lexus-white);
+    font-size: .84rem;
+    font-weight: 600;
+}
+
+.advisor-actions {
+    display: grid;
+    grid-template-columns: minmax(194px, 1.3fr) minmax(116px, .75fr) minmax(142px, .95fr);
+    gap: 10px;
+}
+
+.advisor-call,
+.advisor-message,
+.advisor-request {
+    min-height: 58px;
+    border-radius: 0;
+    transition: transform .25s ease, background .25s ease, border-color .25s ease, color .25s ease;
+}
+
+.advisor-call {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 10px 15px;
+    color: var(--lexus-black);
+    background: var(--lexus-gold);
+}
+
+.advisor-call:hover {
+    color: var(--lexus-black);
+    background: #d1b269;
+    transform: translateY(-2px);
+}
+
+.advisor-call i {
+    font-size: 1.1rem;
+}
+
+.advisor-call span {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.02rem;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: .035em;
+}
+
+.advisor-call small {
+    font-family: 'DM Sans', sans-serif;
+    font-size: .59rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.advisor-message,
+.advisor-request {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 13px;
+    color: #fff;
+    background: rgba(255, 255, 255, .035);
+    border: 1px solid rgba(255, 255, 255, .2);
+    font-family: inherit;
+    font-size: .73rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    cursor: pointer;
+}
+
+.advisor-message:hover,
+.advisor-request:hover {
+    color: var(--lexus-gold);
+    border-color: var(--lexus-gold);
+    background: rgba(196, 160, 82, .08);
+    transform: translateY(-2px);
+}
+
+.advisor-response {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 14px;
+    color: #777;
+    font-size: .7rem;
+    letter-spacing: .02em;
+}
+
+.advisor-response span {
+    width: 7px;
+    height: 7px;
+    flex: 0 0 7px;
+    background: #65a86c;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(101, 168, 108, .1);
+}
+
+.advisor-location {
+    position: relative;
+    z-index: 1;
+    margin-top: clamp(58px, 7vw, 96px);
+    padding-top: clamp(28px, 4vw, 48px);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.advisor-location__heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 26px;
+}
+
+.advisor-location__eyebrow {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--lexus-gold);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+}
+
+.advisor-location__heading h3 {
+    margin: 0;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3.4vw, 3rem);
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.advisor-location__heading p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0 0;
+    color: #aaa;
+    font-size: .84rem;
+}
+
+.advisor-location__heading p i {
+    color: var(--lexus-gold);
+}
+
+.advisor-location__map {
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    flex: 0 0 auto;
+    padding: 0 20px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .26);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+}
+
+.advisor-location__map:hover {
+    color: var(--lexus-black);
+    background: var(--lexus-gold);
+    border-color: var(--lexus-gold);
+}
+
+.advisor-location__gallery {
+    display: grid;
+    grid-template-columns: minmax(0, 1.65fr) minmax(280px, .85fr);
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    min-height: 540px;
+}
+
+.advisor-location__card {
+    position: relative;
+    min-height: 0;
+    margin: 0;
+    overflow: hidden;
+    background: #151515;
+    border: 1px solid rgba(255, 255, 255, .11);
+}
+
+.advisor-location__card--main {
+    grid-row: 1 / -1;
+}
+
+.advisor-location__card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .8s cubic-bezier(.2, .7, .2, 1);
+}
+
+.advisor-location__card--main img {
+    object-position: 51% center;
+}
+
+.advisor-location__card--entrance img {
+    object-position: center 62%;
+}
+
+.advisor-location__card--display img {
+    object-position: center 62%;
+}
+
+.advisor-location__card:hover img {
+    transform: scale(1.025);
+}
+
+.advisor-location__card::after {
+    content: '';
+    position: absolute;
+    inset: 38% 0 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, .88), transparent);
+    pointer-events: none;
+}
+
+.advisor-location__card figcaption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 22px;
+}
+
+.advisor-location__card figcaption span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 5px;
+    color: var(--lexus-gold);
+    font-size: .63rem;
+    font-weight: 700;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+
+.advisor-location__card figcaption strong {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.08rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.advisor-location__card--main figcaption {
+    padding: 30px 32px;
+}
+
+.advisor-location__card--main figcaption strong {
+    max-width: 540px;
+    font-size: clamp(1.45rem, 2.8vw, 2.5rem);
+}
+
 /* ====== AWARDS SECTION ====== */
 .awards-section {
     padding: 80px 0;
@@ -1819,12 +2392,43 @@ img {
 
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 1199px) {
+    .advisor-shell {
+        grid-template-columns: minmax(0, .95fr) minmax(400px, 1.05fr);
+        gap: 48px;
+    }
+
+    .advisor-media {
+        grid-template-columns: 1fr .56fr;
+        min-height: 610px;
+    }
+
+    .advisor-actions {
+        grid-template-columns: 1.15fr .85fr;
+    }
+
+    .advisor-request {
+        grid-column: 1 / -1;
+    }
+
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 991px) {
+    .advisor-shell {
+        grid-template-columns: 1fr;
+        gap: 58px;
+    }
+
+    .advisor-media {
+        min-height: 700px;
+    }
+
+    .advisor-media__seal {
+        right: 18px;
+    }
+
     .hero-section {
         padding-top: 100px;
         min-height: auto;
@@ -1859,6 +2463,66 @@ img {
 }
 
 @media (max-width: 767px) {
+    .advisor-section {
+        padding-top: 70px;
+    }
+
+    .advisor-media {
+        grid-template-columns: 1.3fr .7fr;
+        min-height: 570px;
+        gap: 8px;
+    }
+
+    .advisor-media::before {
+        inset: -9px auto auto -9px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .advisor-media__seal {
+        right: 10px;
+        bottom: 12px;
+        min-width: 146px;
+        padding: 10px 12px;
+    }
+
+    .advisor-media__caption {
+        padding: 40px 12px 12px;
+    }
+
+    .advisor-media__caption-mark {
+        display: none;
+    }
+
+    .advisor-identity {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .advisor-actions {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .advisor-call {
+        grid-column: 1 / -1;
+        justify-content: center;
+    }
+
+    .advisor-request {
+        grid-column: auto;
+    }
+
+    .advisor-location__gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px 210px;
+        min-height: 0;
+    }
+
+    .advisor-location__card--main {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
     .hero-stats {
         flex-wrap: wrap;
         gap: 24px;
@@ -1897,6 +2561,77 @@ img {
 }
 
 @media (max-width: 575px) {
+    .advisor-location__heading {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .advisor-location__map {
+        align-self: flex-start;
+    }
+
+    .advisor-location__gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: 330px 190px 190px;
+        gap: 9px;
+    }
+
+    .advisor-location__card--main {
+        grid-column: auto;
+    }
+
+    .advisor-location__card--main figcaption {
+        padding: 22px 20px;
+    }
+
+    .advisor-location__card--main figcaption strong {
+        font-size: 1.35rem;
+    }
+
+    .advisor-media {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 430px 190px;
+        min-height: 0;
+    }
+
+    .advisor-media__primary {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+    .advisor-media__secondary {
+        grid-row: 2;
+    }
+
+    .advisor-media__primary img {
+        object-position: center 24%;
+    }
+
+    .advisor-media__caption span:last-child {
+        font-size: .6rem;
+    }
+
+    .advisor-media__seal {
+        right: 8px;
+        bottom: 202px;
+    }
+
+    .advisor-title {
+        font-size: 2rem;
+    }
+
+    .advisor-quote {
+        padding-left: 44px;
+    }
+
+    .advisor-message,
+    .advisor-request {
+        padding: 0 8px;
+        font-size: .69rem;
+    }
+
     .hero-title {
         text-align: center;
         font-size: 2.2rem;
@@ -8691,4 +9426,3 @@ img {
             .car-img-wrap{height:54px}
             .date-row{grid-template-columns:1fr}
         }
-

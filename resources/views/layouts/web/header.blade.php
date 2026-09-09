@@ -5,24 +5,40 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="hero-content">
-                            <div class="hero-tagline">Experience Amazing</div>
-                            <h1 class="hero-title">
-                                Trải Nghiệm Đẳng Cấp Lexus
-                            </h1>
-                            <p class="hero-desc">
-                                Trải nghiệm sự hoàn hảo trong từng chi tiết với
-                                các mẫu xe sang trọng,
-                                công nghệ tiên tiến và dịch vụ đẳng cấp từ Lexus
-                                Thăng Long.
-                            </p>
+                            @if (Route::currentRouteName() === 'web.home')
+                                <div class="hero-tagline">Tư vấn riêng · Lexus Thăng Long</div>
+                                <h1 class="hero-title">
+                                    Trải nghiệm Lexus,<br><span class="highlight">có Hữu Lập đồng hành</span>
+                                </h1>
+                                <p class="hero-desc">
+                                    Từ lựa chọn phiên bản, màu xe đến chính sách và lịch lái thử —
+                                    Hữu Lập sẵn sàng hỗ trợ Quý khách nhanh chóng, tận tâm 24/7.
+                                </p>
+                            @else
+                                <div class="hero-tagline">Experience Amazing</div>
+                                <h1 class="hero-title">
+                                    Trải Nghiệm Đẳng Cấp Lexus
+                                </h1>
+                                <p class="hero-desc">
+                                    Trải nghiệm sự hoàn hảo trong từng chi tiết với
+                                    các mẫu xe sang trọng, công nghệ tiên tiến và dịch vụ
+                                    đẳng cấp từ Lexus Thăng Long.
+                                </p>
+                            @endif
                             <div class="hero-actions">
                                 <a href="#models" class="btn-primary-lexus">
                                     <i class="bi bi-grid-3x3-gap"></i> Khám phá
                                     dòng xe
                                 </a>
-                                <a href="#" class="btn-outline-lexus">
-                                    <i class="bi bi-play-circle"></i> Xem video
-                                </a>
+                                @if (Route::currentRouteName() === 'web.home')
+                                    <a href="#tu-van-huu-lap" class="btn-outline-lexus">
+                                        <i class="bi bi-person-badge"></i> Gặp Hữu Lập
+                                    </a>
+                                @else
+                                    <a href="{{ route('web.home') }}#tu-van-huu-lap" class="btn-outline-lexus">
+                                        <i class="bi bi-headset"></i> Nhận tư vấn
+                                    </a>
+                                @endif
                             </div>
                             <div class="hero-stats">
                                 <div class="hero-stat">

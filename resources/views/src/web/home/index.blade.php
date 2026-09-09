@@ -490,6 +490,182 @@
             </div>
         </section>
 
+        <!-- ==================== PERSONAL ADVISOR SECTION ==================== -->
+        <section class="advisor-section" id="tu-van-huu-lap" aria-labelledby="advisor-title">
+            <div class="container">
+                <div class="advisor-shell">
+                    <div class="advisor-media" aria-label="Hình ảnh tư vấn viên Hữu Lập tại Lexus Thăng Long">
+                        <figure class="advisor-media__primary">
+                            <img
+                                src="{{ asset_v('web/assets/images/anhcanhan/huu-lap-lexus-gx550.webp') }}"
+                                alt="Hữu Lập, tư vấn bán hàng Lexus Thăng Long, bên cạnh Lexus GX 550"
+                                width="1440" height="1719" loading="lazy" decoding="async">
+                            <figcaption class="advisor-media__caption">
+                                <span class="advisor-media__caption-mark">HL</span>
+                                <span><strong>Hữu Lập</strong>Tư vấn bán hàng Lexus Thăng Long</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="advisor-media__secondary advisor-media__secondary--portrait">
+                            <img
+                                src="{{ asset_v('web/assets/images/anhcanhan/huu-lap-tu-van-lexus.webp') }}"
+                                alt="Hữu Lập tư vấn xe Lexus tại showroom"
+                                width="1050" height="1502" loading="lazy" decoding="async">
+                        </figure>
+
+                        <figure class="advisor-media__secondary advisor-media__secondary--detail">
+                            <img
+                                src="{{ asset_v('web/assets/images/anhcanhan/huu-lap-lexus-thang-long.webp') }}"
+                                alt="Chân dung tư vấn viên Hữu Lập cùng Lexus GX 550"
+                                width="788" height="1050" loading="lazy" decoding="async">
+                        </figure>
+
+                        <div class="advisor-media__seal" aria-label="Hỗ trợ trực tiếp 24 trên 7">
+                            <i class="bi bi-headset" aria-hidden="true"></i>
+                            <span><strong>24/7</strong>Hỗ trợ trực tiếp</span>
+                        </div>
+                    </div>
+
+                    <div class="advisor-content">
+                        <div class="advisor-eyebrow">
+                            <span></span>
+                            Cố vấn Lexus của Quý khách
+                        </div>
+                        <h2 class="advisor-title" id="advisor-title">
+                            Một người đồng hành.<br>
+                            <em>Trọn vẹn mọi trải nghiệm.</em>
+                        </h2>
+
+                        <div class="advisor-identity">
+                            <div>
+                                <div class="advisor-name">Hữu Lập</div>
+                                <div class="advisor-role">Tư vấn bán hàng · Lexus Thăng Long</div>
+                            </div>
+                            <span class="advisor-verified">
+                                <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                                Thông tin trực tiếp
+                            </span>
+                        </div>
+
+                        <p class="advisor-intro">
+                            Hữu Lập luôn sẵn sàng hỗ trợ Quý khách 24/7. Với mọi thắc mắc về
+                            các dòng xe Lexus, phiên bản, giá xe và chính sách liên quan,
+                            hãy liên hệ em Lập để nhận được sự hỗ trợ sớm nhất.
+                        </p>
+
+                        <blockquote class="advisor-quote">
+                            <i class="bi bi-quote" aria-hidden="true"></i>
+                            <p>“Hữu Lập — Trân trọng được đồng hành và hỗ trợ Quý khách trên mọi hành trình.”</p>
+                        </blockquote>
+
+                        <div class="advisor-services" aria-label="Nội dung hỗ trợ">
+                            <div class="advisor-service">
+                                <i class="bi bi-car-front" aria-hidden="true"></i>
+                                <span><strong>Chọn xe phù hợp</strong>Tư vấn mẫu xe và phiên bản</span>
+                            </div>
+                            <div class="advisor-service">
+                                <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
+                                <span><strong>Chính sách rõ ràng</strong>Giá xe, tài chính và ưu đãi</span>
+                            </div>
+                            <div class="advisor-service">
+                                <i class="bi bi-key" aria-hidden="true"></i>
+                                <span><strong>Đồng hành tận tâm</strong>Từ lái thử đến bàn giao xe</span>
+                            </div>
+                        </div>
+
+                        <div class="advisor-actions">
+                            <a class="advisor-call" href="tel:+84962896582" aria-label="Gọi Hữu Lập theo số 0962 896 582">
+                                <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                                <span><small>Gọi trực tiếp Hữu Lập</small>0962 896 582</span>
+                            </a>
+                            <a class="advisor-message" href="https://zalo.me/0962896582" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-chat-dots" aria-hidden="true"></i>
+                                Nhắn Zalo
+                            </a>
+                            <button class="advisor-request" type="button" data-lead-open data-lead-source="advisor_profile">
+                                Yêu cầu gọi lại
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+
+                        <div class="advisor-response">
+                            <span aria-hidden="true"></span>
+                            Kết nối trực tiếp với Hữu Lập — không qua tổng đài
+                        </div>
+                    </div>
+                </div>
+
+                <div class="advisor-location" aria-labelledby="advisor-location-title">
+                    <div class="advisor-location__heading">
+                        <div>
+                            <span class="advisor-location__eyebrow">Không gian đón tiếp Quý khách</span>
+                            <h3 id="advisor-location-title">Ghé thăm Lexus Thăng Long</h3>
+                            <p>
+                                <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                                Phạm Hùng – Dương Đình Nghệ, Hà Nội
+                            </p>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Lexus+Thang+Long+Pham+Hung+Duong+Dinh+Nghe"
+                            class="advisor-location__map" target="_blank" rel="noopener noreferrer">
+                            Xem chỉ đường
+                            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="advisor-location__gallery">
+                        <figure class="advisor-location__card advisor-location__card--main">
+                            <img
+                                src="{{ asset_v('web/assets/images/anhcanhan/lexus-thang-long-showroom.webp') }}"
+                                alt="Toàn cảnh tòa nhà Lexus Thăng Long tại Hà Nội"
+                                width="1400" height="782" loading="lazy" decoding="async">
+                            <figcaption>
+                                <span><i class="bi bi-building" aria-hidden="true"></i> Lexus Thăng Long</span>
+                                <strong>Điểm hẹn của những trải nghiệm Lexus</strong>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="advisor-location__card advisor-location__card--entrance">
+                            <img
+                                src="{{ asset_v('web/assets/images/anhcanhan/lexus-thang-long-entrance.webp') }}"
+                                alt="Mặt tiền và lối vào showroom Lexus Thăng Long"
+                                width="1600" height="745" loading="lazy" decoding="async">
+                            <figcaption>
+                                <span>01</span>
+                                <strong>Mặt tiền showroom</strong>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="advisor-location__card advisor-location__card--display">
+                            <img
+                                src="{{ asset_v('web/assets/images/anhcanhan/lexus-thang-long-display.webp') }}"
+                                alt="Khu vực trưng bày xe tại Lexus Thăng Long"
+                                width="1400" height="934" loading="lazy" decoding="async">
+                            <figcaption>
+                                <span>02</span>
+                                <strong>Không gian trưng bày</strong>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <script type="application/ld+json">
+            {
+                "@@context": "https://schema.org",
+                "@@type": "Person",
+                "name": "Hữu Lập",
+                "jobTitle": "Tư vấn bán hàng",
+                "telephone": "+84 962 896 582",
+                "image": "{{ asset('web/assets/images/anhcanhan/huu-lap-lexus-gx550.webp') }}",
+                "worksFor": {
+                    "@@type": "AutomotiveBusiness",
+                    "name": "Lexus Thăng Long",
+                    "url": "https://www.lexus.com.vn/vn/dealers/thanglong.html"
+                }
+            }
+            </script>
+        </section>
+
         <!-- ==================== FEATURED SECTION ==================== -->
         <section class="featured-section">
             <div class="container">
