@@ -3,7 +3,9 @@
     <div class="container">
         <div class="footer-grid">
             <div>
-                <div class="footer-brand">LEXUS THĂNG LONG</div>
+                <div class="footer-brand">
+                    <img src="{{ asset_v('web/assets/images/logo/logo-ltl-white.png') }}" alt="Lexus Thăng Long" width="1400" height="119" loading="lazy" decoding="async">
+                </div>
                 <p class="footer-desc">Đại lý ủy quyền chính hãng Lexus tại Hà Nội. Trải nghiệm sự tuyệt vời trong từng hành trình với những chiếc xe sang trọng và công nghệ tiên tiến nhất từ Lexus.</p>
                 <address class="footer-address" style="font-style:normal;color:var(--lexus-text-muted);font-size:.9rem;line-height:1.7">
                     <div><i class="bi bi-geo-alt-fill"></i> {{ $org['street'] }}, {{ $org['locality'] }}, {{ $org['region'] }}</div>

@@ -1,4 +1,28 @@
 /* homepage  */
+/* ===================== FONTS ===================== */
+/* NobelVnu (Lexus brand font, Vietnamese version). Place the font files in public/web/assets/fonts/ */
+@font-face {
+    font-family: 'NobelVnu';
+    src: url('../fonts/NobelVnu-Book.woff2') format('woff2'),
+        url('../fonts/NobelVnu-Book.woff') format('woff'),
+        url('../fonts/NobelVnu-Book.otf') format('opentype'),
+        url('../fonts/NobelVnu-Book.ttf') format('truetype');
+    font-weight: 300 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NobelVnu';
+    src: url('../fonts/NobelVnu-Bold.woff2') format('woff2'),
+        url('../fonts/NobelVnu-Bold.woff') format('woff'),
+        url('../fonts/NobelVnu-Bold.otf') format('opentype'),
+        url('../fonts/NobelVnu-Bold.ttf') format('truetype');
+    font-weight: 600 800;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* ===================== CSS VARIABLES (SHARED) ===================== */
 :root {
     --lexus-gold: #C4A052;
@@ -21,6 +45,8 @@
     --shadow-gold: 0 4px 30px rgba(196, 160, 82, 0.2);
     --shadow-dark: 0 8px 40px rgba(0, 0, 0, 0.4);
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --font-body: 'NobelVnu', 'Nobel', 'Jost', 'DM Sans', sans-serif;
+    --font-display: 'Playfair Display', serif;
 }
 
 * {
@@ -34,7 +60,7 @@ html {
 }
 
 body {
-    font-family: 'Nobel', sans-serif !important;
+    font-family: var(--font-body) !important;
     background: var(--lexus-black);
     color: var(--lexus-text);
     -webkit-font-smoothing: antialiased;
@@ -377,18 +403,17 @@ img {
     position: relative;
     z-index: 1;
     display: grid;
-    grid-template-columns: minmax(0, 1.03fr) minmax(420px, .97fr);
-    gap: clamp(46px, 7vw, 96px);
+    grid-template-columns: minmax(0, 1.12fr) minmax(400px, .88fr);
+    gap: clamp(40px, 5vw, 72px);
     align-items: center;
 }
 
 .advisor-media {
     position: relative;
     display: grid;
-    grid-template-columns: minmax(0, 1.5fr) minmax(150px, .72fr);
+    grid-template-columns: minmax(0, 1.5fr) minmax(150px, .62fr);
     grid-template-rows: repeat(2, minmax(0, 1fr));
     gap: 14px;
-    min-height: 680px;
 }
 
 .advisor-media::before {
@@ -406,12 +431,16 @@ img {
 .advisor-media figure {
     position: relative;
     margin: 0;
+    min-height: 0;
     overflow: hidden;
     background: var(--lexus-dark-2);
     border: 1px solid rgba(255, 255, 255, .1);
 }
 
+/* Images are taken out of flow so the grid rows follow the primary photo's ratio */
 .advisor-media img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -424,10 +453,11 @@ img {
 
 .advisor-media__primary {
     grid-row: 1 / -1;
+    aspect-ratio: 1440 / 1720;
 }
 
 .advisor-media__primary img {
-    object-position: 47% center;
+    object-position: center;
 }
 
 .advisor-media__secondary--portrait img {
@@ -708,7 +738,7 @@ img {
 }
 
 .advisor-call small {
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-body);
     font-size: .59rem;
     font-weight: 700;
     letter-spacing: .08em;
@@ -1722,7 +1752,7 @@ img {
     font-size: 0.75rem;
     font-weight: 400;
     color: var(--lexus-text-muted);
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-body);
 }
 
 .model-link {
@@ -2393,13 +2423,12 @@ img {
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 1199px) {
     .advisor-shell {
-        grid-template-columns: minmax(0, .95fr) minmax(400px, 1.05fr);
-        gap: 48px;
+        grid-template-columns: minmax(0, 1.05fr) minmax(380px, .95fr);
+        gap: 40px;
     }
 
     .advisor-media {
-        grid-template-columns: 1fr .56fr;
-        min-height: 610px;
+        grid-template-columns: 1fr .45fr;
     }
 
     .advisor-actions {
@@ -2419,10 +2448,6 @@ img {
     .advisor-shell {
         grid-template-columns: 1fr;
         gap: 58px;
-    }
-
-    .advisor-media {
-        min-height: 700px;
     }
 
     .advisor-media__seal {
@@ -2468,8 +2493,7 @@ img {
     }
 
     .advisor-media {
-        grid-template-columns: 1.3fr .7fr;
-        min-height: 570px;
+        grid-template-columns: 1.3fr .6fr;
         gap: 8px;
     }
 
@@ -2599,6 +2623,7 @@ img {
     .advisor-media__primary {
         grid-column: 1 / -1;
         grid-row: auto;
+        aspect-ratio: auto;
     }
 
     .advisor-media__secondary {
@@ -2682,7 +2707,7 @@ html {
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-body);
     background: var(--lexus-black);
     color: var(--lexus-text);
     -webkit-font-smoothing: antialiased;
@@ -3204,7 +3229,7 @@ img {
     justify-content: center;
     font-size: 0.75rem;
     font-weight: 700;
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-body);
 }
 
 .hotspot-info-desc {
@@ -4847,7 +4872,7 @@ img {
     white-space: nowrap;
     position: relative;
     transition: var(--transition);
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-body);
 }
 
 .colour-tab::after {
@@ -5065,7 +5090,7 @@ img {
     transition: var(--transition);
     white-space: nowrap;
     position: relative;
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-body);
 }
 
 .variant-tab::after {
@@ -5125,7 +5150,7 @@ img {
     white-space: nowrap;
     position: relative;
     transition: var(--transition);
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-body);
 }
 
 .design-tab::after {
@@ -5371,7 +5396,7 @@ html {
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-body);
     background: var(--lexus-black);
     color: var(--lexus-text);
     -webkit-font-smoothing: antialiased;
@@ -6816,7 +6841,7 @@ html {
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-body);
     background: var(--lexus-black);
     color: var(--lexus-text);
     -webkit-font-smoothing: antialiased;
@@ -7466,7 +7491,7 @@ img {
 .comments-title .ct-count {
     background: var(--lexus-gold);
     color: var(--lexus-black);
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-body);
     font-size: 0.78rem;
     font-weight: 700;
     padding: 4px 12px;
@@ -9426,3 +9451,33 @@ img {
             .car-img-wrap{height:54px}
             .date-row{grid-template-columns:1fr}
         }
+
+/* ===================== BRAND LOGO (Lexus Thăng Long) ===================== */
+.n-brand {
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+    flex-shrink: 0;
+}
+
+.n-brand img {
+    display: block;
+    height: 26px;
+    width: auto;
+}
+
+.footer-brand img {
+    display: block;
+    height: 30px;
+    width: auto;
+}
+
+@media (max-width: 767px) {
+    .n-brand img {
+        height: 20px;
+    }
+
+    .footer-brand img {
+        height: 24px;
+    }
+}

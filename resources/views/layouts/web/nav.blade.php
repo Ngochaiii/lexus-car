@@ -2,7 +2,9 @@
 <nav class="nav-lx" id="nav">
     <div class="container">
         <div class="d-flex align-items-center justify-content-between">
-            <a href="{{ route('web.home') }}" class="n-brand">LEXUS</a>
+            <a href="{{ route('web.home') }}" class="n-brand" aria-label="Lexus Thăng Long - Trang chủ">
+                <img src="{{ asset_v('web/assets/images/logo/logo-ltl-white.png') }}" alt="Lexus Thăng Long" width="1400" height="119" decoding="async">
+            </a>
             <div class="d-none d-lg-flex align-items-center gap-1">
                 <a href="{{ route('web.home') }}" class="n-link">Trang chủ</a>
                 <a href="{{ route('products.rx') }}" class="n-link">RX</a>

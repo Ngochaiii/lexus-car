@@ -22,7 +22,7 @@
         'name' => $org['name'],
         'legalName' => $org['legal_name'],
         'url' => $siteUrl,
-        'logo' => $siteUrl . '/web/assets/images/lexus_logo.png',
+        'logo' => $siteUrl . '/web/assets/images/logo/logo-ltl-black.png',
         'image' => $siteUrl . '/web/assets/images/lexus_logo.png',
         'telephone' => $org['phone'],
         'email' => $org['email'],
