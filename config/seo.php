@@ -7,7 +7,7 @@ return [
     'tracking' => [
         'gtm_id' => env('GTM_ID'),
         'ga4_id' => env('GA4_ID'),
-        'gads_id' => env('GADS_ID'),
+        'gads_id' => env('GADS_ID', 'AW-17996413595'),
         'gads_conversion_contact' => env('GADS_CONVERSION_CONTACT'),
         // Nếu chưa tạo hành động chuyển đổi riêng, dùng chung nhãn "Người liên hệ".
         'gads_conversion_phone' => env('GADS_CONVERSION_PHONE', env('GADS_CONVERSION_CONTACT')),
@@ -70,9 +70,9 @@ return [
             'model_year' => '2026',
             'price' => '2540000000',
             'fuel' => 'Hybrid',
-            'engine' => '2.5L Hybrid e-CVT AWD',
+            'engine' => '2.5L Hybrid e-CVT FWD',
             'image' => '/web/assets/images/es/mau-trang.jpg',
-            'description' => 'Lexus ES 350h 2026 thế hệ 8 - Sedan hạng sang hybrid e-CVT AWD.',
+            'description' => 'Lexus ES 350h 2026 thế hệ 8 - Sedan hạng sang hybrid e-CVT FWD.',
         ],
         'ls' => [
             'name' => 'Lexus LS',

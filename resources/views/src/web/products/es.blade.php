@@ -54,10 +54,10 @@
                 <!-- RIGHT: PRODUCT INFO -->
                 <div class="col-lg-5">
                     <div class="product-info">
-                        <div class="product-badge"><i class="bi bi-lightning-charge-fill"></i> Hybrid Thế Hệ 6 — e-CVT AWD
+                        <div class="product-badge"><i class="bi bi-lightning-charge-fill"></i> Hybrid Thế Hệ 6 — e-CVT FWD
                         </div>
                         <h1 class="product-title">Lexus ES</h1>
-                        <p class="product-subtitle">ES 350h 2026 — 2.5L HEV e-CVT AWD</p>
+                        <p class="product-subtitle">ES 350h 2026 — 2.5L HEV e-CVT FWD</p>
 
                         <div class="product-rating">
                             <div class="rating-stars">
@@ -93,26 +93,26 @@
                             <div class="option-label"><span><i class="bi bi-gear me-2"></i>Phiên bản</span></div>
                             <div class="version-options">
                                 <div class="version-option"
-                                    onclick="selectVersion(this,'2.360.000.000','ES350h Premium',244,'8.5s','5.0L','FWD')">
+                                    onclick="selectVersion(this,'2.360.000.000','ES 350h Premium','≈244–247','≈7,7–8,0s','Đang cập nhật','FWD','HEV','e-CVT')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
-                                        <div class="vo-name">ES350h Premium</div>
+                                        <div class="vo-name">ES 350h Premium</div>
                                     </div>
                                     <div class="vo-price">2.360.000.000</div>
                                 </div>
                                 <div class="version-option active"
-                                    onclick="selectVersion(this,'2.580.000.000','ES350h Luxury',244,'8.3s','5.2L','AWD')">
+                                    onclick="selectVersion(this,'2.580.000.000','ES 350h Luxury','≈244–247','≈7,7–8,0s','Đang cập nhật','FWD','HEV','e-CVT')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
-                                        <div class="vo-name">ES350h Luxury</div>
+                                        <div class="vo-name">ES 350h Luxury</div>
                                     </div>
                                     <div class="vo-price">2.580.000.000</div>
                                 </div>
                                 <div class="version-option"
-                                    onclick="selectVersion(this,'2.980.000.000','ES500e',244,'8.3s','5.2L','AWD')">
+                                    onclick="selectVersion(this,'2.980.000.000','ES 500e','338–343','≈5,7–5,9s','≈430 km','DIRECT4 AWD','BEV','Truyền động điện')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
-                                        <div class="vo-name">ES500e</div>
+                                        <div class="vo-name">ES 500e</div>
                                     </div>
                                     <div class="vo-price">2.980.000.000</div>
                                 </div>
@@ -124,30 +124,30 @@
                             <div class="price-row">
                                 <div>
                                     <div class="price-label">Giá niêm yết</div>
-                                    <div class="price-value" id="priceDisplay">2.360.000.000<span> </span></div>
+                                    <div class="price-value" id="priceDisplay">2.580.000.000<span> </span></div>
                                 </div>
                             </div>
                             <div class="quick-specs"
                                 style="margin:16px 0 0;padding:12px 0 0;background:none;border:none;border-top:1px solid var(--lexus-gray);border-radius:0;">
                                 <div class="qs-item">
                                     <div class="qs-icon"><i class="bi bi-lightning-charge"></i></div>
-                                    <div class="qs-value" id="qs-hp">244</div>
+                                    <div class="qs-value" id="qs-hp">≈244–247</div>
                                     <div class="qs-label">Mã lực</div>
                                 </div>
                                 <div class="qs-item">
                                     <div class="qs-icon"><i class="bi bi-speedometer2"></i></div>
-                                    <div class="qs-value" id="qs-acc">8.3s</div>
+                                    <div class="qs-value" id="qs-acc">≈7,7–8,0s</div>
                                     <div class="qs-label">0-100 km/h</div>
                                 </div>
                                 <div class="qs-item">
                                     <div class="qs-icon"><i class="bi bi-fuel-pump"></i></div>
-                                    <div class="qs-value" id="qs-fuel">5.2L</div>
-                                    <div class="qs-label">/ 100km</div>
+                                    <div class="qs-value" id="qs-fuel">Đang cập nhật</div>
+                                    <div class="qs-label" id="qs-energy-label">Tiêu thụ / 100 km</div>
                                 </div>
                                 <div class="qs-item">
                                     <div class="qs-icon"><i class="bi bi-gear-wide-connected"></i></div>
-                                    <div class="qs-value" id="qs-drive">AWD</div>
-                                    <div class="qs-label">e-CVT</div>
+                                    <div class="qs-value" id="qs-drive">FWD</div>
+                                    <div class="qs-label" id="qs-transmission">e-CVT</div>
                                 </div>
                             </div>
                             <div class="price-installment">
@@ -249,7 +249,7 @@
                             <div class="ms-label">Thế hệ Hybrid</div>
                         </div>
                         <div class="ms-item">
-                            <div class="ms-num">244</div>
+                            <div class="ms-num">≈244–247</div>
                             <div class="ms-label">Mã lực tổng hợp</div>
                         </div>
                         <div class="ms-item">
@@ -466,164 +466,26 @@
         <div class="container">
             <div class="section-tag">Động lực học</div>
             <h2 class="section-title">Hệ Thống Truyền Động</h2>
-            <p class="section-desc">Lexus ES 350h sở hữu hệ thống hybrid thế hệ thứ 6 được tinh chỉnh để tối ưu hoá hiệu
-                quả và hiệu suất — mang đến trải nghiệm vận hành mượt mà cùng khả năng tiết kiệm nhiên liệu vượt trội.</p>
-
-            <div class="variant-tabs">
-                <button class="variant-tab active" onclick="switchVariant(this,'vt-350h-awd')">ES 350h — 2.5L Hybrid
-                    AWD</button>
-                <button class="variant-tab" onclick="switchVariant(this,'vt-350h-fwd')">ES 350h — 2.5L Hybrid FWD</button>
-            </div>
-
-            <!-- ES 350h AWD -->
-            <div class="variant-pane active" id="vt-350h-awd">
-                <div class="powertrain-grid">
-                    <div class="powertrain-image">
-                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/es/dong-co-hybrid.jpg') }}"
-                            alt="Hệ thống Hybrid ES 350h 2.5L">
-                        <div class="powertrain-badge">2.5L HEV AWD</div>
-                    </div>
-                    <div class="powertrain-content">
-                        <h3><i class="bi bi-battery-charging-fill me-2"></i>Hệ Thống Hybrid 2.5L Thế Hệ 6</h3>
-                        <p>Phiên bản 350h sử dụng động cơ xăng 2.5L kết hợp mô-tơ điện với công suất tổng hợp 244 mã lực.
-                            Hybrid thế hệ mới mượt mà hơn, ít "gào máy" khi tăng tốc, đồng thời tiết kiệm nhiên liệu đáng
-                            kể — lợi thế lớn tại Việt Nam. Vẫn giữ được triết lý êm – nhẹ – thư giãn đặc trưng của Lexus.
-                        </p>
-                        <div class="powertrain-specs">
-                            <div class="pt-spec">
-                                <div class="pt-spec-value">244 HP</div>
-                                <div class="pt-spec-label">Công suất</div>
-                            </div>
-                            <div class="pt-spec">
-                                <div class="pt-spec-value">175 Nm</div>
-                                <div class="pt-spec-label">Mô-men xoắn</div>
-                            </div>
-                            <div class="pt-spec">
-                                <div class="pt-spec-value">8.3s</div>
-                                <div class="pt-spec-label">0-100 km/h</div>
-                            </div>
-                            <div class="pt-spec">
-                                <div class="pt-spec-value">e-CVT</div>
-                                <div class="pt-spec-label">Hộp số</div>
-                            </div>
-                        </div>
-                        <div class="hybrid-components" style="margin-top:28px;">
-                            <h4>Thành phần hệ thống Hybrid</h4>
-                            <div class="hc-list">
-                                <div class="hc-item"><i class="bi bi-gear-fill"></i> Động cơ xăng 2.5L 4 xi-lanh</div>
-                                <div class="hc-item"><i class="bi bi-lightning-charge"></i> Mô-tơ điện công suất cao</div>
-                                <div class="hc-item"><i class="bi bi-arrow-repeat"></i> Hộp số vô cấp điện tử e-CVT</div>
-                                <div class="hc-item"><i class="bi bi-cpu"></i> Bộ điều khiển hybrid thế hệ 6</div>
-                                <div class="hc-item"><i class="bi bi-globe-americas"></i> Dẫn động 4 bánh AWD</div>
-                            </div>
-                        </div>
-                        <p style="font-size:0.82rem;color:var(--lexus-text-muted);margin-top:16px;line-height:1.7;">
-                            Trải nghiệm thiên về "chill" hơn là "phấn khích" — phù hợp với khách hàng yêu cầu sự êm ái,
-                            thư giãn và tiết kiệm nhiên liệu trong các hành trình dài.</p>
+            <div class="powertrain-grid">
+                <div class="powertrain-content">
+                    <h3>ES 350h Premium &amp; Luxury — Hybrid FWD</h3>
+                    <p>Động cơ xăng 2.5L I4 (2.487 cc) kết hợp mô-tơ điện, hộp số e-CVT và dẫn động cầu trước FWD. Hybrid tự sạc, không cần sạc ngoài.</p>
+                    <div class="powertrain-specs">
+                        <div class="pt-spec"><div class="pt-spec-value">≈244–247 HP</div><div class="pt-spec-label">Công suất hệ thống</div></div>
+                        <div class="pt-spec"><div class="pt-spec-value">≈7,7–8,0 giây*</div><div class="pt-spec-label">0–100 km/h</div></div>
                     </div>
                 </div>
-            </div>
-
-            <!-- ES350h Premium -->
-            <div class="variant-pane" id="vt-350h-fwd">
-                <div class="powertrain-grid">
-                    <div class="powertrain-image">
-                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/es/dong-co-fwd.jpg') }}" alt="Hệ thống Hybrid ES350h Premium">
-                        <div class="powertrain-badge">2.5L HEV FWD</div>
-                    </div>
-                    <div class="powertrain-content">
-                        <h3><i class="bi bi-lightning-charge-fill me-2"></i>Hệ Thống Hybrid 2.5L Dẫn Động Cầu Trước</h3>
-                        <p>Phiên bản dẫn động cầu trước FWD cung cấp khả năng vận hành mượt mà với ưu thế tiết kiệm nhiên
-                            liệu tối đa. Động cơ hybrid thế hệ 6 kết hợp mô-tơ điện mang lại trải nghiệm lái êm nhẹ, ít
-                            tiếng ồn và thân thiện với môi trường.</p>
-                        <div class="powertrain-specs">
-                            <div class="pt-spec">
-                                <div class="pt-spec-value">244 HP</div>
-                                <div class="pt-spec-label">Công suất</div>
-                            </div>
-                            <div class="pt-spec">
-                                <div class="pt-spec-value">8.5s</div>
-                                <div class="pt-spec-label">0-100 km/h</div>
-                            </div>
-                            <div class="pt-spec">
-                                <div class="pt-spec-value">5.0L</div>
-                                <div class="pt-spec-label">/100km</div>
-                            </div>
-                            <div class="pt-spec">
-                                <div class="pt-spec-value">FWD</div>
-                                <div class="pt-spec-label">Dẫn động</div>
-                            </div>
-                        </div>
-                        <div class="hybrid-components" style="margin-top:28px;">
-                            <h4>Cấu hình hệ thống</h4>
-                            <div class="hc-list">
-                                <div class="hc-item"><i class="bi bi-gear-fill"></i> Động cơ xăng 2.5L 4 xi-lanh</div>
-                                <div class="hc-item"><i class="bi bi-arrow-repeat"></i> Hộp số vô cấp điện tử e-CVT
-                                </div>
-                                <div class="hc-item"><i class="bi bi-globe-americas"></i> Dẫn động cầu trước FWD</div>
-                            </div>
-                        </div>
+                <div class="powertrain-content">
+                    <h3>ES 500e — Thuần điện DIRECT4 AWD</h3>
+                    <p>Hai mô-tơ điện eAxle, dẫn động DIRECT4 AWD và pin Li-ion 74,7 kWh. Hỗ trợ sạc ngoài, quãng đường điện khoảng 430 km.</p>
+                    <div class="powertrain-specs">
+                        <div class="pt-spec"><div class="pt-spec-value">338–343 HP</div><div class="pt-spec-label">Công suất hệ thống</div></div>
+                        <div class="pt-spec"><div class="pt-spec-value">≈5,7–5,9 giây*</div><div class="pt-spec-label">0–100 km/h</div></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- ==================== KHUNG GẦM ==================== -->
-    {{-- <section class="chassis-section" id="chassis">
-        <div class="container">
-            <div class="section-tag">Nền tảng kỹ thuật</div>
-            <h2 class="section-title">Khung Gầm & Hệ Thống Treo</h2>
-            <p style="color:var(--lexus-text-muted);max-width:700px;margin-bottom:0;">Nền tảng hoàn toàn mới của ES thế hệ
-                8 với trục cơ sở tăng, trọng tâm thấp — truyền lực dẫn động xuống mặt đường một cách hiệu quả, đồng thời
-                mang đến khả năng êm ái tối đa trong mọi điều kiện vận hành.</p>
-            <div class="chassis-grid">
-                <div class="chassis-images">
-                    <div class="chassis-img-card">
-                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/es/treo-truoc.jpg') }}" alt="Hệ thống treo trước Lexus ES">
-                        <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
-                                style="color:var(--lexus-gold);"></i>Hệ thống treo trước — MacPherson</div>
-                    </div>
-                    <div class="chassis-img-card">
-                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/es/treo-sau.jpg') }}" alt="Hệ thống treo sau Lexus ES">
-                        <div class="chassis-img-label"><i class="bi bi-gear-fill me-2"
-                                style="color:var(--lexus-gold);"></i>Hệ thống treo sau — Đa liên kết</div>
-                    </div>
-                    <div class="chassis-info-box mt-2">
-                        <h4 class="chassis-info-title"><i class="bi bi-wind"></i>Hiệu suất khí động học</h4>
-                        <p class="chassis-info-desc">Thân xe dài và rộng hơn với phong cách Spindle Body — thiết kế khí
-                            động học được tối ưu hoá giúp giảm lực cản không khí, tăng ổn định tốc độ cao và cải thiện
-                            hiệu suất nhiên liệu đáng kể.</p>
-                    </div>
-                </div>
-
-                <div class="chassis-diagram">
-                    <div class="chassis-diagram-img">
-                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/es/khung-gam.jpg') }}"
-                            alt="Sơ đồ khung gầm Lexus ES thế hệ 8">
-                    </div>
-                    <div class="chassis-legend">
-                        <div class="legend-item"><span class="legend-color c1"></span>Ma-tít đàn hồi cao</div>
-                        <div class="legend-item"><span class="legend-color c2"></span>Keo dán kết cấu</div>
-                        <div class="legend-item"><span class="legend-color c3"></span>Keo dán đàn hồi cao</div>
-                        <div class="legend-item"><span class="legend-color c4"></span>Hàn bước ngắn</div>
-                        <div class="legend-item"><span class="legend-color c5"></span>Hàn vít laser</div>
-                        <div class="legend-item"><span class="legend-color c6"></span>Gia tăng độ cứng vững</div>
-                    </div>
-                    <div class="chassis-info-box mt-3">
-                        <h4 class="chassis-info-title"><i class="bi bi-shield-check"></i>Thân xe độ cứng cao</h4>
-                        <p class="chassis-info-desc">Cấu trúc thân xe thế hệ 8 được gia cố với công nghệ hàn laser và keo
-                            đàn hồi cao, tăng độ cứng vững và giảm rung chấn hiệu quả.</p>
-                    </div>
-                    <div class="chassis-info-box mt-2">
-                        <h4 class="chassis-info-title"><i class="bi bi-speedometer2"></i>Hệ thống treo / giảm xóc</h4>
-                        <p class="chassis-info-desc">Hệ thống treo trước MacPherson và treo sau đa liên kết được tinh chỉnh
-                            để tối ưu sự êm ái — đúng chất xe "ông chủ" với trải nghiệm thư giãn cho hàng ghế sau.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
 
     <!-- ==================== THIẾT KẾ ==================== -->
     <section class="design-section" id="design">
@@ -1060,149 +922,75 @@
     <!-- ==================== THÔNG SỐ KỸ THUẬT ==================== -->
     <section class="specs-section section-padding" id="specs">
         <div class="container">
-            <div class="section-tag">Dữ liệu kỹ thuật</div>
-            <h2 class="section-title">Tính Năng Chính</h2>
-            <p class="section-subtitle">ES 250 / ES 250 F-Sport / ES 300h</p>
-
-            <div class="specs-grid">
-                <!-- 1. NGOẠI THẤT -->
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-lightbulb"></i> Ngoại Thất</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Đèn chiếu xa/gần</span><span class="spec-value">3
-                                bóng LED Blade scan</span></div>
-                        <div class="spec-row"><span class="spec-name">Đèn ban ngày (DRL)</span><span
-                                class="spec-value">LED</span></div>
-                        <div class="spec-row"><span class="spec-name">Đèn thích ứng (AHS/AHB/ALS)</span><span
-                                class="spec-value">F-Sport, ES 300h</span></div>
-                        <div class="spec-row"><span class="spec-name">Đèn báo phanh</span><span
-                                class="spec-value">LED</span></div>
-                        <div class="spec-row"><span class="spec-name">Gạt mưa tự động</span><span class="spec-value">Tiêu
-                                chuẩn</span></div>
-                        <div class="spec-row"><span class="spec-name">Gương chiếu hậu đa tính năng</span><span
-                                class="spec-value">Chỉnh/gập điện, sấy, nhớ</span></div>
-                        <div class="spec-row"><span class="spec-name">Cửa khoang hành lý điện</span><span
-                                class="spec-value">Không chạm</span></div>
-                    </div>
-                </div>
-
-                <!-- 2. GHẾ NGỒI -->
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-person"></i> Ghế Ngồi</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Chất liệu</span><span class="spec-value">Da cao cấp
-                                / F-Sport / Semi-aniline</span></div>
-                        <div class="spec-row"><span class="spec-name">Ghế lái chỉnh điện</span><span
-                                class="spec-value">10 hướng (8 hướng F-Sport)</span></div>
-                        <div class="spec-row"><span class="spec-name">Ghế phụ chỉnh điện</span><span class="spec-value">8
-                                hướng (10 hướng ES 300h)</span></div>
-                        <div class="spec-row"><span class="spec-name">Nhớ vị trí ghế</span><span class="spec-value">3 vị
-                                trí</span></div>
-                        <div class="spec-row"><span class="spec-name">Sưởi & làm mát ghế</span><span
-                                class="spec-value">Tiêu chuẩn</span></div>
-                        <div class="spec-row"><span class="spec-name">Ghế sau chỉnh điện</span><span class="spec-value">2
-                                hướng (ES 300h)</span></div>
-                        <div class="spec-row"><span class="spec-name">Hỗ trợ ra vào</span><span class="spec-value">Tiêu
-                                chuẩn</span></div>
-                    </div>
-                </div>
-
-                <!-- 3. TIỆN NGHI & GIẢI TRÍ -->
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-music-note-beamed"></i> Tiện Nghi & Giải Trí</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Điều hòa tự động</span><span class="spec-value">2
-                                vùng (3 vùng ES 300h)</span></div>
-                        <div class="spec-row"><span class="spec-name">Hệ thống âm thanh</span><span
-                                class="spec-value">Lexus Premium / Mark Levinson</span></div>
-                        <div class="spec-row"><span class="spec-name">Số loa</span><span class="spec-value">10 loa (17
-                                loa ES 300h)</span></div>
-                        <div class="spec-row"><span class="spec-name">Màn hình trung tâm</span><span
-                                class="spec-value">12.3 inch</span></div>
-                        <div class="spec-row"><span class="spec-name">Kết nối</span><span class="spec-value">Apple
-                                CarPlay & Android Auto</span></div>
-                        <div class="spec-row"><span class="spec-name">Head-Up Display (HUD)</span><span
-                                class="spec-value">240 x 90</span></div>
-                        <div class="spec-row"><span class="spec-name">Sạc không dây & chìa khóa thẻ</span><span
-                                class="spec-value">Tiêu chuẩn</span></div>
-                    </div>
-                </div>
-
-                <!-- 4. AN TOÀN CHỦ ĐỘNG -->
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-shield-check"></i> An Toàn Chủ Động</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Ga tự động theo radar</span><span
-                                class="spec-value">DRCC</span></div>
-                        <div class="spec-row"><span class="spec-name">An toàn tiền va chạm</span><span
-                                class="spec-value">PCS</span></div>
-                        <div class="spec-row"><span class="spec-name">Cảnh báo lệch/theo dõi làn</span><span
-                                class="spec-value">LDA + LTA</span></div>
-                        <div class="spec-row"><span class="spec-name">Cảnh báo điểm mù</span><span
-                                class="spec-value">BSM</span></div>
-                        <div class="spec-row"><span class="spec-name">Cảnh báo cắt ngang khi lùi</span><span
-                                class="spec-value">RCTA</span></div>
-                        <div class="spec-row"><span class="spec-name">Ổn định & vào cua chủ động</span><span
-                                class="spec-value">VSC + ACA + HAC</span></div>
-                        <div class="spec-row"><span class="spec-name">Hỗ trợ lực phanh</span><span class="spec-value">BA
-                                + EBD + Phanh đỗ điện tử</span></div>
-                    </div>
-                </div>
-
-                <!-- 5. AN TOÀN BỊ ĐỘNG -->
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-shield-fill-check"></i> An Toàn Bị Động</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Số lượng túi khí</span><span class="spec-value">10
-                                túi khí</span></div>
-                        <div class="spec-row"><span class="spec-name">Camera lùi</span><span class="spec-value">Tiêu
-                                chuẩn</span></div>
-                        <div class="spec-row"><span class="spec-name">Cảm biến khoảng cách</span><span
-                                class="spec-value">8 cảm biến trước/sau</span></div>
-                        <div class="spec-row"><span class="spec-name">Cảnh báo áp suất lốp</span><span
-                                class="spec-value">TPWS</span></div>
-                        <div class="spec-row"><span class="spec-name">Móc ghế trẻ em</span><span
-                                class="spec-value">ISOFIX</span></div>
-                        <div class="spec-row"><span class="spec-name">Khung xe an toàn</span><span class="spec-value">Mũi
-                                xe hấp thụ xung lực</span></div>
-                        <div class="spec-row"><span class="spec-name">Rèm che nắng</span><span class="spec-value">Cửa sau
-                                + kính sau chỉnh điện</span></div>
-                    </div>
-                </div>
-
-                <!-- 6. TAY LÁI & ĐIỀU KHIỂN -->
-                <div class="specs-card">
-                    <div class="specs-card-header">
-                        <h4><i class="bi bi-sliders"></i> Tay Lái & Điều Khiển</h4>
-                    </div>
-                    <div class="specs-card-body">
-                        <div class="spec-row"><span class="spec-name">Tay lái chỉnh điện</span><span
-                                class="spec-value">Nhớ vị trí</span></div>
-                        <div class="spec-row"><span class="spec-name">Sưởi tay lái</span><span class="spec-value">Tiêu
-                                chuẩn</span></div>
-                        <div class="spec-row"><span class="spec-name">Lẫy chuyển số</span><span class="spec-value">Tích
-                                hợp tay lái</span></div>
-                        <div class="spec-row"><span class="spec-name">Hỗ trợ ra vào</span><span class="spec-value">Tự
-                                động lùi tay lái</span></div>
-                        <div class="spec-row"><span class="spec-name">Cửa sổ trời</span><span class="spec-value">1 chạm,
-                                chống kẹt</span></div>
-                        <div class="spec-row"><span class="spec-name">Lọc không khí</span><span class="spec-value">Lọc
-                                bụi & phấn hoa</span></div>
-                        <div class="spec-row"><span class="spec-name">Cửa gió thông minh</span><span
-                                class="spec-value">Tự động điều chỉnh</span></div>
-                    </div>
-                </div>
+            <div class="section-tag">Thông số &amp; tính năng</div>
+            <h2 class="section-title">So Sánh Các Phiên Bản Lexus ES</h2>
+            <h3 class="es-spec-heading">Tổng quan</h3>
+            <div class="es-spec-scroll" role="region" aria-label="Tổng quan" tabindex="0">
+                <table class="es-spec-table">
+                    <thead><tr><th scope="col">Hạng mục</th><th scope="col">ES 350h Premium</th><th scope="col">ES 350h Luxury</th><th scope="col">ES 500e</th></tr></thead>
+                    <tbody>
+                        <tr><th scope="row">Loại xe</th><td>Hybrid tự sạc HEV</td><td>Hybrid tự sạc HEV</td><td>Thuần điện BEV</td></tr>
+                        <tr><th scope="row">Động cơ</th><td>Xăng 2.5L I4 + mô-tơ điện</td><td>Xăng 2.5L I4 + mô-tơ điện</td><td>2 mô-tơ điện eAxle</td></tr>
+                        <tr><th scope="row">Dung tích động cơ</th><td>2.487 cc</td><td>2.487 cc</td><td>—</td></tr>
+                        <tr><th scope="row">Hộp số</th><td>e-CVT</td><td>e-CVT</td><td>Truyền động điện</td></tr>
+                        <tr><th scope="row">Dẫn động</th><td>FWD</td><td>FWD</td><td>DIRECT4 AWD</td></tr>
+                        <tr><th scope="row">Công suất hệ thống</th><td>khoảng 244–247 hp</td><td>khoảng 244–247 hp</td><td>338–343 hp</td></tr>
+                        <tr><th scope="row">0–100 km/h</th><td>khoảng 7,7–8,0 giây*</td><td>khoảng 7,7–8,0 giây*</td><td>khoảng 5,7–5,9 giây*</td></tr>
+                        <tr><th scope="row">Pin</th><td>Pin Hybrid</td><td>Pin Hybrid</td><td>Li-ion 74,7 kWh</td></tr>
+                        <tr><th scope="row">Sạc ngoài</th><td>Không</td><td>Không</td><td>Có</td></tr>
+                        <tr><th scope="row">Quãng đường điện</th><td>—</td><td>—</td><td>khoảng 430 km</td></tr>
+                        <tr><th scope="row">Kích thước D×R×C</th><td>5.140 × 1.920 × 1.555 mm</td><td>5.140 × 1.920 × 1.555 mm</td><td>5.140 × 1.920 × 1.560 mm</td></tr>
+                        <tr><th scope="row">Chiều dài cơ sở</th><td>2.950 mm</td><td>2.950 mm</td><td>2.950 mm</td></tr>
+                        <tr><th scope="row">La răng/ lốp</th><td>19&quot;, 235/55R19</td><td>19&quot;, 235/55R19</td><td>21&quot;, 235/45R21</td></tr>
+                        <tr><th scope="row">Khối lượng</th><td>1.820–1.935 kg*</td><td>1.820–1.935 kg*</td><td>2.205–2.285 kg*</td></tr>
+                        <tr><th scope="row">Số chỗ</th><td>5</td><td>5</td><td>5</td></tr>
+                    </tbody>
+                </table>
             </div>
+            <h3 class="es-spec-heading">Kích thước, kết cấu</h3>
+            <div class="es-spec-scroll" role="region" aria-label="Kích thước, kết cấu" tabindex="0">
+                <table class="es-spec-table">
+                    <thead><tr><th scope="col">Thông số</th><th scope="col">ES 350h Premium</th><th scope="col">ES 350h Luxury</th><th scope="col">ES 500e</th></tr></thead>
+                    <tbody>
+                        <tr><th scope="row">Dài</th><td>5.140 mm</td><td>5.140 mm</td><td>5.140 mm</td></tr>
+                        <tr><th scope="row">Rộng</th><td>1.920 mm</td><td>1.920 mm</td><td>1.920 mm</td></tr>
+                        <tr><th scope="row">Cao</th><td>1.555 mm</td><td>1.555 mm</td><td>1.560 mm</td></tr>
+                        <tr><th scope="row">Chiều dài cơ sở</th><td>2.950 mm</td><td>2.950 mm</td><td>2.950 mm</td></tr>
+                        <tr><th scope="row">Khoảng sáng gầm</th><td>khoảng 185 mm*</td><td>khoảng 185 mm*</td><td>khoảng 155–160 mm*</td></tr>
+                        <tr><th scope="row">Mâm</th><td>19&quot;</td><td>19&quot;</td><td>21&quot;</td></tr>
+                        <tr><th scope="row">Lốp</th><td>235/55R19</td><td>235/55R19</td><td>235/45R21</td></tr>
+                        <tr><th scope="row">Nền tảng</th><td>Multi-pathway platform</td><td>Multi-pathway platform</td><td>Multi-pathway platform</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3 class="es-spec-heading">Nội thất</h3>
+            <div class="es-spec-scroll" role="region" aria-label="Nội thất" tabindex="0">
+                <table class="es-spec-table">
+                    <thead><tr><th scope="col">Trang bị</th><th scope="col">350h Premium</th><th scope="col">350h Luxury</th><th scope="col">500e</th></tr></thead>
+                    <tbody>
+                        <tr><th scope="row">Màn hình trung tâm</th><td>14&quot;</td><td>14&quot;</td><td>14&quot;</td></tr>
+                        <tr><th scope="row">Đồng hồ kỹ thuật số</th><td>12,3&quot;</td><td>12,3&quot;</td><td>12,3&quot;</td></tr>
+                        <tr><th scope="row">Lexus Interface mới</th><td>Có</td><td>Có</td><td>Có</td></tr>
+                        <tr><th scope="row">Apple CarPlay</th><td>Có</td><td>Có</td><td>Có</td></tr>
+                        <tr><th scope="row">Android Auto</th><td>Có</td><td>Có</td><td>Có</td></tr>
+                        <tr><th scope="row">Bluetooth</th><td>Có</td><td>Có</td><td>Có</td></tr>
+                        <tr><th scope="row">Sạc điện thoại không dây</th><td>Có</td><td>Có</td><td>Có</td></tr>
+                        <tr><th scope="row">Điều hòa tự động</th><td>Có</td><td>Có</td><td>Có</td></tr>
+                        <tr><th scope="row">Ghế trước chỉnh điện</th><td>Có</td><td>Có</td><td>Có</td></tr>
+                        <tr><th scope="row">Sưởi ghế trước</th><td>Có</td><td>Có</td><td>Có</td></tr>
+                        <tr><th scope="row">Thông gió ghế trước</th><td>Có</td><td>Có</td><td>Có</td></tr>
+                        <tr><th scope="row">Vô-lăng sưởi</th><td>Có</td><td>Có</td><td>Có</td></tr>
+                        <tr><th scope="row">Ambient Lighting</th><td>Có</td><td>Cao cấp hơn</td><td>Cao cấp hơn</td></tr>
+                        <tr><th scope="row">Da Semi-Aniline</th><td>Có</td><td>Có</td><td>Có</td></tr>
+                        <tr><th scope="row">Bamboo Layering</th><td>Không</td><td>không</td><td>Có trên Luxury BEV</td></tr>
+                        <tr><th scope="row">Mark Levinson</th><td>Đang cập nhật</td><td>Có</td><td>Có</td></tr>
+                        <tr><th scope="row">HUD</th><td>Đang cập nhật</td><td>Có</td><td>Có</td></tr>
+                        <tr><th scope="row">Camera 360°</th><td>Có</td><td>Có</td><td>Có</td></tr>
+                        <tr><th scope="row">Advanced Park</th><td>tùy cấu hình</td><td>Có</td><td>Có</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="section-desc" style="margin-top:20px;">Các giá trị “khoảng” và dấu * là thông số tham khảo. Trang bị tùy cấu hình; các mục “đang cập nhật” sẽ được bổ sung khi có thông tin.</p>
         </div>
     </section>
 
@@ -1321,7 +1109,7 @@
         /* ===================== VERSION SELECTOR ===================== */
         let selectedVersion = {};
 
-        function selectVersion(el, price, name, hp, acc, fuel, drive) {
+        function selectVersion(el, price, name, hp, acc, fuel, drive, type, transmission) {
             document.querySelectorAll('.version-option').forEach(v => v.classList.remove('active'));
             el.classList.add('active');
             document.getElementById('priceDisplay').innerHTML = price + '<span> VNĐ</span>';
@@ -1329,6 +1117,12 @@
             document.getElementById('qs-acc').textContent = acc;
             document.getElementById('qs-fuel').textContent = fuel;
             document.getElementById('qs-drive').textContent = drive;
+            document.getElementById('qs-energy-label').textContent = type === 'BEV' ? 'Quãng đường điện' : 'Tiêu thụ / 100 km';
+            document.getElementById('qs-transmission').textContent = transmission;
+            document.querySelector('.product-badge').innerHTML = '<i class="bi bi-lightning-charge-fill"></i> ' + (type === 'BEV' ? 'Thuần điện — DIRECT4 AWD' : 'Hybrid tự sạc — e-CVT FWD');
+            document.querySelector('.product-subtitle').textContent = name + ' 2026 — ' + (type === 'BEV' ? '2 mô-tơ điện eAxle' : '2.5L HEV e-CVT FWD');
+            document.querySelector('.gallery-badge span').textContent = type === 'BEV' ? 'ES 500e' : 'ES 350h';
+            document.querySelector('.gallery-badge .hybrid').textContent = type === 'BEV' ? 'Thuần điện' : 'Hybrid';
             selectedVersion = {
                 price,
                 name
@@ -1503,6 +1297,12 @@
 @endpush
 @push('css')
     <style>
+        .es-spec-heading { margin: 28px 0 16px; }
+        .es-spec-scroll { overflow-x: auto; }
+        .es-spec-table { width: 100%; min-width: 700px; border-collapse: collapse; }
+        .es-spec-table th, .es-spec-table td { padding: 14px 16px; border-bottom: 1px solid var(--lexus-gray); text-align: left; vertical-align: top; }
+        .es-spec-table thead th { background: var(--lexus-black); color: white; }
+        .es-spec-table tbody th { width: 25%; }
         .toast-notify {
             position: fixed;
             top: 30px;
