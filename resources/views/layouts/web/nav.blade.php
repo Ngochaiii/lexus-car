@@ -73,11 +73,11 @@
 </div>
 <style>
     .mob-lk{
-        display:block;color:var(--text);font-size:1.2rem;font-weight:600;
+        display:block;color:var(--text);font-size:calc(1.2rem + 3px);font-weight:600;
         padding:16px 0;border-bottom:1px solid var(--gray);
         text-decoration:none;transition:color .2s;letter-spacing:.02em;
     }
     .mob-lk:hover,.mob-lk.active{color:var(--gold)}
-    .mob-lk.active{font-family:'Playfair Display',serif;font-size:1.3rem}
+    .mob-lk.active{font-family:'Playfair Display',serif;font-size:calc(1.3rem + 3px)}
     body.menu-open{overflow:hidden}
 </style>

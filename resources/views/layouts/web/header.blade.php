@@ -3,7 +3,7 @@
             <div class="hero-bg"></div>
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-7">
                         <div class="hero-content">
                             @if (Route::currentRouteName() === 'web.home')
                                 <div class="hero-tagline">Tư vấn riêng · Lexus Thăng Long</div>
@@ -61,12 +61,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-5">
                         <div class="hero-image">
                             <img
-                                src="{{asset_v('web/assets/images/image-20210204180128-1.jpeg')}}"
-                                alt="Lexus RX 500h F Sport — Xe SUV Hybrid cao cấp"
-                                width="1200" height="800"
+                                src="https://rx350-lexusthanglong.com/web/assets/images/anhcanhan/huu-lap-lexus-gx550.webp?v=1788965331"
+                                alt="Hữu Lập bên Lexus GX 550 tại Lexus Thăng Long"
+                                width="1440" height="1720"
                                 fetchpriority="high"
                                 loading="eager"
                                 decoding="async">

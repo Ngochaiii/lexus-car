@@ -8359,7 +8359,7 @@ img {
         .nav-lx{position:fixed;top:0;left:0;right:0;z-index:1000;padding:20px 0;background:transparent;border-bottom:1px solid transparent;transition:var(--ease)}
         .nav-lx.s{background:rgba(10,10,10,.96);backdrop-filter:blur(20px);border-bottom-color:var(--gray);padding:14px 0}
         .n-brand{font-family:'Playfair Display',serif;font-size:3.6rem;font-weight:700;letter-spacing:.25em;color:var(--gold)}
-        .n-link{color:rgba(229,229,229,.75);font-size:.82rem;font-weight:500;padding:8px 14px;border-radius:var(--r);transition:var(--ease)}
+        .n-link{color:rgba(229,229,229,.75);font-size:calc(.82rem + 3px);font-weight:500;padding:8px 10px;border-radius:var(--r);transition:var(--ease)}
         .n-link:hover,.n-link.a{color:var(--white)}
         .n-link.a{color:var(--gold)}
         .btn-gold{background:var(--gold);color:var(--black);font-size:.8rem;font-weight:700;padding:10px 22px;border-radius:var(--r);letter-spacing:.05em;transition:var(--ease)}
@@ -9480,4 +9480,32 @@ img {
     .footer-brand img {
         height: 24px;
     }
+}
+
+/* Banner portrait and wider introduction */
+.hero-section .hero-desc { max-width: 640px; }
+.hero-section .hero-title { font-size: clamp(2.6rem, 4.6vw, 4.25rem); line-height: 1.16; }
+.hero-section .hero-image { display: flex; justify-content: flex-end; }
+.hero-section .hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    border-radius: 18px;
+    border: 1px solid rgba(196, 160, 82, .25);
+}
+@media (min-width: 992px) {
+    .hero-section { min-height: 760px; min-height: min(880px, 100svh); padding: 128px 0 72px; }
+    .hero-section .hero-content { padding-right: 24px; }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav-lx .n-brand img { height: 20px; }
+    .nav-lx .n-link { padding-inline: 7px; }
+    .nav-lx .btn-gold { padding-inline: 14px; }
+}
+@media (max-width: 991px) {
+    .hero-section .hero-image { justify-content: center; }
+    .hero-section .hero-image img { max-width: 340px; }
+    .hero-section .hero-actions { flex-wrap: wrap; }
+    .hero-section .hero-stats { flex-wrap: wrap; gap: 24px; }
 }
