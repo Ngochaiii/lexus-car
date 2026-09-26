@@ -628,7 +628,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img loading="lazy" decoding="async" data-tech="SRS" src="{{asset_v('web/assets/images/srs.png')}}" alt="Hệ thống túi khí SRS">
+                                <img loading="lazy" decoding="async" data-tech="SRS" src="{{asset_v('web/assets/images/srs.webp')}}" alt="Hệ thống túi khí SRS">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -671,7 +671,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img loading="lazy" decoding="async" data-tech="PKSB" src="{{asset_v('web/assets/images/pksb.png')}}" alt="Hệ thống PKSB">
+                                <img loading="lazy" decoding="async" data-tech="PKSB" src="{{asset_v('web/assets/images/pksb.webp')}}" alt="Hệ thống PKSB">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -774,7 +774,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img loading="lazy" decoding="async" data-tech="PVM" src="{{asset_v('web/assets/images/pvm.png')}}" alt="Hệ thống quan sát toàn cảnh PVM">
+                                <img loading="lazy" decoding="async" data-tech="PVM" src="{{asset_v('web/assets/images/pvm.webp')}}" alt="Hệ thống quan sát toàn cảnh PVM">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -823,7 +823,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img loading="lazy" decoding="async" data-tech="AUTO_SEAT" src="{{asset_v('web/assets/images/seat.png')}}" alt="Ghế sau tự động ngả">
+                                <img loading="lazy" decoding="async" data-tech="AUTO_SEAT" src="{{asset_v('web/assets/images/seat.webp')}}" alt="Ghế sau tự động ngả">
                                 <div class="ph">
                                     <svg class="ph-svg" width="120" height="80" viewBox="0 0 120 80"
                                         fill="none">
@@ -917,7 +917,7 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img loading="lazy" decoding="async" data-tech="ELATCH" src="{{asset_v('web/assets/images/elatch.png')}}" alt="Hệ thống e-Latch">
+                                <img loading="lazy" decoding="async" data-tech="ELATCH" src="{{asset_v('web/assets/images/elatch.webp')}}" alt="Hệ thống e-Latch">
                                 <div class="ph">
                                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80"
                                         fill="none">
@@ -980,7 +980,7 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="tc">
                             <div class="tc-img">
-                                <img loading="lazy" decoding="async" data-tech="TEAMMATE" src="{{asset_v('web/assets/images/teammate.png')}}" alt="Lexus Teammate Advanced Park">
+                                <img loading="lazy" decoding="async" data-tech="TEAMMATE" src="{{asset_v('web/assets/images/teammate.webp')}}" alt="Lexus Teammate Advanced Park">
                                 <div class="ph">
                                     <svg class="ph-svg" width="140" height="80" viewBox="0 0 140 80"
                                         fill="none">
@@ -1178,7 +1178,7 @@
                     <div class="col-lg-5">
                         <div class="sp-img" style="min-height:360px">
                             <!-- SPOTLIGHT IMAGE SLOT: TEAMMATE -->
-                            <img loading="lazy" decoding="async" data-tech="TEAMMATE_SPOTLIGHT" src="{{asset_v('web/assets/images/teammate.png')}}" alt="Teammate Spotlight"
+                            <img loading="lazy" decoding="async" data-tech="TEAMMATE_SPOTLIGHT" src="{{asset_v('web/assets/images/teammate.webp')}}" alt="Teammate Spotlight"
                                 style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
                             <div class="sp-ph">
                                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
@@ -1405,7 +1405,7 @@
                             <div>
                                 <div class="tl-cnt" onclick="toggleTL(this.closest('.tl-item'))">
                                     <div class="tl-img">
-                                        <img loading="lazy" decoding="async" data-tech="PKSB_TL" src="{{asset_v('web/assets/images/pksb.png')}}" alt="PKSB">
+                                        <img loading="lazy" decoding="async" data-tech="PKSB_TL" src="{{asset_v('web/assets/images/pksb.webp')}}" alt="PKSB">
                                         <div class="tl-ph"><svg width="60" height="40" viewBox="0 0 60 40"
                                                 fill="none" opacity=".3">
                                                 <rect x="18" y="5" width="24" height="16" rx="3"

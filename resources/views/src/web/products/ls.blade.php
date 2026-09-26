@@ -34,15 +34,15 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/ls/mau-den.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/ls/mau-den.jpg') }}" alt="Lexus LS 500h màu đen"></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/ls/mau-trang.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/ls/mau-trang.jpg') }}" alt="Lexus LS 500h màu trắng"></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/ls/mau-xam.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/ls/mau-xam.jpg') }}" alt="Lexus LS 500h màu xám"></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/ls/mau-do.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/ls/mau-do.jpg') }}" alt="Lexus LS 500h màu đỏ"></div>
                             <div class="gallery-thumb" onclick="setImage(4,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/ls/mau-xanh.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/ls/mau-xanh.jpg') }}" alt="Lexus LS 500h màu xanh"></div>
                         </div>
                     </div>
                 </div>
@@ -815,7 +815,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/srs.png') }}" alt="SRS">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/srs.webp') }}" alt="SRS">
                                 </div>
                                 <div class="ti-name">Hệ Thống Túi Khí SRS</div>
                                 <div class="ti-abbr">SRS Airbag System</div>
@@ -957,6 +957,8 @@
             </div>
         </div>
     </section>
+
+    @include('partials.car-faq')
 @endsection
 @push('js')
     <script>

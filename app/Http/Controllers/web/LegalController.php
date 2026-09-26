@@ -28,7 +28,7 @@ class LegalController extends Controller
         return $this->renderLegal(
             slug: 'dieu-khoan-su-dung',
             title: 'Điều Khoản Sử Dụng Website',
-            metaDesc: 'Điều khoản sử dụng website tuvangiaxelexus.com. Quy định về quyền & nghĩa vụ khi truy cập, sử dụng nội dung và dịch vụ tư vấn xe Lexus.',
+            metaDesc: 'Điều khoản sử dụng website rx350-lexusthanglong.com. Quy định về quyền & nghĩa vụ khi truy cập, sử dụng nội dung và dịch vụ tư vấn xe Lexus.',
             sections: [
                 ['heading' => '1. Chấp nhận điều khoản', 'body' => 'Khi truy cập website, bạn đồng ý tuân thủ các điều khoản dưới đây. Nếu không đồng ý, vui lòng ngừng sử dụng website.'],
                 ['heading' => '2. Quyền sở hữu trí tuệ', 'body' => 'Toàn bộ nội dung, hình ảnh, logo trên website thuộc bản quyền của Lexus Thăng Long hoặc Tập đoàn Toyota/Lexus. Nghiêm cấm sao chép thương mại không phép.'],

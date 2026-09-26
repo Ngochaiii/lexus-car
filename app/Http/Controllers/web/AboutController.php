@@ -10,8 +10,8 @@ class AboutController extends Controller
     {
         $seo = [
             'title' => 'Giới Thiệu Lexus Thăng Long - Đại Lý Ủy Quyền Chính Hãng Hà Nội | Lexus Thăng Long',
-            'description' => 'Lexus Thăng Long - đại lý ủy quyền chính hãng Lexus tại Hà Nội. MST 010xxxxxxx, showroom Phạm Hùng, đội ngũ chuyên gia tư vấn xe sang.',
-            'keywords' => 'giới thiệu Lexus Thăng Long, đại lý Lexus Hà Nội, showroom Lexus, MST Lexus Thăng Long',
+            'description' => 'Lexus Thăng Long - đại lý ủy quyền chính hãng Lexus tại Hà Nội. Showroom tại Phạm Hùng, Nam Từ Liêm, đội ngũ chuyên gia tư vấn xe sang.',
+            'keywords' => 'giới thiệu Lexus Thăng Long, đại lý Lexus Hà Nội, showroom Lexus',
         ];
 
         $breadcrumbs = [

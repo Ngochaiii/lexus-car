@@ -4,6 +4,7 @@ use App\Http\Controllers\web\AboutController;
 use App\Http\Controllers\web\BlogsController;
 use App\Http\Controllers\web\HomeController;
 use App\Http\Controllers\web\LegalController;
+use App\Http\Controllers\web\LlmsController;
 use App\Http\Controllers\web\ProductsController;
 use App\Http\Controllers\web\SitemapController;
 use App\Http\Controllers\web\TechnogoryLexusController;
@@ -23,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('web.home');
 
 Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('web.sitemap');
+Route::get('/llms.txt', [LlmsController::class, 'index'])->name('web.llms');
 
 Route::get('/regis', [HomeController::class, 'regis'])->name('web.home.regis');
 

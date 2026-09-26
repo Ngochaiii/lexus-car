@@ -11,7 +11,6 @@
                     <div><i class="bi bi-geo-alt-fill"></i> {{ $org['street'] }}, {{ $org['locality'] }}, {{ $org['region'] }}</div>
                     <div><i class="bi bi-telephone-fill"></i> <a href="tel:{{ $org['phone'] }}" style="color:inherit">{{ $org['phone_display'] }}</a></div>
                     <div><i class="bi bi-envelope-fill"></i> <a href="mailto:{{ $org['email'] }}" style="color:inherit">{{ $org['email'] }}</a></div>
-                    <div><i class="bi bi-building"></i> MST: 010xxxxxxx</div>
                 </address>
                 <div class="footer-socials">
                     <a href="{{ $org['social'][0] ?? '#' }}" aria-label="Facebook Lexus Thăng Long" rel="noopener"><i class="bi bi-facebook"></i></a>

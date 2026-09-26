@@ -64,7 +64,7 @@
                     <div class="col-lg-5">
                         <div class="hero-image">
                             <img
-                                src="https://rx350-lexusthanglong.com/web/assets/images/anhcanhan/huu-lap-lexus-gx550.webp?v=1788965331"
+                                src="{{ asset_v('web/assets/images/anhcanhan/huu-lap-lexus-gx550.webp') }}"
                                 alt="Hữu Lập bên Lexus GX 550 tại Lexus Thăng Long"
                                 width="1440" height="1720"
                                 fetchpriority="high"

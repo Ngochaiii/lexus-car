@@ -38,15 +38,15 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/es/mau-trang.jpg') }}" alt="chiếc ES mang dấu ấn riêng"></div>
+                                    src="{{ asset_v('web/assets/images/es/mau-trang.jpg') }}" alt="Lexus ES 350h màu trắng"></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/es/mau-den.jpg') }}" alt="chiếc ES mang dấu ấn riêng"></div>
+                                    src="{{ asset_v('web/assets/images/es/mau-den.jpg') }}" alt="Lexus ES 350h màu đen"></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/es/mau-xam.jpg') }}" alt="chiếc ES mang dấu ấn riêng"></div>
+                                    src="{{ asset_v('web/assets/images/es/mau-xam.jpg') }}" alt="Lexus ES 350h màu xám"></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/es/mau-xanh-duong.jpg') }}" alt="chiếc ES mang dấu ấn riêng"></div>
+                                    src="{{ asset_v('web/assets/images/es/mau-xanh-duong.jpg') }}" alt="Lexus ES 350h màu xanh dương"></div>
                             <div class="gallery-thumb" onclick="setImage(4,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/es/mau-dong.jpg') }}" alt="chiếc ES mang dấu ấn riêng"></div>
+                                    src="{{ asset_v('web/assets/images/es/mau-dong.jpg') }}" alt="Lexus ES 350h màu đồng"></div>
                         </div>
                     </div>
                 </div>
@@ -1011,6 +1011,8 @@
             </div>
         </div>
     </section>
+
+    @include('partials.car-faq')
 @endsection
 @push('js')
     <script>

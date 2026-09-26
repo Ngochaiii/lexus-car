@@ -34,15 +34,15 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/rx/anh-1.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/rx/anh-1.jpg') }}" alt="Lexus RX 500h ảnh ngoại thất 1"></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/rx/anh-2.webp') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/rx/anh-2.webp') }}" alt="Lexus RX 500h ảnh ngoại thất 2"></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/rx/anh-4.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/rx/anh-4.jpg') }}" alt="Lexus RX 500h ảnh ngoại thất 3"></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/rx/anh-3.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/rx/anh-3.jpg') }}" alt="Lexus RX 500h ảnh ngoại thất 4"></div>
                             <div class="gallery-thumb" onclick="setImage(4,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/rx/anh-5.webp') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/rx/anh-5.webp') }}" alt="Lexus RX 500h ảnh ngoại thất 5"></div>
                         </div>
                     </div>
                 </div>
@@ -279,7 +279,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/ngoai-that.png') }}" alt="Front Trim">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/ngoai-that.webp') }}" alt="Front Trim">
                             </div>
                             <div class="ti-abbr">Màu đen </div>
                         </div>
@@ -287,7 +287,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/mautrang.jpg') }}" alt="Front Trim">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/mautrang.webp') }}" alt="Front Trim">
                             </div>
                             <div class="ti-abbr">Màu trắng</div>
                         </div>
@@ -303,7 +303,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/maudo.jpg') }}" alt="Front Trim">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/maudo.webp') }}" alt="Front Trim">
                             </div>
                             <div class="ti-abbr">Màu đỏ</div>
                         </div>
@@ -311,7 +311,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/xanhduong.jpg') }}" alt="Front Trim">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/xanhduong.webp') }}" alt="Front Trim">
                             </div>
                             <div class="ti-abbr">Xanh rêu</div>
                         </div>
@@ -319,7 +319,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/cam.png') }}" alt="Front Trim">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/cam.webp') }}" alt="Front Trim">
                             </div>
                             <div class="ti-abbr">Màu cam</div>
                         </div>
@@ -384,7 +384,7 @@
                         <div class="item-card-label">Đen Black</div>
                     </div>
                     <div class="item-card" onclick="selectCard(this)">
-                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/ghexe3.jpg') }}" alt="Da nâu Saddle Tan">
+                        <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/rx/ghexe3.webp') }}" alt="Da nâu Saddle Tan">
                         <div class="item-card-label">Đỏ Dank ROSE</div>
                     </div>
                 </div>
@@ -658,7 +658,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/rx/duoixe.png')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/rx/duoixe.webp')}}"
                             alt="Đuôi xe Lexus RX — Đèn hậu liên kết">
                         <div class="design-caption">
                             <h4>Đuôi xe thể thao — Đèn hậu liên kết</h4>
@@ -701,7 +701,7 @@
                         </div>
                     </div>
                     <div class="design-card">
-                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/rx/duclo.png')}}"
+                        <img loading="lazy" decoding="async" src="{{asset_v('web/assets/images/rx/duclo.webp')}}"
                             alt="Ghế thể thao F SPORT bọc da đục lỗ">
                         <div class="design-caption">
                             <h4>Ghế thể thao F SPORT</h4>
@@ -1172,6 +1172,8 @@
             </div>
         </div>
     </section>
+
+    @include('partials.car-faq')
 @endsection
 @push('js')
     <script>
@@ -1179,56 +1181,56 @@
         const colorGalleries = {
             white: {
                 name: 'Màu trắng',
-                images: ['{{ asset_v('web/assets/images/rx/mautrang.jpg') }}',
-                    '{{ asset_v('web/assets/images/rx/trang1.jpg') }}',
-                    '{{ asset_v('web/assets/images/rx/trang2.jpg') }}',
+                images: ['{{ asset_v('web/assets/images/rx/mautrang.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/trang1.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/trang2.webp') }}',
                     '{{ asset_v('web/assets/images/rx/trang3.jpg') }}',
                     '{{ asset_v('web/assets/images/rx/trang4.jpg') }}'
                 ]
             },
             black: {
                 name: 'Màu đen',
-                images: ['{{ asset_v('web/assets/images/rx/ngoai-that.png') }}',
-                    '{{ asset_v('web/assets/images/rx/den1.jpg') }}',
+                images: ['{{ asset_v('web/assets/images/rx/ngoai-that.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/den1.webp') }}',
                     '{{ asset_v('web/assets/images/rx/den2.webp') }}',
-                    '{{ asset_v('web/assets/images/rx/den3.jpg') }}',
-                    '{{ asset_v('web/assets/images/rx/ngoai-that.png') }}'
+                    '{{ asset_v('web/assets/images/rx/den3.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/ngoai-that.webp') }}'
                 ]
             },
             silver: {
                 name: 'Màu xám',
                 images: ['{{ asset_v('web/assets/images/rx/mauxam.webp') }}',
-                    '{{ asset_v('web/assets/images/rx/xam1.png') }}',
-                    '{{ asset_v('web/assets/images/rx/xam2.png') }}',
-                    '{{ asset_v('web/assets/images/rx/xam3.png') }}',
-                    '{{ asset_v('web/assets/images/rx/xam4.png') }}'
+                    '{{ asset_v('web/assets/images/rx/xam1.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/xam2.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/xam3.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/xam4.webp') }}'
                 ]
             },
             red: {
                 name: 'Màu đỏ',
-                images: ['{{ asset_v('web/assets/images/rx/maudo.jpg') }}',
+                images: ['{{ asset_v('web/assets/images/rx/maudo.webp') }}',
                     '{{ asset_v('web/assets/images/rx/do1.webp') }}',
-                    '{{ asset_v('web/assets/images/rx/do2.png') }}',
-                    '{{ asset_v('web/assets/images/rx/do3.jpg') }}',
-                    '{{ asset_v('web/assets/images/rx/maudo.jpg') }}'
+                    '{{ asset_v('web/assets/images/rx/do2.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/do3.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/maudo.webp') }}'
                 ]
             },
             green: {
                 name: 'Xanh rêu',
-                images: ['{{ asset_v('web/assets/images/rx/xanhduong.jpg') }}',
-                    '{{ asset_v('web/assets/images/rx/xanhr1.png') }}',
-                    '{{ asset_v('web/assets/images/rx/xanhr2.png') }}',
-                    '{{ asset_v('web/assets/images/rx/xanhr3.png') }}',
-                    '{{ asset_v('web/assets/images/rx/xanhr4.png') }}'
+                images: ['{{ asset_v('web/assets/images/rx/xanhduong.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/xanhr1.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/xanhr2.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/xanhr3.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/xanhr4.webp') }}'
                 ]
             },
             copper: {
                 name: 'Màu đồng',
-                images: ['{{ asset_v('web/assets/images/rx/cam.png') }}',
-                    '{{ asset_v('web/assets/images/rx/cam1.jpg') }}',
-                    '{{ asset_v('web/assets/images/rx/cam2.jpg') }}',
-                    '{{ asset_v('web/assets/images/rx/cam3.jpg') }}',
-                    '{{ asset_v('web/assets/images/rx/cam.png') }}'
+                images: ['{{ asset_v('web/assets/images/rx/cam.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/cam1.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/cam2.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/cam3.webp') }}',
+                    '{{ asset_v('web/assets/images/rx/cam.webp') }}'
                 ]
             },
             blue: {

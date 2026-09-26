@@ -88,7 +88,7 @@ class SeoBuilder
                 'answer' => "{$name} được bảo hành chính hãng 5 năm hoặc 100.000 km tùy điều kiện nào đến trước, kèm dịch vụ cứu hộ 24/7.",
             ],
             [
-                'question' => "Lexus {$car['name']} có hỗ trợ trả góp không?",
+                'question' => "{$car['name']} có hỗ trợ trả góp không?",
                 'answer' => "Có. {$org['name']} hỗ trợ trả góp đến 70% giá trị xe qua các ngân hàng đối tác, lãi suất ưu đãi, thủ tục nhanh trong ngày.",
             ],
         ];

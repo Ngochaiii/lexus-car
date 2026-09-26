@@ -34,13 +34,13 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/gx/mau-den.webp') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/gx/mau-den.webp') }}" alt="Lexus GX 550 màu đen"></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/gx/mau-trang.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/gx/mau-trang.webp') }}" alt="Lexus GX 550 màu trắng"></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/gx/mau-xam.webp') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/gx/mau-xam.webp') }}" alt="Lexus GX 550 màu xám"></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/gx/mau-xanh.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/gx/mau-xanh.webp') }}" alt="Lexus GX 550 màu xanh"></div>
                         </div>
                     </div>
                 </div>
@@ -261,7 +261,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/mau-trang.jpg') }}" alt="Màu trắng">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/mau-trang.webp') }}" alt="Màu trắng">
                             </div>
                             <div class="ti-abbr">Màu trắng — Sonic White</div>
                         </div>
@@ -277,7 +277,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/mau-xanh.jpg') }}" alt="Màu xanh">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/gx/mau-xanh.webp') }}" alt="Màu xanh">
                             </div>
                             <div class="ti-abbr">Màu xanh — Terrane kaki</div>
                         </div>
@@ -976,6 +976,8 @@
             </div>
         </div>
     </section>
+
+    @include('partials.car-faq')
 @endsection
 @push('js')
     <script>
@@ -984,9 +986,9 @@
             white: {
                 name: 'Sonic White',
                 images: [
-                    '{{ asset_v('web/assets/images/gx/mau-trang1.jpg') }}',
+                    '{{ asset_v('web/assets/images/gx/mau-trang1.webp') }}',
                     '{{ asset_v('web/assets/images/gx/mau-trang2.webp') }}',
-                    '{{ asset_v('web/assets/images/gx/mau-trang3.jpg') }}',
+                    '{{ asset_v('web/assets/images/gx/mau-trang3.webp') }}',
                     '{{ asset_v('web/assets/images/gx/mau-trang4.webp') }}'
                 ]
             },
@@ -994,26 +996,26 @@
                 name: 'Caviar Black',
                 images: [
                     '{{ asset_v('web/assets/images/gx/mau-den1.webp') }}',
-                    '{{ asset_v('web/assets/images/gx/mau-den2.jpg') }}',
+                    '{{ asset_v('web/assets/images/gx/mau-den2.webp') }}',
                     '{{ asset_v('web/assets/images/gx/mau-den3.webp') }}',
-                    '{{ asset_v('web/assets/images/gx/mau-den4.jpg') }}'
+                    '{{ asset_v('web/assets/images/gx/mau-den4.webp') }}'
                 ]
             },
             silver: {
                 name: 'Sonic Titanium',
                 images: [
-                    '{{ asset_v('web/assets/images/gx/mau-xam1.jpg') }}',
+                    '{{ asset_v('web/assets/images/gx/mau-xam1.webp') }}',
                     '{{ asset_v('web/assets/images/gx/mau-xam2.webp') }}',
-                    '{{ asset_v('web/assets/images/gx/mau-xam3.jpg') }}',
+                    '{{ asset_v('web/assets/images/gx/mau-xam3.webp') }}',
                     '{{ asset_v('web/assets/images/gx/mau-xam4.webp') }}'
                 ]
             },
             green: {
                 name: 'Nori Green Pearl',
                 images: [
-                    '{{ asset_v('web/assets/images/gx/mau-xanhla1.jpg') }}',
+                    '{{ asset_v('web/assets/images/gx/mau-xanhla1.webp') }}',
                     '{{ asset_v('web/assets/images/gx/mau-xanhla2.webp') }}',
-                    '{{ asset_v('web/assets/images/gx/mau-xanhla3.jpg') }}',
+                    '{{ asset_v('web/assets/images/gx/mau-xanhla3.webp') }}',
                     '{{ asset_v('web/assets/images/gx/mau-xanhla4.webp') }}'
                 ]
             }

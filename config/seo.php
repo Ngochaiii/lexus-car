@@ -1,7 +1,10 @@
 <?php
 
 return [
-    'site_url' => env('SEO_SITE_URL', 'https://tuvangiaxelexus.com'),
+    'site_url' => env('SEO_SITE_URL', 'https://rx350-lexusthanglong.com'),
+
+    // Domain cũ — mọi request tới đây được 301 về site_url (giữ nguyên path + query)
+    'legacy_hosts' => array_filter(array_map('trim', explode(',', env('SEO_LEGACY_HOSTS', 'tuvangiaxelexus.com,www.tuvangiaxelexus.com')))),
     'site_name' => env('SEO_SITE_NAME', 'Lexus Thăng Long'),
 
     'tracking' => [
@@ -35,8 +38,6 @@ return [
         'lng' => 105.781944,
         'opens' => '08:00',
         'closes' => '18:00',
-        'rating_value' => '4.9',
-        'review_count' => '2500',
         'social' => [
             'https://facebook.com/lexusthanglong',
             'https://youtube.com/@lexusthanglong',
@@ -81,7 +82,7 @@ return [
             'price' => '8200000000',
             'fuel' => 'Hybrid',
             'engine' => '3.5L V6 Hybrid',
-            'image' => '/web/assets/images/lexus_logo.png',
+            'image' => '/web/assets/images/ls/mau-den.jpg',
             'description' => 'Lexus LS 500h 2026 - Sedan flagship hạng sang hybrid.',
         ],
         'lx' => [
@@ -91,7 +92,7 @@ return [
             'price' => '8520000000',
             'fuel' => 'Xăng',
             'engine' => '3.5L V6 Twin-Turbo',
-            'image' => '/web/assets/images/lexus_logo.png',
+            'image' => '/web/assets/images/lx/anh-main.webp',
             'description' => 'Lexus LX 600 2026 - SUV full-size hạng sang flagship.',
         ],
         'lm' => [
@@ -101,7 +102,7 @@ return [
             'price' => '7200000000',
             'fuel' => 'Hybrid',
             'engine' => '2.5L Hybrid',
-            'image' => '/web/assets/images/lexus_logo.png',
+            'image' => '/web/assets/images/lm/anh-3.jpg',
             'description' => 'Lexus LM 350h 2026 - MPV hạng sang dành cho doanh nhân.',
         ],
         'gx' => [
@@ -111,7 +112,7 @@ return [
             'price' => '5690000000',
             'fuel' => 'Xăng',
             'engine' => '3.4L V6 Twin-Turbo',
-            'image' => '/web/assets/images/lexus_logo.png',
+            'image' => '/web/assets/images/gx/mau-den.webp',
             'description' => 'Lexus GX 550 2026 - SUV body-on-frame off-road hạng sang.',
         ],
     ],

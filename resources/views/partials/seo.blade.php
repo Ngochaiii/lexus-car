@@ -46,11 +46,6 @@
             'opens' => $org['opens'],
             'closes' => $org['closes'],
         ],
-        'aggregateRating' => [
-            '@type' => 'AggregateRating',
-            'ratingValue' => $org['rating_value'],
-            'reviewCount' => $org['review_count'],
-        ],
         'sameAs' => $org['social'],
     ];
 

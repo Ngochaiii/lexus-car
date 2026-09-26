@@ -15,7 +15,7 @@
 @section('content')
     <!-- ==================== ARTICLE HERO ==================== -->
     <section class="article-hero">
-        <img loading="lazy" decoding="async" src="{{ $heroImage }}" alt="{{ $post->title }}">
+        <img loading="eager" fetchpriority="high" decoding="async" src="{{ $heroImage }}" alt="{{ $post->title }}">
         <div class="ah-overlay">
             <div class="container">
                 <div class="ah-content">

@@ -34,13 +34,13 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/lm/anh-1.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/lm/anh-1.jpg') }}" alt="Lexus LM 500h ảnh ngoại thất 1"></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/lm/anh-2.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/lm/anh-2.jpg') }}" alt="Lexus LM 500h ảnh ngoại thất 2"></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/lm/anh-3.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/lm/anh-3.jpg') }}" alt="Lexus LM 500h ảnh ngoại thất 3"></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/lm/anh-4.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/lm/anh-4.jpg') }}" alt="Lexus LM 500h ảnh ngoại thất 4"></div>
 
                         </div>
                     </div>
@@ -814,6 +814,8 @@
             </div>
         </div>
     </section>
+
+    @include('partials.car-faq')
 @endsection
 @push('js')
     <script>

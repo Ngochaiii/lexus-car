@@ -12,6 +12,7 @@ class ProductsController extends Controller
         $car = config("seo.cars.$key");
         $fullName = 'Lexus ' . $car['model'];
         $priceTy = number_format($car['price'] / 1_000_000_000, 2, ',', '.');
+        $faq = SeoBuilder::carFaq($key);
 
         $seo = [
             'title' => "{$fullName} {$car['model_year']} - Giá Lăn Bánh & Khuyến Mãi | Lexus Thăng Long",
@@ -21,7 +22,7 @@ class ProductsController extends Controller
             'og_image' => SeoBuilder::siteUrl() . $car['image'],
             'schemas' => [
                 SeoBuilder::carSchema($key),
-                SeoBuilder::faqSchema(SeoBuilder::carFaq($key)),
+                SeoBuilder::faqSchema($faq),
             ],
         ];
 
@@ -31,7 +32,7 @@ class ProductsController extends Controller
             ['name' => $car['name'] . ' Series'],
         ];
 
-        return view($view, compact('seo', 'breadcrumbs', 'car'));
+        return view($view, compact('seo', 'breadcrumbs', 'car', 'faq'));
     }
 
     public function index()

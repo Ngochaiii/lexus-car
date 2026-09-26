@@ -100,15 +100,21 @@ class BlogsController extends Controller
             ->first();
 
         $siteUrl = rtrim(config('seo.site_url'), '/');
+
+        // Ảnh upload nằm trong storage/ — cần URL tuyệt đối cho OG và schema
+        $ogImage = $post->effectiveOgImage();
+        if ($ogImage && !str_starts_with($ogImage, 'http')) {
+            $ogImage = $siteUrl . '/storage/' . ltrim($ogImage, '/');
+        }
+        $ogImage = $ogImage ?: $siteUrl . config('seo.default_og_image');
+
         $seo = [
             'title' => $post->effectiveMetaTitle() . ' | Lexus Thăng Long',
             'description' => $post->effectiveMetaDescription(),
             'keywords' => $post->meta_keywords ?: $post->tags->pluck('name')->implode(', '),
             'canonical' => $post->canonical_url ?: ($siteUrl . '/blogs/' . $post->slug),
             'og_type' => 'article',
-            'og_image' => $post->effectiveOgImage()
-                ? (str_starts_with($post->effectiveOgImage(), 'http') ? $post->effectiveOgImage() : $siteUrl . '/' . ltrim($post->effectiveOgImage(), '/'))
-                : null,
+            'og_image' => $ogImage,
             'robots' => $post->noindex ? 'noindex, nofollow' : null,
             'schemas' => [[
                 '@context' => 'https://schema.org',
@@ -116,7 +122,7 @@ class BlogsController extends Controller
                 'mainEntityOfPage' => $siteUrl . '/blogs/' . $post->slug,
                 'headline' => $post->title,
                 'description' => $post->effectiveMetaDescription(),
-                'image' => $post->effectiveOgImage(),
+                'image' => [$ogImage],
                 'author' => ['@type' => 'Organization', 'name' => config('seo.organization.name')],
                 'publisher' => [
                     '@type' => 'Organization',

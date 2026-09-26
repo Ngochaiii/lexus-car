@@ -16,7 +16,7 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
 
     {{-- Preload hero image (homepage LCP) --}}
-    <link rel="preload" as="image" href="https://rx350-lexusthanglong.com/web/assets/images/anhcanhan/huu-lap-lexus-gx550.webp?v=1788965331" fetchpriority="high">
+    <link rel="preload" as="image" href="{{ asset_v('web/assets/images/anhcanhan/huu-lap-lexus-gx550.webp') }}" fetchpriority="high">
 
     @stack('preload')
     @stack('css')

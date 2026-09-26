@@ -22,7 +22,6 @@
                 <table style="width:100%;line-height:1.9">
                     <tr><td style="font-weight:600;width:200px">Tên đầy đủ:</td><td>{{ $org['legal_name'] }}</td></tr>
                     <tr><td style="font-weight:600">Tên viết tắt:</td><td>{{ $org['name'] }}</td></tr>
-                    <tr><td style="font-weight:600">Mã số thuế:</td><td>010xxxxxxx</td></tr>
                     <tr><td style="font-weight:600">Địa chỉ:</td><td>{{ $org['street'] }}, {{ $org['locality'] }}, {{ $org['region'] }}</td></tr>
                     <tr><td style="font-weight:600">Hotline:</td><td><a href="tel:{{ $org['phone'] }}" style="color:#a47c2a;font-weight:600">{{ $org['phone_display'] }}</a></td></tr>
                     <tr><td style="font-weight:600">Email:</td><td><a href="mailto:{{ $org['email'] }}" style="color:#a47c2a">{{ $org['email'] }}</a></td></tr>

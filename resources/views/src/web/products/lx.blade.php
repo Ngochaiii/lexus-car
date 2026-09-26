@@ -34,13 +34,13 @@
                         </div>
                         <div class="gallery-thumbs">
                             <div class="gallery-thumb active" onclick="setImage(0,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/lx/mau-den.webp') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/lx/mau-den.webp') }}" alt="Lexus LX 600 màu đen"></div>
                             <div class="gallery-thumb" onclick="setImage(1,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/lx/mau-trang.webp') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/lx/mau-trang.webp') }}" alt="Lexus LX 600 màu trắng"></div>
                             <div class="gallery-thumb" onclick="setImage(2,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/lx/mau-xam.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/lx/mau-xam.jpg') }}" alt="Lexus LX 600 màu xám"></div>
                             <div class="gallery-thumb" onclick="setImage(3,this)"><img loading="lazy" decoding="async"
-                                    src="{{ asset_v('web/assets/images/lx/mau-do.jpg') }}" alt=""></div>
+                                    src="{{ asset_v('web/assets/images/lx/mau-do.webp') }}" alt="Lexus LX 600 màu đỏ"></div>
                         </div>
                     </div>
                 </div>
@@ -294,7 +294,7 @@
                     <div class="tech-item">
                         <div class="ti-content">
                             <div class="feature-thumb-img">
-                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lx/mau-do.jpg') }}" alt="Màu đỏ">
+                                <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/lx/mau-do.webp') }}" alt="Màu đỏ">
                             </div>
                             <div class="ti-abbr">Màu xanh rêu — Terrane kaki</div>
                         </div>
@@ -892,7 +892,7 @@
                         <div class="ti-content">
                             <a href="{{ route('tech_car.index') }}">
                                 <div class="feature-thumb-img">
-                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/pksb.png') }}" alt="PKSB">
+                                    <img loading="lazy" decoding="async" src="{{ asset_v('web/assets/images/pksb.webp') }}" alt="PKSB">
                                 </div>
                                 <div class="ti-name">Phanh An Toàn Khi Đỗ Xe</div>
                                 <div class="ti-abbr">PKSB — Vật tĩnh, xe & người đi bộ</div>
@@ -1048,6 +1048,8 @@
             </div>
         </div>
     </section>
+
+    @include('partials.car-faq')
 @endsection
 @push('js')
     <script>
@@ -1058,9 +1060,9 @@
                 images: [
                     '{{ asset_v('web/assets/images/lx/mau-trang1.webp') }}',
                     '{{ asset_v('web/assets/images/lx/mau-trang2.webp') }}',
-                    '{{ asset_v('web/assets/images/lx/mau-trang3.jpg') }}',
-                    '{{ asset_v('web/assets/images/lx/mau-trang4.jpg') }}',
-                    '{{ asset_v('web/assets/images/lx/mau-trang5.jpg') }}'
+                    '{{ asset_v('web/assets/images/lx/mau-trang3.webp') }}',
+                    '{{ asset_v('web/assets/images/lx/mau-trang4.webp') }}',
+                    '{{ asset_v('web/assets/images/lx/mau-trang5.webp') }}'
                 ]
             },
             black: {
@@ -1068,9 +1070,9 @@
                 images: [
                     '{{ asset_v('web/assets/images/lx/mau-den1.webp') }}',
                     '{{ asset_v('web/assets/images/lx/mau-den2.webp') }}',
-                    '{{ asset_v('web/assets/images/lx/mau-den3.jpg') }}',
-                    '{{ asset_v('web/assets/images/lx/mau-den4.jpg') }}',
-                    '{{ asset_v('web/assets/images/lx/mau-den5.jpg') }}'
+                    '{{ asset_v('web/assets/images/lx/mau-den3.webp') }}',
+                    '{{ asset_v('web/assets/images/lx/mau-den4.webp') }}',
+                    '{{ asset_v('web/assets/images/lx/mau-den5.webp') }}'
                 ]
             },
             silver: {
@@ -1079,7 +1081,7 @@
                     '{{ asset_v('web/assets/images/lx/mau-xam1.jpg') }}',
                     '{{ asset_v('web/assets/images/lx/mau-xam2.webp') }}',
                     '{{ asset_v('web/assets/images/lx/mau-xam3.webp') }}',
-                    '{{ asset_v('web/assets/images/lx/mau-xam4.jpg') }}',
+                    '{{ asset_v('web/assets/images/lx/mau-xam4.webp') }}',
                     '{{ asset_v('web/assets/images/lx/mau-xam5.jpg') }}'
                 ]
             },
