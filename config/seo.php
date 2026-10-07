@@ -9,7 +9,7 @@ return [
 
     'tracking' => [
         'gtm_id' => env('GTM_ID'),
-        'ga4_id' => env('GA4_ID'),
+        'ga4_id' => env('GA4_ID') ?: 'G-BQ4278YPX2',
         'gads_id' => env('GADS_ID', 'AW-17996413595'),
         'gads_conversion_contact' => env('GADS_CONVERSION_CONTACT'),
         // Nếu chưa tạo hành động chuyển đổi riêng, dùng chung nhãn "Người liên hệ".
