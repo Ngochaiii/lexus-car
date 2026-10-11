@@ -415,7 +415,7 @@
                                 </div>
                                 <div class="model-footer">
                                     <div
-                                        class="model-price">ĐANG CẬP NHẬP</div>
+                                        class="model-price">2.340.000.000đ</div>
                                     <a href="{{route('products.es')}}" class="model-link">Chi tiết <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>

@@ -93,28 +93,28 @@
                             <div class="option-label"><span><i class="bi bi-gear me-2"></i>Phiên bản</span></div>
                             <div class="version-options">
                                 <div class="version-option"
-                                    onclick="selectVersion(this,'2.360.000.000','ES 350h Premium','≈244–247','≈7,7–8,0s','Đang cập nhật','FWD','HEV','e-CVT')">
+                                    onclick="selectVersion(this,'2.340.000.000','ES 350h Premium','≈244–247','≈7,7–8,0s','Đang cập nhật','FWD','HEV','e-CVT')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">ES 350h Premium</div>
                                     </div>
-                                    <div class="vo-price">2.360.000.000</div>
+                                    <div class="vo-price">2.340.000.000</div>
                                 </div>
                                 <div class="version-option active"
-                                    onclick="selectVersion(this,'2.580.000.000','ES 350h Luxury','≈244–247','≈7,7–8,0s','Đang cập nhật','FWD','HEV','e-CVT')">
+                                    onclick="selectVersion(this,'2.600.000.000','ES 350h Luxury','≈244–247','≈7,7–8,0s','Đang cập nhật','FWD','HEV','e-CVT')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">ES 350h Luxury</div>
                                     </div>
-                                    <div class="vo-price">2.580.000.000</div>
+                                    <div class="vo-price">2.600.000.000</div>
                                 </div>
                                 <div class="version-option"
-                                    onclick="selectVersion(this,'2.980.000.000','ES 500e','338–343','≈5,7–5,9s','≈430 km','DIRECT4 AWD','BEV','Truyền động điện')">
+                                    onclick="selectVersion(this,'2.940.000.000','ES 500e','338–343','≈5,7–5,9s','≈430 km','DIRECT4 AWD','BEV','Truyền động điện')">
                                     <div class="vo-info">
                                         <div class="vo-radio"></div>
                                         <div class="vo-name">ES 500e</div>
                                     </div>
-                                    <div class="vo-price">2.980.000.000</div>
+                                    <div class="vo-price">2.940.000.000</div>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                             <div class="price-row">
                                 <div>
                                     <div class="price-label">Giá niêm yết</div>
-                                    <div class="price-value" id="priceDisplay">2.580.000.000<span> </span></div>
+                                    <div class="price-value" id="priceDisplay">2.600.000.000<span> </span></div>
                                 </div>
                             </div>
                             <div class="quick-specs"
